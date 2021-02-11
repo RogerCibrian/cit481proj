@@ -1,0 +1,33 @@
+$('.userrating-form').submit(function(e){
+e.preventDefault();
+        $.ajax({
+            url     : $(this).attr('action'),
+            type    : $(this).attr('method'),
+            data    : $(this).serialize(),
+            success : function() {
+        if(!alert('Thanks for your comment!')){window.location.reload();}
+            //alert("Thanks for your comment");
+        }
+    });
+
+});
+
+// same function as above for reply section
+$('.form-container').submit(function(e){
+e.preventDefault();
+        $.ajax({
+            url     : $(this).attr('action'),
+            type    : $(this).attr('method'),
+            data    : $(this).serialize(),
+            success : function() {
+        if(!alert('Thanks for your comment!')){window.location.reload();}
+            //alert("Thanks for your comment");
+        }
+    });
+
+});
+
+    </script>
+</body>
+</html>
+
