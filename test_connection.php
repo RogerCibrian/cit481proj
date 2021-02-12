@@ -1,6 +1,6 @@
 
 <?php //session_start();
- $DB_HOST = 'rottenpotatodb.cjmbcqw5ubno.us-east-1.rds.amazonaws.com:3306';
+ $DB_HOST = 'localhost';
  $DB_USER = 'rottenuser';
  $DB_PASS = 'rotten123';
  $DB_NAME = 'mydatabase';
