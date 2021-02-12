@@ -40,7 +40,7 @@
 			return false;
 		}
 	
-		var email = document.getElementById('email_addr_box');
+		var email = document.getElementById('email_addr');
 		var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		if (!filter.test(email.value)){
 			alert("Please provide a valid email address. Example: oinkster159@sbcglobal.net");
@@ -167,7 +167,7 @@
 	?>
       <form class="contact-form" name="myForm" onsubmit="return ValidateContactForm()"  method="POST" action="contactform.php">
         <input type="text" name="fullname" maxlength="40" placeholder="Full name" required/>
-        <input type="text" name="email" id="email_addr_box" maxlength="40" placeholder="Your Email Address" required/>
+        <input type="text" name="email" id="email_addr" maxlength="40" placeholder="Your Email Address" required/>
         <input type="text" name="subject" maxlength="100" placeholder="Subject" required/>
         <textarea name="message" id="textarea-box" maxlength="200" placeholder="Message" required ></textarea>
         <button type="submit" name="submit" style="width: 300px">
