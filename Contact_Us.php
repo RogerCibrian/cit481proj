@@ -42,7 +42,7 @@
 		}
 	
 		//var email = document.getElementById('email_addr');
-		var email = document.forms["myForm"]["email"].value;
+		var email = document.getElementsByClassName('email');
 		var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		if (!filter.test(email.value)){
 			alert("Please provide a valid email address. Example: oinkster159@sbcglobal.net");
