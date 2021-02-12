@@ -291,7 +291,10 @@ border: none;
         text-indent: 20px;
 
 }
-
+	pre{
+		background-color: none;
+		border: none;
+	}
     </style>
 
 
