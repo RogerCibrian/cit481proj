@@ -231,7 +231,7 @@
           <div class="content">
             <a href="/PC_games/Garrys_Mod.php">
               <img
-                src="/PC_games/220px-Garry's_Mod_logo.svg.png"
+                src="/PC_games/220px-Garry_s_Mod_logo.svg.png"
                 alt="Garry's Mod"
                 style="width: 100%; height: 275px"
             /></a>
