@@ -107,8 +107,7 @@
     <!--START OF PASSWORD RECOVERY FORM-->
     <div class="passwrd_recovery_container">
       <h1>Password Recovery</h1>
-	  <br>
-      Or<a href="passwrd_recovery_phone.php"> via phone number</a>
+	  
 	<?php
                 if (isset($_GET['msg'])){
                         $msg = $_GET['msg'];
@@ -120,6 +119,8 @@
 			echo "<p>Password reset request expired. <br>Please submit your request again.</p>";}
 		else echo "<p>Please enter your email address.</p>";
 	?>
+	  <br>
+      Or<a href="passwrd_recovery_phone.php"> via phone number</a>
       <form
         class="psswd-recovery-form"
         method="post"
