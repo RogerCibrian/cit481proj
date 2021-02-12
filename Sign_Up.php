@@ -59,12 +59,15 @@
 			return false;
 		}
 
+
+
 		var email = document.getElementById('email');
 		var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		if (!filter.test(email.value)){
 			alert("Please provide a valid email address. Example: oinster159@sbcgobal.net");
 			return false;
 		}
+		
 		
 		if (password1 == ""){
 			alert("Password field must be filled");
@@ -82,7 +85,7 @@
 			return true;
 		}
 	}
-
+	
 	function myFunction(){
 		var passwordx2 = document.getElementById("PassInput");
 		var passwordx3 = document.getElementById("PassInput2");
