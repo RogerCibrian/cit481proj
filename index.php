@@ -110,7 +110,7 @@
       <h1>Who are we?</h1>
       <ol>
         <p>
-          TEST4 We, RottenPotatoes, is a review website for video games on various
+          TEST3 We, RottenPotatoes, is a review website for video games on various
           gaming consoles, such as PlayStation, Xbox, Nintendo, and PC!!! Here,
           people like you can view the reviews and rates of the games listed in
           each category before deciding on purchasing the video game in
