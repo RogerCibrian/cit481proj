@@ -18,6 +18,38 @@
     <script>
 	function ValidateContactForm(){
 		
+		var full_name_field = document.forms["myForm"]["fullname"].value;
+		var email_field = document.forms["myForm"]["email"].value;
+		var subject_field = document.forms["myForm"]["subject"].value;
+		var message_box_field = document.forms["myForm"]["message"].value;
+
+
+		if (full_name_field == ""){
+			alert("Full Name field must be filled");
+			return false;
+		}
+		if (email_field == ""){
+			alert("Emaill Address field must be filled in");
+			return false;
+		}
+		if (subject_field == ""){
+			alert("Subject field must be filled in");
+			return false;
+		}	
+		if (message_box_field == ""){
+			alert("Message field must be filled out");
+			return false;
+		}
+	
+		//var email = document.getElementById('email_addr');
+		var email = document.forms["myForm"]["email"].value;
+		var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		if (!filter.test(email.value)){
+			alert("Please provide a valid email address. Example: oinkster159@sbcglobal.net");
+			return false;
+		}
+	}
+	
 		/***************************
 	* RESTRICT KEYWORDS IN MESSAGE BOX
 	*8************************8*/
@@ -49,42 +81,6 @@
 			$(this).val(textBoxValue);
 		});
 	});
-		
-		
-		
-		
-		var full_name_field = document.forms["myForm"]["fullname"].value;
-		var email_field = document.forms["myForm"]["email"].value;
-		var subject_field = document.forms["myForm"]["subject"].value;
-		var message_box_field = document.forms["myForm"]["message"].value;
-
-
-		if (full_name_field == ""){
-			alert("Full Name field must be filled");
-			return false;
-		}
-		if (email_field == ""){
-			alert("Emaill Address field must be filled in");
-			return false;
-		}
-		if (subject_field == ""){
-			alert("Subject field must be filled in");
-			return false;
-		}	
-		if (message_box_field == ""){
-			alert("Message field must be filled out");
-			return false;
-		}
-	
-		var email = document.getElementById('email_addr');
-		var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		if (!filter.test(email.value)){
-			alert("Please provide a valid email address. Example: oinkster159@sbcglobal.net");
-			return false;
-		}
-	}
-	
-
 	
 
 
