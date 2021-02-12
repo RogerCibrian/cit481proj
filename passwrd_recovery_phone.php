@@ -116,9 +116,9 @@
                         echo "<p>Request received! Check your email.</p>";}
 		elseif (isset($_GET['limit'])){
 			echo "<p>Password reset request expired. <br>Please submit your request again.</p>";}
-		else echo "<p>Please enter your email address.</p>";
+		else echo "<p>Please enter your phone number.</p>";
 	?>
-        <p>Please enter your phone number. </p>
+        
       <br>
       Or<a href="Passwrd_recovery.php"> via email address</a>
       <form
