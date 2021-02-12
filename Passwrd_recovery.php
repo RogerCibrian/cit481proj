@@ -71,7 +71,7 @@
 
   <body>
     <!----start of  Navigation Bar with search bar, member login, sign up-->
-    <nav class="navbar navbar-inverse">
+    <!---<nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.php">RottenPotatoes</a>
@@ -93,9 +93,10 @@
           <li class="deactive"><a href="Contact_Us.php">Contact Us</a></li>
         </ul>
 
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">---->
 	<?php
-		include 'navbar.php';
+		/*<!--include 'navbar.php';-->*/
+		include 'fullnavbar.php';
 	?>
         </ul>
       </div>
