@@ -1,5 +1,5 @@
 <?php session_start();
- $server = 'rottenpotatodb.cjmbcqw5ubno.us-east-1.rds.amazonaws.com:3306';
+ $server = 'localhost';
  $username = 'rottenuser';
  $password = 'rotten123';
  $database = 'mydatabase';

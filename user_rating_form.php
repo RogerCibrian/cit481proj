@@ -1,6 +1,6 @@
 <?php
 include 'test_connection.php';
-$servername = "rottenpotatodb.cjmbcqw5ubno.us-east-1.rds.amazonaws.com:3306";
+$servername = "localhost";
 $username = "rottenuser";
 $password = "rotten123";
 $database = "mydatabase";
