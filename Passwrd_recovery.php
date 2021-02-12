@@ -107,6 +107,8 @@
     <!--START OF PASSWORD RECOVERY FORM-->
     <div class="passwrd_recovery_container">
       <h1>Password Recovery</h1>
+	  <br>
+      Or<a href="passwrd_recovery_phone.php"> via phone number</a>
 	<?php
                 if (isset($_GET['msg'])){
                         $msg = $_GET['msg'];
