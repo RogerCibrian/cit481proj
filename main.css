@@ -26,6 +26,7 @@ div.transbox {
   opacity: 0.6;
   margin-left: auto;
   margin-right: 50%;
+  position: center;
  /* margin-bottom: 20%;*/
 }
 
