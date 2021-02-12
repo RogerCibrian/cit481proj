@@ -1,6 +1,6 @@
 
 <?php //session_start();
- $DB_HOST = 'localhost';
+ $DB_HOST = '127.0.0.1';
  $DB_USER = 'rottenuser';
  $DB_PASS = 'rotten123';
  $DB_NAME = 'mydatabase';
