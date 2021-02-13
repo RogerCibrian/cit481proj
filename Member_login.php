@@ -154,51 +154,7 @@
         </div>
       </form>
     </div>
-
-    <!---DO NOT DELETE THIS GREEN BLOCK OF CODE ---->
-    <!------
-    <form class="modal-content animate" action="/action_page.php" method="post">
-      <div class="imgcontainer">
-        <img src="/images/img_avatar2.jpg" alt="Avatar" class="avatar" />
-      </div>
-
-      <div class="container">
-        <ol>
-          <label for="uname"><b>Username</b></label>
-          <input
-            type="text"
-            placeholder="Enter Username"
-            name="uname"
-            required
-          />
-        </ol>
-        <ol>
-          <label for="psw"><b>Password</b></label>
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
-            required
-          />
-        </ol>
-        <ol>
-          <label>
-            <input
-              type="checkbox"
-              style="margin-left: 70px"
-              checked="checked"
-              name="remember"
-            />
-            Remember me
-          </label>
-        </ol>
-        <ol>
-          <button type="submit">Login</button>
-        </ol>
-        <span class="psw">Forgot <a href="Passwrd_recovery.php">password?</a></span>
-      </div>
-    </form> ---->
-    <!--START OF MEMBER LOG IN FORM-->
+	<!--END OF MEMBER LOG IN FORM-->
     <!---START OF FOOTER-->
     <div class="footer" style="background-color:black; padding: 4px 6px; text-align:center; bottom:0; left:0">
       <p>

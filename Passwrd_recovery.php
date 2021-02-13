@@ -70,30 +70,6 @@
   </head>
 
   <body>
-    <!----start of  Navigation Bar with search bar, member login, sign up-->
-    <!---<nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.php">RottenPotatoes</a>
-        </div>
-
-        <ul class="nav navbar-nav">
-          <li class="deactive"><a href="index.php">Home</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-              >Video Games <span class="caret"></span
-            ></a>
-            <ul class="dropdown-menu">
-              <li><a href="Playstation_games.html">PlayStation</a></li>
-              <li><a href="Xbox_games.html">Xbox</a></li>
-              <li><a href="PC_games.html">PC</a></li>
-              <li><a href="Nintendo_games.html">Nintendo</a></li>
-            </ul>
-          </li>
-          <li class="deactive"><a href="Contact_Us.php">Contact Us</a></li>
-        </ul>
-
-        <ul class="nav navbar-nav navbar-right">---->
 	<?php
 		/*<!--include 'navbar.php';-->*/
 		include 'fullnavbar.php';
