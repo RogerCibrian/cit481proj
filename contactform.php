@@ -36,6 +36,7 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 	$mail->IsSMTP();
 	$mail->Host = 'smtp.gmail.com';
 	$mail->SMTPAuth = true;
+	$mail->AuthType='LOGIN';
 	$mail->Username = 'rottenpotatoes.cit480@gmail.com';
 	$mail->Password = 'C!t--480';
 	$mail->Port = 587;
