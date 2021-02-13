@@ -5,7 +5,7 @@ ini_set('display_errors',1);
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '/home/ec2-user/vendor/phpmailer/phpmailer/vendor/autoload.php';
+require '/home/cit481/vendor/autoload.php';
 
 //echo !extension_loaded('openssl')?"Not Avail":"Avail";
 
