@@ -58,7 +58,7 @@
 			console.log(textBoxValue);
 
 			var forbidden = [
-				'http', 'https', '.py', '.php', '.exe', '.diff', .'sh',
+				'http', 'https', '.py', '.php', '.exe', '.diff', '.sh',
 				'.c', '.wnry', '.java', '.json', '.ps1', '.js', '.pl',
 				'.pas', '.rb', '.r', '.sql', '.xml', '.html', 'micro', 'zepto','cerber',
 		 		'locky','cerber3','cryp1','mole','onion','axx','osiris','crpyz','crypt',
