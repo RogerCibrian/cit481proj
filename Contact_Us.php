@@ -52,7 +52,7 @@
 		/***************************
 	* RESTRICT KEYWORDS IN MESSAGE BOX
 	*8************************8*/
-	$(document).ready(fucntion() {
+	$(document).ready(function() {
 		$('#textarea-box').keyup(function() {
 			var textBoxValue = $(this).val();
 			console.log(textBoxValue);
