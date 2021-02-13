@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
     <link rel="stylesheet" href="main.css" />
-	<link rel="stylesheet" href="../style2.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -317,41 +316,7 @@
                 alt="Call of Duty: Black Ops"
                 style="width: 100%; height: 275px"
             /></a>
-            <h4>Call of Duty: Black Ops</h4>
-<?php
-session_start();
-include '../test_connection.php';
-include '../user_rating_form.php';
-include '/var/www/html/rememberme.php';
-
-//multidimentional array of objects
-$page = 60;
-$multiobj = display_comments($page,$con);
-$multiobj2 = display_comments2($page,$con);
-$average_r = average_rating($page,$con);
-$avr_final = round($average_r);
-//subtract average from 5
-$final_avg = 5;
-$final_avg -= $avr_final;
-//print_r($avr_final);
-//count how many comments have been submitted.
-//need to include a where clause to filter correct page
-$nbc = $con->prepare("SELECT COUNT(review_id) FROM reviews WHERE Review_game = $page");
-$nbc->execute();
-$nbcomments = $nbc->get_result()->fetch_row();
-//variable $comm holds the amount of comments
-$comm = $nbcomments[0];
-$nbc->close();
-$num = 0;
-?>			
-			<div class="average">
-<?php for ($i=1; $i <= $avr_final; $i++): ?>
-      <span class="fa fa-star checked"></span>
-<?php endfor; ?>
-<?php for ($i=1; $i <= $final_avg; $i++): ?>
-      <span class="fa fa-star"></span>
-<?php endfor; ?>
-</div>			
+            <h4>Call of Duty: Black Ops</h4>		
           </div>
         </div>
         <!--Grand Theft Auto IV-->
