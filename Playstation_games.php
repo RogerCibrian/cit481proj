@@ -316,7 +316,22 @@
                 alt="Call of Duty: Black Ops"
                 style="width: 100%; height: 275px"
             /></a>
-            <h4>Call of Duty: Black Ops</h4>		
+            <h4>Call of Duty: Black Ops</h4>	
+			<div class="center">
+					  <div class="stars">
+						<input type="radio" id="five" name="rate" value="5">
+						<label for="five"></label>
+						<input type="radio" id="four" name="rate" value="4">
+						<label for="four"></label>
+						<input type="radio" id="three" name="rate" value="3">
+						<label for="three"></label>
+						<input type="radio" id="two" name="rate" value="2">
+						<label for="two"></label>
+						<input type="radio" id="one" name="rate" value="1">
+						<label for="one"></label>
+						<span class="result"></span>
+						   </div>
+			</div>			
           </div>
         </div>
         <!--Grand Theft Auto IV-->
