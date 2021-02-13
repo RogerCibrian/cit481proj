@@ -18,7 +18,7 @@
     <script>
 	function ValidateContactForm(){
 		
-		var full_name_field = document.forms["myForm"]["fullname"].value;
+		var full_name_field = document.forms["myForm"]["name"].value;
 		var email_field = document.forms["myForm"]["email"].value;
 		var subject_field = document.forms["myForm"]["subject"].value;
 		var message_box_field = document.forms["myForm"]["message"].value;
