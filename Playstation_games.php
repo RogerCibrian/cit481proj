@@ -316,25 +316,7 @@
                 alt="Call of Duty: Black Ops"
                 style="width: 100%; height: 275px"
             /></a>
-            <h4>Call of Duty: Black Ops</h4>
-           <?php
-				session_start();
-				include '../test_connection.php';
-				include '../user_rating_form.php';
-				$average_r = average_rating($page,$con);
-				$avr_final = round($average_r);
-				//subtract average from 5
-				$final_avg = 5;
-				$final_avg -= $avr_final;?>
-				<div class="average">
-				<?php for ($i=1; $i <= $avr_final; $i++): ?>
-					  <span class="fa fa-star checked"></span>
-				<?php endfor; ?>
-				<?php for ($i=1; $i <= $final_avg; $i++): ?>
-					  <span class="fa fa-star"></span>
-				<?php endfor; ?>
-				</div>
-				
+            <h4>Call of Duty: Black Ops</h4>		
           </div>
         </div>
         <!--Grand Theft Auto IV-->
