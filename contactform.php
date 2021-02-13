@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 
 //	echo "SMTP settings";
 	/*SMTP settings for external mail server*/
-//	$mail->SMTPDebug = 4;
+	$mail->SMTPDebug = 4;
 	$mail->IsSMTP();
 	$mail->Host = 'smtp.gmail.com';
 	$mail->SMTPAuth = true;
