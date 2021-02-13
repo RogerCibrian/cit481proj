@@ -57,7 +57,7 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 	$mail->Subject = $subject;
 	$mail->Body = $body;
 
-	/*if(!$mail->Send()){
+	if(!$mail->Send()){
 //	use these echos for debugging, comment out page redirect
 //	echo "message not sent: " . $mail->ErrorInfo;} 
 //	else echo "message sent";}
@@ -65,4 +65,4 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 	else{
 	header("location:/Contact_Us.php?msg=suc");}}
 //	$mail->ClearAddresses();}
-?>*/
+?>
