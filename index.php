@@ -39,6 +39,9 @@
 	.active{
 		background-color: #717171;
 	}
+	.navbar-brand {
+		padding: 0;
+	}
   </style>
   </head>
 
