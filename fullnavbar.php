@@ -8,7 +8,9 @@
 echo '<nav class="navbar navbar-inverse">';
 echo     '<div class="container-fluid">';
 echo        '<div class="navbar-header">';
-echo          '<a class="navbar-brand" href="index.php">RottenPotatoes</a>';
+echo          '<a class="navbar-brand" href="index.php">
+				<img src="/images/Rotten Potatoes.gif" style="width:100%; height:150px;" alt="Logo">
+			  </a>';
 echo        '</div>';
 echo        '<ul class="nav navbar-nav">';
 echo          '<li class="deactive"><a href="index.php">Home</a></li>';
