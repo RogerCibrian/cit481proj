@@ -2,7 +2,9 @@
 echo '<nav class="navbar navbar-inverse">';
 echo     '<div class="container-fluid">';
 echo        '<div class="navbar-header">';
-echo          '<a class="navbar-brand" href="../index.php">RottenPotatoes</a>';
+echo          '<a class="navbar-brand" href="../index.php" style="padding: 0;">
+				<img src="/images/logo.png" style="width:174px; height:58px; padding-left: 0px; padding-top: 0px;" alt="Logo">
+				</a>';
 echo        '</div>';
 echo        '<ul class="nav navbar-nav">';
 echo          '<li class="deactive"><a href="../index.php">Home</a></li>';
