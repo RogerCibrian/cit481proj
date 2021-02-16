@@ -9,7 +9,7 @@ echo '<nav class="navbar navbar-inverse">';
 echo     '<div class="container-fluid">';
 echo        '<div class="navbar-header">';
 echo          '<a class="navbar-brand" href="index.php">
-				<img src="/images/logo.gif" style="width:100%;" alt="Logo">
+				<img src="/images/logo.gif" style="width:50%;" alt="Logo">
 			  </a>';
 echo        '</div>';
 echo        '<ul class="nav navbar-nav">';
