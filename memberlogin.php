@@ -29,7 +29,7 @@ if ($stmt = $con->prepare('SELECT user_id, user_password FROM users WHERE user_u
 						$selector . ':' . bin2hex($token),
 						time() + 864000,
 						'/',
-						'rottenpotatoes.org'
+						'rottenpotatoes.org',
 						true,
 						true
 						);

@@ -82,7 +82,7 @@ if (empty($_SESSION['name']) && !empty($_COOKIE['remember'])){
                         $newSelector . ':' . bin2hex($newToken),
                         time() + 864000,
                         '/',
-                        'rottenpotatoes.org'
+                        'rottenpotatoes.org',
 						true,
 						true
                         );
