@@ -17,7 +17,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script>
 	function ValidateContactForm(){
-		var full_name_field = document.forms["myForm"]["fullname"].value;
+		
+		var full_name_field = document.forms["myForm"]["name"].value;
 		var email_field = document.forms["myForm"]["email"].value;
 		var subject_field = document.forms["myForm"]["subject"].value;
 		var message_box_field = document.forms["myForm"]["message"].value;
@@ -40,7 +41,7 @@
 			return false;
 		}
 	
-		var email = document.getElementById('email_addr_box');
+		var email = document.getElementById('email_addr');
 		var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		if (!filter.test(email.value)){
 			alert("Please provide a valid email address. Example: oinkster159@sbcglobal.net");
@@ -48,27 +49,26 @@
 		}
 	}
 	
-
-	/***************************
+		/***************************
 	* RESTRICT KEYWORDS IN MESSAGE BOX
 	*8************************8*/
-	$(document).ready(fucntion() {
+	$(document).ready(function() {
 		$('#textarea-box').keyup(function() {
 			var textBoxValue = $(this).val();
 			console.log(textBoxValue);
 
 			var forbidden = [
-				'http', 'https', '.py', '.php', '.exe', '.diff', .'sh',
+				'http', 'https', '.py', '.php', '.exe', '.diff', '.sh',
 				'.c', '.wnry', '.java', '.json', '.ps1', '.js', '.pl',
 				'.pas', '.rb', '.r', '.sql', '.xml', '.html', 'micro', 'zepto','cerber',
 		 		'locky','cerber3','cryp1','mole','onion','axx','osiris','crpyz','crypt',
-				'locked', 'odin','ccc', 'cerber2,'sage', 'globe','exx','1txt, 'decrypt2017',
+				'locked', 'odin','ccc', 'cerber2','sage', 'globe','exx','1txt', 'decrypt2017',
 				'encrypt','ezz','zzzzz', 'MERRY', 'enciphered', 'r5a','aesir','ecc', 'enigma',
 				'cryptowall', 'breaking_bad','angelamerkel','windows10','PEGS1', '1cbu1','venusf',
 				'rnsmwr', 'evillock','realfs0ciety@sigiant.org.fs0ciety','zorro', 'hush', 'bin',
 				'crypte','dll','rokku','mbed','djvu','.bat','gero','.hese','.seto','.peta', 
 				'.moka','.meds','.kvga','.domn','.karl','.nesa','.noos','.kuub','.reco',
-				'.bora','.nols','.werd','.coot','.derp','.meka','.toec,'.kodg'		
+				'.bora','.nols','.werd','.coot','.derp','.meka','.toec','.kodg'		
 			
 			];
 
@@ -80,6 +80,7 @@
 			$(this).val(textBoxValue);
 		});
 	});
+	
 
 
 	</script>
@@ -166,8 +167,8 @@
 	else echo "<b>Message failed. Try again!</b>";}
 	?>
       <form class="contact-form" name="myForm" onsubmit="return ValidateContactForm()"  method="POST" action="contactform.php">
-        <input type="text" name="fullname" maxlength="40" placeholder="Full name" required/>
-        <input type="text" name="email" id="email_addr_box" maxlength="40" placeholder="Your Email Address" required/>
+        <input type="text" name="name" maxlength="40" placeholder="Full name" required/>
+        <input type="text" name="email" id="email_addr" maxlength="40" placeholder="Your Email Address" required/>
         <input type="text" name="subject" maxlength="100" placeholder="Subject" required/>
         <textarea name="message" id="textarea-box" maxlength="200" placeholder="Message" required ></textarea>
         <button type="submit" name="submit" style="width: 300px">

@@ -316,8 +316,7 @@
                 alt="Call of Duty: Black Ops"
                 style="width: 100%; height: 275px"
             /></a>
-            <h4>Call of Duty: Black Ops</h4>
-           
+            <h4>Call of Duty: Black Ops</h4>		
           </div>
         </div>
         <!--Grand Theft Auto IV-->

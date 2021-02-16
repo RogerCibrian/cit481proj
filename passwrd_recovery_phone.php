@@ -70,8 +70,10 @@
   </head>
 
   <body>
+    <!----start of  Navigation Bar with search bar, member login, sign up-->
+   
 	<?php
-		/*<!--include 'navbar.php';-->*/
+		/*include 'navbar.php';*/
 		include 'fullnavbar.php';
 	?>
         </ul>
@@ -84,7 +86,6 @@
     <!--START OF PASSWORD RECOVERY FORM-->
     <div class="passwrd_recovery_container">
       <h1>Password Recovery</h1>
-	  
 	<?php
                 if (isset($_GET['msg'])){
                         $msg = $_GET['msg'];
@@ -94,10 +95,11 @@
                         echo "<p>Request received! Check your email.</p>";}
 		elseif (isset($_GET['limit'])){
 			echo "<p>Password reset request expired. <br>Please submit your request again.</p>";}
-		else echo "<p>Please enter your email address.</p>";
+		else echo "<p>Please enter your phone number.</p>";
 	?>
-	  <br>
-      Or<a href="passwrd_recovery_phone.php"> via phone number</a>
+        
+      <br>
+      Or<a href="Passwrd_recovery.php"> via email address</a>
       <form
         class="psswd-recovery-form"
         method="post"
@@ -105,8 +107,8 @@
       >
         <input
           type="text"
-          name="mail"
-          placeholder="Enter Email Address"
+          name="phone"
+          placeholder="Enter phone number"
           required
         />
         <div class="clearfix">

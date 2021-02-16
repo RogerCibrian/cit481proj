@@ -59,6 +59,8 @@
 			return false;
 		}
 
+
+
 		var email = document.getElementById('email');
 		var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		if (!filter.test(email.value)){
@@ -66,23 +68,28 @@
 			return false;
 		}
 		
-		if (password1 == ""){
-			alert("Password field must be filled");
-			return false;
-		}
-		else if (password2 = ""){
-			alert("Re-enter Password field must be filled");
-			return false;
-		}
-		else if (password1 != password2){
-			alert("\nPassword did not match: Please try again...");
-			return false;
-		}else{
-			alert("Password Match: Welcome to RottenPotatoes!");
-			return true;
-		}
+		
+		/*Password validation part 2*/
+              /*checks if password is empty*/
+              if ( password1 == "") {
+                alert("Password field must be filled out");
+                return false;
+            }
+            else if (password2 == "") {
+                alert("Re-Enter Password field must be filled out");
+                return false;
+            }
+            // Function to check Whether both passwords 
+            // are the same or not. 
+            else if (password1 != password2) { 
+                alert ("\nPassword did not match: Please try again..."); 
+                return false; 
+            }else{ 
+                    alert("Password Match: Welcome to RottenPotatoes!") 
+                    return true; 
+                }
 	}
-
+	
 	function myFunction(){
 		var passwordx2 = document.getElementById("PassInput");
 		var passwordx3 = document.getElementById("PassInput2");

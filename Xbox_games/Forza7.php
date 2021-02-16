@@ -93,7 +93,7 @@ div.forza7 {
         text-indent: 200px;
         background-color:black;
         opacity: 0.9;
-        margin-top: -20px;
+        margin-top: -230px;
         }
 div.transbox_forza7 {
         margin: 30px;
@@ -291,7 +291,10 @@ border: none;
         text-indent: 20px;
 
 }
-
+	pre{
+		background-color: none;
+		border: none;
+	}
     </style>
 
 

@@ -5,7 +5,7 @@ ini_set('display_errors',1);
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '/home/ec2-user/vendor/phpmailer/phpmailer/vendor/autoload.php';
+require '/home/cit481/vendor/autoload.php';
 
 //echo !extension_loaded('openssl')?"Not Avail":"Avail";
 
@@ -32,10 +32,11 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 
 //	echo "SMTP settings";
 	/*SMTP settings for external mail server*/
-//	$mail->SMTPDebug = 4;
+	//$mail->SMTPDebug = 4;
 	$mail->IsSMTP();
 	$mail->Host = 'smtp.gmail.com';
 	$mail->SMTPAuth = true;
+	$mail->AuthType='LOGIN';
 	$mail->Username = 'rottenpotatoes.cit480@gmail.com';
 	$mail->Password = 'C!t--480';
 	$mail->Port = 587;
