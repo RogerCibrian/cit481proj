@@ -9,7 +9,7 @@ if (isset($_POST["resetrequestsubmit"])){
 	$selector = bin2hex(random_bytes(8));
 	$token = random_bytes(32);
 
-	$url = "rottenpotatoes.org/reset_pw.php?selector=" . $selector . "&validator=" . bin2hex($token);
+	$url = "rottenpotatoes.org/reset_pw.php?selector=" . $selector . "&validator=" . bin2hex($token); 
 
 	$expires = date("U") + 1800;
 
