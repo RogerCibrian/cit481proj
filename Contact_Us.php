@@ -18,7 +18,7 @@
     <script>
 	function ValidateContactForm(){
 		
-		var full_name_field = document.forms["myForm"]["fullname"].value;
+		var full_name_field = document.forms["myForm"]["name"].value;
 		var email_field = document.forms["myForm"]["email"].value;
 		var subject_field = document.forms["myForm"]["subject"].value;
 		var message_box_field = document.forms["myForm"]["message"].value;
@@ -52,13 +52,13 @@
 		/***************************
 	* RESTRICT KEYWORDS IN MESSAGE BOX
 	*8************************8*/
-	$(document).ready(fucntion() {
+	$(document).ready(function() {
 		$('#textarea-box').keyup(function() {
 			var textBoxValue = $(this).val();
 			console.log(textBoxValue);
 
 			var forbidden = [
-				'http', 'https', '.py', '.php', '.exe', '.diff', .'sh',
+				'http', 'https', '.py', '.php', '.exe', '.diff', '.sh',
 				'.c', '.wnry', '.java', '.json', '.ps1', '.js', '.pl',
 				'.pas', '.rb', '.r', '.sql', '.xml', '.html', 'micro', 'zepto','cerber',
 		 		'locky','cerber3','cryp1','mole','onion','axx','osiris','crpyz','crypt',
@@ -167,7 +167,7 @@
 	else echo "<b>Message failed. Try again!</b>";}
 	?>
       <form class="contact-form" name="myForm" onsubmit="return ValidateContactForm()"  method="POST" action="contactform.php">
-        <input type="text" name="fullname" maxlength="40" placeholder="Full name" required/>
+        <input type="text" name="name" maxlength="40" placeholder="Full name" required/>
         <input type="text" name="email" id="email_addr" maxlength="40" placeholder="Your Email Address" required/>
         <input type="text" name="subject" maxlength="100" placeholder="Subject" required/>
         <textarea name="message" id="textarea-box" maxlength="200" placeholder="Message" required ></textarea>
