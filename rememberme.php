@@ -78,7 +78,7 @@ if (empty($_SESSION['name']) && !empty($_COOKIE['remember'])){
 
 // set cookie details
 		setcookie(
-			'remember',
+						'remember',
                         $newSelector . ':' . bin2hex($newToken),
                         time() + 864000,
                         '/',
