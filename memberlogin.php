@@ -29,9 +29,9 @@ if ($stmt = $con->prepare('SELECT user_id, user_password FROM users WHERE user_u
 						$selector . ':' . bin2hex($token),
 						time() + 864000,
 						'/',
-						'rottenpotatoes.games'
-// set to true for TLS-only			true,
-// set to true for http-only			true
+						'rottenpotatoes.org'
+						true,
+						true
 						);
 // fetch user email
 					if ($stmt = $con->prepare('SELECT user_email FROM users WHERE user_username = ?')){

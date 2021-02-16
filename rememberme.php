@@ -82,9 +82,9 @@ if (empty($_SESSION['name']) && !empty($_COOKIE['remember'])){
                         $newSelector . ':' . bin2hex($newToken),
                         time() + 864000,
                         '/',
-                        'rottenpotatoes.games'
-// set to true for TLS-only                     true,
-// set to true for http-only                    true
+                        'rottenpotatoes.org'
+						true,
+						true
                         );
 
 // store cookie validators to db
