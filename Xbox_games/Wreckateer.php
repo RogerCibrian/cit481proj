@@ -102,7 +102,7 @@ div.transbox_Wreckateer{
         padding: 0.1 rem;
         height: 277px;
         text-indent: 20px;
-        background: url('/Xbox_games/Xbox360_games/Wreckateer_logo.png');
+        background: url('/Xbox_games/Xbox360_games/wreckateer.png');
         background-repeat: no-repeat;
         width: 100%;
         height: 234px;

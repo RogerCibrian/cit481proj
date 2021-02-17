@@ -103,7 +103,7 @@ div.transbox_motogp07{
         padding: 0.1 rem;
         height: 277px;
         text-indent: 200px;
-        background: url('/Xbox_games/Xbox360_games/Motogp07.jpg');
+        background: url('/Xbox_games/Xbox360_games/motogp-07-front-cover.jpg');
         background-repeat: no-repeat;
         width: 100%;
         height: 234px;
