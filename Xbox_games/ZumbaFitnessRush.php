@@ -103,7 +103,7 @@ div.transbox_zumbafitness2{
         padding: 0.1 rem;
         height: 277px;
         text-indent: 165px;
-        background: url('/Xbox_games/Xbox360_games/zumba_fitness-_rush.jpg');
+        background: url('/Xbox_games/Xbox360_games/zumba_fitness-_rush-game-cover.jpg');
         background-repeat: no-repeat;
         width: 100%;
         height: 234px;
