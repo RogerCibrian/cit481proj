@@ -255,7 +255,7 @@
           <div class="content">
             <a href="Xbox_games/Wipeout.php">
               <img
-                src="Xbox_games/Xbox360_games/Wipeout_in_the_Zone_Coverart.jpg"
+                src="Xbox_games/Xbox360_games/Wipeout_in_the_Zone_Coverart.png"
                 alt="Wipeout: In The Zone"
                 style="width: 100%; height: 250px"
             /></a>
