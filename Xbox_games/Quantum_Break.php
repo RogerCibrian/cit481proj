@@ -76,7 +76,7 @@ html {
   padding: 0;
 }
 div.quantumbreak {
-        font-family: "Times New Roman";
+        font-family: "Times New Roman", sans-serif, serif;
         color: white;
         font-size: medium;
         text-align: left;
@@ -193,13 +193,13 @@ div.transbox_quantumbreak{
 /*END OF FOOTER EDITING*/
 //comment section
 .count {
-     font-family:"Comic Sans MS", cursive, sans-serif;
+     font-family:"Times New Roman", cursive, sans-serif;
      font-weight: bold;
 }
 .comment_container {
      margin-left: 35px;
      margin-right: 35px;
-     font-family:"Comic Sans MS", cursive, sans-serif;
+     font-family:"Times New Roman", cursive, sans-serif;
      color: white;
 }
 .name {
