@@ -150,7 +150,7 @@
           <div class="content">
             <a href="Xbox_games/AceCombat6.php">
               <img
-                src="Xbox_games/Xbox360_games/Ace_Combat6.png"
+                src="Xbox_games/Xbox360_games/ace-combat-6-fires-of-liberation-wallpaper"
                 alt="Ace Combat 6"
                 style="width: 100%; height: 250px"
             /></a>
