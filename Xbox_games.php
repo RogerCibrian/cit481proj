@@ -287,7 +287,7 @@
               <img
                 src="Xbox_games/Xbox360_games/Zumba-Fitness-Rush-Cover.jpg"
                 alt="Dead or Alive 4"
-                style="width: 100%; height: 250px"
+                style="width: 100%; height: 275px"
             /></a>
             <h4>Zumba Fitness Rush</h4>
             
