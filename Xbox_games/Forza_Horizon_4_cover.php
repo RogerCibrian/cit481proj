@@ -295,10 +295,13 @@ border: none;
 		display:block;
 		padding: 0;   /*9.5px--margin:0 0 10px*/
 		margin: 0;
-		fint-size: 13px;
+		font-size: 13px;
 		line-height: 1.4;
 		color: #333;
 		word-break: break-all;
+		background-color: none;
+		border: none;
+		border-radius: none;
 		}
     </style>
 
