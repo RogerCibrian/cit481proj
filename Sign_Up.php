@@ -269,7 +269,7 @@
 	</label>
 	<!--recaptcha thing for form-->
 		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; margin-left: 30%;"></div>
-	<br>
+	
 	
 	
         <p style="text-align: center; text-indent: 15px;">
@@ -279,7 +279,7 @@
           >.
 	</p>
 	<br>
-	<br>
+	
         <div class="clearfix">
           <button
             type="cancel"
