@@ -248,8 +248,7 @@
 		<label for="re_password">Re-Password:</label>
 		<input type="password" name="re_user_pwd" id="PassInput2" placeholder="Re-enter Password" required/>
 	</span>	
-	<br>
-	<br>
+	
 
 	<label style="margin-top: -15px">
 		<input type="checkbox" onclick="myFunction()" style="float:left;">
