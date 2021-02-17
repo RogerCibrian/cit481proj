@@ -73,7 +73,7 @@
         border: none;
         outline: none;
         padding: 12px 16px;
-        background-color: #222222;
+        background-color: #222222e6;
 		color: white;
         cursor: pointer;
         width: 150px;
