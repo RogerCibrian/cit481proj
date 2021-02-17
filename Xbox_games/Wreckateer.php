@@ -90,7 +90,7 @@ div.Wreckateer {
         padding: 0.1 rem;
         outline-offset: 0.25rem;
         height: 277px;
-        text-indent: 200px;
+        text-indent: 175px;
         background-color:black;
         opacity: 0.9;
         margin-top: -20px;
@@ -101,7 +101,7 @@ div.transbox_Wreckateer{
         margin: 0rem;
         padding: 0.1 rem;
         height: 277px;
-        text-indent: 20px;
+        text-indent: 150px;
         background: url('/Xbox_games/Xbox360_games/wreckateer-game-cover.jpg');
         background-repeat: no-repeat;
         width: 100%;
@@ -307,12 +307,13 @@ border: none;
         <div class="Wreckateer">
         <div class="transbox_Wreckateer">
             <ul>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
+              
               <h2>Wreckateer</h2>
+			  <br />
+              <br />
+              <br />
+              <br />
+              <br />
              
               <li>Initial Release Date: July 25, 2012</li>
               <li>Developed by Iron Galaxy Studios & Published by Microsoft Studios/li>
