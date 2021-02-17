@@ -165,7 +165,7 @@
           <div class="content">
             <a href="Xbox_games/DeadorAlive4.php">
               <img
-                src="Xbox_games/Xbox360_games/DoA4.jpg"
+                src="Xbox_games/Xbox360_games/Doa4cover.jpg"
                 alt="Dead or Alive 4"
                 style="width: 100%; height: 250px"
             /></a>
@@ -180,7 +180,7 @@
           <div class="content">
             <a href="Xbox_games/Forza4.php">
               <img
-                src="Xbox_games/Xbox360_games/Forza4.jpg"
+                src="Xbox_games/Xbox360_games/Forza_Motorsport_4_cover.jpg"
                 alt="Forza 4"
                 style="width: 100%; height: 250px"
             /></a>
@@ -225,7 +225,7 @@
           <div class="content">
             <a href="Xbox_games/SaintsRow.php">
               <img
-                src="Xbox_games/Xbox360_games/Saintsrow.jpg"
+                src="Xbox_games/Xbox360_games/Saints_Row_Box_Art.jpg"
                 alt="Saints Row"
                 style="width: 100%; height: 250px"
             /></a>
@@ -255,7 +255,7 @@
           <div class="content">
             <a href="Xbox_games/Wipeout.php">
               <img
-                src="Xbox_games/Xbox360_games/wipeout.jpg"
+                src="Xbox_games/Xbox360_games/Wipeout_in_the_Zone_Coverart.jpg"
                 alt="Wipeout: In The Zone"
                 style="width: 100%; height: 250px"
             /></a>
