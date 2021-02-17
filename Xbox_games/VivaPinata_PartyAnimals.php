@@ -103,7 +103,7 @@ div.transbox_vivapinata{
         padding: 0.1 rem;
         height: 277px;
         text-indent: 220px;
-        background: url('/Xbox_games/Xbox360_games/viva-pinata-cover.jpg');
+        background: url('/Xbox_games/Xbox360_games/viva-pinata-v2.jpg');
         background-repeat: no-repeat;
         width: 100%;
         height: 234px;
