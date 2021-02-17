@@ -93,7 +93,7 @@ div.forzahorizon4 {
         text-indent: 200px;
         background-color:black;
         opacity: 0.9;
-        margin-top: -20px;
+        margin-top: -50px;
         }
 div.transbox_forzahorizon4 {
         margin: 30px;

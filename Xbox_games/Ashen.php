@@ -94,7 +94,7 @@ div.ashen {
         text-indent: 200px;
         background-color:black;
         opacity: 0.9;
-        margin-top: -20px;
+        margin-top: -50px;
         }
 div.transbox_ashen {
         margin: 30px;

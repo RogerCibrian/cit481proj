@@ -93,7 +93,7 @@ div.Wreckateer {
         text-indent: 180px;
         background-color:black;
         opacity: 0.9;
-        margin-top: -20px;
+        margin-top: -50px;
         }
 div.transbox_Wreckateer{
         margin: 30px;
