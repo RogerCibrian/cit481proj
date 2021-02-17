@@ -103,7 +103,7 @@ div.transbox_killerinstinct{
         padding: 0.1 rem;
         height: 277px;
         text-indent: 360px;
-        background: url('/Xbox_games/Xbox_One_games/Killer_Instinct_Logo.png');
+        background: url('/Xbox_games/Xbox_One_games/killer_instinct-cover.jpg');
         background-repeat: no-repeat;
         width: 100%;
         height: 234px;
