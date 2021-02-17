@@ -15,6 +15,9 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<!-- Google reCAPTCHA API Call -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
 	$(function () {
 		$('#phone').keydown(function(e){
@@ -264,6 +267,8 @@
           />
           <p style="float: left; text-indent: 5px; margin-top: 3px">Remember me</p>
 	</label>
+	<!--recaptcha thing for form-->
+		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; margin-left: 34px;"></div>
 	<br>
 	<br>
 	
