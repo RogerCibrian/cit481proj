@@ -19,9 +19,10 @@
 	.videogame_slides{
 		display: none;
 	}
+	<!-- 
 	img{
 		vertical-align: middle;
-	}
+	} -->
 	.image-slideshow-container {
 		max-width: 1000px;
 		position: relative;
