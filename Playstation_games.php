@@ -57,7 +57,7 @@
 
       /* Content */
       .content {
-        background-color: white;
+        background-color: #00dbf966;
         padding: 10px;
         height: 350px;
         width: auto;
