@@ -90,7 +90,7 @@ div.Wreckateer {
         padding: 0.1 rem;
         outline-offset: 0.25rem;
         height: 277px;
-        text-indent: 175px;
+        text-indent: 180px;
         background-color:black;
         opacity: 0.9;
         margin-top: -20px;
@@ -101,7 +101,7 @@ div.transbox_Wreckateer{
         margin: 0rem;
         padding: 0.1 rem;
         height: 277px;
-        text-indent: 150px;
+        text-indent: 175px;
         background: url('/Xbox_games/Xbox360_games/wreckateer-game-cover.jpg');
         background-repeat: no-repeat;
         width: 100%;
