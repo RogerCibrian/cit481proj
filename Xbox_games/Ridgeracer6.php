@@ -103,7 +103,7 @@ div.transbox_ridgeracer6{
         padding: 0.1 rem;
         height: 277px;
         text-indent: 185px;
-        background: url('/Xbox_games/Xbox360_games/ridge-racer-game-cover.png');
+        background: url('/Xbox_games/Xbox360_games/Ridgeracer6.jpg');
         background-repeat: no-repeat;
         width: 100%;
         height: 234px;
