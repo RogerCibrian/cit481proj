@@ -15,6 +15,9 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	 <!-- Google reCAPTCHA API Call -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
 	function ValidateContactForm(){
 		
@@ -171,6 +174,7 @@
         <input type="text" name="email" id="email_addr" maxlength="40" placeholder="Your Email Address" required/>
         <input type="text" name="subject" maxlength="100" placeholder="Subject" required/>
         <textarea name="message" id="textarea-box" maxlength="200" placeholder="Message" required ></textarea>
+		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; margin-left: 34px;"></div>
         <button type="submit" name="submit" style="width: 300px">
           SEND MESSAGE
         </button>
