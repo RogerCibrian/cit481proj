@@ -285,7 +285,7 @@
           <div class="content">
             <a href="Xbox_games/ZumbaFitnessRush.php">
               <img
-                src="Xbox_games/Xbox360_games/zumba_fitness-_rush.jpg"
+                src="Xbox_games/Xbox360_games/Zumba-Fitness-Rush-Cover.jpg"
                 alt="Dead or Alive 4"
                 style="width: 100%; height: 250px"
             /></a>
