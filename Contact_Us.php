@@ -122,7 +122,7 @@
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 40px;
-        height: 550px;
+        height: 600px;
         width: 450px;
         text-align: center;
         margin-left: 30%;
