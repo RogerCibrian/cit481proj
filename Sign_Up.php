@@ -268,7 +268,7 @@
           <p style="float: left; text-indent: 5px; margin-top: 3px">Remember me</p>
 	</label>
 	<!--recaptcha thing for form-->
-		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; margin-left: 34px;"></div>
+		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; margin-left: 30%;"></div>
 	<br>
 	<br>
 	
