@@ -103,7 +103,7 @@ div.transbox_acecombat6{
         padding: 0.1 rem;
         height: 277px;
         text-indent: 230px;
-        background: url('/Xbox_games/Xbox360_games/Ace_Combat_6_Fires_of_Liberation_Game_Cover');
+        background: url('/Xbox_games/Xbox360_games/Ace_Combat_6_Fires_of_Liberation_Game_Cover.jpg');
         background-repeat: no-repeat;
         width: 100%;
         height: 234px;
