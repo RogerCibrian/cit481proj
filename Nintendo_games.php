@@ -73,7 +73,8 @@
         border: none;
         outline: none;
         padding: 12px 16px;
-        background-color: white;
+        background-color: #222222;
+		color: white;
         cursor: pointer;
         margin-left: 10px;
         margin-top: 10px;
@@ -84,7 +85,7 @@
       }
 
       .btn.active {
-        background-color: #666;
+        background-color: #f25bffa1;
         color: white;
       }
       /* scroll to the top button*/

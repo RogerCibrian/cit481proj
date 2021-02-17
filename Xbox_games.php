@@ -73,11 +73,12 @@
         border: none;
         outline: none;
         padding: 12px 16px;
-        background-color: white;
+        background-color: #222222;
+		color: white;
         cursor: pointer;
         margin-left: 20px;
         width: 150px;
-	margin-left: 20px;
+		margin-left: 20px;
       }
 
       .btn:hover {
@@ -85,7 +86,7 @@
       }
 
       .btn.active {
-        background-color: #666;
+        background-color: #f25bffa1;
 	color: white;
       }
       #myBtn {
