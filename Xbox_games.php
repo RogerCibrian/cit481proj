@@ -379,7 +379,7 @@
           <div class="content">
             <a href="Xbox_games/Killer_Instinct.php">
               <img
-                src="Xbox_games/Xbox_One_games/killer_instinct.jpg"
+                src="Xbox_games/Xbox_One_games/killer-instinct-game-cover.png"
                 alt="Killer Instinct"
                 style="width: 100%; height: 275px"
             /></a>
