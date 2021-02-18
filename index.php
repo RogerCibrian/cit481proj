@@ -45,6 +45,69 @@
 	.navbar-brand {
 		padding: 0;
 	}
+	
+	/*staffs' best picks ---video games--table CSS edit*/
+		table {
+		  margin: 0 auto;
+		  text-align: center;
+		  border-collapse: collapse;
+		  border: 1px solid #d4d4d4;
+		  font-size: 20px;
+		  background: #fff;
+		  font-family: 'Times New Roman', sans-serif, serif;
+		}
+
+		table th, 
+		table tr:nth-child(2n+2) {
+		  background: #e7e7e7;
+		}
+
+		table th, 
+		table td {
+		  padding: 20px 50px;
+		}
+
+		table th {
+		  border-bottom: 1px solid #d4d4d4;
+		}     
+
+		.stars-outer {
+		  display: inline-block;
+		  position: relative;
+		  font-family: FontAwesome;
+		}
+
+		.stars-outer::before {
+		  content: "\f006 \f006 \f006 \f006 \f006";
+		}
+
+		.stars-inner {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  white-space: nowrap;
+		  overflow: hidden;
+		  width: 0;
+		}
+
+		.stars-inner::before {
+		  content: "\f005 \f005 \f005 \f005 \f005";
+		  color: #f8ce0b;
+		}
+
+		.attribution {
+		  font-size: 12px;
+		  color: #444;
+		  text-decoration: none;
+		  text-align: center;
+		  position: fixed;
+		  right: 10px;
+		  bottom: 10px;
+		  z-index: -1;
+		}
+		.attribution:hover {
+		  color: #1fa67a;
+		}
   </style>
   </head>
 
@@ -129,8 +192,119 @@
       </ol>
     </div>
     <!----end of About us (transparent box)-->
-  
+     <!--------start of top staff best picks----------------------->
+		<table>
+        <thead>
+          <tr>
+            <th>Staffs' Best Picks</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="CODBO1"> 
+            <td>
+              <a href="/Playstation_games/CODBlackOps.php" title="Call of Duty: Black Ops">
+                <img src="images/top_staff_picks/CODBO1_mini.jpg" alt="Call of Duty: Black Ops" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <p style=" text-indent: 15px; margin-top: 20px;">Call of Duty: Black Ops</p>
+              </a>
+            </td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+            </td>
+          </tr>
+          
+          <tr class="GOW4">
+            <td>
+              <a href="/Xbox_games/GoW4.php" title="Gears of War 4">
+                <img src="images/top_staff_picks/gears-of-war-4-mini.jpg" alt="Gears of War 4" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <p style=" text-indent: 15px; margin-top: 20px;">Gears of War 4</p>
+                </a>
+              </td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+            </td>
+          </tr>
+          
+          <tr class="RDR2">
+            <td>
+              <a href="/PC_games/RedDeadRedemp2.php" title="Red Dead Redemption 2">
+                <img src="images/top_staff_picks/red-dead-redemption-2-mini.jpg" alt="Red Dead Redemption 2" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <p style=" text-indent: 15px; margin-top: 20px;">Red Dead Redemption 2</p>
+                </a>
+              </td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+            </td>
+          </tr>
+          
+          <tr class="Control">
+            <td>
+              <a href="/PC_games/Control.php" title="Control">
+                <img src="images/top_staff_picks/control-mini.jpg" alt="Control" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <p style=" text-indent: 15px; margin-top: 20px;">Control</p>
+              </a>
+              </td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+            </td>
+          </tr>
+          
+          <tr class="Minecraft">
+            <td>
+              <a href="/PC_games/Minecraft.php" title="Minecraft">
+                <img src="images/top_staff_picks/minecraft-mini.jpg" alt="Minecraft" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <p style=" text-indent: 15px; margin-top: 20px;">Minecraft</p>
+              </a>
+              </td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+            </td>
+          </tr>
+          
+          <tr class="W3WH">
+            <td>
+              <a href="/PC_games/TheWitcher3_Wild_Hunt.php" title="The Witcher 3: Wild Hunt">
+                <img src="images/top_staff_picks/the-witcher-3-wild-hunt-mini.jpg" alt="The Witcher 3: Wild Hunt" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <p style=" text-indent: 15px; margin-top: 20px;">The Witcher 3: Wild Hunt</p>
+              </a>
+              </td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+            </td>
+          </tr>
+          
+          <tr class="ACNH">
+            <td>
+              <a href="/Nintendo_games/Animal_Cross_New_Horizons.php" title="Animal Crossing: New Horizons">
+                <img src="images/top_staff_picks/animal-crossing-new-horizons-mini.png" alt="Animal Crossing: New Horizons" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <p style=" text-indent: 15px; margin-top: 20px;">Animal Crossing: New Horizons</p>
+              </a>
+              </td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+            </td>
+          </tr>
+     
+        </tbody>
+      </table>
+      <a class="attribution" href="http://fontawesome.io/"><i class="fa fa-font-awesome"></i> fontawesome.io</a>
 
+
+	<!---------end of top staff best picks--------------------->
     <!---START OF FOOTER-->
     <div id ="page-container">
     <footer id="footer">
@@ -162,6 +336,28 @@
 			setTimeout(showSlides, 6000);
 		}
 		showSlides();
+		
+		
+		
+		/*****STAFFS' BEST PICKS********/
+			const ratings = {
+			  CODBO1 : 5.0,
+			  GOW4 : 3.65,
+			  RDR2 : 4.42,
+			  Control : 4.15,
+			  Minecraft : 3.90,
+			  W3WH : 5.0,
+			  ACNH : 4.5
+			};
+
+			// total number of stars
+			const starTotal = 5;
+
+			for(const rating in ratings) {  
+			  const starPercentage = (ratings[rating] / starTotal) * 100;
+			  const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
+			  document.querySelector(`.${rating} .stars-inner`).style.width = starPercentageRounded; 
+			}
 	</script>
 
   </body>
