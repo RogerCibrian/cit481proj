@@ -150,7 +150,7 @@
           <div class="content">
             <a href="Xbox_games/AceCombat6.php">
               <img
-                src="Xbox_games/Xbox360_games/Ace_Combat6.png"
+                src="Xbox_games/Xbox360_games/Ace_Combat_6_Fires_of_Liberation_Game_Cover.jpg"
                 alt="Ace Combat 6"
                 style="width: 100%; height: 250px"
             /></a>
@@ -165,7 +165,7 @@
           <div class="content">
             <a href="Xbox_games/DeadorAlive4.php">
               <img
-                src="Xbox_games/Xbox360_games/DoA4.jpg"
+                src="Xbox_games/Xbox360_games/Doa4cover.jpg"
                 alt="Dead or Alive 4"
                 style="width: 100%; height: 250px"
             /></a>
@@ -180,7 +180,7 @@
           <div class="content">
             <a href="Xbox_games/Forza4.php">
               <img
-                src="Xbox_games/Xbox360_games/Forza4.jpg"
+                src="Xbox_games/Xbox360_games/Forza_Motorsport_4_cover.jpg"
                 alt="Forza 4"
                 style="width: 100%; height: 250px"
             /></a>
@@ -195,7 +195,7 @@
           <div class="content">
             <a href="Xbox_games/MotoGP07.php">
               <img
-                src="Xbox_games/Xbox360_games/Motogp07.jpg"
+                src="Xbox_games/Xbox360_games/motogp-07-front-cover.jpg"
                 alt="MotoGP '07"
                 style="width: 100%; height: 250px"
             /></a>
@@ -210,7 +210,7 @@
           <div class="content">
             <a href="Xbox_games/Ridgeracer6.php">
               <img
-                src="Xbox_games/Xbox360_games/Ridgeracer6.jpg"
+                src="Xbox_games/Xbox360_games/ridge-racer-game-cover.png"
                 alt="Ridge Racer 6"
                 style="width: 100%; height: 250px"
             /></a>
@@ -225,7 +225,7 @@
           <div class="content">
             <a href="Xbox_games/SaintsRow.php">
               <img
-                src="Xbox_games/Xbox360_games/Saintsrow.jpg"
+                src="Xbox_games/Xbox360_games/Saints_Row_Box_Art.jpg"
                 alt="Saints Row"
                 style="width: 100%; height: 250px"
             /></a>
@@ -240,7 +240,7 @@
           <div class="content">
             <a href="Xbox_games/VivaPinata_PartyAnimals.php">
               <img
-                src="Xbox_games/Xbox360_games/vivapinata.jpg"
+                src="Xbox_games/Xbox360_games/viva-pinata-front-cover.jpg"
                 alt="Dead or Alive 4"
                 style="width: 100%; height: 250px"
             /></a>
@@ -255,7 +255,7 @@
           <div class="content">
             <a href="Xbox_games/Wipeout.php">
               <img
-                src="Xbox_games/Xbox360_games/wipeout.jpg"
+                src="Xbox_games/Xbox360_games/Wipeout_in_the_Zone_Coverart.png"
                 alt="Wipeout: In The Zone"
                 style="width: 100%; height: 250px"
             /></a>
@@ -285,9 +285,9 @@
           <div class="content">
             <a href="Xbox_games/ZumbaFitnessRush.php">
               <img
-                src="Xbox_games/Xbox360_games/zumba_fitness-_rush.jpg"
+                src="Xbox_games/Xbox360_games/Zumba-Fitness-Rush-Cover.jpg"
                 alt="Dead or Alive 4"
-                style="width: 100%; height: 250px"
+                style="width: 100%; height: 275px"
             /></a>
             <h4>Zumba Fitness Rush</h4>
             
@@ -379,7 +379,7 @@
           <div class="content">
             <a href="Xbox_games/Killer_Instinct.php">
               <img
-                src="Xbox_games/Xbox_One_games/killer_instinct.jpg"
+                src="Xbox_games/Xbox_One_games/killer-instinct-game-cover.png"
                 alt="Killer Instinct"
                 style="width: 100%; height: 275px"
             /></a>

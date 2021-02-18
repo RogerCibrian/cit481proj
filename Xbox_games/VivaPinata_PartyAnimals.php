@@ -77,7 +77,7 @@ html {
 }
 
 div.vivapinata {
-        font-family: "Times New Roman";
+        font-family: "Times New Roman", sans-serif, serif;
         color: white;
         font-size: medium;
         text-align: left;
@@ -94,7 +94,7 @@ div.vivapinata {
         text-indent: 200px;
         background-color:black;
         opacity: 0.9;
-        margin-top: -20px;
+        margin-top: -50px;
         }
 div.transbox_vivapinata{
         margin: 30px;
@@ -103,7 +103,7 @@ div.transbox_vivapinata{
         padding: 0.1 rem;
         height: 277px;
         text-indent: 220px;
-        background: url('/Xbox_games/Xbox360_games/Viva_Pinata_-_Party_Animals_Coverart.png');
+        background: url('/Xbox_games/Xbox360_games/Viva_Piñata_cover_v2.jpg');
         background-repeat: no-repeat;
         width: 100%;
         height: 234px;
@@ -195,13 +195,13 @@ div.transbox_vivapinata{
 /*END OF FOOTER EDITING*/
 //comment section
 .count {
-     font-family:"Comic Sans MS", cursive, sans-serif;
+     font-family:"Times New Roman", cursive, sans-serif;
      font-weight: bold;
 }
 .comment_container {
      margin-left: 35px;
      margin-right: 35px;
-     font-family:"Comic Sans MS", cursive, sans-serif;
+     font-family:"Times New Roman", cursive, sans-serif;
      color: white;
 }
 .name {
@@ -293,6 +293,19 @@ border: none;
         text-indent: 20px;
 
 }
+
+pre{
+		display:block;
+		padding: 0;   /*9.5px--margin:0 0 10px*/
+		margin: 0;
+		font-size: 13px;
+		line-height: 1.4;
+		color: #333;
+		word-break: break-all;
+		background-color: none;
+		border: none;
+		border-radius: none;
+		}
     </style>
 
 </head>

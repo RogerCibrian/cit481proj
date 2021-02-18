@@ -15,6 +15,9 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<!-- Google reCAPTCHA API Call -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
 	$(function () {
 		$('#phone').keydown(function(e){
@@ -245,8 +248,7 @@
 		<label for="re_password">Re-Password:</label>
 		<input type="password" name="re_user_pwd" id="PassInput2" placeholder="Re-enter Password" required/>
 	</span>	
-	<br>
-	<br>
+	
 
 	<label style="margin-top: -15px">
 		<input type="checkbox" onclick="myFunction()" style="float:left;">
@@ -264,8 +266,10 @@
           />
           <p style="float: left; text-indent: 5px; margin-top: 3px">Remember me</p>
 	</label>
-	<br>
-	<br>
+	<!--recaptcha thing for form-->
+		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; margin-left: 30%;"></div>
+	
+	
 	
         <p style="text-align: center; text-indent: 15px;">
           By creating an account you agree to our
@@ -274,7 +278,7 @@
           >.
 	</p>
 	<br>
-	<br>
+	
         <div class="clearfix">
           <button
             type="cancel"

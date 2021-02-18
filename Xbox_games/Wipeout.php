@@ -76,7 +76,7 @@ html {
   padding: 0;
 }
 div.wipeout {
-        font-family: "Times New Roman";
+        font-family: "Times New Roman", sans-serif, serif;
         color: white;
         font-size: medium;
         text-align: left;
@@ -93,7 +93,7 @@ div.wipeout {
         text-indent: 200px;
         background-color:black;
         opacity: 0.9;
-        margin-top: -20px;
+        margin-top: -50px;
         }
 div.transbox_wipeout{
         margin: 30px;
@@ -194,13 +194,13 @@ div.transbox_wipeout{
 /*END OF FOOTER EDITING*/
 //comment section
 .count {
-     font-family:"Comic Sans MS", cursive, sans-serif;
+     font-family:"Times New Roman", cursive, sans-serif;
      font-weight: bold;
 }
 .comment_container {
      margin-left: 35px;
      margin-right: 35px;
-     font-family:"Comic Sans MS", cursive, sans-serif;
+     font-family:"Times New Roman", cursive, sans-serif;
      color: white;
 }
 .name {
@@ -292,6 +292,18 @@ border: none;
         text-indent: 20px;
 
 }
+pre{
+		display:block;
+		padding: 0;   /*9.5px--margin:0 0 10px*/
+		margin: 0;
+		font-size: 13px;
+		line-height: 1.4;
+		color: #333;
+		word-break: break-all;
+		background-color: none;
+		border: none;
+		border-radius: none;
+		}
     </style>
 
 </head>

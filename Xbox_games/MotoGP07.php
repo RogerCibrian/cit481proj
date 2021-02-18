@@ -77,7 +77,7 @@ html {
 }
 
 div.motogp07 {
-        font-family: "Times New Roman";
+        font-family: "Times New Roman" sans-serif, serif;
         color: white;
         font-size: medium;
         text-align: left;
@@ -94,16 +94,15 @@ div.motogp07 {
         text-indent: 200px;
         background-color:black;
         opacity: 0.9;
-        margin-top: -20px;
+        margin-top: -50px;
         }
 div.transbox_motogp07{
         margin: 30px;
         border: 1px solid black;
         margin: 0rem;
         padding: 0.1 rem;
-        height: 277px;
         text-indent: 200px;
-        background: url('/Xbox_games/Xbox360_games/Motogp07.jpg');
+        background: url('/Xbox_games/Xbox360_games/Motogp07-cover.jpg');
         background-repeat: no-repeat;
         width: 100%;
         height: 234px;
@@ -194,13 +193,13 @@ div.transbox_motogp07{
 /*END OF FOOTER EDITING*/
 //comment section
 .count {
-     font-family:"Comic Sans MS", cursive, sans-serif;
+     font-family:"Times New Roman", cursive, sans-serif;
      font-weight: bold;
 }
 .comment_container {
      margin-left: 35px;
      margin-right: 35px;
-     font-family:"Comic Sans MS", cursive, sans-serif;
+     font-family:"Times New Roman", cursive, sans-serif;
      color: white;
 }
 .name {
@@ -292,6 +291,19 @@ border: none;
         text-indent: 20px;
 
 }
+
+pre{
+		display:block;
+		padding: 0;   /*9.5px--margin:0 0 10px*/
+		margin: 0;
+		font-size: 13px;
+		line-height: 1.4;
+		color: #333;
+		word-break: break-all;
+		background-color: none;
+		border: none;
+		border-radius: none;
+		}
     </style>
 
 </head>

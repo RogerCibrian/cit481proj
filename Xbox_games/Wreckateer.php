@@ -76,7 +76,7 @@ html {
   padding: 0;
 }
 div.Wreckateer {
-        font-family: "Times New Roman";
+        font-family: "Times New Roman", sans-serif, serif;
         color: white;
         font-size: medium;
         text-align: left;
@@ -90,10 +90,10 @@ div.Wreckateer {
         padding: 0.1 rem;
         outline-offset: 0.25rem;
         height: 277px;
-        text-indent: 200px;
+        text-indent: 180px;
         background-color:black;
         opacity: 0.9;
-        margin-top: -20px;
+        margin-top: -50px;
         }
 div.transbox_Wreckateer{
         margin: 30px;
@@ -101,8 +101,8 @@ div.transbox_Wreckateer{
         margin: 0rem;
         padding: 0.1 rem;
         height: 277px;
-        text-indent: 20px;
-        background: url('/Xbox_games/Xbox360_games/Wreckateer_logo.png');
+        text-indent: 175px;
+        background: url('/Xbox_games/Xbox360_games/wreckateer-game-cover.jpg');
         background-repeat: no-repeat;
         width: 100%;
         height: 234px;
@@ -194,13 +194,13 @@ div.transbox_Wreckateer{
 /*END OF FOOTER EDITING*/
 //comment section
 .count {
-     font-family:"Comic Sans MS", cursive, sans-serif;
+     font-family:"Times New Roman", cursive, sans-serif;
      font-weight: bold;
 }
 .comment_container {
      margin-left: 35px;
      margin-right: 35px;
-     font-family:"Comic Sans MS", cursive, sans-serif;
+     font-family:"Times New Roman", cursive, sans-serif;
      color: white;
 }
 .name {
@@ -292,6 +292,18 @@ border: none;
         text-indent: 20px;
 
 }
+pre{
+		display:block;
+		padding: 0;   /*9.5px--margin:0 0 10px*/
+		margin: 0;
+		font-size: 13px;
+		line-height: 1.4;
+		color: #333;
+		word-break: break-all;
+		background-color: none;
+		border: none;
+		border-radius: none;
+		}
     </style>
 
 </head>
@@ -307,12 +319,13 @@ border: none;
         <div class="Wreckateer">
         <div class="transbox_Wreckateer">
             <ul>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
+              
               <h2>Wreckateer</h2>
+			  <br />
+              <br />
+              <br />
+              <br />
+              <br />
              
               <li>Initial Release Date: July 25, 2012</li>
               <li>Developed by Iron Galaxy Studios & Published by Microsoft Studios/li>
