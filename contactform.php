@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 
 //	echo "SMTP settings";
 	/*SMTP settings for external mail server*/
-	//$mail->SMTPDebug = 2;
+	$mail->SMTPDebug = 2;
 	$mail->IsSMTP();
 	$mail->Host = 'mail.rottenpotatoes.org';
 	$mail->SMTPAuth = true;
@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 	$mail->Port = 587;
 	$mail->SMTPSecure = 'tls';
 
-//	don't allow less secure certs
+//	don't allow less secure certs 
 	$mail->SMTPOptions = array(
 	'ssl' => array(
 		'verify_peer' => true,
@@ -61,10 +61,10 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 
 	if(!$mail->Send()){
 //	use these echos for debugging, comment out page redirect
-//	echo "message not sent: " . $mail->ErrorInfo;} 
-//	else echo "message sent";}
-	header("location:/Contact_Us.php?msg=err");}
-	else{
-	header("location:/Contact_Us.php?msg=suc");}}
+	echo "message not sent: " . $mail->ErrorInfo;} 
+	else echo "message sent";}
+	//header("location:/Contact_Us.php?msg=err");}
+	//else{
+	//header("location:/Contact_Us.php?msg=suc");}}
 //	$mail->ClearAddresses();}
 ?>
