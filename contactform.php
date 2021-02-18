@@ -27,6 +27,7 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 //	require_once "/usr/share/php/libphp-phpmailer/vendor/phpmailer/phpmailer/src/SMTP.php";
 //	require_once "/usr/share/php/libphp-phpmailer/vendor/phpmailer/phpmailer/src/Exception.php";
 
+
 //	echo "new PHPMailer";
 	$mail = new PHPMailer();
 
