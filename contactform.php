@@ -64,7 +64,7 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 	//echo "message not sent: " . $mail->ErrorInfo;} 
 	//else echo "message sent";}
 	header("location:/Contact_Us.php?msg=err");}
-	//else{
+	else{
 	header("location:/Contact_Us.php?msg=suc");}}
 //	$mail->ClearAddresses();}
 ?>
