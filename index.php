@@ -205,7 +205,7 @@
         <tbody>
           <tr class="CODBO1"> 
             <td>
-              <a href="/Playstation_games/CODBlackOps.php" title="Call of Duty: Black Ops">
+              <a href="https://www.rottenpotatoes.org/Playstation_games/CODBlackOps.php" title="Call of Duty: Black Ops">
                 <img src="images/top_staff_picks/CODBO1_mini.jpg" alt="Call of Duty: Black Ops" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
                 <p style=" text-indent: 15px; margin-top: 20px;">Call of Duty: Black Ops</p>
               </a>
