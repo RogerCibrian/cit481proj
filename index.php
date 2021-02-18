@@ -195,7 +195,7 @@
     </div>
     <!----end of About us (transparent box)-->
      <!--------start of top staff best picks----------------------->
-		<table class="transbox">
+		<table>
         <thead>
           <tr>
             <th>Staffs' Best Picks</th>
