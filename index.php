@@ -303,9 +303,6 @@
      
         </tbody>
       </table>
-      
-
-
 	<!---------end of top staff best picks--------------------->
     <!---START OF FOOTER-->
     <div id ="page-container">
