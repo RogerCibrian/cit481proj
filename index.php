@@ -189,7 +189,7 @@
           reviews about the game so other fellow gamers such as yourself can
           decide what to do next. Take a peek at what we can offer you! Or if
           you have an questions about our site, please feel free to contact us
-          on the "Contact Us" tab above.
+          on the "Contact Us" tab above. hello there
         </p>
       </ol>
     </div>
