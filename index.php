@@ -57,6 +57,7 @@
 		  font-family: 'Times New Roman', sans-serif, serif;
 		  float: right;
 		  margin-right: 5%;
+		  margin-bottom: 20%;
 		}
 
 		table th, 
