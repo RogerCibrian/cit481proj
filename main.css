@@ -24,7 +24,7 @@ div.transbox {
   background-color: white;
   border: 1px solid black;
   opacity: 0.6;
-  margin-left: 25%;
+  /*margin-left: 25%;*/
    
   position: center;
  /* margin-bottom: 20%;*/
@@ -50,14 +50,14 @@ div.transbox p {
 /*added by Sean to fix footer travel*/
 #page-container{
 	position: relative;
-	min-height: 100vh;
+	min-height: 135vh;
 }
 #content-wrap{
 	padding-bottom: 2.5rem;
 }
 #footer{
 	position: absolute;
-	bottom: 0px;
+	bottom: 0;
 	width: 100%;
 	/*height: 2.5rem;*/
 	background: black;
