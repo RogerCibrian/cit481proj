@@ -46,7 +46,7 @@
 		padding: 0;
 	}
 	
-	/*staffs' best picks table CSS edit*/
+	/*staffs' best picks ---video game--table CSS edit*/
 		table {
 		  margin: 0 auto;
 		  text-align: center;
