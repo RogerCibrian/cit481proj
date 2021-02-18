@@ -20,7 +20,6 @@ html {
 
 /*START OF HOME PAGE EDITING (index.html)*/
 div.transbox {
-  float: left;
   margin: 30px;
   background-color: white;
   border: 1px solid black;
