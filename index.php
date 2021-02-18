@@ -64,7 +64,7 @@
 
 		table th, 
 		table td {
-		  padding: 20px 50px;
+		  padding: 20px 30px;
 		}
 
 		table th {
