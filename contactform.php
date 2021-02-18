@@ -32,28 +32,29 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 
 //	echo "SMTP settings";
 	/*SMTP settings for external mail server*/
-	//$mail->SMTPDebug = 4;
+	//$mail->SMTPDebug = 2;
 	$mail->IsSMTP();
-	$mail->Host = 'smtp.gmail.com';
+	$mail->Host = 'mail.rottenpotatoes.org';
 	$mail->SMTPAuth = true;
 	$mail->AuthType='LOGIN';
-	$mail->Username = 'rottenpotatoes.cit480@gmail.com';
-	$mail->Password = 'C!t--480';
+	$mail->Username = 'support@rottenpotatoes.org';
+	$mail->Password = 'WeLoveGames2021!';
 	$mail->Port = 587;
 	$mail->SMTPSecure = 'tls';
 
+//	don't allow less secure certs
 	$mail->SMTPOptions = array(
 	'ssl' => array(
-		'verify_peer' => false,
-		'verify_peer_name' => false,
-		'allow_self_signed' => true
+		'verify_peer' => true,
+		'verify_peer_name' => true,
+		'allow_self_signed' => false
 		)
 	);
 
 	/*email settings*/
 	$mail->isHTML(true);
 	$mail->setFrom($email, 'Contact Mailer');
-	$mail->addAddress('RottenPotatoes.cit480@gmail.com');
+	$mail->addAddress('support@rottenpotatoes.org');
 	$mail->addReplyTo($email, $name);
 	$mail->Subject = $subject;
 	$mail->Body = $body;
