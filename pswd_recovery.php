@@ -86,7 +86,7 @@ if (isset($_POST["resetrequestsubmit"])){
         $mail->Port = 587;
         $mail->SMTPSecure = "tls";
 
-// don't allow less secure certs
+// don't allow less secure certs 
 	$mail->SMTPOptions = array(
         'ssl' => array(
                 'verify_peer' => true,
