@@ -195,7 +195,7 @@
     </div>
     <!----end of About us (transparent box)-->
      <!--------start of top staff best picks----------------------->
-		<table>
+		<table style="display: inline-block;">
         <thead>
           <tr>
             <th>Staffs' Best Picks</th>
