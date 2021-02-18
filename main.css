@@ -51,7 +51,7 @@ div.transbox p {
 /*added by Sean to fix footer travel*/
 #page-container{
 	position: relative;
-	margin-top: 50%;
+	margin-top: 100%;
 	min-height: 100vh;
 }
 #content-wrap{
