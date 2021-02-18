@@ -110,6 +110,12 @@
 		.attribution:hover {
 		  color: #1fa67a;
 		}
+		
+		#page-container{
+			position: relative;
+			margin-top: 70%;
+			min-height: 80vh;
+		}
   </style>
   </head>
 
