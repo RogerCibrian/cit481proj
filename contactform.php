@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 	$mail->Port = 587;
 	$mail->SMTPSecure = 'tls';
 
-//	don't allow less secure certs
+//	don't allow less secure certs 
 	$mail->SMTPOptions = array(
 	'ssl' => array(
 		'verify_peer' => true,
