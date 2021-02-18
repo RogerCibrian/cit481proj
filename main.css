@@ -24,10 +24,13 @@ div.transbox {
   background-color: white;
   border: 1px solid black;
   opacity: 0.6;
-  margin-left: 25%;
-  margin-right: 25%;
+  /*margin-left: 25%;*/
+   
   /*position: center;*/
  /* margin-bottom: 20%;*/
+	margin-right: 25%;
+	 height: 50%;
+	 width: 50%;
 }
 
 div.transbox h1 {

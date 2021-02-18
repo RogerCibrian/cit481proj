@@ -54,6 +54,9 @@
 		  font-size: 20px;
 		  background: #fff;
 		  font-family: 'Times New Roman', sans-serif, serif;
+		  float: right;
+		  margin-right: 5%;
+		  margin-bottom: 20%;
 		}
 
 		table th, 
@@ -63,7 +66,7 @@
 
 		table th, 
 		table td {
-		  padding: 20px 50px;
+		  padding: 20px 30px;
 		}
 
 		table th {
@@ -300,9 +303,6 @@
      
         </tbody>
       </table>
-      <a class="attribution" href="http://fontawesome.io/"><i class="fa fa-font-awesome"></i> fontawesome.io</a>
-
-
 	<!---------end of top staff best picks--------------------->
     <!---START OF FOOTER-->
     <div id ="page-container">
