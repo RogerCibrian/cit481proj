@@ -23,11 +23,9 @@
 		vertical-align: middle;
 	}
 	.image-slideshow-container {
-		max-width: 1000px;
+		max-width: 900px;
 		position: relative;
 		margin: auto;
-		background-size: cover;
-		background-color: #333333e0;
 	}
 	.dots {
 		height: 15px;
