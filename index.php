@@ -30,7 +30,7 @@
 	.dots {
 		height: 15px;
 		width: 15px;
-		margin: 0 2px;
+		margin: 10px 2px;
 		background-color: #bbb;
 		border-radius: 50%;
 		display: inline-block;
