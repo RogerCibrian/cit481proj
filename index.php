@@ -26,6 +26,7 @@
 		max-width: 1000px;
 		position: relative;
 		margin: auto;
+		background-size: cover;
 		background-color: #333333e0;
 	}
 	.dots {
