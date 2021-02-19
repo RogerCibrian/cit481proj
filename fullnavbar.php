@@ -25,7 +25,7 @@ echo              '<li><a href="Nintendo_games.php">Nintendo</a></li>';
 echo            '</ul>';
 echo          '</li>';
 echo          '<li class="deactive"><a href="Contact_Us.php">Contact Us</a></li>';
-echo          '<li class="deactive"><a href="https://twitter.com/RottenP_Games"><img src="/images/twitcon.png" style="width:20px; height:20px;"></a></li>';
+echo          '<li class="deactive"><a href="https://twitter.com/RottenP_Games"><img src="/images/twitcon.png" style="width:30px; height:30px;"></a></li>';
 echo        '</ul>';
 echo        '<ul class="nav navbar-nav navbar-right">';
 
