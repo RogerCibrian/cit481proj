@@ -31,17 +31,16 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 	$mail = new PHPMailer();
 
 //	echo "SMTP settings";
+	$login = parse_ini_file('/var/app/login.ini', true); // Parse external INI file on server
 	/*SMTP settings for external mail server*/
 	$mail->SMTPDebug = 2;
 	$mail->IsSMTP();
 	$mail->Host = 'mail.rottenpotatoes.org';
 	$mail->SMTPAuth = true;
 	$mail->AuthType='LOGIN';
-	//require '/var/app/login.ini';
-	$login = parse_ini_file('/var/app/login.ini', true);
-	print_r($login['email']['username']);
-	//$mail->Username = $login['email']['username']; //Saving data in file outside of github and root directory to prevent unauthed access to email
-	//$mail->Password = $login['email']['password'];
+
+	$mail->Username = $login['email']['username']; //Saving data in file outside of github and root directory to prevent unauthed access to email
+	$mail->Password = $login['email']['password'];
 	$mail->Port = 587;
 	$mail->SMTPSecure = 'tls';
 
