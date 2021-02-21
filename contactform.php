@@ -37,8 +37,9 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 	$mail->Host = 'mail.rottenpotatoes.org';
 	$mail->SMTPAuth = true;
 	$mail->AuthType='LOGIN';
-	$mail->Username = 'support@rottenpotatoes.org';
-	$mail->Password = 'WeLoveGames2021!';
+	includes '/var/app/login.ini';
+//	$mail->Username = ''; Saving data in file outside of github and root directory to prevent unauthed access to email
+//	$mail->Password = '';
 	$mail->Port = 587;
 	$mail->SMTPSecure = 'tls';
 
