@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 	$mail->AuthType='LOGIN';
 	//require '/var/app/login.ini';
 	$login = parse_ini_file('/var/app/login.ini', true);
-	print_r($login[$email]);
+	print_r($login[$email],[$username]);
 	//$mail->Username = $login['email']['username']; //Saving data in file outside of github and root directory to prevent unauthed access to email
 	//$mail->Password = $login['email']['password'];
 	$mail->Port = 587;
