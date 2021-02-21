@@ -78,11 +78,12 @@ if (isset($_POST["resetrequestsubmit"])){
         $mail = new PHPMailer();
 
 /*SMTP settings for external mail server*/
+		$login = parse_ini_file('/var/app/login.ini', true); // Parse external INI file on server
         $mail->IsSMTP();
         $mail->Host = 'mail.rottenpotatoes.org';
         $mail->SMTPAuth = true;
-        $mail->Username = 'support@rottenpotatoes.org';
-        $mail->Password = 'WeLoveGames2021!';
+		$mail->Username = $login['email']['username']; //Saving data in file outside of github and root directory to prevent unauthed access to email
+		$mail->Password = $login['email']['password'];
         $mail->Port = 587;
         $mail->SMTPSecure = "tls";
 
