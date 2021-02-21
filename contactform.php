@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 
 //	echo "SMTP settings";
 	/*SMTP settings for external mail server*/
-	//$mail->SMTPDebug = 2;
+	$mail->SMTPDebug = 2;
 	$mail->IsSMTP();
 	$mail->Host = 'mail.rottenpotatoes.org';
 	$mail->SMTPAuth = true;
