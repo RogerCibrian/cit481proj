@@ -122,6 +122,13 @@
       /*  display: inline-block;
       }*/
 
+	/*attempting to fix how it looks on mobile device*/
+	/* Center website */
+      .main {
+        max-width: 850px;
+        margin: auto;
+      }
+	  
       input[type="submit"] {
         background-color: #4caf50;
         color: white;
@@ -142,11 +149,13 @@
         padding: 20px;
        /* height: 750px;
 	width: 450px;*/
-	height: 100%;
-	width: 700px;
+	/*height: 100%;
+	width: 700px;*/
+	height: auto;
+	width:auto;
         text-align: center;
-        margin-left: 30%;
-        margin-right: 50%;
+       /* margin-left: 30%;
+        margin-right: 50%;*/
         margin-top: 5%;
         margin-bottom: 20%;
       }
@@ -200,6 +209,9 @@
 	include 'fullnavbar.php';
     ?>
     <!----end of Navigation Bar-->
+    <div id="page-container">
+    <div id="content-wrap">
+     <div class="main">
     <!-----Start of Sign up page---->
     <div class="Signup_container">
       <h1>Sign up with us!</h1>
@@ -300,7 +312,8 @@
       </form>
     </div>
 
-    
+    </div>
+    </div>
     <!---START OF FOOTER-->
     <div class="footer" style="background-color: black; text-align: center; bottom: 0; left: 0; padding: 4px 6px">
       <p>
@@ -308,6 +321,7 @@
         property of their respective owners.
       </p>
       <p>© 2020 RottenPotatoes</p>
+    </div>
     </div>
     <!---END OF FOOTER-->
   </body>
