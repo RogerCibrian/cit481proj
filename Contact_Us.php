@@ -192,6 +192,7 @@
       </p>
       <p>© 2020 RottenPotatoes</p>
     </footer>
+    </div>
     <!---END OF FOOTER-->
   </body>
 </html>
