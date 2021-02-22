@@ -122,11 +122,13 @@
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 40px;
-        height: 600px;
-        width: 450px;
+       /* height: 600px;
+        width: 450px;*/
+	 height: auto;
+	 width: auto;
         text-align: center;
-        margin-left: 30%;
-        margin-right: 50%;
+       /* margin-left: 30%;
+        margin-right: 50%;*/
         margin-top: 5%;
         margin-bottom: 10%;
       }
