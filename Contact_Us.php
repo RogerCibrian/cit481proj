@@ -89,7 +89,7 @@
 	</script>
     <!---Start of CSS style for contact form-->
     <style>
-	/*attempting to fix how it looks on mobile devices*/
+	/*attempting to fix how it looks on mobile device*/
 	/* Center website */
       .main {
         max-width: 850px;
@@ -192,6 +192,7 @@
     <!----end of Contact us box-->
     <!---START OF FOOTER-->
 	</div>
+	<!---end o main class---->
     </div>
     </br>
     <footer id="footer">
