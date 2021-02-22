@@ -89,6 +89,14 @@
 	</script>
     <!---Start of CSS style for contact form-->
     <style>
+	
+	/* Center website */
+      .main {
+        max-width: 850px;
+        margin: auto;
+      }
+	  
+	  
       input[type="text"],
       select,
       textarea {
@@ -157,7 +165,7 @@
     <div id="page-container">
     <div id="content-wrap">
     <!---footer fix-->
-
+	<div class="main">
     <!----Start of Contact us box-->
     <div class="Contact_container">
       <h1>Contact Us!</h1>
@@ -183,6 +191,7 @@
     </div>
     <!----end of Contact us box-->
     <!---START OF FOOTER-->
+	</div>
     </div>
     </br>
     <footer id="footer">
