@@ -26,6 +26,13 @@
 	}
     </script>
     <style>
+	    
+      /* Center website */
+      .main {
+        max-width: 850px;
+        margin: auto;
+      }      
+	    
       input[type="text"],
       select {
         width: 100%;
@@ -66,11 +73,13 @@
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 40px;
-        height: 450px;
-        width: 450px;
+        /*height: 450px;
+        width: 450px;*/
+	height:auto;
+	 width: auto;
         text-align: center;
-        margin-left: 30%;
-        margin-right: 50%;
+       /* margin-left: 30%;
+        margin-right: 50%;*/
         margin-top: 5%;
         margin-bottom: 20%;
       }
@@ -93,7 +102,12 @@
 	include 'fullnavbar.php';
     ?>
     <!----end of Navigation Bar-->
+     <div id="page-container">
+    <div id="content-wrap">
+	    
     <div class="bg"></div>
+	    
+    <div class="main">
     <!--START OF MEMBER LOG IN FORM-->
     <div class="Memberlogin_container">
       <h1>Member Login</h1>
@@ -154,6 +168,9 @@
         </div>
       </form>
     </div>
+	    
+    </div> 
+    </div>
 	<!--END OF MEMBER LOG IN FORM-->
     <!---START OF FOOTER-->
     <div class="footer" style="background-color:black; padding: 4px 6px; text-align:center; bottom:0; left:0">
@@ -162,6 +179,7 @@
         property of their respective owners.
       </p>
       <p>© 2020 RottenPotatoes</p>
+    </div>
     </div>
     <!---END OF FOOTER-->
   </body>
