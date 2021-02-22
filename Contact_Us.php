@@ -89,7 +89,7 @@
 	</script>
     <!---Start of CSS style for contact form-->
     <style>
-	
+	/*attempting to fix how it looks on mobile devices*/
 	/* Center website */
       .main {
         max-width: 850px;
