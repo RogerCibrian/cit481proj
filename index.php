@@ -2,10 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="/main.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -24,14 +23,14 @@
 		vertical-align: middle;
 	}
 	.image-slideshow-container {
-		max-width: 1000px;
+		max-width: 900px;
 		position: relative;
 		margin: auto;
 	}
 	.dots {
 		height: 15px;
 		width: 15px;
-		margin: 0 2px;
+		margin: 10px 2px;
 		background-color: #bbb;
 		border-radius: 50%;
 		display: inline-block;
@@ -110,6 +109,12 @@
 		}
 		.attribution:hover {
 		  color: #1fa67a;
+		}
+		
+		#page-container{
+			position: relative;
+			margin-top: 70%;
+			min-height: 80vh;
 		}
   </style>
   </head>

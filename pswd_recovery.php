@@ -78,28 +78,29 @@ if (isset($_POST["resetrequestsubmit"])){
         $mail = new PHPMailer();
 
 /*SMTP settings for external mail server*/
+		$login = parse_ini_file('/var/app/login.ini', true); // Parse external INI file on server
         $mail->IsSMTP();
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'mail.rottenpotatoes.org';
         $mail->SMTPAuth = true;
-        $mail->Username = 'rottenpotatoes.cit480@gmail.com';
-        $mail->Password = 'C!t--480';
+		$mail->Username = $login['email']['username']; //Saving data in file outside of github and root directory to prevent unauthed access to email
+		$mail->Password = $login['email']['password'];
         $mail->Port = 587;
         $mail->SMTPSecure = "tls";
 
-// allows less secure certs
+// don't allow less secure certs 
 	$mail->SMTPOptions = array(
         'ssl' => array(
-                'verify_peer' => false,
-                'verify_peer_name' => false,
-                'allow_self_signed' => true
+                'verify_peer' => true,
+                'verify_peer_name' => true,
+                'allow_self_signed' => false
                 )
         );
 
 
 	$mail->isHTML(true);
-        $mail->setFrom('RottenPotatoes.cit480@gmail.com', 'Rotten Potatoes Password Reset');
+        $mail->setFrom('support@rottenpotatoes.org', 'Rotten Potatoes Password Reset');
         $mail->addAddress($to);
-        $mail->addReplyTo('RottenPotatoes.cit480@gmail.com');
+        $mail->addReplyTo('support@rottenpotatoes.org');
         $mail->Subject = $subject;
         $mail->Body = $message;
 
