@@ -168,18 +168,9 @@
         </div>
       </form>
     </div>
-<<<<<<< HEAD
-	
-	
-	</div>
-	<!---end of main--->
-	</div>
-	<!-----end of content wrap----->
-=======
 	    
     </div> 
     </div>
->>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
 	<!--END OF MEMBER LOG IN FORM-->
     <!---START OF FOOTER-->
     <div class="footer" style="background-color:black; padding: 4px 6px; text-align:center; bottom:0; left:0">
@@ -189,13 +180,7 @@
       </p>
       <p>© 2020 RottenPotatoes</p>
     </div>
-<<<<<<< HEAD
-	
-	</div>
-	<!---end of page container--->
-=======
     </div>
->>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
     <!---END OF FOOTER-->
   </body>
 </html>
