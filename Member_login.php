@@ -26,17 +26,6 @@
 	}
     </script>
     <style>
-<<<<<<< HEAD
-	
-	/*attempt to fix layout on mobile devices and footer*/
-	/* Center website */
-      .main {
-        max-width: 850px;
-        margin: auto;
-      }
-	  
-	  
-=======
 	    
       /* Center website */
       .main {
@@ -44,7 +33,6 @@
         margin: auto;
       }      
 	    
->>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
       input[type="text"],
       select {
         width: 100%;
@@ -86,19 +74,11 @@
         background-color: #f2f2f2;
         padding: 40px;
         /*height: 450px;
-<<<<<<< HEAD
-        width: 400px;*/
-		height: auto;
-		width: auto;
-        text-align: center;
-        /*margin-left: 30%;
-=======
         width: 450px;*/
-	height:auto;
-	 width: auto;
+        height:auto;
+        width: auto;
         text-align: center;
        /* margin-left: 30%;
->>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
         margin-right: 50%;*/
         margin-top: 5%;
         margin-bottom: 20%;
@@ -122,21 +102,12 @@
 	include 'fullnavbar.php';
     ?>
     <!----end of Navigation Bar-->
-<<<<<<< HEAD
-	 <div id="page-container">
-    <div id="content-wrap">
-	
-    <div class="bg"></div>
-	
-	<div class="main">
-=======
      <div id="page-container">
     <div id="content-wrap">
 	    
     <div class="bg"></div>
 	    
     <div class="main">
->>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
     <!--START OF MEMBER LOG IN FORM-->
     <div class="Memberlogin_container">
       <h1>Member Login</h1>
