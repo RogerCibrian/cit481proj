@@ -91,6 +91,7 @@
     <style>
 	/*attempting to fix how it looks on mobile device*/
 	/* Center website */
+      /* testing*/
       .main {
         max-width: 850px;
         margin: auto;
@@ -131,22 +132,12 @@
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 40px;
-<<<<<<< HEAD
-        /*height: 600px;
-        width: 450px;*/
-        height: auto;
-        width:auto;
-        text-align: center;
-        max-width: 300px;
-        /*margin-left: 30%;
-=======
        /* height: 600px;
         width: 450px;*/
 	 height: auto;
 	 width: auto;
         text-align: center;
        /* margin-left: 30%;
->>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
         margin-right: 50%;*/
         margin-top: 5%;
         margin-bottom: 10%;
