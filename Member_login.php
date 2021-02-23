@@ -134,7 +134,8 @@
           placeholder="Enter password"
 	  required>
 	<input type="checkbox" onclick="myFunction()" style="float: left"><p style="float: left; text-indent: 5px;"> Show Password</p>
-        <br />
+      <br>
+      <br>
         <ol>
           <span class="psw" style="margin-right: 40px"
             >Forgot <a href="Passwrd_recovery.php">password?</a></span
