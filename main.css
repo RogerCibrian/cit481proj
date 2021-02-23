@@ -1,6 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
- min-height: 100%vh;
+  /*the %vh is not a unit of measure*/
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background-size: cover;
