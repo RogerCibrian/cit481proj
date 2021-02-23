@@ -207,11 +207,7 @@
       </p>
       <p>© 2020 RottenPotatoes</p>
     </footer>
-<<<<<<< HEAD
-	</div>
-=======
     </div>
->>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
     <!---END OF FOOTER-->
   </body>
 </html>
