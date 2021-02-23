@@ -13,7 +13,8 @@ body {
   box-sizing: border-box;
 }
 html {
-  min-height: 100%vh;
+	/*%vh unit does not exist*/
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }

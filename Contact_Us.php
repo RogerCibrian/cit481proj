@@ -131,6 +131,7 @@
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 40px;
+<<<<<<< HEAD
         /*height: 600px;
         width: 450px;*/
         height: auto;
@@ -138,6 +139,14 @@
         text-align: center;
         max-width: 300px;
         /*margin-left: 30%;
+=======
+       /* height: 600px;
+        width: 450px;*/
+	 height: auto;
+	 width: auto;
+        text-align: center;
+       /* margin-left: 30%;
+>>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
         margin-right: 50%;*/
         margin-top: 5%;
         margin-bottom: 10%;
@@ -188,7 +197,7 @@
         <input type="text" name="subject" maxlength="100" placeholder="Subject" required/>
         <textarea name="message" id="textarea-box" maxlength="200" placeholder="Message" required ></textarea>
 		<!--recaptcha thing for form-->
-		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; margin-left: 34px;"></div>
+		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px;"></div>
         <button type="submit" name="submit" style="width: 300px">
           SEND MESSAGE
         </button>
@@ -207,7 +216,11 @@
       </p>
       <p>© 2020 RottenPotatoes</p>
     </footer>
+<<<<<<< HEAD
 	</div>
+=======
+    </div>
+>>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
     <!---END OF FOOTER-->
   </body>
 </html>

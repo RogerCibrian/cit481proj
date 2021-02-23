@@ -26,6 +26,7 @@
 	}
     </script>
     <style>
+<<<<<<< HEAD
 	
 	/*attempt to fix layout on mobile devices and footer*/
 	/* Center website */
@@ -35,6 +36,15 @@
       }
 	  
 	  
+=======
+	    
+      /* Center website */
+      .main {
+        max-width: 850px;
+        margin: auto;
+      }      
+	    
+>>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
       input[type="text"],
       select {
         width: 100%;
@@ -76,11 +86,19 @@
         background-color: #f2f2f2;
         padding: 40px;
         /*height: 450px;
+<<<<<<< HEAD
         width: 400px;*/
 		height: auto;
 		width: auto;
         text-align: center;
         /*margin-left: 30%;
+=======
+        width: 450px;*/
+	height:auto;
+	 width: auto;
+        text-align: center;
+       /* margin-left: 30%;
+>>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
         margin-right: 50%;*/
         margin-top: 5%;
         margin-bottom: 20%;
@@ -104,12 +122,21 @@
 	include 'fullnavbar.php';
     ?>
     <!----end of Navigation Bar-->
+<<<<<<< HEAD
 	 <div id="page-container">
     <div id="content-wrap">
 	
     <div class="bg"></div>
 	
 	<div class="main">
+=======
+     <div id="page-container">
+    <div id="content-wrap">
+	    
+    <div class="bg"></div>
+	    
+    <div class="main">
+>>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
     <!--START OF MEMBER LOG IN FORM-->
     <div class="Memberlogin_container">
       <h1>Member Login</h1>
@@ -170,12 +197,18 @@
         </div>
       </form>
     </div>
+<<<<<<< HEAD
 	
 	
 	</div>
 	<!---end of main--->
 	</div>
 	<!-----end of content wrap----->
+=======
+	    
+    </div> 
+    </div>
+>>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
 	<!--END OF MEMBER LOG IN FORM-->
     <!---START OF FOOTER-->
     <div class="footer" style="background-color:black; padding: 4px 6px; text-align:center; bottom:0; left:0">
@@ -185,9 +218,13 @@
       </p>
       <p>© 2020 RottenPotatoes</p>
     </div>
+<<<<<<< HEAD
 	
 	</div>
 	<!---end of page container--->
+=======
+    </div>
+>>>>>>> ced11c3dc4fd5c4aff8dad2cdb70eec11017cf8d
     <!---END OF FOOTER-->
   </body>
 </html>
