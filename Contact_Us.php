@@ -145,10 +145,7 @@
 
       .rc-anchor-normal .rc-anchor-pt{
         margin: 2px 11px 0 0;
-        padding-right: 25px;
-        right: 0;
-        text-align: right;
-        width: 276px;
+        text-indent: -25px;
 
       }
       .rc-anchor-light.rc-anchor-normal{
@@ -157,8 +154,23 @@
         width: fit-content;
       }
       .rc-anchor-logo-portrait{
-        margin: none;
+        margin: 0;
         width: 58px;
+      }
+      .rc-anchor-logo-img-portrait{
+        background-size: 32px;
+        height: 32px;
+        margin: 0;
+        width: 32px
+      }
+      .rc-anchor-logo-text{
+        cursor: default;
+        font-family: Roboto,helvetica,arial,sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 10px;
+        margin-top: 5px;
+        text-indent: -20px;
       }
       /* Responsive layout - when the screen is less than 600px wide, 
       make the two columns stack on top of each other instead of next 
