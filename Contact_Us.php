@@ -91,7 +91,7 @@
     <style>
 	/*attempting to fix how it looks on mobile device*/
 	/* Center website */
-      /* testing*/
+      /* testing for git push on git gui*/
       .main {
         max-width: 850px;
         margin: auto;
