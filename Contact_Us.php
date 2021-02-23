@@ -126,15 +126,17 @@
         background-color: #45a049;
       }
 
+      /*attempting to fix look on mobile devices*/
       .Contact_container {
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 40px;
         /*height: 600px;
         width: 450px;*/
-		height: auto;
-		width:auto;
+        height: auto;
+        width:auto;
         text-align: center;
+        max-width: 300px;
         /*margin-left: 30%;
         margin-right: 50%;*/
         margin-top: 5%;
@@ -144,14 +146,14 @@
       /* Responsive layout - when the screen is less than 600px wide, 
       make the two columns stack on top of each other instead of next 
       to each other */
-      @media screen and (max-width: 600px) {
+     /* @media screen and (max-width: 600px) {
         .col-25,
         .col-75,
         input[type="submit"] {
           width: 100%;
           margin-top: 0;
         }
-      }
+      }*/
     </style>
     <!---End of CSS style for contact form-->
   </head>
