@@ -134,8 +134,8 @@
         padding: 40px;
        /* height: 600px;
         width: 450px;*/
-	 height: auto;
-	 width: auto;
+        height: auto;
+        width: auto;
         text-align: center;
        /* margin-left: 30%;
         margin-right: 50%;*/
@@ -143,6 +143,23 @@
         margin-bottom: 10%;
       }
 
+      .rc-anchor-normal .rc-anchor-pt{
+        margin: 2px 11px 0 0;
+        padding-right: 25px;
+        right: 0;
+        text-align: right;
+        width: 276px;
+
+      }
+      .rc-anchor-light.rc-anchor-normal{
+        border: 1px solid #d3d3d3;
+        height: fit-content;
+        width: fit-content;
+      }
+      .rc-anchor-logo-portrait{
+        margin: none;
+        width: 58px;
+      }
       /* Responsive layout - when the screen is less than 600px wide, 
       make the two columns stack on top of each other instead of next 
       to each other */
@@ -189,7 +206,7 @@
         <textarea name="message" id="textarea-box" maxlength="200" placeholder="Message" required ></textarea>
 		<!--recaptcha thing for form-->
 		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px;"></div>
-        <button type="submit" name="submit" style="width: 300px">
+        <button type="submit" name="submit" style="width: auto">
           SEND MESSAGE
         </button>
       </form>
