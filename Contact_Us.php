@@ -220,7 +220,7 @@
         <input type="text" name="subject" maxlength="100" placeholder="Subject" required/>
         <textarea name="message" id="textarea-box" maxlength="200" placeholder="Message" required ></textarea>
 		<!--recaptcha thing for form-->
-		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px;"></div>
+		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; margin-left: 30%; margin-right: 30%;"></div>
         <button type="submit" name="submit" style="width: auto">
           SEND MESSAGE
         </button>
