@@ -90,7 +90,7 @@ $num = 0;
                 margin: 0rem;
                 padding: 0.1 rem;
                 text-indent: 185px;
-                background: url('/Nintendo_games/GameCube/220px-Resi4-gc-cover.jpg');
+                background: url('/Nintendo_games/GameCube/Resident_Evil_4_Cover.png');
                 background-repeat: no-repeat;
                background-size: 220px 200px;
                 width: 100%;

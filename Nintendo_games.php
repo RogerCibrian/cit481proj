@@ -330,7 +330,7 @@
           <div class="content">
             <a href="/Nintendo_games/Resident_Evil_4.php ">
               <img
-                src="/Nintendo_games/GameCube/220px-Resi4-gc-cover.jpg"
+                src="/Nintendo_games/GameCube/Resident_Evil_4_Cover.png"
                 alt="Resident Evil 4"
                 style="width: 100%; height: 275px"
             /></a>
