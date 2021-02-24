@@ -89,7 +89,7 @@ $num = 0;
                 margin: 0rem;
                 padding: 0.1 rem;
                 text-indent: 210px;
-                background: url('/Nintendo_games/Game_Boy_Advance/250px-Dbzlog1.jpg');
+                background: url('/Nintendo_games/Game_Boy_Advance/DBZ_Legacy_of_goku.jpg');
                 background-size: 240px 225px;
                 background-repeat: no-repeat;
                 width: 100%;

@@ -316,7 +316,7 @@
           <div class="content">
             <a href="/Nintendo_games/DBZ_Legacy_of_Goku.php ">
               <img
-                src="/Nintendo_games/Game_Boy_Advance/Dbzlog1.jpg"
+                src="/Nintendo_games/Game_Boy_Advance/DBZ_Legacy_of_goku.jpg"
                 alt="Dragon Ball Z: The Legacy of Goku"
                 style="width: 100%; height: 250px"
             /></a>
