@@ -235,7 +235,7 @@
           <div class="content">
             <a href="/Nintendo_games/Pokemon_Platinum.php ">
               <img
-                src="/Nintendo_games/DS/220px-Pokemon_Platinum.png"
+                src="/Nintendo_games/DS/Pokemon_platinum.png"
                 alt="Pokémon Platinum "
                 style="width: 100%; height: 275px"
             /></a>
