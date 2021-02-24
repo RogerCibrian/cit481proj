@@ -30,18 +30,6 @@ $num = 0;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
-  <!-------
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    ---->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -103,7 +91,7 @@ div.transbox_newsupermariobros {
         padding: 0.1 rem;
         height: 244px;
         text-indent: 185px;
-        background: url('/Nintendo_games/DS/220px-NewSuperMarioBrothers.jpg');
+        background: url('/Nintendo_games/DS/new_super_mario_bros_2DS.jpg');
         background-repeat: no-repeat;
 	background-size: 220px 200px;
         width: 100%;

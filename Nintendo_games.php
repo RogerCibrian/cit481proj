@@ -222,7 +222,7 @@
           <div class="content">
             <a href="/Nintendo_games/New_Super_Mario_Bros.php">
               <img
-                src="/Nintendo_games/DS/220px-NewSuperMarioBrothers.jpg"
+                src="/Nintendo_games/DS/new_super_mario_bros_2DS.jpg"
                 alt="New Super Mario Bros."
                 style="width: 100%; height: 275px"
             /></a>
