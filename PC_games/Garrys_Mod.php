@@ -103,7 +103,7 @@ div.transbox_garrysmod {
         padding: 0.1 rem;
         height: 277px;
         text-indent: 185px;
-        background: url('/PC_games/220px-Garry\'s_Mod_logo.svg.png');
+        background: url('/PC_games/220px-Garry\'s_Mod_logo.png');
         background-repeat: no-repeat;
         width: 100%;
         height: 234px;
