@@ -303,7 +303,7 @@
           <div class="content">
             <a href="/Nintendo_games/Pokemon_Emerald.php">
               <img
-                src="/Nintendo_games/Game_Boy_Advance/220px-PokemonEmeraldBox.jpg"
+                src="/Nintendo_games/Game_Boy_Advance/Pokemon_Emerald.jpg"
                 alt="Pokemon Emerald"
                 style="width: 100%; height: 275px"
             /></a>

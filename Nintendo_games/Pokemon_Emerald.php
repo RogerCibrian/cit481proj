@@ -91,7 +91,7 @@ $num = 0;
                 padding: 0.1 rem;
                 height: 235px;
                 text-indent: 185px;
-                background: url('/Nintendo_games/Game_Boy_Advance/220px-PokemonEmeraldBox.jpg');
+                background: url('/Nintendo_games/Game_Boy_Advance/Pokemon_Emerald.jpg');
                 background-size: 220px 210px;
                 background-repeat: no-repeat;
                 width: 100%;
