@@ -29,18 +29,6 @@ $num = 0;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
-  <!-------
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    ---->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -55,257 +43,258 @@ $num = 0;
   <link rel="stylesheet" href="/main.css" />
   <link rel="stylesheet" href="../style2.css" />
    <style>
-    body {
-  font-family: Arial, Helvetica, sans-serif;
-  height: 100%;
-  min-width: 800px;
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-repeat: repeat;
-  background-image: url("/images/Space2.jpg");
-  background-position: center;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            min-width: 800px;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-repeat: repeat;
+            background-image: url("/images/Space2.jpg");
+            background-position: center;
+          }
 
-* {
-  box-sizing: border-box;
-}
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-div.vivapinata {
-        font-family: "Times New Roman", sans-serif, serif;
-        color: white;
-        font-size: medium;
-        text-align: left;
-        overflow: auto;
-        position: relative;
-        width: 100%;
-        border: 0.5rem outset black;
-        border-radius: 12px;
-        font: 1.70rem Times New Roman;
-        margin: 0rem;
-        padding: 0.1 rem;
-        outline-offset: 0.25rem;
-        height: 277px;
-        text-indent: 200px;
-        background-color:black;
-        opacity: 0.9;
-        margin-top: -50px;
+        * {
+          box-sizing: border-box;
         }
-div.transbox_vivapinata{
-        margin: 30px;
-        border: 1px solid black;
-        margin: 0rem;
-        padding: 0.1 rem;
-        height: 277px;
-        text-indent: 220px;
-        background: url('/Xbox_games/Xbox360_games/Viva_Piñata_cover_v2.jpg');
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 234px;
+        html {
+          height: 100%;
+          margin: 0;
+          padding: 0;
         }
 
-      ul{
-        list-style: none;
-        margin: 0;
-        padding: 20;
-      }
-      li{
-      padding: 0px 5px;
-      }
+      div.vivapinata {
+              font-family: "Times New Roman", sans-serif, serif;
+              color: white;
+              font-size: medium;
+              text-align: left;
+              overflow: auto;
+              position: relative;
+              width: 100%;
+              border: 0.5rem outset black;
+              border-radius: 12px;
+              font: 1.70rem Times New Roman;
+              margin: 0rem;
+              padding: 0.1 rem;
+              outline-offset: 0.25rem;
+              height: 277px;
+              text-indent: 200px;
+              background-color:black;
+              opacity: 0.9;
+              margin-top: -50px;
+              }
+      div.transbox_vivapinata{
+              margin: 30px;
+              border: 1px solid black;
+              margin: 0rem;
+              padding: 0.1 rem;
+              height: 277px;
+              text-indent: 220px;
+              background: url('/Xbox_games/Xbox360_games/Viva_Piñata_cover_v2.jpg');
+              background-repeat: no-repeat;
+              width: 100%;
+              height: 234px;
+              }
 
-      /* summary transparent box    */
-      div.transbox {
-        margin: 0;
-        background-color: #ffffff;
-        border: 1px solid black;
-        opacity: 0.5;
-        }
-        div.transbox p {
-            margin: 5%;
-            font-weight: bold;
-            color: #000000;
-            text-indent:50px;
+            ul{
+              list-style: none;
+              margin: 0;
+              padding: 20;
             }
-    /*  COMMENT/  USER RATING*/
-    input[type="text"],
-      select,
-      textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-      }
+            li{
+            padding: 0px 5px;
+            }
 
-      label {
-        padding: 12px 12px 12px 0;
-        display: inline-block;
-      }
+            /* summary transparent box    */
+            div.transbox {
+              margin: 0;
+              background-color: #ffffff;
+              border: 1px solid black;
+              opacity: 0.5;
+              height: 65%;
+              }
+              div.transbox p {
+                  margin: 5%;
+                  font-weight: bold;
+                  color: #000000;
+                  text-indent:50px;
+                  }
+        /*  COMMENT/  USER RATING*/
+        input[type="text"],
+          select,
+          textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+          }
 
-      input[type="submit"] {
-        background-color: #4caf50;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-      }
+          label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+          }
 
-      input[type="submit"]:hover {
-        background-color: #45a049;
-      }
+          input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+          }
 
-      .UserRating_container {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-        height: 450px;
-        width: 100%;
-        text-align: center;
-	justify-content: center;
-        margin-left: 0%;
-        margin-right: 20%;
-        margin-top: 0%;
-        margin-bottom: 0%;
-      }
+          input[type="submit"]:hover {
+            background-color: #45a049;
+          }
 
-      .unchecked {
-        color: black;
-      } 
-  /*START OF FOOTER EDITING*/
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: black;
-  padding: 4px 6px;
-  font-size: 14px;
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  position: relative;
-  margin-top: 100%;
-  margin: 0 auto;
-}
-/*END OF FOOTER EDITING*/
-//comment section
-.count {
-     font-family:"Times New Roman", cursive, sans-serif;
-     font-weight: bold;
-}
-.comment_container {
-     margin-left: 35px;
-     margin-right: 35px;
-     font-family:"Times New Roman", cursive, sans-serif;
-     color: white;
-}
-.name {
-     font-size: 18px;
-}
-.comment {
-margin-top: 15px;
-border-style: solid;
-background-color: rgba(0,0,0, 0.7);
-}
-.Content {
-     margin-top:5px;
-     font-size: 15px;
-     margin-bottom: 5px;
-}
-.replies {
-     margin-top:5px;
-     margin-left: 25px;
-     border-style: solid;
-     background-color: rgba(0,0,0, 0.7);
+          .UserRating_container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            height: 450px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            margin-left: 0%;
+            margin-right: 20%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+          }
 
-}
-.form-popup {
-    display: none;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-}
+          .unchecked {
+            color: black;
+          } 
+            /*START OF FOOTER EDITING*/
+          .footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: black;
+            padding: 4px 6px;
+            font-size: 14px;
+            font-family: "Times New Roman", Times, serif;
+            text-align: center;
+            position: relative;
+            margin-top: 100%;
+            margin: 0 auto;
+          }
+          /*END OF FOOTER EDITING*/
+          //comment section
+          .count {
+              font-family:"Times New Roman", cursive, sans-serif;
+              font-weight: bold;
+          }
+          .comment_container {
+              margin-left: 35px;
+              margin-right: 35px;
+              font-family:"Times New Roman", cursive, sans-serif;
+              color: white;
+          }
+          .name {
+              font-size: 18px;
+          }
+          .comment {
+          margin-top: 15px;
+          border-style: solid;
+          background-color: rgba(0,0,0, 0.7);
+          }
+          .Content {
+              margin-top:5px;
+              font-size: 15px;
+              margin-bottom: 5px;
+          }
+          .replies {
+              margin-top:5px;
+              margin-left: 25px;
+              border-style: solid;
+              background-color: rgba(0,0,0, 0.7);
 
-/*.replies {	margin-left:20px;
-}*/
-.checked {
- padding:0;
- color: orange;
-}
+          }
+          .form-popup {
+              display: none;
+              border: 3px solid #f1f1f1;
+              z-index: 9;
+          }
 
-.open-button{
- background-color: #006400;
- font-size: 16px;
- padding: 4px 10px;
- border: none;
- border-radius: 8px;
- margin: 4px 4px
-}
-.button {
- background-color: #FF0000;
- opacity: 0.5;
- font-size: 16px;
- padding: 4px 10px;
- border: none;
- border-radius: 8px;
- margin: 4px 4px
+          /*.replies {	margin-left:20px;
+          }*/
+          .checked {
+          padding:0;
+          color: orange;
+          }
 
-}
+          .open-button{
+          background-color: #006400;
+          font-size: 16px;
+          padding: 4px 10px;
+          border: none;
+          border-radius: 8px;
+          margin: 4px 4px
+          }
+          .button {
+          background-color: #FF0000;
+          opacity: 0.5;
+          font-size: 16px;
+          padding: 4px 10px;
+          border: none;
+          border-radius: 8px;
+          margin: 4px 4px
 
-.button2 {
- background-color: #696969;
- opacity: 0.5;
- font-size: 16px;
- padding: 4px 10px;
- border: none;
- border-radius: 8px;
- margin: 4px 4px
-}
-.button:hover {
- opacity: 1.0;
-}
-.button2:hover {
- opacity: 1.0;
-}
-.average{
- display:flex;
-border: none;
-  align-self: left;
-  text-align: left;
-  justify-content: left;
-  padding:0;
-  margin:0 auto;
-  height: 50px;
-        font-size: 1.70rem;
-        overflow: auto;
-        position: relative;
-        width: 50%;
-        border-radius: none;
-        margin: 0rem;
-	margin-top: 14px;
-        padding: 0.1 rem;
-        outline-offset: 0.25rem;
-        height: 20px;
-        text-indent: 20px;
+          }
 
-}
+          .button2 {
+          background-color: #696969;
+          opacity: 0.5;
+          font-size: 16px;
+          padding: 4px 10px;
+          border: none;
+          border-radius: 8px;
+          margin: 4px 4px
+          }
+          .button:hover {
+          opacity: 1.0;
+          }
+          .button2:hover {
+          opacity: 1.0;
+          }
+          .average{
+                display:flex;
+                border: none;
+                  align-self: left;
+                  text-align: left;
+                  justify-content: left;
+                  padding:0;
+                  margin:0 auto;
+                  height: 50px;
+                  font-size: 1.70rem;
+                  overflow: auto;
+                  position: relative;
+                  width: 50%;
+                  border-radius: none;
+                  margin: 0rem;
+                  margin-top: 14px;
+                  padding: 0.1 rem;
+                  outline-offset: 0.25rem;
+                  height: 20px;
+                  text-indent: 20px;
 
-pre{
-		display:block;
-		padding: 0;   /*9.5px--margin:0 0 10px*/
-		margin: 0;
-		font-size: 13px;
-		line-height: 1.4;
-		color: #333;
-		word-break: break-all;
-		background-color: none;
-		border: none;
-		border-radius: none;
-		}
+          }
+
+          pre{
+              display:block;
+              padding: 0;   /*9.5px--margin:0 0 10px*/
+              margin: 0;
+              font-size: 13px;
+              line-height: 1.4;
+              color: #333;
+              word-break: break-all;
+              background-color: none;
+              border: none;
+              border-radius: none;
+              }
     </style>
 
 </head>

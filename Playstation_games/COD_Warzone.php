@@ -30,18 +30,6 @@ $num = 0;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
-  <!-------
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    ---->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -56,58 +44,58 @@ $num = 0;
   <link rel="stylesheet" href="/main.css" />
   <link rel="stylesheet" href="../style2.css" />
    <style>
-    body {
-  font-family: Arial, Helvetica, sans-serif;
-  height: 100%;
-  min-width: 800px;
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-repeat: repeat;
-  background-image: url("/images/Space2.jpg");
-  background-position: center;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            min-width: 800px;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-repeat: repeat;
+            background-image: url("/images/Space2.jpg");
+            background-position: center;
+          }
 
-* {
-  box-sizing: border-box;
-}
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-div.COD_Warzone {
-        font-family: "Times New Roman";
-        color: white;
-        font-size: medium;
-        text-align: left;
-        overflow: auto;
-        position: relative;
-        width: 100%;
-        border: 0.5rem outset black;
-        border-radius: 12px;
-        font: 1.70rem Times New Roman;
-        margin: 0rem;
-        padding: 0.1 rem;
-        outline-offset: 0.25rem;
-        height: 277px;
-        text-indent: 200px;
-        background-color:black;
-        opacity: 0.9;
-        margin-top: -20px;
+        * {
+          box-sizing: border-box;
         }
-div.transbox_codwarzone {
-	margin: 30px;
-        border: 1px solid black;
-        margin: 0rem;
-        padding: 0.1 rem;
-        height: 244px;
-        text-indent: 195px;
-        background: url('/Playstation_games/Playstation_4_games/COD_Warzone_cover_art.jpg');
-        background-repeat: no-repeat;
-	background-size: 230px 240px;
-        width: 100%;
-        height: 234px;
+        html {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      div.COD_Warzone {
+              font-family: "Times New Roman";
+              color: white;
+              font-size: medium;
+              text-align: left;
+              overflow: auto;
+              position: relative;
+              width: 100%;
+              border: 0.5rem outset black;
+              border-radius: 12px;
+              font: 1.70rem Times New Roman;
+              margin: 0rem;
+              padding: 0.1 rem;
+              outline-offset: 0.25rem;
+              height: 277px;
+              text-indent: 200px;
+              background-color:black;
+              opacity: 0.9;
+              margin-top: -20px;
+        }
+      div.transbox_codwarzone {
+           margin: 30px;
+              border: 1px solid black;
+              margin: 0rem;
+              padding: 0.1 rem;
+              height: 244px;
+              text-indent: 195px;
+              background: url('/Playstation_games/Playstation_4_games/COD_Warzone_cover_art.jpg');
+              background-repeat: no-repeat;
+              background-size: 230px 240px;
+              width: 100%;
+              height: 234px;
         }
 
       ul{
@@ -125,6 +113,7 @@ div.transbox_codwarzone {
         background-color: #ffffff;
         border: 1px solid black;
         opacity: 0.5;
+        height: 60%;
         }
         div.transbox p {
             margin: 5%;
@@ -179,121 +168,121 @@ div.transbox_codwarzone {
       .unchecked {
         color: black;
       } 
-  /*START OF FOOTER EDITING*/
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: black;
-  padding: 4px 6px;
-  font-size: 14px;
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  position: relative;
-  margin-top: 100%;
-  margin: 0 auto;
-}
-/*END OF FOOTER EDITING*/
-//comment section
-.count {
-     font-family:"Comic Sans MS", cursive, sans-serif;
-     font-weight: bold;
-}
-.comment_container {
-     margin-left: 35px;
-     margin-right: 35px;
-     font-family:"Comic Sans MS", cursive, sans-serif;
-     color: white;
-}
-.name {
-     font-size: 18px;
-}
-.comment {
-margin-top: 15px;
-border-style: solid;
-background-color: rgba(0,0,0, 0.7);
-}
-.Content {
-     margin-top:5px;
-     font-size: 15px;
-     margin-bottom: 5px;
-}
-.replies {
-     margin-top:5px;
-     margin-left: 25px;
-     border-style: solid;
-     background-color: rgba(0,0,0, 0.7);
+          /*START OF FOOTER EDITING*/
+        .footer {
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background: black;
+          padding: 4px 6px;
+          font-size: 14px;
+          font-family: "Times New Roman", Times, serif;
+          text-align: center;
+          position: relative;
+          margin-top: 100%;
+          margin: 0 auto;
+        }
+        /*END OF FOOTER EDITING*/
+        //comment section
+        .count {
+            font-family:"Comic Sans MS", cursive, sans-serif;
+            font-weight: bold;
+        }
+        .comment_container {
+            margin-left: 35px;
+            margin-right: 35px;
+            font-family:"Comic Sans MS", cursive, sans-serif;
+            color: white;
+        }
+        .name {
+            font-size: 18px;
+        }
+        .comment {
+        margin-top: 15px;
+        border-style: solid;
+        background-color: rgba(0,0,0, 0.7);
+        }
+        .Content {
+            margin-top:5px;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        .replies {
+            margin-top:5px;
+            margin-left: 25px;
+            border-style: solid;
+            background-color: rgba(0,0,0, 0.7);
 
-}
-.form-popup {
-    display: none;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-}
+        }
+        .form-popup {
+            display: none;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
 
-/*.replies {	margin-left:20px;
-}*/
-.checked {
- padding:0;
- color: orange;
-}
+        /*.replies {	margin-left:20px;
+        }*/
+        .checked {
+        padding:0;
+        color: orange;
+        }
 
-.open-button{
- background-color: #006400;
- font-size: 16px;
- padding: 4px 10px;
- border: none;
- border-radius: 8px;
- margin: 4px 4px
-}
-.button {
- background-color: #FF0000;
- opacity: 0.5;
- font-size: 16px;
- padding: 4px 10px;
- border: none;
- border-radius: 8px;
- margin: 4px 4px
+        .open-button{
+        background-color: #006400;
+        font-size: 16px;
+        padding: 4px 10px;
+        border: none;
+        border-radius: 8px;
+        margin: 4px 4px
+        }
+        .button {
+        background-color: #FF0000;
+        opacity: 0.5;
+        font-size: 16px;
+        padding: 4px 10px;
+        border: none;
+        border-radius: 8px;
+        margin: 4px 4px
 
-}
+        }
 
-.button2 {
- background-color: #696969;
- opacity: 0.5;
- font-size: 16px;
- padding: 4px 10px;
- border: none;
- border-radius: 8px;
- margin: 4px 4px
-}
-.button:hover {
- opacity: 1.0;
-}
-.button2:hover {
- opacity: 1.0;
-}
-.average{
- display:flex;
-border: none;
-  align-self: left;
-  text-align: left;
-  justify-content: left;
-  padding:0;
-  margin:0 auto;
-  height: 50px;
-        font-size: 1.70rem;
-        overflow: auto;
-        position: relative;
-        width: 50%;
-        border-radius: none;
-        margin: 0rem;
-	margin-top: 14px;
-        padding: 0.1 rem;
-        outline-offset: 0.25rem;
-        height: 20px;
-        text-indent: 20px;
+        .button2 {
+        background-color: #696969;
+        opacity: 0.5;
+        font-size: 16px;
+        padding: 4px 10px;
+        border: none;
+        border-radius: 8px;
+        margin: 4px 4px
+        }
+        .button:hover {
+        opacity: 1.0;
+        }
+        .button2:hover {
+        opacity: 1.0;
+        }
+        .average{
+            display:flex;
+            border: none;
+              align-self: left;
+              text-align: left;
+              justify-content: left;
+              padding:0;
+              margin:0 auto;
+              height: 50px;
+                font-size: 1.70rem;
+                overflow: auto;
+                position: relative;
+                width: 50%;
+                border-radius: none;
+                margin: 0rem;
+                margin-top: 14px;
+                padding: 0.1 rem;
+                outline-offset: 0.25rem;
+                height: 20px;
+                text-indent: 20px;
 
-}
+        }
     </style>
 
 </head>
