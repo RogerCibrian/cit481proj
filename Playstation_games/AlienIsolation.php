@@ -422,7 +422,7 @@ placeholder="Enter your comment here..."></textarea>
 <button type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
  <i class="fas fa-thumbs-down"></i>
 </button>
-<!-- show like count summary -->
+<!-- show like count summary dislikes -->
 <?php foreach ($counterLikes as $Tdown): ?>
 <?php if ($Tdown['date'] == $comment->review_date): ?>
 <h2 id="dislikess"><?php echo $Tdown['COUNT(dislikevalue)'] ?></h2>
@@ -434,7 +434,7 @@ placeholder="Enter your comment here..."></textarea>
 <?php $nope2 == 0; ?>
 <?php endif; ?>
 </div>
-<!-- end of likes section -->
+<!-- end of likes section for parent comments-->
    <button class="open-button" onclick="openForm(<?php echo $num; ?>)">reply</button>
      <div class="form-popup" id="<?php echo $num; ?>">
       <form class="form-container" method="POST" action="../user_rating_form.php">
@@ -459,20 +459,20 @@ placeholder="Enter your comment here..."></textarea>
         <div class="name"><?php echo $replies->user_username;?><span> <?php echo $replies->review_date;?></span></div>
         <div class="Content"><?php echo $replies->review_content;?></div>
         <div class="LikeAndReplies2">
-<!-- form for likes -->
+<!-- form for likes for replies-->
 <form class="likesContainer" action="../likesdislikes.php" method="POST" id="e<?php echo $num; ?>">
 <input type="hidden" id="input1" value="1" name="input1">
 <input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
-<input type='hidden' name='date' value="<?php echo $comment->review_date; ?>">
-<input type='hidden' name='parent_comment' value="-1";>
+<input type='hidden' name='date' value="<?php echo $replies->review_date; ?>">
+<input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
 <button class="btn2" type="submit" form="e<?php echo $num; ?>" value="Submit" id="likebtn">
  <i class="fas fa-thumbs-up"></i>
 </button>
-<!-- show like count summary -->
+<!-- show like count summary for replies -->
 <?php foreach ($counterLikes as $Tup): ?>
-<?php if ($Tup['date'] == $comment->review_date): ?>
+<?php if ($Tup['date'] == $replies->review_date): ?>
 <h2 id="likess"><?php echo $Tup['COUNT(likesvalue)'] ?></h2>
 <?php $nope3 = 1; ?>
 <?php endif; ?>
@@ -481,20 +481,20 @@ placeholder="Enter your comment here..."></textarea>
 <h2 id="likess">&nbsp;</h2>
 <?php $nope3 = 0; ?>
 <?php endif; ?>
-<!-- form for dislikes-->
+<!-- form for dislikes for replies-->
 <form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="f<?php echo $num; ?>">
 <input type="hidden" id="input2" value="1" name="input2">
 <input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
-<input type='hidden' name='date' value="<?php echo $comment->review_date; ?>">
-<input type='hidden' name='parent_comment' value="-1">
+<input type='hidden' name='date' value="<?php echo $replies->review_date; ?>">
+<input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
 <button type="submit" form="f<?php echo $num; ?>" value="Submit" id="dislikebtn">
  <i class="fas fa-thumbs-down"></i>
 </button>
 <!-- show like count summary -->
 <?php foreach ($counterLikes as $Tdown): ?>
-<?php if ($Tdown['date'] == $comment->review_date): ?>
+<?php if ($Tdown['date'] == $replies->review_date): ?>
 <h2 id="dislikess"><?php echo $Tdown['COUNT(dislikevalue)'] ?></h2>
 <?php $nope4 = 1; ?>
 <?php endif; ?>
