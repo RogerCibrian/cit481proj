@@ -54,8 +54,8 @@ if(isset($_POST['submit'])){ /*checks whether user submitted form*/
 
 	/*email settings*/
 	$mail->isHTML(true);
-	$mail->setFrom('support@rottenpotatoes.org', $name); // can't do DKIM signing w/ forged from field
-	$mail->addAddress('support@rottenpotatoes.org');
+	$mail->setFrom($login['email']['username'], $name); // can't do DKIM signing w/ forged from field
+	$mail->addAddress($login['email']['username']);
 	$mail->addReplyTo($email, $name);
 	$mail->Subject = $subject;
 	$mail->Body = $body;
