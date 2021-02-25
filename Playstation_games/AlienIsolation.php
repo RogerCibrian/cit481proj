@@ -542,7 +542,7 @@ parent.addEventListener('click', event => {
           //let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
           //get the <h> tag to add to the count summary of the liked event
           let str2 = event.target.parentElement.nextElementSibling;
-          let str3 = event.target.parentElement.parentElement.outerHTML;
+          let str3 = event.target.parentElement.parentElement.parentElement.firstElementChild.outerHTML;
           console.log(str3);
           //start at the closing character of the first span tag
           /*str = str.substring(str.indexOf(">") + 2);
