@@ -44,7 +44,7 @@ function LikesCount($con,$page){
     return $arr;
     $stmt2->close();
 }
-/*
+
 //get user likes and dislikes per date
 function LikesCount2($con,$usr,$id){
     //class Thumbs {}
@@ -58,6 +58,7 @@ function LikesCount2($con,$usr,$id){
     return $arr;
     $stmt2->close();
 }
+/*
 //get all comments by the page id ordered by the submit date
 function likes($x,$con){
     $stmt2 = $con->prepare("SELECT * FROM likes WHERE page = 7 ORDER BY date DESC");
