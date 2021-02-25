@@ -16,7 +16,7 @@ $final_avg -= $avr_final;
 //print_r($avr_final);
 $counterLikes = LikesCount($con,$page);
 $usrName = $_SESSION['name'];
-$userLikes = LikesCount2($con,$usrName,$page); 
+$userLikes = LikesCount2($con,$usrName,$page);
 //count how many comments have been submitted.
 //need to include a where clause to filter correct page
 $nbc = $con->prepare("SELECT COUNT(review_id) FROM reviews WHERE Review_game = $page");
@@ -386,6 +386,54 @@ placeholder="Enter your comment here..."></textarea>
 <div class="comment">
  <div class="name"><?php echo $comment->user_username; ?> <span class="date"> <?php echo $comment->review_date; ?></span></div>
   <div class="Content"><?php echo $comment->review_content; ?> </div>
+  <!--start of likes section -->
+  <div class="LikeAndReplies">
+<!-- form for likes -->
+<form class="likesContainer" action="./likesdislikes.php" method="POST" id="l<?php echo $num; ?>">
+<input type="hidden" id="input1" value="1" name="input1">
+<input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
+<input type='hidden' name='page_id' value="<?php echo $page; ?>">
+<input type='hidden' name='date' value="<?php echo $comment->review_date; ?>">
+<input type='hidden' name='parent_comment' value="-1";>
+</form>
+<button class="btn" type="submit" form="l<?php echo $num; ?>" value="Submit" id="likebtn">
+ <i class="fas fa-thumbs-up"></i>
+</button>
+<!-- show like count summary -->
+<?php foreach ($counterLikes as $Tup): ?>
+<?php if ($Tup['date'] == $comment->review_date): ?>
+<h2 id="likess"><?php echo $Tup['COUNT(likesvalue)'] ?></h2>
+<?php $nope = 1; ?>
+<?php endif; ?>
+<?php endforeach; ?>
+<?php if ($nope == 0): ?>
+<h2 id="likess">&nbsp;</h2>
+<?php $nope = 0; ?>
+<?php endif; ?>
+<!-- form for dislikes-->
+<form class="dislikesContainer" action="./likesdislikes.php" method="POST" id="d<?php echo $num; ?>">
+<input type="hidden" id="input2" value="1" name="input2">
+<input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
+<input type='hidden' name='page_id' value="<?php echo $id; ?>">
+<input type='hidden' name='date' value="<?php echo $comment->review_date; ?>">
+<input type='hidden' name='parent_comment' value="-1">
+</form>
+<button type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
+ <i class="fas fa-thumbs-down"></i>
+</button>
+<!-- show like count summary -->
+<?php foreach ($counterLikes as $Tdown): ?>
+<?php if ($Tdown['date'] == $comment->review_date): ?>
+<h2 id="dislikess"><?php echo $Tdown['COUNT(dislikevalue)'] ?></h2>
+<?php $nope2 = 1; ?>
+<?php endif; ?>
+<?php endforeach; ?>
+<?php if ($nope2 == 0): ?>
+<h2 id="likess">&nbsp;</h2>
+<?php $nope2 == 0; ?>
+<?php endif; ?>
+</div>
+<!-- end of likes section -->
    <button class="open-button" onclick="openForm(<?php echo $num; ?>)">reply</button>
      <div class="form-popup" id="<?php echo $num; ?>">
       <form class="form-container" method="POST" action="../user_rating_form.php">
