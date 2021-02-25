@@ -640,7 +640,32 @@ e.preventDefault();
     });
 
 });
+// likes click events stop submit with ajax call
+$('.likesContainer').submit(function(e){
+e.preventDefault();
+        $.ajax({
+            url     : $(this).attr('action'),
+            type    : $(this).attr('method'),
+            data    : $(this).serialize()
+           /* success : function() {
+             alert('liked!');
+            //alert("Thanks for your comment");
+        }*/
+    });
 
+});
+$('.dislikesContainer').submit(function(e){
+e.preventDefault();
+        $.ajax({
+            url     : $(this).attr('action'),
+            type    : $(this).attr('method'),
+            data    : $(this).serialize()
+            /*success : function() {
+             alert('didnt like it!');
+        }*/
+    });
+
+});
     </script>
 </body>
 </html>
