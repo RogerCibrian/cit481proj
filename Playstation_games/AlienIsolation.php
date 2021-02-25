@@ -390,7 +390,7 @@ placeholder="Enter your comment here..."></textarea>
   <!--start of likes section -->
   <div class="LikeAndReplies">
 <!-- form for likes -->
-<form class="likesContainer" action="./likesdislikes.php" method="POST" id="l<?php echo $num; ?>">
+<form class="likesContainer" action="../likesdislikes.php" method="POST" id="l<?php echo $num; ?>">
 <input type="hidden" id="input1" value="1" name="input1">
 <input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
@@ -412,10 +412,10 @@ placeholder="Enter your comment here..."></textarea>
 <?php $nope = 0; ?>
 <?php endif; ?>
 <!-- form for dislikes-->
-<form class="dislikesContainer" action="./likesdislikes.php" method="POST" id="d<?php echo $num; ?>">
+<form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="d<?php echo $num; ?>">
 <input type="hidden" id="input2" value="1" name="input2">
 <input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
-<input type='hidden' name='page_id' value="<?php echo $id; ?>">
+<input type='hidden' name='page_id' value="<?php echo $page; ?>">
 <input type='hidden' name='date' value="<?php echo $comment->review_date; ?>">
 <input type='hidden' name='parent_comment' value="-1">
 </form>
