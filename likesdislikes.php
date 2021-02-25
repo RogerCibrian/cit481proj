@@ -32,7 +32,7 @@ if (isset($_POST['input2'])) {
 
         }
 }
-function LikesCount($con){
+/*function LikesCount($con){
     //class Thumbs {}
     $p = 7;
     $stmt2 = $con->prepare("SELECT date, COUNT(likesvalue), COUNT(dislikevalue) FROM likes WHERE page = ? GROUP BY date ORDER BY date DESC");
@@ -67,5 +67,5 @@ function likes($x,$con){
 //      return = $likess;
     //print_r($likess);
 }
-
+*/
 ?> 
