@@ -397,7 +397,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='date' value="<?php echo $comment->review_date; ?>">
 <input type='hidden' name='parent_comment' value="-1";>
 </form>
-<button class="btn" type="submit" form="l<?php echo $num; ?>" value="Submit" id="likebtn">
+<button class="btn2" type="submit" form="l<?php echo $num; ?>" value="Submit" id="likebtn">
  <i class="fas fa-thumbs-up"></i>
 </button>
 <!-- show like count summary -->
