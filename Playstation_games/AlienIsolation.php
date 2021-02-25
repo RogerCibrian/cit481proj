@@ -381,7 +381,7 @@ placeholder="Enter your comment here..."></textarea>
         </div>
     <div class="comment_container">
 	<div class="count"><h2><b><?php echo "$comm"; ?> comments</b></h2></div>
- 	<div class="Comments">
+ 	<div class="Comments" id="pComments";>
         <?php foreach ($multiobj as $comment): ?>
 	<?php if ($comment->review_parent == -1): ?>
 <div class="comment">
@@ -529,6 +529,14 @@ placeholder="Enter your comment here..."></textarea>
 //likes section 
 // pass php array to javascript array in json format
 var lArray = <?php echo json_encode($userLikes) ?>;
+//grab the parent element which comments are a part of
+const parent = document.getElementById('pComments');
+var countn = 0;
+//save all clicks a user does before refreshing the page
+var arrayClicks = [];
+//add event listener to parent, any event in children element events will bubble up to this element
+
+
 $('.userrating-form').submit(function(e){
 e.preventDefault();
         $.ajax({
