@@ -32,9 +32,9 @@ if (isset($_POST['input2'])) {
 
         }
 }
-/*function LikesCount($con){
+function LikesCount($con,$page){
     //class Thumbs {}
-    $p = 7;
+    $p = 52;
     $stmt2 = $con->prepare("SELECT date, COUNT(likesvalue), COUNT(dislikevalue) FROM likes WHERE page = ? GROUP BY date ORDER BY date DESC");
     $stmt2->bind_param('i', $p);
     $stmt2->execute();
@@ -44,6 +44,7 @@ if (isset($_POST['input2'])) {
     return $arr;
     $stmt2->close();
 }
+/*
 //get user likes and dislikes per date
 function LikesCount2($con,$usr,$id){
     //class Thumbs {}
