@@ -3,7 +3,7 @@ session_start();
 include '../test_connection.php';
 include '../user_rating_form.php';
 include '/var/www/html/rememberme.php';
-
+include '../likesdislikes.php';
 //multidimentional array of objects
 $page = 50;
 $multiobj = display_comments($page,$con);
@@ -14,6 +14,9 @@ $avr_final = round($average_r);
 $final_avg = 5;
 $final_avg -= $avr_final;
 //print_r($avr_final);
+$counterLikes = LikesCount($con);
+$usrName = $_SESSION['name'];
+$userLikes = LikesCount2($con,$usrName,$page);
 //count how many comments have been submitted.
 //need to include a where clause to filter correct page
 $nbc = $con->prepare("SELECT COUNT(review_id) FROM reviews WHERE Review_game = $page");
@@ -392,6 +395,52 @@ placeholder="Enter your comment here..."></textarea>
 <div class="comment">
  <div class="name"><?php echo $comment->user_username; ?> <span class="date"> <?php echo $comment->review_date; ?></span></div>
   <div class="Content"><?php echo $comment->review_content; ?> </div>
+  <!-- start of like section -->
+<div class="LikeAndReplies">
+<!-- form for likes -->
+<form class="likesContainer" action="./likesdislikes.php" method="POST" id="l<?php echo $num; ?>">
+<input type="hidden" id="input1" value="1" name="input1">
+<input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
+<input type='hidden' name='page_id' value="<?php echo $id; ?>">
+<input type='hidden' name='date' value="<?php echo $comment->comment_date; ?>">
+<input type='hidden' name='parent_comment' value="-1";>
+</form>
+<button class="btn" type="submit" form="l<?php echo $num; ?>" value="Submit" id="likebtn">
+ <i class="fas fa-thumbs-up"></i>
+</button>
+<!-- show like count summary -->
+<?php foreach ($counterLikes as $Tup): ?>
+<?php if ($Tup['date'] == $comment->comment_date): ?>
+<h2 id="likess"><?php echo $Tup['COUNT(likesvalue)'] ?></h2>
+<?php $nope = 1; ?>
+<?php endif; ?>
+<?php endforeach; ?>
+<?php if ($nope == 0): ?>
+<h2 id="likess">&nbsp;</h2>
+<?php $nope = 0; ?>
+<?php endif; ?>
+<!-- form for dislikes-->
+<form class="dislikesContainer" action="./likesdislikes.php" method="POST" id="d<?php echo $num; ?>">
+<input type="hidden" id="input2" value="1" name="input2">
+<input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
+<input type='hidden' name='page_id' value="<?php echo $id; ?>">
+<input type='hidden' name='date' value="<?php echo $comment->comment_date; ?>">
+<input type='hidden' name='parent_comment' value="-1">
+</form>
+<button type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
+ <i class="fas fa-thumbs-down"></i>
+</button>
+<!-- show like count summary -->
+<?php foreach ($counterLikes as $Tdown): ?>
+<?php if ($Tdown['date'] == $comment->comment_date): ?>
+<h2 id="dislikess"><?php echo $Tdown['COUNT(dislikevalue)'] ?></h2>
+<?php $nope2 = 1; ?>
+<?php endif; ?>
+<?php endforeach; ?>
+<?php if ($nope2 == 0): ?>
+<h2 id="likess">&nbsp;</h2>
+<?php $nope2 == 0; ?>
+<?php endif; ?>
    <button class="open-button" onclick="openForm(<?php echo $num; ?>)">reply</button>
      <div class="form-popup" id="<?php echo $num; ?>">
       <form class="form-container" method="POST" action="../user_rating_form.php">
@@ -416,6 +465,55 @@ placeholder="Enter your comment here..."></textarea>
         <div class="name"><?php echo $replies->user_username;?><span> <?php echo $replies->review_date;?></span></div>
         <div class="Content"><?php echo $replies->review_content;?></div>
     </div>
+<!-- likes for replies -->
+ <div class="LikeAndReplies2">
+<!-- form for likes -->
+<form class="likesContainer" action="./likesdislikes.php" method="POST" id="e<?php echo $num; ?>">
+<input type="hidden" id="input1" value="1" name="input1">
+<input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
+<input type='hidden' name='page_id' value="<?php echo $id; ?>">
+<input type='hidden' name='date' value="<?php echo $replies->comment_date; ?>">
+<input type='hidden' name='parent_comment' value="<?php echo $replies->comment_id; ?>">
+</form>
+<button type="submit" form="e<?php echo $num; ?>" value="Submit" id="likebtn">
+ <i class="fas fa-thumbs-up"></i>
+</button>
+<!-- show like count summary -->
+<!-- show like count summary -->
+<?php foreach ($counterLikes as $Tup): ?>
+<?php if ($Tup['date'] == $replies->comment_date): ?>
+<h2 id="likess"><?php echo $Tup['COUNT(likesvalue)'] ?></h2>
+<?php $nope3 = 1; ?>
+<?php endif; ?>
+<?php endforeach; ?>
+<?php if ($nope3 == 0): ?>
+<h2 id="likess">&nbsp;</h2>
+<?php $nope3 = 0; ?>
+<?php endif; ?>
+<!-- form for dislikes-->
+<form class="dislikesContainer" action="./likesdislikes.php" method="POST" id="f<?php echo $num; ?>">
+<input type="hidden" id="input2" value="1" name="input2">
+<input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
+<input type='hidden' name='page_id' value="<?php echo $id; ?>">
+<input type='hidden' name='date' value="<?php echo $replies->comment_date; ?>">
+<input type='hidden' name='parent_comment' value="<?php echo $replies->comment_id; ?>">
+</form>
+<button type="submit" form="f<?php echo $num; ?>" value="Submit" id="dislikebtn">
+ <i class="fas fa-thumbs-down"></i>
+</button>
+<!-- show like count summary -->
+<?php foreach ($counterLikes as $Tdown): ?>
+<?php if ($Tdown['date'] == $replies->comment_date): ?>
+<h2 id="dislikess"><?php echo $Tdown['COUNT(dislikevalue)'] ?></h2>
+<?php $nope4 = 1; ?>
+<?php endif; ?>
+<?php endforeach; ?>
+<?php if ($nope4 == 0): ?>
+<h2 id="likess">&nbsp;</h2>
+<?php $nope4 = 0; ?>
+<?php endif; ?>
+</div>
+</div>
 		 <?php endif; ?>
 		 <?php endif; ?>
 		 <?php endforeach; ?>
@@ -483,7 +581,90 @@ placeholder="Enter your comment here..."></textarea>
   function closeForm($id) {
    document.getElementById($id).style.display = "none";
 }
-
+// ::::::::::::section for likes::::::::::::::::
+// pass php array to javascript array in json format
+var lArray = <?php echo json_encode($userLikes) ?>;
+//grab the parent element which comments are a part of
+const parent = document.getElementById('pComments');
+var countn = 0;
+//save all clicks a user does before refreshing the page
+//add event listener to parent, any event in children element events will bubble up to this element
+var arrayClicks = [];
+parent.addEventListener('click', event => {
+        if (event.target.className === 'fas fa-thumbs-up'){
+          //get the date associated with the liked event
+          let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
+          //get the <h> tag to add to the count summary of the liked event
+          let str2 = event.target.parentElement.nextElementSibling;
+          //start at the closing character of the first span tag
+          str = str.substring(str.indexOf(">") + 2);
+          //start at 0 index and end at opening character of the closing span tag
+          str = str.substring(0, str.indexOf('<'));
+          // for loop check if user already liked on that date
+          for (let i = 0; i < lArray.length; i++){
+           let a = lArray[i].date;
+           //let b = lArray[i]["COUNT(likesvalue)"];
+           let c = lArray[i]["COUNT(dislikevalue)"];
+           let dt1 = str.trim();
+            if (dt1 === a){
+             countn = 1;
+            }
+          }
+           if (countn === 0 && arrayClicks.indexOf(str.trim()) == -1){
+            //add 1 to the counter
+            arrayClicks.push(str.trim());
+            //  console.log(arrayClicks[0]);
+            let e = 1;
+            let d = Number(str2.innerHTML);
+            if (Number.isFinite(d)){
+            let f = e+d;
+            str2.innerHTML = f;
+            } else {
+            str2.innerHTML = e;
+            }
+            //console.log(e);
+          } else{
+             countn = 0;
+           }
+        }
+        else if (event.target.className === 'fas fa-thumbs-down'){
+          //get the date associated with the liked event
+          let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
+          //get the <h> tag to add to the count summary of the liked event
+          let str2 = event.target.parentElement.nextElementSibling;
+          //start at the closing character of the first span tag
+          str = str.substring(str.indexOf(">") + 2);
+          //start at 0 index and end at opening character of the closing span tag
+          str = str.substring(0, str.indexOf('<'));
+          // for loop check if user already liked on that date
+          for (let i = 0; i < lArray.length; i++){
+           let a = lArray[i].date;
+           let b = lArray[i]["COUNT(likesvalue)"];
+           //let c = lArray[i]["COUNT(dislikevalue)"];
+           let dt1 = str.trim();
+            if (dt1 === a){
+             countn = 1;
+            }
+          }
+           if (countn === 0 && arrayClicks.indexOf(str.trim()) == -1){
+            //put date into array
+            arrayClicks.push(str.trim());
+            //add 1 to the counter
+            let e = 1;
+            let d = Number(str2.innerHTML);
+            if (Number.isFinite(d)){
+            let f = e+d;
+            str2.innerHTML = f;
+            } else {
+            str2.innerHTML = e;
+            }
+            //console.log(e);
+           } else{
+             countn = 0;
+           }
+        }
+});
+// END of like section 
 $('.userrating-form').submit(function(e){
 e.preventDefault();
         $.ajax({
