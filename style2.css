@@ -77,4 +77,21 @@
 .stars #one:checked ~ .result:before{
   content: "I hate it 😠";
 }
-
+.LikeAndReplies{
+  /* this container is absolute because its inside another div so it
+  can go in the bottom of the first container */
+  /*position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0px;
+  margin-left:40px;*/
+  }
+  .LikeAndReplies2{
+    /* this container is absolute because its inside another div so it
+    can go in the bottom of the first container */
+    /*position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0px;
+    margin-left:40px;*/
+    }
