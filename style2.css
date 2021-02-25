@@ -87,11 +87,11 @@
   .LikeAndReplies2{
     /* this container is absolute because its inside another div so it
     can go in the bottom of the first container */
-    /*position: absolute;
+    /*position: absolute;*/
     display: flex;
     align-items: center;
     bottom: 0px;
-    margin-left:40px;*/
+    /*margin-left:40px;*/
     }
 #likebtn{
     width:20px;
