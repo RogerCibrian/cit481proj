@@ -3,7 +3,7 @@ session_start();
 include '../test_connection.php';
 include '../user_rating_form.php';
 include '/var/www/html/rememberme.php';
-
+include '../likesdislikes.php';
 //multidimentional array of objects
 $page = 52;
 $multiobj = display_comments($page,$con);
