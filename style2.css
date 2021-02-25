@@ -125,3 +125,12 @@ font-size: 18px;
 margin: 0 5px;
 pointer-events: none;
 }
+#dislikess{
+width:18px;
+border: none;
+background: none;
+color: #919191;
+font-size: 18px;
+margin: 0 5px;
+pointer-events:none;
+}
