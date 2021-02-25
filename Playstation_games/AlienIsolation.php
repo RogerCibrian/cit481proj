@@ -430,7 +430,7 @@ placeholder="Enter your comment here..."></textarea>
 <?php endif; ?>
 <?php endforeach; ?>
 <?php if ($nope2 == 0): ?>
-<h2 id="likess">&nbsp;</h2>
+<h2 id="dislikess">&nbsp;</h2>
 <?php $nope2 == 0; ?>
 <?php endif; ?>
 </div>
@@ -526,7 +526,9 @@ placeholder="Enter your comment here..."></textarea>
   function closeForm($id) {
    document.getElementById($id).style.display = "none";
 }
-
+//likes section 
+// pass php array to javascript array in json format
+var lArray = <?php echo json_encode($userLikes) ?>;
 $('.userrating-form').submit(function(e){
 e.preventDefault();
         $.ajax({
