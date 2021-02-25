@@ -545,7 +545,7 @@ parent.addEventListener('click', event => {
           let str3 = event.target.parentElement.outerHTML;
           console.log(str3);
           //start at the closing character of the first span tag
-          str = str.substring(str.indexOf(">") + 2);
+          /*str = str.substring(str.indexOf(">") + 2);
           //start at 0 index and end at opening character of the closing span tag
           str = str.substring(0, str.indexOf('<'));
           // for loop check if user already liked on that date
@@ -574,7 +574,7 @@ parent.addEventListener('click', event => {
             //console.log(e);
            } else{
              countn = 0;
-           }
+           }*/
         }
         else if (event.target.className === 'fas fa-thumbs-down'){
           //get the date associated with the liked event
