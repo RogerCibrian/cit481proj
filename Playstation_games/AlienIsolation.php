@@ -558,7 +558,7 @@ parent.addEventListener('click', event => {
             if (dt1 === a){
              countn = 1;
             }
-          }
+          }/*
           if (countn === 0 && arrayClicks.indexOf(str.trim()) == -1){
             //add 1 to the counter
                 arrayClicks.push(str.trim());
