@@ -1,0 +1,5 @@
+include '../likesdislikes.php';
+
+$counterLikes = LikesCount($con,$page);
+$usrName = $_SESSION['name'];
+$userLikes = LikesCount2($con,$usrName,$page);
