@@ -590,8 +590,6 @@ parent.addEventListener('click', event => {
           let str2 = event.target.parentElement.nextElementSibling;
           // date associated with event
           let str3 = event.target.parentElement.parentElement.parentElement.firstElementChild.innerHTML;
-          console.log(str3);
-          console.log(str2);
           //start at the closing character of the first span tag
           str3 = str3.substring(str3.indexOf(">") + 2);
           //start at 0 index and end at opening character of the closing span tag
