@@ -547,9 +547,9 @@ parent.addEventListener('click', event => {
           console.log(str3);
           console.log(str2);
           //start at the closing character of the first span tag
-          str3 = str3.substring(str.indexOf(">") + 2);
+          str3 = str3.substring(str3.indexOf(">") + 2);
           //start at 0 index and end at opening character of the closing span tag
-          str3 = str3.substring(0, str.indexOf('<'));
+          str3 = str3.substring(0, str3.indexOf('<'));
           // for loop check if user already liked on that date
           for (let i = 0; i < lArray.length; i++){
            let a = lArray[i].date;
@@ -584,7 +584,7 @@ parent.addEventListener('click', event => {
           //get the <h> tag to add to the count summary of the liked event
           let str2 = event.target.parentElement.nextElementSibling;
           //start at the closing character of the first span tag
-          str3 = str3.substring(str.indexOf(">") + 2);
+          str3 = str3.substring(str3.indexOf(">") + 2);
           //start at 0 index and end at opening character of the closing span tag
           str3 = str3.substring(0, str3.indexOf('<'));
           // for loop check if user already liked on that date
