@@ -1,1 +1,1 @@
-sed "/include '..\/likesdislikes.php';/ r AliensVPredExct.php;
+include '../likesdislikes.php';
