@@ -1,5 +1,5 @@
 <?php
-include '/test_connection.php';
+include 'test_connection.php';
 // Check connection
 //if ($conn->connect_error) {
  // die("Connection failed: " . $conn->connect_error);
