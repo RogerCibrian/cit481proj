@@ -111,3 +111,10 @@
   font-size: 15px;
   outline:none;
   }
+  .fas{
+    color:#A0A0A0;
+    margin-right:10px;
+    }
+    .fas:hover{
+    color:#787878;
+    }
