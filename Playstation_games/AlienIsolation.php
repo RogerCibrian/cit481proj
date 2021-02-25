@@ -14,6 +14,7 @@ $avr_final = round($average_r);
 $final_avg = 5;
 $final_avg -= $avr_final;
 //print_r($avr_final);
+$counterLikes = LikesCount($con,$page);
 //count how many comments have been submitted.
 //need to include a where clause to filter correct page
 $nbc = $con->prepare("SELECT COUNT(review_id) FROM reviews WHERE Review_game = $page");
