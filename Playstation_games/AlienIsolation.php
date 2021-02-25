@@ -580,7 +580,7 @@ parent.addEventListener('click', event => {
           //get the date associated with the liked event
           let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
           //get the <h> tag to add to the count summary of the liked event
-          let str2 = event.target.parentElement.nextElementSibling;
+          /*let str2 = event.target.parentElement.nextElementSibling;
           //start at the closing character of the first span tag
           str = str.substring(str.indexOf(">") + 2);
           //start at 0 index and end at opening character of the closing span tag
@@ -610,7 +610,7 @@ parent.addEventListener('click', event => {
             //console.log(e);
            } else{
              countn = 0;
-           }
+           }*/
         }
 });          
 
