@@ -539,7 +539,7 @@ var arrayClicks = [];
 parent.addEventListener('click', event => {
         if (event.target.className === 'fas fa-thumbs-up'){
           //get the date associated with the liked event
-          let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
+          //let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
           //get the <h> tag to add to the count summary of the liked event
           let str2 = event.target.parentElement.nextElementSibling;
           let str3 = event.target.parentElement.outerHTML;
@@ -578,7 +578,7 @@ parent.addEventListener('click', event => {
         }
         else if (event.target.className === 'fas fa-thumbs-down'){
           //get the date associated with the liked event
-          let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
+          let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild;
           //get the <h> tag to add to the count summary of the liked event
           /*let str2 = event.target.parentElement.nextElementSibling;
           //start at the closing character of the first span tag
