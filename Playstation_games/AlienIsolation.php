@@ -544,10 +544,11 @@ parent.addEventListener('click', event => {
           let str2 = event.target.parentElement.nextElementSibling;
           let str3 = event.target.parentElement.parentElement.parentElement.firstElementChild.innerHTML;
           console.log(str3);
+          console.log(str2);
           //start at the closing character of the first span tag
-          /*str = str.substring(str.indexOf(">") + 2);
+          str3 = str.substring(str.indexOf(">") + 2);
           //start at 0 index and end at opening character of the closing span tag
-          str = str.substring(0, str.indexOf('<'));
+          str3 = str.substring(0, str.indexOf('<'));
           // for loop check if user already liked on that date
           for (let i = 0; i < lArray.length; i++){
            let a = lArray[i].date;
