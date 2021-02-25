@@ -458,6 +458,7 @@ placeholder="Enter your comment here..."></textarea>
      <div class="replies">
         <div class="name"><?php echo $replies->user_username;?><span> <?php echo $replies->review_date;?></span></div>
         <div class="Content"><?php echo $replies->review_content;?></div>
+<!-- start of likes for replies-->
         <div class="LikeAndReplies2">
 <!-- form for likes for replies-->
 <form class="likesContainer" action="../likesdislikes.php" method="POST" id="e<?php echo $num; ?>">
