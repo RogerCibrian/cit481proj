@@ -46,6 +46,7 @@ $num = 0;
   />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/961faa2e94.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/main.css" />
   <link rel="stylesheet" href="../style2.css" />
    <style>
@@ -605,4 +606,32 @@ e.preventDefault();
 
 });
 
+// likes click events stop submit with ajax call
+$('.likesContainer').submit(function(e){
+e.preventDefault();
+        $.ajax({
+            url     : $(this).attr('action'),
+            type    : $(this).attr('method'),
+            data    : $(this).serialize()
+           /* success : function() {
+             alert('liked!');
+            //alert("Thanks for your comment");
+        }*/
+    });
+
+});
+$('.dislikesContainer').submit(function(e){
+e.preventDefault();
+        $.ajax({
+            url     : $(this).attr('action'),
+            type    : $(this).attr('method'),
+            data    : $(this).serialize()
+            /*success : function() {
+             alert('didnt like it!');
+        }*/
+    });
+
+});
     </script>
+</body>
+</html>
