@@ -5,8 +5,8 @@ include '../test_connection.php';
 include '../user_rating_form.php';
 //include '../rememberme.php';
 include '../rememberme.php';
-
 include '../likesdislikes.php';
+$page = 100;
 //multidimentional array of objects
 $multiobj = display_comments(2,$con);
 $multiobj2 = display_comments2(2,$con);

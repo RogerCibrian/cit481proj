@@ -2,9 +2,9 @@
 session_start();
 include '../test_connection.php';
 include '../user_rating_form.php';
-
 include '../rememberme.php';
 include '../likesdislikes.php';
+$page = 101;
 //multidimentional array of objects
 $multiobj = display_comments(3,$con);
 $multiobj2 = display_comments2(3,$con);
