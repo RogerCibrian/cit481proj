@@ -610,10 +610,12 @@ parent.addEventListener('click', event => {
             //  console.log(arrayClicks[0]);
             let e = 1;
             let d = Number(str2.innerHTML);
+            console.log(d);
             if (Number.isFinite(d)){
             let f = e+d;
             str2.innerHTML = f;
             } else {
+              console.log(e);
             str2.innerHTML = e;
             }
 
