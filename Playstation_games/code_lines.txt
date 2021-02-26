@@ -1,5 +1,1 @@
-include '../likesdislikes.php';
-
-$counterLikes = LikesCount($con,$page);
-$usrName = $_SESSION['name'];
-$userLikes = LikesCount2($con,$usrName,$page);
+<script src="https://kit.fontawesome.com/961faa2e94.js" crossorigin="anonymous"></script>
