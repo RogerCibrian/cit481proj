@@ -85,4 +85,4 @@ parent.addEventListener('click', event => {
            }
         }
 });          
- 
+ $('.userrating-form').submit(function(e){

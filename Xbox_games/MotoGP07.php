@@ -590,7 +590,6 @@ placeholder="Enter your comment here..."></textarea>
    document.getElementById($id).style.display = "none";
 }
 
-$('.userrating-form').submit(function(e){
 //likes section 
 // pass php array to javascript array in json format
 var lArray = <?php echo json_encode($userLikes) ?>;
