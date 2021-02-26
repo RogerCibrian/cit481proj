@@ -4,7 +4,6 @@ include '../test_connection.php';
 include '../user_rating_form.php';
 include '/var/www/html/rememberme.php';
 
-//multidimentional array of objects
 $page = 48;
 $multiobj = display_comments($page,$con);
 $multiobj2 = display_comments2($page,$con);
@@ -603,6 +602,7 @@ include '../test_connection.php';
 include '../user_rating_form.php';
 include '/var/www/html/rememberme.php';
 
+include '../likesdislikes.php';
 //multidimentional array of objects
 $page = 49;
 $multiobj = display_comments($page,$con);
@@ -1187,6 +1187,7 @@ include '../test_connection.php';
 include '../user_rating_form.php';
 include '/var/www/html/rememberme.php';
 
+include '../likesdislikes.php';
 //multidimentional array of objects
 $page = 50;
 $multiobj = display_comments($page,$con);
