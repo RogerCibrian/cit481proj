@@ -4,6 +4,7 @@ include '../test_connection.php';
 include '../user_rating_form.php';
 include '/var/www/html/rememberme.php';
 
+include '../likesdislikes.php';
 //multidimentional array of objects
 $page = 51;
 $multiobj = display_comments($page,$con);
@@ -14,6 +15,9 @@ $avr_final = round($average_r);
 $final_avg = 5;
 $final_avg -= $avr_final;
 //print_r($avr_final);
+$counterLikes = LikesCount($con,$page);
+$usrName = $_SESSION['name'];
+$userLikes = LikesCount2($con,$usrName,$page);
 //count how many comments have been submitted.
 //need to include a where clause to filter correct page
 $nbc = $con->prepare("SELECT COUNT(review_id) FROM reviews WHERE Review_game = $page");
@@ -53,6 +57,7 @@ $num = 0;
   />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/961faa2e94.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/main.css" />
   <link rel="stylesheet" href="../style2.css" />
    <style>
@@ -630,7 +635,94 @@ placeholder="Enter your comment here..."></textarea>
   function closeForm($id) {
    document.getElementById($id).style.display = "none";
 }
+//likes section 
+// pass php array to javascript array in json format
+var lArray = <?php echo json_encode($userLikes) ?>;
+//grab the parent element which comments are a part of
+const parent = document.getElementById('pComments');
+var countn = 0;
+//save all clicks a user does before refreshing the page
+var arrayClicks = [];
+//add event listener to parent, any event in children element events will bubble up to this element
+var arrayClicks = [];
+parent.addEventListener('click', event => {
+        if (event.target.className === 'fas fa-thumbs-up'){
+          //get the date associated with the liked event
+          //let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
+          //get the <h> tag to add to the count summary of the liked event
+          let str2 = event.target.parentElement.nextElementSibling;
+          // date associated with event
+          let str3 = event.target.parentElement.parentElement.parentElement.firstElementChild.innerHTML;
+          //start at the closing character of the first span tag
+          str3 = str3.substring(str3.indexOf(">") + 2);
+          //start at 0 index and end at opening character of the closing span tag
+          str3 = str3.substring(0, str3.indexOf('<'));
+          // for loop check if user already liked on that date
+          for (let i = 0; i < lArray.length; i++){
+           let a = lArray[i].date;
+           //let b = lArray[i]["COUNT(likesvalue)"];
+           let c = lArray[i]["COUNT(dislikevalue)"];
+           let dt1 = str3.trim();
+            if (dt1 === a){
+             countn = 1;
+            }
+          }
+          if (countn === 0 && arrayClicks.indexOf(str3.trim()) == -1){
+            //add 1 to the counter
+                arrayClicks.push(str3.trim());
+            //  console.log(arrayClicks[0]);
+            let e = 1;
+            let d = Number(str2.innerHTML);
+            if (Number.isFinite(d)){
+            let f = e+d;
+            str2.innerHTML = f;
+            } else {
+            str2.innerHTML = e;
+            }
 
+            //console.log(e);
+           } else{
+             countn = 0;
+           }
+        }
+        else if (event.target.className === 'fas fa-thumbs-down'){
+          //get the date associated with the liked event
+          let str3 = event.target.parentElement.parentElement.parentElement.firstElementChild.innerHTML;
+          //get the <h> tag to add to the count summary of the liked event
+          let str2 = event.target.parentElement.nextElementSibling;
+          //start at the closing character of the first span tag
+          str3 = str3.substring(str3.indexOf(">") + 2);
+          //start at 0 index and end at opening character of the closing span tag
+          str3 = str3.substring(0, str3.indexOf('<'));
+          // for loop check if user already liked on that date
+          for (let i = 0; i < lArray.length; i++){
+           let a = lArray[i].date;
+           let b = lArray[i]["COUNT(likesvalue)"];
+           //let c = lArray[i]["COUNT(dislikevalue)"];
+           let dt1 = str3.trim();
+            if (dt1 === a){
+             countn = 1;
+            }
+          }
+          if (countn === 0 && arrayClicks.indexOf(str3.trim()) == -1){
+            //put date into array
+            arrayClicks.push(str3.trim());
+            //add 1 to the counter
+            let e = 1;
+            let d = Number(str2.innerHTML);
+            if (Number.isFinite(d)){
+            let f = e+d;
+            str2.innerHTML = f;
+            } else {
+            str2.innerHTML = e;
+            }
+            //console.log(e);
+           } else{
+             countn = 0;
+           }
+        }
+});          
+ 
 $('.userrating-form').submit(function(e){
 e.preventDefault();
         $.ajax({
@@ -660,7 +752,32 @@ e.preventDefault();
 
 });
 
+// likes click events stop submit with ajax call
+$('.likesContainer').submit(function(e){
+e.preventDefault();
+        $.ajax({
+            url     : $(this).attr('action'),
+            type    : $(this).attr('method'),
+            data    : $(this).serialize()
+           /* success : function() {
+             alert('liked!');
+            //alert("Thanks for your comment");
+        }*/
+    });
+
+});
+$('.dislikesContainer').submit(function(e){
+e.preventDefault();
+        $.ajax({
+            url     : $(this).attr('action'),
+            type    : $(this).attr('method'),
+            data    : $(this).serialize()
+            /*success : function() {
+             alert('didnt like it!');
+        }*/
+    });
+
+});
     </script>
 </body>
 </html>
-
