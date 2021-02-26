@@ -1,7 +1,3 @@
-one
-two
-three
-four
 // likes click events stop submit with ajax call
 $('.likesContainer').submit(function(e){
 e.preventDefault();
