@@ -431,7 +431,7 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope2 == 0): ?>
 <h2 id="dislikess">&nbsp;</h2>
-<?php $nope2 == 0; ?>
+<?php $nope2 = 0; ?>
 <?php endif; ?>
 </div>
 <!-- end of likes section for parent comments--> 

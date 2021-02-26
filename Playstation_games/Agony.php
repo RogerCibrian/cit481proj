@@ -428,7 +428,7 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope2 == 0): ?>
 <h2 id="dislikess">&nbsp;</h2>
-<?php $nope2 == 0; ?>
+<?php $nope2 = 0; ?>
 <?php endif; ?>
 </div>
 <!-- end of likes section for parent comments-->
@@ -499,7 +499,7 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope4 == 0): ?>
 <h2 id="dislikess">&nbsp;</h2>
-<?php $nope4 == 0; ?>
+<?php $nope4 = 0; ?>
 <?php endif; ?>
     </div>    
     </div>
@@ -586,6 +586,7 @@ parent.addEventListener('click', event => {
           //let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
           //get the <h> tag to add to the count summary of the liked event
           let str2 = event.target.parentElement.nextElementSibling;
+          console.log(str2);
           // date associated with event
           let str3 = event.target.parentElement.parentElement.parentElement.firstElementChild.innerHTML;
           //start at the closing character of the first span tag
