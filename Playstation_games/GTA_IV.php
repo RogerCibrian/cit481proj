@@ -4,6 +4,7 @@ include '../test_connection.php';
 include '../user_rating_form.php';
 include '/var/www/html/rememberme.php';
 
+include '../likesdislikes.php;
 //multidimentional array of objects
 $page = 66;
 $multiobj = display_comments($page,$con);
@@ -14,6 +15,9 @@ $avr_final = round($average_r);
 $final_avg = 5;
 $final_avg -= $avr_final;
 //print_r($avr_final);
+$counterLikes = LikesCount($con,$page);
+= [''name''];
+$userLikes = LikesCount2($con,$usrName,$page);
 //count how many comments have been submitted.
 //need to include a where clause to filter correct page
 $nbc = $con->prepare("SELECT COUNT(review_id) FROM reviews WHERE Review_game = $page");
@@ -613,6 +617,3 @@ e.preventDefault();
 });
 
     </script>
-</body>
-</html>
-
