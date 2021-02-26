@@ -380,7 +380,7 @@ placeholder="Enter your comment here..."></textarea>
         </div>
     <div class="comment_container">
 	<div class="count"><h2><b><?php echo "$comm"; ?> comments</b></h2></div>
- 	<div class="Comments">
+ 	<div class="Comments" id="pComments">
         <?php foreach ($multiobj as $comment): ?>
 	<?php if ($comment->review_parent == -1): ?>
 <div class="comment">
