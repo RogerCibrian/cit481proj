@@ -45,4 +45,3 @@
 <?php $nope4 == 0; ?>
 <?php endif; ?>
     </div>
-</div>
