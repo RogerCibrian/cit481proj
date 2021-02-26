@@ -513,7 +513,8 @@ placeholder="Enter your comment here..."></textarea>
 <h2 id="dislikess">&nbsp;</h2>
 <?php $nope4 == 0; ?>
 <?php endif; ?>
-    </div>    </div>
+    </div>    
+    </div>
 		 <?php endif; ?>
 		 <?php endif; ?>
 		 <?php endforeach; ?>
@@ -668,7 +669,7 @@ parent.addEventListener('click', event => {
            }
         }
 });          
- 
+
 $('.userrating-form').submit(function(e){
 e.preventDefault();
         $.ajax({
