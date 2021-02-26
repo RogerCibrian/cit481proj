@@ -670,6 +670,7 @@ parent.addEventListener('click', event => {
            }
         }
 });          
+$('.userrating-form').submit(function(e){
  e.preventDefault();
         $.ajax({
             url     : $(this).attr('action'),

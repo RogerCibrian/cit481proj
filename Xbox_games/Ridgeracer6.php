@@ -668,7 +668,8 @@ parent.addEventListener('click', event => {
              countn = 0;
            }
         }
-});          
+});       
+$('.userrating-form').submit(function(e){
  e.preventDefault();
         $.ajax({
             url     : $(this).attr('action'),
