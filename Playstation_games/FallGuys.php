@@ -503,7 +503,7 @@ placeholder="Enter your comment here..."></textarea>
 <?php $nope4 == 0; ?>
 <?php endif; ?>
     </div>
-</div>    </div>
+</div>
 		 <?php endif; ?>
 		 <?php endif; ?>
 		 <?php endforeach; ?>
