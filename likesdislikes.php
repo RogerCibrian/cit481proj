@@ -36,7 +36,7 @@ function LikesCount($con,$page){
     //class Thumbs {}
     $p = 52;
     $stmt2 = $con->prepare("SELECT date, COUNT(likesvalue), COUNT(dislikevalue) FROM likes WHERE page = ? GROUP BY date ORDER BY date DESC");
-    $stmt2->bind_param('i', $p);
+    $stmt2->bind_param('i', $page);
     $stmt2->execute();
     $arr = $stmt2->get_result()->fetch_all(MYSQLI_ASSOC);
     //echo "hello there";
