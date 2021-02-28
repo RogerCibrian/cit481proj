@@ -310,9 +310,8 @@
 	</p>
 	<br>
 	
-        <div class="clearfix" style="width: auto;>
-          <button
-            type="cancel"
+        <div class="clearfix" style="width: auto;">
+          <button type="cancel"
             style="width: fit-content;"
             onclick="window.location='index.php';return false;"
             class="cancelbtn"
