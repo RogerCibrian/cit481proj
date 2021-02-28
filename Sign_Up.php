@@ -147,12 +147,12 @@
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 20px;
-       /* height: 750px;
-	width: 450px;*/
-	/*height: 100%;
-	width: 700px;*/
-	height: auto;
-	width:auto;
+		   /* height: 750px;
+		width: 450px;*/
+		/*height: 100%;
+		width: 700px;*/
+		height: auto;
+		width:auto;
         text-align: center;
        /* margin-left: 30%;
         margin-right: 50%;*/
@@ -161,7 +161,7 @@
       }
 
 	#SignUpAccount{
-		width: 700px;
+		width: fit-content;
 		margin: 0 auto;
 		padding: 10px 20px 20px 0;
 	}
@@ -175,7 +175,7 @@
 	form input#username, form input#email,
 	form input#phone, form input#PassInput,
 	form input#PassInput2{
-		width: 100%;
+		width: fit-content;
 		padding: 10px;
 		border: 1px solid #ccc;
 		border-radius: 4px;
@@ -199,6 +199,24 @@
           margin-top: 0;
         }
       }
+	  
+	  /*editing recaptcha for mobile devices*/
+	  .rc-anchor-logo-portrait{
+		  margin: 0;
+		  width: 58px;
+	  }
+	  .rc-anchor-normal .rc-anchor-pt{
+		  margin: 2px 11px 0 0;
+		  padding-right: 25px;
+		  position: absolute;
+		  right: 0;
+		  text-align: right;
+		  width: 276px;
+	  }
+	  .rc-anchor-light.rc-anchor-nnormal{
+		  border: 1px solid #d3d3d3;
+		  width: fit-content;
+	  }
     </style>
     <!---End of CSS style for sign form-->
   </head>
@@ -222,7 +240,8 @@
         <input type="text" name="lname" placeholder="Last name" maxlength="30" required />
         <input type="text" name="username" placeholder="Username" maxlength="20" required />
 	<input type="text" name="mailaddr" id="email" placeholder="Your Email Address" maxlength="40" required/>-->
-	
+	<br>
+	<br>
 	<span style="vertical-align:center;">
 		<label for="Username">Username:</label>
 		<input id="username" name="username" type="text" maxlength="20" placeholder="Ex: SpottyMilk45" required />
@@ -279,11 +298,11 @@
           <p style="float: left; text-indent: 5px; margin-top: 3px">Remember me</p>
 	</label>
 	<!--recaptcha thing for form-->
-		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; margin-left: 30%;"></div>
+		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px;"></div>
 	
 	
 	
-        <p style="text-align: center; text-indent: 15px;">
+        <p style="text-align: center; text-indent: 15px; width: fit-content; height:fit-content; padding-right: 10px;">
           By creating an account you agree to our
           <a href="Terms_Privacy.html" style="color: dodgerblue"
             >Terms & Privacy</a
