@@ -151,8 +151,8 @@
 		width: 450px;*/
 		/*height: 100%;
 		width: 700px;*/
-		height: auto;
-		width:auto;
+		height: fit-content;
+		width:fit-content;
         text-align: center;
        /* margin-left: 30%;
         margin-right: 50%;*/
@@ -161,7 +161,7 @@
       }
 
 	#SignUpAccount{
-		width: fit-content;
+		width: 100%;
 		margin: 0 auto;
 		padding: 10px 20px 20px 0;
 	}
@@ -175,7 +175,7 @@
 	form input#username, form input#email,
 	form input#phone, form input#PassInput,
 	form input#PassInput2{
-		width: fit-content;
+		width: 100%;
 		padding: 10px;
 		border: 1px solid #ccc;
 		border-radius: 4px;
@@ -241,16 +241,16 @@
         <input type="text" name="username" placeholder="Username" maxlength="20" required />
 	<input type="text" name="mailaddr" id="email" placeholder="Your Email Address" maxlength="40" required/>-->
 	
-	<span style="vertical-align:center;">
+	<span style="vertical-align:center; margin-left: 35px;width: 270px;">
 		<label for="Username">Username:</label>
 		<input id="username" name="username" type="text" maxlength="20" placeholder="Ex: SpottyMilk45" required />
 	</span>
 	<br>
-	<span>
+	<span style="margin-left: 35px;width: 270px;">
 		<label for="First Name">First Name:</label>
 		<input id="fname" name="fname" type="text" maxlength="30" placeholder="Ex: Janette" required />
 	</span>
-	<span>
+	<span style="margin-left: 35px;width: 270px;">
 		<label for="Last Name">Last Name:</label>
 		<input id="lname" name="lname" tye="text" maxlength="30" placeholder="Ex: Dubbert" required />
 	</span>
@@ -268,7 +268,7 @@
 		<label for="phonenumber">Phone Number:</label>
 		<input id="phone" name="phone" type="text" maxlength="12" placeholder="Ex: xxx-xxx-xxxx" required />
 	</span>
-	<span style="float:left; margin-left: 7%;">
+	<span style="margin-left: 15%; width: 265px; float: left;">
 		<label for="password">Password:</label>
         	<input type="password" name="user_pwd" id="PassInput" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}" title="Minimum eight characters, at least one uppercase, at least one lowercase letter, one number, and one special character"  placeholder="Enter Password" required/>
 	</span>
