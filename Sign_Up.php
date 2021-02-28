@@ -310,10 +310,10 @@
 	</p>
 	<br>
 	
-        <div class="clearfix">
+        <div class="clearfix" style="width: auto;>
           <button
             type="cancel"
-            style="width: 150px"
+            style="width: fit-content;"
             onclick="window.location='index.php';return false;"
             class="cancelbtn"
           >
@@ -322,7 +322,7 @@
           <button
             type="submit"
             name="signup-button"
-            style="width: 150px; margin-left: 45px"
+            style="width: fit-content; margin-left: 45px"
             class="signup"
           >
             Create Account
