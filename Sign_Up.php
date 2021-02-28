@@ -200,7 +200,7 @@
         }
       }
 	  
-	  /*editing recaptcha for mobile devices*/
+	  /*editing recaptcha for mobile devices used DevTools to find the div class names*/
 	  .rc-anchor-logo-portrait{
 		  margin: 0;
 		  width: 58px;
