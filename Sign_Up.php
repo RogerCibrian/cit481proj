@@ -296,12 +296,13 @@
           />
           <p style="float: left; text-indent: 5px; margin-top: 3px">Remember me</p>
 	</label>
+	<br>
 	<!--recaptcha thing for form-->
-		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px;"></div>
+		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; display: inline-block"></div>
 	
 	
 	
-        <p style="text-align: center; text-indent: 15px; width: fit-content; height:fit-content; padding-right: 10px;">
+        <p style="text-align: center; text-indent: 15px; padding-right: 10px;">
           By creating an account you agree to our
           <a href="Terms_Privacy.html" style="color: dodgerblue"
             >Terms & Privacy</a
