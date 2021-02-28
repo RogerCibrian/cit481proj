@@ -240,8 +240,7 @@
         <input type="text" name="lname" placeholder="Last name" maxlength="30" required />
         <input type="text" name="username" placeholder="Username" maxlength="20" required />
 	<input type="text" name="mailaddr" id="email" placeholder="Your Email Address" maxlength="40" required/>-->
-	<br>
-	<br>
+	
 	<span style="vertical-align:center;">
 		<label for="Username">Username:</label>
 		<input id="username" name="username" type="text" maxlength="20" placeholder="Ex: SpottyMilk45" required />
