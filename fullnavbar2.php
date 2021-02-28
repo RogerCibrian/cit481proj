@@ -33,7 +33,7 @@ echo        '<ul class="nav navbar-nav navbar-right">';
                 echo'<li><a href="../Member_login.php">';
                 echo'<span class="glyphicon glyphicon-log-in"></span> Member Login</a></li>';}
         else {
-                echo '<li><a><span class="glyphicon glyphicon-user"></span> Welcome, ' . $_SESSION['name'] . '!</a></li>';
+                echo '<li><a href="../profile_page.php"><span class="glyphicon glyphicon-user"></span> Welcome, ' . $_SESSION['name'] . '!</a></li>';
                 echo'<li><a href="../logout.php">';
                 echo 'Not you? <span class="glyphicon glyphicon-log-in"></span> Logout</a></li>';}
 

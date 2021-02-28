@@ -77,4 +77,60 @@
 .stars #one:checked ~ .result:before{
   content: "I hate it 😠";
 }
-
+.LikeAndReplies{
+  /* this container is absolute because its inside another div so it
+  can go in the bottom of the first container */
+  display: flex;
+  align-items: center;
+  bottom: 0px;
+  }
+  .LikeAndReplies2{
+    /* this container is absolute because its inside another div so it
+    can go in the bottom of the first container */
+    /*position: absolute;*/
+    display: flex;
+    align-items: center;
+    bottom: 0px;
+    /*margin-left:40px;*/
+    }
+#likebtn{
+    width:20px;
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 15px;
+    outline:none;
+    }
+#dislikebtn{
+  width:20px;
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 15px;
+  outline:none;
+  }
+.fas{
+color:#A0A0A0;
+margin-right:10px;
+}
+.fas:hover{
+color:#787878;
+}
+#likess{
+width:18px;
+border: none;
+background: none;
+color: #919191;
+font-size: 18px;
+margin: 0 5px;
+pointer-events: none;
+}
+#dislikess{
+width:18px;
+border: none;
+background: none;
+color: #919191;
+font-size: 18px;
+margin: 0 5px;
+pointer-events:none;
+}
