@@ -151,7 +151,7 @@ session_start();
       /*testing*/
       .rc-anchor-normal .rc-anchor-pt{
         margin: 2px 11px 0 0;
-        text-indent: -25px;
+        text-indent: 25px;
 
       }
       .rc-anchor-light.rc-anchor-normal{
@@ -163,12 +163,12 @@ session_start();
         margin: 0;
         width: 58px;
       }
-      .rc-anchor-logo-img-portrait{
+      /*.rc-anchor-logo-img-portrait{
         background-size: 32px;
         height: 32px;
         margin: 0;
         width: 32px
-      }
+      }*/
       .rc-anchor-logo-text{
         cursor: default;
         font-family: Roboto,helvetica,arial,sans-serif;
@@ -223,8 +223,9 @@ session_start();
         <input type="text" name="subject" maxlength="100" placeholder="Subject" required/>
         <textarea name="message" id="textarea-box" maxlength="200" placeholder="Message" required ></textarea>
 		<!--recaptcha thing for form-->
-		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; margin-left: 30%; margin-right: 30%;"></div>
-        <button type="submit" name="submit" style="width: auto">
+		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; display: inline-block"></div>
+       <br>
+	   <button type="submit" name="submit" style="width: auto">
           SEND MESSAGE
         </button>
       </form>
