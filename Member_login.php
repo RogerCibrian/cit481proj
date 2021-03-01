@@ -136,7 +136,7 @@
 	<input type="checkbox" onclick="myFunction()" style="float:left"><p style="float:left; text-indent: 5px;"> Show Password</p>
       <br>
       <br>
-        <ol style="text-indent: -55px>
+        <ol style="text-indent: -55px">
           <span class="psw" style="margin-right: 40px"
             >Forgot <a href="Passwrd_recovery.php">password?</a></span
           >
