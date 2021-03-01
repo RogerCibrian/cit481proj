@@ -39,6 +39,7 @@
       .row,
       .row > .column {
         padding: 8px;
+		
       }
 
       /* Create three equal columns that floats next to each other */
