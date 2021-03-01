@@ -280,9 +280,9 @@
 	</span>	
 	
 
-	<label style="margin-top: -15px">
+	<label /*style="margin-top: -15px"*/>
 		<input type="checkbox" onclick="myFunction()" style="float:left;">
-		<p style="margin-left: 10%; margin-top: -15px; float:left; text-indent: 5px"> Show Password </p>
+		<p style="/*margin-left: 10%; margin-top: -15px;*/margin-top:-1px; float:left; text-indent: 5px"> Show Password </p>
 	</label>
 	
 	<br>
