@@ -133,10 +133,10 @@
 	  id="PassInput1"
           placeholder="Enter password"
 	  required>
-	<input type="checkbox" onclick="myFunction()" style="float: left"><p style="float: left; text-indent: 5px;"> Show Password</p>
+	<input type="checkbox" onclick="myFunction()" style="float:left"><p style="float:left; text-indent: 5px;"> Show Password</p>
       <br>
       <br>
-        <ol>
+        <ol style="text-indent: -55px>
           <span class="psw" style="margin-right: 40px"
             >Forgot <a href="Passwrd_recovery.php">password?</a></span
           >
@@ -150,10 +150,10 @@
           />
           Remember me
         </label>
-        <div class="clearfix" style="margin-left: 25px">
+        <div class="clearfix" style=" width: auto; margin-left: 25px">
           <button
             type="cancel"
-            style="width: 150px"
+            style="width: fit-content"
             onclick="window.location='index.php';return false;"
             class="cancelbtn"
           >
@@ -162,7 +162,7 @@
           <button
             type="submit"
             name="login-submit"
-            style="width: 150px"
+            style="width: fit-content; margin-left: 45px;"
             class="signup"
           >
             Log In
