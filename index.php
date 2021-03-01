@@ -127,6 +127,8 @@
 	include 'fullnavbar.php';
         ?>
     <!----end of Navigation Bar-->
+	<div id ="page-container">
+	<div id="content-wrap">
     <!----start of full back background-->
     <div class="bg"></div>
     <!----end of full back background-->
@@ -309,9 +311,10 @@
      
         </tbody>
       </table>
+	  </div>
 	<!---------end of top staff best picks--------------------->
     <!---START OF FOOTER-->
-    <div id ="page-container">
+    <!---<div id ="page-container">----->
     <footer id="footer">
         Video games, pictures, all trademarks, and registered trademarks are the
         property of their respective owners.</br>
