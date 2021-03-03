@@ -510,7 +510,7 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope4 == 0): ?>
 <h2 id="dislikess">&nbsp;</h2>
-<?php $nope4 == 0; ?>
+<?php $nope4 = 0; ?>
 <?php endif; ?>
     </div>    </div>
 		 <?php endif; ?>
