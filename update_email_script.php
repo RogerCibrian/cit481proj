@@ -28,6 +28,7 @@ else if ($newemail != $emailRepeat){
  	else {
        		mysqli_stmt_bind_param($stmt, "ss", $newemail, $uname);
       		mysqli_stmt_execute($stmt);
+		$_SESSION['userEmail'] = $newemail;
 
 		if (!empty($_COOKIE['remember'])){
 	        list($selector, $token) = explode(':', $_COOKIE['remember']);
