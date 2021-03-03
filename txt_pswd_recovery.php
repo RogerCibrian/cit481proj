@@ -32,14 +32,14 @@ if (isset($_POST["resetrequestsubmit"])){
 
 // if no results, no account exists under the provided phone number
                 $result = mysqli_stmt_get_result($stmt);
-		echo "fetching result";
+//		echo "fetching result";
                 if (!$row = mysqli_fetch_assoc($result)){
 //			echo "account doesnt exist";
 			header("Location:passwrd_recovery_phone.php?msg=nomatch");
 			exit();
               	}
                 else {
-               		echo "setting email";
+//            		echo "setting email";
 			$userEmail = $row["user_email"];
 		}}
 
@@ -54,7 +54,7 @@ if (isset($_POST["resetrequestsubmit"])){
 	mysqli_stmt_bind_param($stmt, "s", $userEmail);
 	mysqli_stmt_execute($stmt);}
 
-echo "previous requests deleted"; 
+// echo "previous requests deleted"; 
 
 // create new request entry with valid validation tokens in pwdReset table
 	$sql = "INSERT INTO pwdReset (pwdResetEmail, pwdResetSelector, pwdResetToken, pwdResetExpires) VALUES (?, ?, ?, ?);";
@@ -67,7 +67,7 @@ echo "previous requests deleted";
         mysqli_stmt_bind_param($stmt, "ssss", $userEmail, $selector, $hashedToken, $expires);
         mysqli_stmt_execute($stmt);}
 
-echo "tokens added to table";
+// echo "tokens added to table";
 
 // close stmt and connection
 	mysqli_stmt_close($stmt);
@@ -76,22 +76,22 @@ echo "tokens added to table";
 // Beginning of twilio text settings
 
 	$texting = parse_ini_file('/var/app/texting.ini', true); // parse external INI file
-	echo "INI file parsed";
+//	echo "INI file parsed";
 
 //Account ID and Auth Token from twilio.com/console
 	$account_sid = $texting['twilio']['sid'];
 	$auth_token = $texting['twilio']['token'];
 
-	echo "twilio keys set";
+//	echo "twilio keys set";
 // Twilio number
 	$twilio_number = $texting['twilio']['number'];
-	echo "twilio number set";
+//	echo "twilio number set";
 
 // send sms
 	try {
-		echo "entering try";
+//		echo "entering try";
 		$client = new Client($account_sid, $auth_token);
-		echo "new Client set";
+//		echo "new Client set";
 		$client->messages->create(
 		    // Where to send a text message (your cell phone?)
 		    $userPhone,
@@ -100,7 +100,7 @@ echo "tokens added to table";
 		        'body' => "Reset request from RottenPotatoes.games. Link valid for 30 mins. $url "
 		    )
 		);
-		echo "text sent";
+//		echo "text sent";
 	}
 // catch exception, report error
 	catch (\Exception $e) {
