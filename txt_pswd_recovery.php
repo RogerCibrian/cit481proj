@@ -1,6 +1,6 @@
 <?php
 // require/use statments for Twilio SMS service
-require __DIR__ . '/vendor/autoload.php';
+require '/home/cit481/vendor/autoload.php';
 use Twilio\Rest\Client;
 
 // Generate $selector + $token to create valid reset request link
