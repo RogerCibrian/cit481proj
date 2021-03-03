@@ -420,6 +420,7 @@ placeholder="Enter your comment here..."></textarea>
 <h2 id="likess">&nbsp;</h2>
 <?php $nope = 0; ?>
 <?php endif; ?>
+<?php $nope = 0; ?>
 <!-- form for dislikes-->
 <form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="d<?php echo $num; ?>">
 <input type="hidden" id="input2" value="1" name="input2">
@@ -440,8 +441,9 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope2 == 0): ?>
 <h2 id="dislikess">&nbsp;</h2>
-<?php $nope2 == 0; ?>
+<?php $nope2 = 0; ?>
 <?php endif; ?>
+<?php $nope2 = 0; ?>
 </div>
 <!-- end of likes section for parent comments-->   <button class="open-button" onclick="openForm(<?php echo $num; ?>)">reply</button>
      <div class="form-popup" id="<?php echo $num; ?>">
@@ -490,6 +492,7 @@ placeholder="Enter your comment here..."></textarea>
 <h2 id="likess">&nbsp;</h2>
 <?php $nope3 = 0; ?>
 <?php endif; ?>
+<?php $nope3 = 0; ?>
 <!-- form for dislikes for replies-->
 <form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="f<?php echo $num2; ?>">
 <input type="hidden" id="input2" value="1" name="input2">
@@ -512,6 +515,7 @@ placeholder="Enter your comment here..."></textarea>
 <h2 id="dislikess">&nbsp;</h2>
 <?php $nope4 = 0; ?>
 <?php endif; ?>
+<?php $nope4 = 0; ?>
     </div>    </div>
 		 <?php endif; ?>
 		 <?php endif; ?>
