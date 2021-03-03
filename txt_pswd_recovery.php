@@ -39,7 +39,8 @@ if (isset($_POST["resetrequestsubmit"])){
 			exit();
               	}
                 else {
-               		$userEmail = $row["user_email"];
+               		echo "setting email";
+			$userEmail = $row["user_email"];
 		}}
 
 // invalidate previous reset requests
@@ -53,7 +54,7 @@ if (isset($_POST["resetrequestsubmit"])){
 	mysqli_stmt_bind_param($stmt, "s", $userEmail);
 	mysqli_stmt_execute($stmt);}
 
-// echo "previous requests deleted"; 
+echo "previous requests deleted"; 
 
 // create new request entry with valid validation tokens in pwdReset table
 	$sql = "INSERT INTO pwdReset (pwdResetEmail, pwdResetSelector, pwdResetToken, pwdResetExpires) VALUES (?, ?, ?, ?);";
@@ -66,7 +67,7 @@ if (isset($_POST["resetrequestsubmit"])){
         mysqli_stmt_bind_param($stmt, "ssss", $userEmail, $selector, $hashedToken, $expires);
         mysqli_stmt_execute($stmt);}
 
-// echo "tokens added to table";
+echo "tokens added to table";
 
 // close stmt and connection
 	mysqli_stmt_close($stmt);
