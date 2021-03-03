@@ -491,7 +491,7 @@ placeholder="Enter your comment here..."></textarea>
 <?php $nope3 = 0; ?>
 <?php endif; ?>
 <!-- form for dislikes for replies-->
-<form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="f<?php echo ++$num2; ?>">
+<form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="f<?php echo $num2; ?>">
 <input type="hidden" id="input2" value="1" name="input2">
 <input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
