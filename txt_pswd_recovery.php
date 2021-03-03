@@ -76,11 +76,13 @@ echo "tokens added to table";
 // Beginning of twilio text settings
 
 	$texting = parse_ini_file('/var/app/texting.ini', true); // parse external INI file
+	echo "INI file parsed";
 
 //Account ID and Auth Token from twilio.com/console
 	$account_sid = $texting['twilio']['sid'];
 	$auth_token = $texting['twilio']['token'];
 
+	echo "twilio keys set";
 // Twilio number
 	$twilio_number = $texting['twilio']['number'];
 
