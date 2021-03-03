@@ -85,6 +85,7 @@ echo "tokens added to table";
 	echo "twilio keys set";
 // Twilio number
 	$twilio_number = $texting['twilio']['number'];
+	echo "twilio number set";
 
 // send sms
 	try {
@@ -97,6 +98,7 @@ echo "tokens added to table";
 		        'body' => "Reset request from RottenPotatoes.games. Link valid for 30 mins. $url "
 		    )
 		);
+		echo "text sent";
 	}
 // catch exception, report error
 	catch (\Exception $e) {
