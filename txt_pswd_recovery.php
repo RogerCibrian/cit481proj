@@ -89,7 +89,9 @@ echo "tokens added to table";
 
 // send sms
 	try {
+		echo "entering try";
 		$client = new Client($account_sid, $auth_token);
+		echo "new Client set";
 		$client->messages->create(
 		    // Where to send a text message (your cell phone?)
 		    $userPhone,
