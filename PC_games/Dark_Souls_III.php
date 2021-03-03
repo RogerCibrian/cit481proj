@@ -26,6 +26,8 @@ $nbcomments = $nbc->get_result()->fetch_row();
 $comm = $nbcomments[0];
 $nbc->close();
 $num = 0;
+//counter for likes form
+$num2 = 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -467,14 +469,14 @@ placeholder="Enter your comment here..."></textarea>
 <!-- start of likes for replies-->
 <div class="LikeAndReplies2">
 <!-- form for likes for replies-->
-<form class="likesContainer" action="../likesdislikes.php" method="POST" id="e<?php echo $num; ?>">
+<form class="likesContainer" action="../likesdislikes.php" method="POST" id="e<?php echo ++$num2; ?>">
 <input type="hidden" id="input1" value="1" name="input1">
 <input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
 <input type='hidden' name='date' value="<?php echo $replies->review_date; ?>">
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
-<button class="btn2" type="submit" form="e<?php echo $num; ?>" value="Submit" id="likebtn">
+<button class="btn2" type="submit" form="e<?php echo $num2; ?>" value="Submit" id="likebtn">
  <i class="fas fa-thumbs-up"></i>
 </button>
 <!-- show like count summary for replies -->
@@ -489,14 +491,14 @@ placeholder="Enter your comment here..."></textarea>
 <?php $nope3 = 0; ?>
 <?php endif; ?>
 <!-- form for dislikes for replies-->
-<form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="f<?php echo $num; ?>">
+<form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="f<?php echo ++$num2; ?>">
 <input type="hidden" id="input2" value="1" name="input2">
 <input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
 <input type='hidden' name='date' value="<?php echo $replies->review_date; ?>">
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
-<button type="submit" form="f<?php echo $num; ?>" value="Submit" id="dislikebtn">
+<button type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
  <i class="fas fa-thumbs-down"></i>
 </button>
 <!-- show like count summary -->
