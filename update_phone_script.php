@@ -29,6 +29,7 @@ else if ($newphone != $phoneRepeat){
  	else {
        		mysqli_stmt_bind_param($stmt, "ss", $newphone, $uname);
       		mysqli_stmt_execute($stmt);
+		$_SESSION['userPhone'] = $newphone;
 		header("Location: profile_page.php?msg=phoneupdated");
 	}
 }
