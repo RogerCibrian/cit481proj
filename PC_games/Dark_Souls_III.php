@@ -590,7 +590,6 @@ var countn = 0;
 //save all clicks a user does before refreshing the page
 var arrayClicks = [];
 //add event listener to parent, any event in children element events will bubble up to this element
-var arrayClicks = [];
 parent.addEventListener('click', event => {
         if (event.target.className === 'fas fa-thumbs-up'){
           //get the date associated with the liked event
