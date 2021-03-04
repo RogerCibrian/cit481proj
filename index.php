@@ -55,7 +55,7 @@
 		  background: #fff;
 		  font-family: 'Times New Roman', sans-serif, serif;
 		  float: right;
-		  margin-right: 5%;
+		  margin-right: 20%;
 		  margin-bottom: 20%;
 		}
 
