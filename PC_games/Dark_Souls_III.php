@@ -440,7 +440,6 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope2 == 0): ?>
 <h2 id="dislikess">&nbsp;</h2>
-</div>
 <?php endif; ?>
 <?php $nope2 = 0; ?>
 </div>
@@ -491,7 +490,6 @@ placeholder="Enter your comment here..."></textarea>
 <h2 id="likess">&nbsp;</h2>
 <?php endif; ?>
 <?php $nope3 = 0; ?>
-<?php $nope = 0; ?>
 <!-- form for dislikes for replies-->
 <form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="f<?php echo ++$num2; ?>">
 <input type="hidden" id="input2" value="1" name="input2">
@@ -512,7 +510,10 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope4 == 0): ?>
 <h2 id="dislikess">&nbsp;</h2>
-    </div>    </div>
+<?php endif; ?>
+<?php $nope4 = 0; ?>
+</div>
+</div>
 		 <?php endif; ?>
 		 <?php endif; ?>
 		 <?php endforeach; ?>
@@ -588,6 +589,7 @@ var lArray = <?php echo json_encode($userLikes) ?>;
 const parent = document.getElementById('pComments');
 var countn = 0;
 //save all clicks a user does before refreshing the page
+
 var arrayClicks = [];
 //add event listener to parent, any event in children element events will bubble up to this element
 parent.addEventListener('click', event => {
