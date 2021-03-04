@@ -173,7 +173,7 @@
 		</a>
 	</div>
     </div>
-
+	</div> 
    <!------the dots below the image slider----------------->
 	<div style="text-align:center">
 		<span class="dots"></span>
@@ -311,7 +311,7 @@
      
         </tbody>
       </table>
-	  </div>
+	 <!-- </div> -->
 	<!---------end of top staff best picks--------------------->
     <!---START OF FOOTER-->
     <!--><div id ="page-container">-->
