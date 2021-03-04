@@ -53,7 +53,8 @@ div.transbox p {
 	
 }
 #content-wrap{
-	padding-bottom: 2.5rem;
+	/*padding-bottom: 2.5rem;*/
+	background-color: #000000d9;
 }
 #footer{
 	position: absolute;
