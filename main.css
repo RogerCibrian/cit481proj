@@ -28,12 +28,8 @@ div.transbox {
   border: 1px solid black;
   opacity: 0.6;
   margin-left: 20%;
-   
-  position: center;
- /* margin-bottom: 20%;*/
-	margin-right: 20%;
-	 height: 30%;
-	/* width: 50%;*/
+  margin-right: 20%;
+  height: 30%;
 }
 
 div.transbox h1 {
