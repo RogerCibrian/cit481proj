@@ -314,13 +314,13 @@
 	  </div>
 	<!---------end of top staff best picks--------------------->
     <!---START OF FOOTER-->
-    <div id ="page-container">
+    <!--><div id ="page-container">-->
     <footer id="footer">
         Video games, pictures, all trademarks, and registered trademarks are the
         property of their respective owners.</br>
         © 2020 RottenPotatoes
     </footer>
-    </div>
+    <!--</div>-->
     <!---END OF FOOTER-->
 	<script>
 		var slideIndex = 0;
