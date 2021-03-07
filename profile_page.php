@@ -123,5 +123,6 @@ session_start();
       <p>© 2020 RottenPotatoes</p>
     </footer>
     <!---END OF FOOTER-->
+	</div>
   </body>
 </html>

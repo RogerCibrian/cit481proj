@@ -96,6 +96,8 @@
     <!----start of full back background-->
     <div class="bg"></div>
     <!----end of full back background-->
+	<div id="page-container">
+	<div id="content-wrap">
     <!--START OF EMAIL CHANGE FORM-->
     <div class="email_change_container">
 
@@ -120,7 +122,18 @@
 		<button type="submit" name="reset-email-submit" style="width: 150px" class="signup">Submit</button>
         </div>
       </form>
-    </div>
+	  </div>
+	  </div>
+	  <footer id="footer">
+      <p>
+        Video games, pictures, all trademarks, and registered trademarks are the
+        property of their respective owners.
+      </p>
+      <p>© 2020 RottenPotatoes</p>
+    </footer>
+    <!---END OF FOOTER-->
+    
     <!--END OF EMAIL CHANGE FORM-->
+	</div>
   </body>
 </html>
