@@ -43,7 +43,6 @@
 	
 	.navbar-brand {
 		padding: 0;
-		margin-bottom: 20px;
 	}
 	
 	/*staffs' best picks ---video games--table CSS edit*/
