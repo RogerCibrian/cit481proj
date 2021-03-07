@@ -187,7 +187,7 @@ div.transbox_BatmanArk {
         color: black;
       } 
   /*START OF FOOTER EDITING*/
-/*.footer {
+.footer {
   left: 0;
   bottom: 0;
   width: 100%;
@@ -199,7 +199,7 @@ div.transbox_BatmanArk {
   position: relative;
   margin-top: 100%;
   margin: 0 auto;
-}*/
+}
 /*END OF FOOTER EDITING*/
 //comment section
 .count {
@@ -526,9 +526,9 @@ placeholder="Enter your comment here..."></textarea>
 		    </div>
 		    </div>
 		 </div>
-	         </div>
+	      <!--   </div>
 	      </div>
-		  </div>
+		  </div>-->
         <!---End OF comment section-->
         <!---START OF FOOTER-->
     <footer id="footer">
