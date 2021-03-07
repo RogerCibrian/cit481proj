@@ -311,6 +311,8 @@ border: none;
     ?>
     <!----end of Navigation Bar-->
 <div class="bg"></div>
+<div id="page-container">
+<div id="content-wrap">
         <div class="batmanarkhamcity">
         <div class="transbox_BatmanArk">
             <ul>
@@ -526,6 +528,7 @@ placeholder="Enter your comment here..."></textarea>
 		 </div>
 	         </div>
 	      </div>
+		  </div>
         <!---End OF comment section-->
         <!---START OF FOOTER-->
     <div class="footer">
@@ -535,6 +538,7 @@ placeholder="Enter your comment here..."></textarea>
       </p>
       <p>© 2020 RottenPotatoes</p>
     </div>
+	</div>
     <!---END OF FOOTER-->
     <script type="text/javascript">
       var count;
