@@ -531,13 +531,13 @@ placeholder="Enter your comment here..."></textarea>
 		  </div>
         <!---End OF comment section-->
         <!---START OF FOOTER-->
-    <div class="footer">
+    <footer id="footer">
       <p>
         Video games, pictures, all trademarks, and registered trademarks are the
         property of their respective owners.
       </p>
       <p>© 2020 RottenPotatoes</p>
-    </div>
+    </footer>
 	</div>
     <!---END OF FOOTER-->
     <script type="text/javascript">
