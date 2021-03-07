@@ -57,7 +57,7 @@ session_start();
        /* height: 470px;
         width: 450px;*/
 		height: fit-content;
-		width: fit-content;
+		width: min-content;
         text-align: center;
         /*margin-left: 30%;
         margin-right: 50%;
