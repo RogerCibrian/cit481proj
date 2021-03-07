@@ -101,6 +101,8 @@
     <!----start of full back background-->
     <div class="bg"></div>
     <!----end of full back background-->
+	<div id="page-container">
+	<div id="content-wrap">
     <!--START OF EMAIL CHANGE FORM-->
     <div class="email_change_container">
 
@@ -124,6 +126,16 @@
         </div>
       </form>
     </div>
+	</div>
     <!--END OF EMAIL CHANGE FORM-->
+	 <footer id="footer">
+      <p>
+        Video games, pictures, all trademarks, and registered trademarks are the
+        property of their respective owners.
+      </p>
+      <p>© 2020 RottenPotatoes</p>
+    </footer>
+    <!---END OF FOOTER-->
+	</div>
   </body>
 </html>
