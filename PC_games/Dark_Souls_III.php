@@ -25,9 +25,9 @@ $nbcomments = $nbc->get_result()->fetch_row();
 //variable $comm holds the amount of comments
 $comm = $nbcomments[0];
 $nbc->close();
-$num = 0;
-//counter for likes form
+//counters for likes feature section
 $num2 = 0;
+$num = 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -418,7 +418,6 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope == 0): ?>
 <h2 id="likess">&nbsp;</h2>
-<?php $nope = 0; ?>
 <?php endif; ?>
 <?php $nope = 0; ?>
 <!-- form for dislikes-->
@@ -441,7 +440,6 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope2 == 0): ?>
 <h2 id="dislikess">&nbsp;</h2>
-<?php $nope2 = 0; ?>
 <?php endif; ?>
 <?php $nope2 = 0; ?>
 </div>
@@ -490,11 +488,10 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope3 == 0): ?>
 <h2 id="likess">&nbsp;</h2>
-<?php $nope3 = 0; ?>
 <?php endif; ?>
 <?php $nope3 = 0; ?>
 <!-- form for dislikes for replies-->
-<form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="f<?php echo $num2; ?>">
+<form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="f<?php echo ++$num2; ?>">
 <input type="hidden" id="input2" value="1" name="input2">
 <input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
@@ -513,10 +510,10 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope4 == 0): ?>
 <h2 id="dislikess">&nbsp;</h2>
-<?php $nope4 = 0; ?>
 <?php endif; ?>
 <?php $nope4 = 0; ?>
-    </div>    </div>
+</div>
+</div>
 		 <?php endif; ?>
 		 <?php endif; ?>
 		 <?php endforeach; ?>
@@ -592,6 +589,7 @@ var lArray = <?php echo json_encode($userLikes) ?>;
 const parent = document.getElementById('pComments');
 var countn = 0;
 //save all clicks a user does before refreshing the page
+
 var arrayClicks = [];
 //add event listener to parent, any event in children element events will bubble up to this element
 parent.addEventListener('click', event => {
