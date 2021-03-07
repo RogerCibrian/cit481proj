@@ -9,12 +9,12 @@ include 'connect.php';
 //	header('location:/index.php');}
 // Possibly add this if statment to Member_login.php
 
-if ($stmt = $con->prepare('SELECT user_id, user_password FROM users WHERE user_username = ?')){
+if ($stmt = $con->prepare('SELECT user_id, user_password, user_email, user_phone FROM users WHERE user_username = ?')){
 	$stmt->bind_param('s', $_POST['username']);
 	$stmt->execute(); 
 	$stmt->store_result(); //stores result to confirm account exists
 	if ($stmt->num_rows > 0){ //confirms account in database
-		$stmt->bind_result($user_id, $user_password);
+		$stmt->bind_result($user_id, $user_password, $userEmail, $userPhone);
 		$stmt->fetch();
 		if (password_verify($_POST['pwd'], $user_password)){
 
@@ -70,6 +70,8 @@ if ($stmt = $con->prepare('SELECT user_id, user_password FROM users WHERE user_u
                         $_SESSION['loggedin'] = TRUE;
                         $_SESSION['name'] = $_POST['username'];
                         $_SESSION['id'] = $user_id;
+			$_SESSION['userEmail'] = $userEmail;
+			$_SESSION['userPhone'] = $userPhone;
 			header("location:/index.php");}
 		else {
 			header("location:/Member_login.php?errormsg=2");}}

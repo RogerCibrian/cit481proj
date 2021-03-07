@@ -39,12 +39,12 @@ if (empty($_SESSION['name']) && !empty($_COOKIE['remember'])){
 
 
 // fetch username
-                if ($stmt = $con->prepare('SELECT user_username, user_id FROM users WHERE user_email = ?;')){
+                if ($stmt = $con->prepare('SELECT user_username, user_id, user_phone FROM users WHERE user_email = ?;')){
 	                $stmt->bind_param('s', $tokenEmail);
                         $stmt->execute();
                         $stmt->store_result();
                         if ($stmt->num_rows > 0){
-        	                $stmt->bind_result($user_username, $user_id);
+        	                $stmt->bind_result($user_username, $user_id, $userPhone);
                                 $stmt->fetch();}
                         else {
                  	       echo "error fetching data";
@@ -59,6 +59,7 @@ if (empty($_SESSION['name']) && !empty($_COOKIE['remember'])){
 		$_SESSION['name'] = $user_username;
 		$_SESSION['userEmail'] = $tokenEmail;
 		$_SESSION['id'] = $user_id;
+		$_SESSION['userPhone'] = $userPhone;
 
 // create new cookie and regenerate validators
 // delete old cookie tokens from db

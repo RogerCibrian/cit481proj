@@ -26,6 +26,8 @@ $nbcomments = $nbc->get_result()->fetch_row();
 //variable $comm holds the amount of comments
 $comm = $nbcomments[0];
 $nbc->close();
+//counters for likes feature section
+$num2 = 0;
 $num = 0;
 ?>
 <!DOCTYPE html>
@@ -415,8 +417,8 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope == 0): ?>
 <h2 id="likess">&nbsp;</h2>
-<?php $nope = 0; ?>
 <?php endif; ?>
+<?php $nope = 0; ?>
 <!-- form for dislikes-->
 <form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="d<?php echo $num; ?>">
 <input type="hidden" id="input2" value="1" name="input2">
@@ -437,8 +439,8 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope2 == 0): ?>
 <h2 id="dislikess">&nbsp;</h2>
-<?php $nope2 == 0; ?>
 <?php endif; ?>
+<?php $nope2 = 0; ?>
 </div>
 <!-- end of likes section for parent comments-->   <button class="open-button" onclick="openForm(<?php echo $num; ?>)">reply</button>
      <div class="form-popup" id="<?php echo $num; ?>">
@@ -466,14 +468,14 @@ placeholder="Enter your comment here..."></textarea>
 <!-- start of likes for replies-->
 <div class="LikeAndReplies2">
 <!-- form for likes for replies-->
-<form class="likesContainer" action="../likesdislikes.php" method="POST" id="e<?php echo $num; ?>">
+<form class="likesContainer" action="../likesdislikes.php" method="POST" id="e<?php echo ++$num2; ?>">
 <input type="hidden" id="input1" value="1" name="input1">
 <input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
 <input type='hidden' name='date' value="<?php echo $replies->review_date; ?>">
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
-<button class="btn2" type="submit" form="e<?php echo $num; ?>" value="Submit" id="likebtn">
+<button class="btn2" type="submit" form="e<?php echo $num2; ?>" value="Submit" id="likebtn">
  <i class="fas fa-thumbs-up"></i>
 </button>
 <!-- show like count summary for replies -->
@@ -485,17 +487,17 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope3 == 0): ?>
 <h2 id="likess">&nbsp;</h2>
-<?php $nope3 = 0; ?>
 <?php endif; ?>
+<?php $nope3 = 0; ?>
 <!-- form for dislikes for replies-->
-<form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="f<?php echo $num; ?>">
+<form class="dislikesContainer" action="../likesdislikes.php" method="POST" id="f<?php echo ++$num2; ?>">
 <input type="hidden" id="input2" value="1" name="input2">
 <input type='hidden' name='uid' value="<?php echo $_SESSION['name']; ?>">
 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
 <input type='hidden' name='date' value="<?php echo $replies->review_date; ?>">
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
-<button type="submit" form="f<?php echo $num; ?>" value="Submit" id="dislikebtn">
+<button type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
  <i class="fas fa-thumbs-down"></i>
 </button>
 <!-- show like count summary -->
@@ -507,9 +509,9 @@ placeholder="Enter your comment here..."></textarea>
 <?php endforeach; ?>
 <?php if ($nope4 == 0): ?>
 <h2 id="dislikess">&nbsp;</h2>
-<?php $nope4 == 0; ?>
 <?php endif; ?>
-    </div>
+<?php $nope4 = 0; ?>
+</div>
 </div>
 		 <?php endif; ?>
 		 <?php endif; ?>
@@ -585,7 +587,7 @@ var lArray = <?php echo json_encode($userLikes) ?>;
 const parent = document.getElementById('pComments');
 var countn = 0;
 //save all clicks a user does before refreshing the page
-var arrayClicks = [];
+
 //add event listener to parent, any event in children element events will bubble up to this element
 var arrayClicks = [];
 parent.addEventListener('click', event => {

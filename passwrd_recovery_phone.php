@@ -15,6 +15,25 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+                        $('.phone').keydown(function(e){
+                                var key = e.charCode || e.keyCode || 0;
+                                $text = $(this);
+                                if (key !== 8 && key !== 9) {
+                                        if($text.val().length === 3){
+                                                $text.val($text.val() + '-');
+                                        }
+                                        if($text.val().length === 7){
+                                                $text.val($text.val() + '-');
+                                        }
+                                }
+                                (key == 8 || key == 9 || key == 46 || (key >= 48 && key <=57) || (key >= 96 && key <= 105));
+			})
+                        });
+    </script>
+
     <style>
       input[type="text"],
       select {
@@ -91,26 +110,22 @@
                         $msg = $_GET['msg'];
                         if ($msg == 'err'){
                         echo "<p>Error: please try again later!</p>";}
+			elseif ($msg == 'nomatch'){
+			echo "<p>The provided phone number is not <br>associated with an account.</p>";}
                         else
-                        echo "<p>Request received! Check your email.</p>";}
+                        echo "<p>Request received! Check your phone.</p>";}
 		elseif (isset($_GET['limit'])){
 			echo "<p>Password reset request expired. <br>Please submit your request again.</p>";}
 		else echo "<p>Please enter your phone number.</p>";
 	?>
-        
       <br>
       Or<a href="Passwrd_recovery.php"> via email address</a>
       <form
         class="psswd-recovery-form"
         method="post"
-        action="pswd_recovery.php"
+        action="txt_pswd_recovery.php"
       >
-        <input
-          type="text"
-          name="phone"
-          placeholder="Enter phone number"
-          required
-        />
+        <input class="phone" type="text" name="phone" maxlength="12" placeholder="Enter Phone Number" required/>
         <div class="clearfix">
           <button
             type="cancel"

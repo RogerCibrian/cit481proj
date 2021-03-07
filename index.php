@@ -55,7 +55,7 @@
 		  background: #fff;
 		  font-family: 'Times New Roman', sans-serif, serif;
 		  float: right;
-		  margin-right: 5%;
+		  margin-right: 20%;
 		  margin-bottom: 20%;
 		}
 
@@ -128,7 +128,7 @@
         ?>
     <!----end of Navigation Bar-->
 	
-	<div id="content-wrap">
+	<div id="content-wrap-home">
     <!----start of full back background-->
     <div class="bg"></div>
     <!----end of full back background-->
@@ -173,7 +173,7 @@
 		</a>
 	</div>
     </div>
-
+	</div> 
    <!------the dots below the image slider----------------->
 	<div style="text-align:center">
 		<span class="dots"></span>
@@ -311,16 +311,16 @@
      
         </tbody>
       </table>
-	  </div>
+	 <!-- </div> -->
 	<!---------end of top staff best picks--------------------->
     <!---START OF FOOTER-->
-    <div id ="page-container">
+    <!--><div id ="page-container">-->
     <footer id="footer">
         Video games, pictures, all trademarks, and registered trademarks are the
         property of their respective owners.</br>
         © 2020 RottenPotatoes
     </footer>
-    </div>
+    <!--</div>-->
     <!---END OF FOOTER-->
 	<script>
 		var slideIndex = 0;
