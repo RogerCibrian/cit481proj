@@ -128,7 +128,7 @@
         ?>
     <!----end of Navigation Bar-->
 	
-	<div id="content-wrap">
+	<div id="content-wrap-home">
     <!----start of full back background-->
     <div class="bg"></div>
     <!----end of full back background-->
