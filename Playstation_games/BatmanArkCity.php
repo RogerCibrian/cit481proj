@@ -532,6 +532,9 @@ placeholder="Enter your comment here..."></textarea>
         <!---End OF comment section-->
         <!---START OF FOOTER-->
 		<br>
+		<br>
+		<br>
+		<br>
     <footer id="footer">
       <p>
         Video games, pictures, all trademarks, and registered trademarks are the
