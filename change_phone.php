@@ -68,13 +68,16 @@
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 40px;
-        height: 350px;
-        width: 450px;
+        /*height: 350px;
+        width: 450px;*/
+		height: fit-content;
+		width:fit-content;
         text-align: center;
-        margin-left: 30%;
+        /*margin-left: 30%;
         margin-right: 50%;
         margin-top: 5%;
-        margin-bottom: 20%;
+        margin-bottom: 20%;*/
+		margin: 0 auto;
       }
 
       /* Responsive layout - when the screen is less than 600px wide, 
@@ -98,6 +101,8 @@
     <!----start of full back background-->
     <div class="bg"></div>
     <!----end of full back background-->
+	<div id="page-container">
+	<div id="content-wrap">
     <!--START OF EMAIL CHANGE FORM-->
     <div class="email_change_container">
 
@@ -121,6 +126,16 @@
         </div>
       </form>
     </div>
+	</div>
     <!--END OF EMAIL CHANGE FORM-->
+	 <footer id="footer">
+      <p>
+        Video games, pictures, all trademarks, and registered trademarks are the
+        property of their respective owners.
+      </p>
+      <p>© 2020 RottenPotatoes</p>
+    </footer>
+    <!---END OF FOOTER-->
+	</div>
   </body>
 </html>

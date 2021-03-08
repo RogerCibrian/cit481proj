@@ -311,6 +311,8 @@ border: none;
     ?>
     <!----end of Navigation Bar-->
 <div class="bg"></div>
+<div id="page-container">
+<div id="content-wrap">
         <div class="batmanarkhamcity">
         <div class="transbox_BatmanArk">
             <ul>
@@ -524,17 +526,23 @@ placeholder="Enter your comment here..."></textarea>
 		    </div>
 		    </div>
 		 </div>
-	         </div>
+	      <!--   </div>
 	      </div>
+		  </div>-->
         <!---End OF comment section-->
         <!---START OF FOOTER-->
-    <div class="footer">
+		<br>
+		<br>
+		<br>
+		<br>
+    <footer id="footer">
       <p>
         Video games, pictures, all trademarks, and registered trademarks are the
         property of their respective owners.
       </p>
       <p>© 2020 RottenPotatoes</p>
-    </div>
+    </footer>
+	</div>
     <!---END OF FOOTER-->
     <script type="text/javascript">
       var count;

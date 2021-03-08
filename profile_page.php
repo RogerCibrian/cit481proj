@@ -54,13 +54,16 @@ session_start();
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 40px;
-        height: 470px;
-        width: 450px;
+       /* height: 470px;
+        width: 450px;*/
+		height: fit-content;
+		width: min-content;
         text-align: center;
-        margin-left: 30%;
+        /*margin-left: 30%;
         margin-right: 50%;
         margin-top: 5%;
-        margin-bottom: 10%;
+        margin-bottom: 10%;*/
+		margin: 0 auto;
       }
 
       /* Responsive layout - when the screen is less than 600px wide, 
@@ -120,5 +123,6 @@ session_start();
       <p>© 2020 RottenPotatoes</p>
     </footer>
     <!---END OF FOOTER-->
+	</div>
   </body>
 </html>
