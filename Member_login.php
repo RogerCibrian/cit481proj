@@ -174,14 +174,14 @@
     </div> 
     </div>
 	<!--END OF MEMBER LOG IN FORM-->
-    <!---START OF FOOTER-->
+    </div>
+	    <!---START OF FOOTER-->
     <div class="footer" style="background-color:black; padding: 4px 6px; text-align:center; bottom:0; left:0">
       <p>
         Video games, pictures, all trademarks, and registered trademarks are the
         property of their respective owners.
       </p>
       <p>© 2020 RottenPotatoes</p>
-    </div>
     </div>
     <!---END OF FOOTER-->
   </body>
