@@ -202,7 +202,7 @@
       </ol>
     </div>
     <!----end of About us (transparent box)-->
-     <!--------start of top staff best picks----------------------->
+     <!--------start of top staff best picks----------------->
 		<table>
         <thead>
           <tr>
