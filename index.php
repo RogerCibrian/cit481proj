@@ -15,6 +15,17 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- new account success alert -->
+	<script>
+		const queryString = window.location.search;
+		const urlPar = new URLSearchParams(queryString);
+		const accountSuccess = urlPar.get('newacct');
+		if (accountSuccess == 1){
+			alert("Account creation successful. Welcome to RottenPotatoes!");
+		}
+	</script>
+
     <style>
 	.videogame_slides{
 		display: none;
