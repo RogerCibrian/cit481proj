@@ -492,6 +492,6 @@
     </div>
     <!---END OF FOOTER-->
     <!---external JS script for playstation games----->
-   <script src="../js/Playstation_games_filter.js"></script>
+   <script src="./js/Playstation_games_filter.js"></script>
   </body>
 </html>
