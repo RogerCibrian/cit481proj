@@ -7,3 +7,8 @@ document.getElementById("show_password").addEventListener("click", myFunction);
 			passwordx1.type = "password";
 		}
 	}
+	
+document.getElementById("cancel_button").addEventListener("click", cancel);	
+	function cancel() {
+		onclick="window.location='index.php';return false;"
+	}
