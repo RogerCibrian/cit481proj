@@ -117,7 +117,7 @@
             <td>
               <a href="/Playstation_games/CODBlackOps.php" title="Call of Duty: Black Ops">
                 <img src="images/top_staff_picks/CODBO1_mini.jpg" alt="Call of Duty: Black Ops" class="staff_img">
-                <p style=" text-indent: 15px; margin-top: 20px;">Call of Duty: Black Ops</p>
+                <p class="staff_title">Call of Duty: Black Ops</p>
               </a>
             </td>
             <td>
