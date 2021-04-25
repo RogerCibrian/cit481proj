@@ -62,6 +62,13 @@
 		  border-bottom: 1px solid #d4d4d4;
 		}     
 
+		.staff_img {
+			height: 8rem; 
+			width: 25%; 
+			float:left; 
+			margin-left: -25PX;
+		}
+		
 		.stars-outer {
 		  display: inline-block;
 		  position: relative;

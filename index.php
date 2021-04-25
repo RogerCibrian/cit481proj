@@ -116,7 +116,7 @@
           <tr class="CODBO1"> 
             <td>
               <a href="/Playstation_games/CODBlackOps.php" title="Call of Duty: Black Ops">
-                <img src="images/top_staff_picks/CODBO1_mini.jpg" alt="Call of Duty: Black Ops" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <img src="images/top_staff_picks/CODBO1_mini.jpg" alt="Call of Duty: Black Ops" class="staff_img">
                 <p style=" text-indent: 15px; margin-top: 20px;">Call of Duty: Black Ops</p>
               </a>
             </td>
@@ -130,7 +130,7 @@
           <tr class="GOW4">
             <td>
               <a href="/Xbox_games/GoW4.php" title="Gears of War 4">
-                <img src="images/top_staff_picks/gears-of-war-4-mini.jpg" alt="Gears of War 4" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <img src="images/top_staff_picks/gears-of-war-4-mini.jpg" alt="Gears of War 4" class="staff_img">
                 <p style=" text-indent: 15px; margin-top: 20px;">Gears of War 4</p>
                 </a>
               </td>
@@ -144,7 +144,7 @@
           <tr class="RDR2">
             <td>
               <a href="/PC_games/RedDeadRedemp2.php" title="Red Dead Redemption 2">
-                <img src="images/top_staff_picks/red-dead-redemption-2-mini.jpg" alt="Red Dead Redemption 2" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <img src="images/top_staff_picks/red-dead-redemption-2-mini.jpg" alt="Red Dead Redemption 2" class="staff_img">
                 <p style=" text-indent: 15px; margin-top: 20px;">Red Dead Redemption 2</p>
                 </a>
               </td>
@@ -158,7 +158,7 @@
           <tr class="Control">
             <td>
               <a href="/PC_games/Control.php" title="Control">
-                <img src="images/top_staff_picks/control-mini.jpg" alt="Control" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <img src="images/top_staff_picks/control-mini.jpg" alt="Control" class="staff_img">
                 <p style=" text-indent: 15px; margin-top: 20px;">Control</p>
               </a>
               </td>
@@ -172,7 +172,7 @@
           <tr class="Minecraft">
             <td>
               <a href="/PC_games/Minecraft.php" title="Minecraft">
-                <img src="images/top_staff_picks/minecraft-mini.jpg" alt="Minecraft" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <img src="images/top_staff_picks/minecraft-mini.jpg" alt="Minecraft" class="staff_img">
                 <p style=" text-indent: 15px; margin-top: 20px;">Minecraft</p>
               </a>
               </td>
@@ -186,7 +186,7 @@
           <tr class="W3WH">
             <td>
               <a href="/PC_games/TheWitcher3_Wild_Hunt.php" title="The Witcher 3: Wild Hunt">
-                <img src="images/top_staff_picks/the-witcher-3-wild-hunt-mini.jpg" alt="The Witcher 3: Wild Hunt" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <img src="images/top_staff_picks/the-witcher-3-wild-hunt-mini.jpg" alt="The Witcher 3: Wild Hunt" class="staff_img">
                 <p style=" text-indent: 15px; margin-top: 20px;">The Witcher 3: Wild Hunt</p>
               </a>
               </td>
@@ -200,7 +200,7 @@
           <tr class="ACNH">
             <td>
               <a href="/Nintendo_games/Animal_Cross_New_Horizons.php" title="Animal Crossing: New Horizons">
-                <img src="images/top_staff_picks/animal-crossing-new-horizons-mini.png" alt="Animal Crossing: New Horizons" style="height: 8rem; width: 25%; float:left; margin-left: -25PX;">
+                <img src="images/top_staff_picks/animal-crossing-new-horizons-mini.png" alt="Animal Crossing: New Horizons" class="staff_img">
                 <p style=" text-indent: 15px; margin-top: 20px;">Animal Crossing: New Horizons</p>
               </a>
               </td>
