@@ -65,7 +65,7 @@
             <a href="/Playstation_games/7daystodie.php ">
               <img
                 class="ps4_image"
-                src="Playstation_games/Playstation_4_games/7Days-to-Die.jpg"
+                src="/Playstation_games/Playstation_4_games/7Days-to-Die.jpg"
                 alt="7 Days to Die"
                 
             /></a>
