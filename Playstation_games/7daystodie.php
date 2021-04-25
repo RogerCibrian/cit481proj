@@ -479,5 +479,8 @@ e.preventDefault();
 
 });
     </script>
+     <!-------css edits are in external css link----->
+  <script src="../js/Playstation_games/7waystodie.js"/>
+   
 </body>
 </html>
