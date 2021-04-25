@@ -1,4 +1,4 @@
-	/* line 8     */
+	/* line 8  */
 	.navbar navbar-inverse{
 		margin-bottom: 0px;
 	}
@@ -12,12 +12,12 @@
 		height:58px; 
 		padding-left: 0px; 
 		padding-top: 0px;
-		
+		margin-top: -15px;
 	}
 
 	/*css edit for twittter logo*/
 	/*   line 28  */
-	/*  class="twitter_logo"    */
+	/*  class="twitter_logo"  */
 	.twitter_logo{
 		width:23px; 
 		height:23px;
