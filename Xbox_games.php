@@ -60,6 +60,7 @@
           <div class="content">
             <a href="Xbox_games/AceCombat6.php">
               <img
+				class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox360_games/Ace_Combat_6_Fires_of_Liberation_Game_Cover.jpg"
                 alt="Ace Combat 6"
                 
@@ -75,6 +76,7 @@
           <div class="content">
             <a href="Xbox_games/DeadorAlive4.php">
               <img
+				class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox360_games/Doa4cover.jpg"
                 alt="Dead or Alive 4"
                 
@@ -90,6 +92,7 @@
           <div class="content">
             <a href="Xbox_games/Forza4.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox360_games/Forza_Motorsport_4_cover.jpg"
                 alt="Forza 4"
                 
@@ -105,6 +108,7 @@
           <div class="content">
             <a href="Xbox_games/MotoGP07.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox360_games/motogp-07-front-cover.jpg"
                 alt="MotoGP '07"
                 
@@ -120,6 +124,7 @@
           <div class="content">
             <a href="Xbox_games/Ridgeracer6.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox360_games/ridge-racer-game-cover.png"
                 alt="Ridge Racer 6"
                 
@@ -135,6 +140,7 @@
           <div class="content">
             <a href="Xbox_games/SaintsRow.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox360_games/Saints_Row_Box_Art.jpg"
                 alt="Saints Row"
                 
@@ -150,6 +156,7 @@
           <div class="content">
             <a href="Xbox_games/VivaPinata_PartyAnimals.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox360_games/viva-pinata-front-cover.jpg"
                 alt="Dead or Alive 4"
                
@@ -165,6 +172,7 @@
           <div class="content">
             <a href="Xbox_games/Wipeout.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox360_games/Wipeout_in_the_Zone_Coverart.png"
                 alt="Wipeout: In The Zone"
                 
@@ -180,6 +188,7 @@
           <div class="content">
             <a href="Xbox_games/Wreckateer.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox360_games/wreckateer.png"
                 alt="Wreckateer"
                 
@@ -195,6 +204,7 @@
           <div class="content">
             <a href="Xbox_games/ZumbaFitnessRush.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox360_games/Zumba-Fitness-Rush-Cover.jpg"
                 alt="Dead or Alive 4"
                 
@@ -211,6 +221,7 @@
           <div class="content">
             <a href="Xbox_games/Ashen.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox_One_games/ashen.jpg"
                 alt="Ashen"
                 
@@ -224,6 +235,7 @@
           <div class="content">
             <a href="Xbox_games/Forza_Horizon_4_cover.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox_One_games/Forza_Horizon_4_cover.jpg"
                 alt="Forza Horizon 4"
                 
@@ -237,6 +249,7 @@
           <div class="content">
             <a href="Xbox_games/Forza7.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox_One_games/Forza7.jpg"
                 alt="Forza 7"
                 
@@ -250,6 +263,7 @@
           <div class="content">
             <a href="Xbox_games/GoW4.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox_One_games/GoW4.jpg"
                 alt="Gears of War 4"
                
@@ -263,6 +277,7 @@
           <div class="content">
             <a href="Xbox_games/gears5.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox_One_games/gears5.png"
                 alt="Gears 5"
                
@@ -276,6 +291,7 @@
           <div class="content">
             <a href="Xbox_games/halo5.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox_One_games/halo5.jpg"
                 alt="Halo 5: Guardians"
               
@@ -289,6 +305,7 @@
           <div class="content">
             <a href="Xbox_games/Killer_Instinct.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox_One_games/killer-instinct-game-cover.png"
                 alt="Killer Instinct"
               
@@ -302,6 +319,7 @@
           <div class="content">
             <a href="Xbox_games/Quantum_Break.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox_One_games/quantum_break.jpg"
                 alt="Quantum Break"
                
@@ -315,6 +333,7 @@
           <div class="content">
             <a href="Xbox_games/Sea_Of_Thieves.php">
               <img
+			    class="xbox_wallpaper_image"
                 src="Xbox_games/Xbox_One_games/Sea_of_thieves_cover_art.jpg"
                 alt="Sea of Thieves"
                
@@ -329,6 +348,7 @@
             <div class="content">
               <a href="Xbox_games/Sunset_Overdrive.php">
                 <img
+				  class="xbox_wallpaper_image"
                   src="Xbox_games/Xbox_One_games/Sunset_Overdrive_cover.jpg"
                   alt="Sunset Overdrive"
                  
@@ -355,7 +375,5 @@
     </footer>
     </div>
     <!---END OF FOOTER-->
-    <!-----Filter Javascript: No need to make changes here-->
-
   </body>
 </hmtl>
