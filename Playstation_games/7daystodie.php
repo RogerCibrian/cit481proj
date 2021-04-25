@@ -50,6 +50,7 @@ $num = 0;
 <script src="https://kit.fontawesome.com/961faa2e94.js" crossorigin="anonymous"></script>
   
   <link rel="stylesheet" href="../style2.css" />
+  <!-------css edits are in external css link----->
    <style>
     body {
   font-family: Arial, Helvetica, sans-serif;
