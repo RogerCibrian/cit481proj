@@ -75,6 +75,7 @@
         </label>
         <div class="clearfix">
           <button
+			id="cancel_button"
             type="cancel"
             class="cancelbtn"
           >
