@@ -10,5 +10,5 @@ document.getElementById("show_password").addEventListener("click", myFunction);
 	
 document.getElementById("cancel_button").addEventListener("click", cancel);	
 	function cancel() {
-		window.location.href='index.php';
+		window.location.href='https://www.rottenpotatoes.org/index.php';
 	}
