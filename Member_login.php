@@ -56,7 +56,6 @@
           placeholder="Enter password"
 	  required>
 	<input type="checkbox" id="show_password" class="button"><p class="button_p"> Show Password</p>
-	<script src='./js/passwordInput.js'></script>
       <br>
       <br>
         <ol>
@@ -91,6 +90,7 @@
         </div>
       </form>
     </div>
+	<script src='./js/passwordInput.js'></script>
 	    
     </div> 
     </div>
