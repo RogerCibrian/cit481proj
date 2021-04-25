@@ -51,7 +51,7 @@ $num = 0;
 <script src="https://kit.fontawesome.com/961faa2e94.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/main.css" />
   <link rel="stylesheet" href="../style2.css" />
-  <link rel="stylesheet" href="./css/Playstation_games/CODBlackOps.css"/>
+  <link rel="stylesheet" href="../css/Playstation_games/CODBlackOps.css"/>
 
 </head>
 <body>
