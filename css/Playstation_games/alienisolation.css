@@ -236,3 +236,15 @@ justify-content: center;
           text-indent: 20px;
 
   }
+
+  /* line 137*/
+  .btn-post{
+    width: 300px; 
+    background-color: green;
+     color: white;
+  }
+
+  /* line 209*/
+  .textarea_line209{
+    color: black;
+  }

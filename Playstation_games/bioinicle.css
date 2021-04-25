@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
   }
-  div.Agony {
+  div.Bionicle {
           font-family: "Times New Roman";
           color: white;
           font-size: medium;
@@ -32,22 +32,22 @@ body {
           margin: 0rem;
           padding: 0.1 rem;
           outline-offset: 0.25rem;
-          height: 258px;
-          text-indent: 225px;
+          height: 270px;
+          text-indent: 200px;
           background-color:black;
           opacity: 0.9;
           margin-top: -20px;
           }
-  div.transbox_agony {
+  div.transbox_bionicle{
       margin: 30px;
           border: 1px solid black;
           margin: 0rem;
           padding: 0.1 rem;
           height: 244px;
-          text-indent: 230px;
-          background: url('/Playstation_games/Playstation_4_games/Agony.jpg');
+          text-indent: 185px;
+          background: url('/Playstation_games/Playstation_2_games/bionicle_cover.jpg');
           background-repeat: no-repeat;
-      background-size: 270px 220px;
+      background-size: 215px 220px;
           width: 100%;
           height: 234px;
           }
@@ -229,7 +229,7 @@ body {
           width: 50%;
           border-radius: none;
           margin: 0rem;
-      margin-top: 2px;
+      margin-top: 14px;
           padding: 0.1 rem;
           outline-offset: 0.25rem;
           height: 20px;
@@ -237,14 +237,19 @@ body {
   
   }
 
+  .p_text_store{
+    text-indent: 180px;
+  }
+
+
   /* line 136*/
+
   .btn-post{
     width: 300px; 
     background-color: green; 
     color: white;
   }
 
-  /* line 208*/
-  .textarea_line208{
-    color:black;
+  .textarea_line207{
+      color: black;
   }

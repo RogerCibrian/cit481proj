@@ -8,53 +8,54 @@ body {
     background-repeat: repeat;
     background-image: url("/images/Space2.jpg");
     background-position: center;
-}
+  }
 
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 html {
-height: 100%;
-margin: 0;
-padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-div.AgeofwondersPlanetfall {
-    font-family: "Times New Roman";
-    color: white;
-    font-size: medium;
-    text-align: left;
-    overflow: auto;
-    position: relative;
-    width: 100%;
-    border: 0.5rem outset black;
-    border-radius: 12px;
-    font: 1.70rem Times New Roman;
-    margin: 0rem;
-    padding: 0.1 rem;
-    outline-offset: 0.25rem;
-    height: 270px;
-    text-indent: 200px;
-    background-color:black;
-    opacity: 0.9;
-    margin-top: -20px;
-}
-div.transbox_ageofwonder {
-      margin: 30px;
-      border: 1px solid black;
-      margin: 0rem;
-      padding: 0.1 rem;
-      height: 244px;
-      text-indent: 185px;
-      background: url('/Playstation_games/Playstation_4_games/Age_of_Wonders_Planetfall_cover_art.jpg');
-      background-repeat: no-repeat;
-      background-size: 220px 220px;
-      width: 100%;
-      }
+div.SpiderMan2 {
+        font-family: "Times New Roman";
+        color: white;
+        font-size: medium;
+        text-align: left;
+        overflow: auto;
+        position: relative;
+        width: 100%;
+        border: 0.5rem outset black;
+        border-radius: 12px;
+        font: 1.70rem Times New Roman;
+        margin: 0rem;
+        padding: 0.1 rem;
+        outline-offset: 0.25rem;
+        height: 275px;
+        text-indent: 200px;
+        background-color:black;
+        opacity: 0.9;
+        margin-top: -20px;
+  }
+div.transbox_spiderman2 {
+       margin: 30px;
+        border: 1px solid black;
+        margin: 0rem;
+        padding: 0.1 rem;
+        height: 244px;
+        text-indent: 185px;
+        background: url('/Playstation_games/Playstation_4_games/The_Amazing_Spider-Man_2_cover.png');
+        background-repeat: no-repeat;
+      background-size: 215px 230px;
+        width: 100%;
+        height: 234px;
+   }
 
 ul{
-list-style: none;
-margin: 0;
-padding: 20;
+  list-style: none;
+  margin: 0;
+  padding: 20;
 }
 li{
 padding: 0px 5px;
@@ -62,64 +63,64 @@ padding: 0px 5px;
 
 /* summary transparent box    */
 div.transbox {
-margin: 0;
-background-color: #ffffff;
-border: 1px solid black;
-opacity: 0.5;
-height: 45%;
-}
-div.transbox p {
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
-    text-indent:50px;
-    }
+  margin: 0;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.5;
+  height: 35%;
+  }
+  div.transbox p {
+      margin: 5%;
+      font-weight: bold;
+      color: #000000;
+      text-indent:50px;
+      }
 /*  COMMENT/  USER RATING*/
 input[type="text"],
 select,
 textarea {
-width: 100%;
-padding: 12px;
-border: 1px solid #ccc;
-border-radius: 4px;
-resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
 label {
-padding: 12px 12px 12px 0;
-display: inline-block;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
 input[type="submit"] {
-background-color: #4caf50;
-color: white;
-padding: 12px 20px;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-float: right;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
 }
 
 input[type="submit"]:hover {
-background-color: #45a049;
+  background-color: #45a049;
 }
 
 .UserRating_container {
-border-radius: 5px;
-background-color: #f2f2f2;
-padding: 20px;
-height: 450px;
-width: 100%;
-text-align: center;
-justify-content: center;
-margin-left: 0%;
-margin-right: 20%;
-margin-top: 0%;
-margin-bottom: 0%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 450px;
+  width: 100%;
+  text-align: center;
+    justify-content: center;
+  margin-left: 0%;
+  margin-right: 20%;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 .unchecked {
-color: black;
+  color: black;
 } 
   /*START OF FOOTER EDITING*/
 .footer {
@@ -237,15 +238,13 @@ opacity: 1.0;
 
 }
 
-/*line 143*/
+/* line 140*/
 .btn-post{
     width: 300px; 
     background-color: green; 
     color: white;
 }
 
-
-/*line 215*/
-.textarea_line215{
-    color:black;
+.textarea_line211{
+    color: black;
 }
