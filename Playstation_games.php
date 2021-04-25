@@ -491,7 +491,7 @@
     </footer>
     </div>
     <!---END OF FOOTER-->
-    <!---external JS script for playstation games----->
+    <!---external JS script for PC games----->
     <script src="../js/scroll_top.js"></script>
    <script src="../js/Playstation_games_filter.js"></script>
   </body>
