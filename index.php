@@ -17,7 +17,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <!-- new account success alert -->
-	<script src='accountCheck.js'></script>
+	<script src='./js/accountCheck.js'></script>
 
     <style>
 	.videogame_slides{
