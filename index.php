@@ -40,38 +40,38 @@
 
 	<div class="videogame_slides">
 	    <a href="/Playstation_games/CODBlackOps.php">
-		<img src="/images/image_slideshow/CODBO1_image_slider.jpg" style="width:100%; height: 375px;" alt="Call of Duty: Black Ops">
+		<img src="/images/image_slideshow/CODBO1_image_slider.jpg" class="videogame_img" alt="Call of Duty: Black Ops">
 	    </a>
         </div>
 
 	<div class="videogame_slides">
 
 	    <a href="Xbox_games/Forza7.php">
-		<img src="/images/image_slideshow/forza-7-_image_slider.jpg" style="width:100%; height: 375px;" alt="Forza 7 Motorsport">
+		<img src="/images/image_slideshow/forza-7-_image_slider.jpg" class="videogame_img" alt="Forza 7 Motorsport">
 	    </a>
         </div>
 
 	<div class="videogame_slides">
 		<a href="/Playstation_games/BatmanArkCity.php">
-			<img src="/images/image_slideshow/Batman_Arkham_City_image_slider.jpg" style="width: 100%; height: 375px;" alt="Batman Arkham City">
+			<img src="/images/image_slideshow/Batman_Arkham_City_image_slider.jpg" class="videogame_img" alt="Batman Arkham City">
 		</a>
 	</div>
 
 	<div class="videogame_slides">
 		<a href="/PC_games/RedDeadRedemp2.php">
-			<img src="/images/image_slideshow/RedDeadRedemption2_image_slider.jpg" style="width: 100%; height: 375px;" alt="Red Dead Rdemption 2">
+			<img src="/images/image_slideshow/RedDeadRedemption2_image_slider.jpg" class="videogame_img" alt="Red Dead Rdemption 2">
 		</a>
 	</div>
 
 	<div class="videogame_slides">
 		<a href="/PC_games/TheWitcher3_Wild_Hunt.php">
-			<img src="/images/image_slideshow/thewitcher3wildhunt_image_slider.jpg" style="width: 100%; height: 375px;" alt="The Witcher 3: Wild Hunt">
+			<img src="/images/image_slideshow/thewitcher3wildhunt_image_slider.jpg" class="videogame_img" alt="The Witcher 3: Wild Hunt">
 		</a>
 	</div>
 
 	<div class="videogame_slides">
 		<a href="/Playstation_games/MGS2_Son_Liberty.php">
-			<img src="/images/image_slideshow/Metal_Gear_Solid_2_Sons+of_Liberty_image_slider.jpg" style="width: 100%; height: 375px;" alt="Metal Gear Solid 2: Sons of Liberty">
+			<img src="/images/image_slideshow/Metal_Gear_Solid_2_Sons+of_Liberty_image_slider.jpg" class="videogame_img" alt="Metal Gear Solid 2: Sons of Liberty">
 		</a>
 	</div>
     </div>

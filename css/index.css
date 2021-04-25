@@ -1,5 +1,9 @@
-.videogame_slides{
+	.videogame_slides{
 		display: none;
+	}
+	.videogame_img{
+		width:100%; 
+		height: 375px;
 	}
 	img{
 		vertical-align: middle;
