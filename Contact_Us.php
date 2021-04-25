@@ -23,7 +23,7 @@ session_start();
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src='./js/validateContact.js'></script>
     <!---Start of CSS style for contact form-->
-    <link rel="stylesheet" href="./css/Contact_Us.css"/>
+    <link rel="stylesheet" href="../css/Contact_Us.css"/>
     <!---End of CSS style for contact form-->
   </head>
 
@@ -48,7 +48,7 @@ session_start();
 	if(isset($_GET['msg'])){
 	$msg = $_GET['msg'];
 	if($msg == 'suc'){
-		echo '<b><font style="color:#28DF06;">Message sent!</font></b>';}
+		echo '<b><font class="b_font_51">Message sent!</font></b>';}
 	else echo "<b>Message failed. Try again!</b>";}
 	?>
       <form class="contact-form" name="myForm" onsubmit="return ValidateContactForm()"  method="POST" action="contactform.php">

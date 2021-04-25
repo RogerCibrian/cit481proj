@@ -124,120 +124,10 @@
 		}
 	}
     </script>
-    <!---Start of CSS style for sign up form-->
-    <style>
-    /*input[type="text"],
-    input[type="password"],
-      select {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-      }
 
-      label {*/
-	/*padding: 12px 12px 12px 0;*/
-      /*  display: inline-block;
-      }*/
-
-	/*attempting to fix how it looks on mobile device*/
-	/* Center website */
-      .main {
-        max-width: 850px;
-        margin: auto;
-      }
-	  
-      input[type="submit"] {
-        background-color: #4caf50;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #45a049;
-      }
-
-      .Signup_container {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-		   /* height: 750px;
-		width: 450px;*/
-		/*height: 100%;
-		width: 700px;*/
-		height: fit-content;
-		width:fit-content;
-        text-align: center;
-       /* margin-left: 30%;
-        margin-right: 50%;*/
-        margin-top: 5%;
-        margin-bottom: 20%;
-      }
-
-	#SignUpAccount{
-		width: 100%;
-		margin: 0 auto;
-		padding: 10px 20px 20px 0;
-	}
-	#SignUpAccount form label{
-		float: left;
-		display: block;
-		padding: 1.0rem 0 0 0;
-		font-weight: bold;
-	}
-	form input#lname, form input#fname,
-	form input#username, form input#email,
-	form input#phone, form input#PassInput,
-	form input#PassInput2{
-		width: 100%;
-		padding: 10px;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-	}
-	#SignUpAccount span{
-		display: inline-block;
-		margin: 10px 10px 25px 30px;
-		vertical-align: top;
-	/*	float: left;*/
-	}
-	.button{display:block;}
-	#SignUpAccount .error{ display:block;}
-
-
-      /* Responsive layout - when the screen is less than 600px wide, 
-      make the two columns stack on top of each other instead of next 
-      to each other */
-      @media screen and (max-width: 600px) {
-        input[type="submit"] {
-          width: 100%;
-          margin-top: 0;
-        }
-      }
-	  
-	  /*editing recaptcha for mobile devices used DevTools to find the div class names*/
-	  .rc-anchor-logo-portrait{
-		  margin: 0;
-		  width: 58px;
-	  }
-	  .rc-anchor-normal .rc-anchor-pt{
-		  margin: 2px 11px 0 0;
-		  padding-right: 25px;
-		  position: absolute;
-		  right: 0;
-		  text-align: right;
-		  width: 276px;
-	  }
-	  .rc-anchor-light.rc-anchor-nnormal{
-		  border: 1px solid #d3d3d3;
-		  width: fit-content;
-	  }
-    </style>
-    <!---End of CSS style for sign form-->
+	<!---external css file------>
+	<link rel="stylesheet" href="../css/sign_up.css"/>
+   
   </head>
 
   <body>
@@ -260,16 +150,16 @@
         <input type="text" name="username" placeholder="Username" maxlength="20" required />
 	<input type="text" name="mailaddr" id="email" placeholder="Your Email Address" maxlength="40" required/>-->
 	
-	<span style="vertical-align:center; margin-left: 35px;width: 270px;">
+	<span class="span1">
 		<label for="Username">Username:</label>
 		<input id="username" name="username" type="text" maxlength="20" placeholder="Ex: SpottyMilk45" required />
 	</span>
 	<br>
-	<span style="margin-left: 35px;width: 270px;">
+	<span class="span2">
 		<label for="First Name">First Name:</label>
 		<input id="fname" name="fname" type="text" maxlength="30" placeholder="Ex: Janette" required />
 	</span>
-	<span style="margin-left: 35px;width: 270px;">
+	<span class="span2">
 		<label for="Last Name">Last Name:</label>
 		<input id="lname" name="lname" tye="text" maxlength="30" placeholder="Ex: Dubbert" required />
 	</span>
@@ -278,60 +168,58 @@
 		<label for="Username">Username:</label>
 		<input id="username" name="username" type="text" maxlength="20" placeholder="Ex: SpottyMilk45" required />
 	</span>	--->
-	<span style="margin-left: 35px; width: 270px">
+	<span class="span2">
 		<label for="Emailaddr">Email Address:</label>
 		<input id="email" name="mailaddr" type="text" maxlength="40" placeholder="Ex: random98oink@yahoo.com" required />
 	</span>
 	<!--<br>--->
-	<span style="margin-left: 35px; width: 270px">
+	<span class="span2">
 		<label for="phonenumber">Phone Number:</label>
 		<input id="phone" name="phone" type="text" maxlength="12" placeholder="Ex: xxx-xxx-xxxx" required />
 	</span>
-	<span style="margin-left: 15%; width: 265px; float: left;">
+	<span class="span3">
 		<label for="password">Password:</label>
         	<input type="password" name="user_pwd" id="PassInput" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}" title="Minimum eight characters, at least one uppercase, at least one lowercase letter, one number, and one special character"  placeholder="Enter Password" required/>
 	</span>
 	
 	<br>
-	<span style="width:270px">
+	<span class="span4">
 		<label for="re_password">Re-Password:</label>
 		<input type="password" name="re_user_pwd" id="PassInput2" placeholder="Re-enter Password" required/>
 	</span>	
 	
 
-	<label /*style="margin-top: -15px"*/>
-		<input type="checkbox" onclick="myFunction()" style="float:left;">
-		<p style="/*margin-left: 10%; margin-top: -15px;*/margin-top:-1px; float:left; text-indent: 5px"> Show Password </p>
+	<label>
+		<input class="input_193" type="checkbox" onclick="myFunction()">
+		<p class="label_p_text"> Show Password </p>
 	</label>
 	
 	<br>
 	
-	<label style="margin-top -15px;">
+	<label class="label_199">
           <input
             type="checkbox"
             checked="checked"
             name="remember"
-            style="float: left"
-          />
-          <p style="float: left; text-indent: 5px; margin-top: 3px">Remember me</p>
+			class="input_200"/>
+          <p class="lable_p_206">Remember me</p>
 	</label>
 	<br>
 	<!--recaptcha thing for form-->
-		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" style="padding-top: 10px; padding-bottom: 10px; display: inline-block"></div>
+		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR" ></div>
 	
 	
 	
-        <p style="text-align: center; text-indent: 15px; padding-right: 10px;">
+        <p class="terms_conditions_text">
           By creating an account you agree to our
-          <a href="Terms_Privacy.html" style="color: dodgerblue"
+          <a href="Terms_Privacy.html" class="terms_condition_a"
             >Terms & Privacy</a
           >.
 	</p>
 	<br>
 	
-        <div class="clearfix" style="width: auto;">
+        <div class="clearfix" >
           <button type="cancel"
-            style="width: fit-content;"
             onclick="window.location='index.php';return false;"
             class="cancelbtn"
           >
@@ -340,7 +228,6 @@
           <button
             type="submit"
             name="signup-button"
-            style="width: fit-content; margin-left: 45px"
             class="signup"
           >
             Create Account
@@ -352,7 +239,7 @@
     </div>
     </div>
     <!---START OF FOOTER-->
-    <div class="footer" style="background-color: black; text-align: center; bottom: 0; left: 0; padding: 4px 6px">
+    <div class="footer">
       <p>
         Video games, pictures, all trademarks, and registered trademarks are the
         property of their respective owners.

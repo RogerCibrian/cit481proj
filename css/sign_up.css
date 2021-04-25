@@ -1,0 +1,209 @@
+ /*input[type="text"],
+    input[type="password"],
+      select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      label {*/
+	/*padding: 12px 12px 12px 0;*/
+      /*  display: inline-block;
+      }*/
+
+	/*attempting to fix how it looks on mobile device*/
+	/* Center website */
+    .main {
+        max-width: 850px;
+        margin: auto;
+      }
+	  
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .Signup_container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+		   /* height: 750px;
+		width: 450px;*/
+		/*height: 100%;
+		width: 700px;*/
+		height: fit-content;
+		width:fit-content;
+        text-align: center;
+       /* margin-left: 30%;
+        margin-right: 50%;*/
+        margin-top: 5%;
+        margin-bottom: 20%;
+      }
+
+	#SignUpAccount{
+		width: 100%;
+		margin: 0 auto;
+		padding: 10px 20px 20px 0;
+	}
+	#SignUpAccount form label{
+		float: left;
+		display: block;
+		padding: 1.0rem 0 0 0;
+		font-weight: bold;
+	}
+	form input#lname, form input#fname,
+	form input#username, form input#email,
+	form input#phone, form input#PassInput,
+	form input#PassInput2{
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+	#SignUpAccount span{
+		display: inline-block;
+		margin: 10px 10px 25px 30px;
+		vertical-align: top;
+	/*	float: left;*/
+	}
+	.button{display:block;}
+	#SignUpAccount .error{ display:block;}
+
+
+      /* Responsive layout - when the screen is less than 600px wide, 
+      make the two columns stack on top of each other instead of next 
+      to each other */
+      @media screen and (max-width: 600px) {
+        input[type="submit"] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+	  
+	  /*editing recaptcha for mobile devices used DevTools to find the div class names*/
+	  .rc-anchor-logo-portrait{
+		  margin: 0;
+		  width: 58px;
+	  }
+	  .rc-anchor-normal .rc-anchor-pt{
+		  margin: 2px 11px 0 0;
+		  padding-right: 25px;
+		  position: absolute;
+		  right: 0;
+		  text-align: right;
+		  width: 276px;
+	  }
+	  .rc-anchor-light.rc-anchor-nnormal{
+		  border: 1px solid #d3d3d3;
+		  width: fit-content;
+	  }
+
+
+      /* line 153*/
+      .span1{
+        vertical-align:center; 
+        margin-left: 35px;
+        width: 270px;
+      }
+
+      /* line 158, 162, 1171, 176*/
+      .span2{
+        margin-left: 35px; 
+        width: 270px;
+      }
+
+
+      /*line 180 */
+      .span3{
+        margin-left: 15%; 
+        width: 265px; 
+        float: left;
+      }
+
+      /* line 186*/
+      .span4{
+        width:270px;
+      }
+
+      /* line 193*/
+      .input_193{
+        float:left;
+      }
+      /* line 194*/
+      .label_p_text{
+        margin-top:-1px; 
+        float:left; 
+        text-indent: 5px
+      }
+
+      /* line 199*/
+      .label_199{
+        margin-top: -15px;
+      }
+
+      /* line 200*/
+      .input_200{
+        float: left;
+      }
+      /* line 206*/
+      .lable_p_206{
+        float: left; 
+        text-indent: 5px; 
+        margin-top: 3px
+      }
+
+      /* line 210*/
+      .g-recaptcha{
+        padding-top: 10px; 
+        padding-bottom: 10px; 
+        display: inline-block;
+      }
+
+      /* line 214*/
+      .terms_conditions_text{
+        text-align: center; 
+        text-indent: 15px; 
+        padding-right: 10px;
+      }
+
+      /* line 216*/
+      .terms_condition_a{
+        color: dodgerblue;
+      }
+
+
+      /* line 222*/
+      .clearfix{
+        width: auto;
+      }
+
+      /* line 223*/
+      .cancelbtn{
+        width: fit-content;
+      }
+
+      /* line 229*/
+      .signup{
+        width: fit-content; 
+        margin-left: 45px
+      }
+
+      /* line 243*/
+      .footer{
+        background-color: black; 
+        text-align: center; 
+        bottom: 0; 
+        left: 0; 
+        padding: 4px 6px
+      }
