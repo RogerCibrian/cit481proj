@@ -18,7 +18,7 @@
 
 <!-- new account success alert -->
 	<script src='./js/accountCheck.js'></script>
-    <style src='./css/index.css'></style>
+    <link rel="stylesheet" href="./css/index.css"/>
   </head>
 
 
