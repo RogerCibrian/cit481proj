@@ -15,85 +15,7 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script>
-	function myFunction(){
-		var passwordx1 = document.getElementById("PassInput1");
-		if (passwordx1.type === "password"){
-			passwordx1.type = "text";
-		}else{
-			passwordx1.type = "password";
-		}
-	}
-    </script>
-    <style>
-	    
-      /* Center website */
-      .main {
-        max-width: 850px;
-        margin: auto;
-      }      
-	    
-      input[type="text"],
-      select {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-      }
-      input[type="password"],
-      select {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-      }
-
-      label {
-        padding: 12px 12px 12px 0;
-        display: inline-block;
-      }
-
-      input[type="submit"] {
-        background-color: #4caf50;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #45a049;
-      }
-
-      .Memberlogin_container {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 40px;
-        /*height: 450px;
-        width: 450px;*/
-        height:auto;
-        width: auto;
-        text-align: center;
-       /* margin-left: 30%;
-        margin-right: 50%;*/
-        margin-top: 5%;
-        margin-bottom: 20%;
-      }
-
-      /* Responsive layout - when the screen is less than 600px wide, 
-      make the two columns stack on top of each other instead of next 
-      to each other */
-     /* @media screen and (max-width: 600px) {*/
-       /* input[type="submit"] {
-          width: 100%;
-          margin-top: 0;*/
-       /* }*/
-     /*}*/
-    </style>
+    <link rel="stylesheet" href="./css/Member_login.css"/>
   </head>
 
   <body>
@@ -133,28 +55,27 @@
 	  id="PassInput1"
           placeholder="Enter password"
 	  required>
-	<input type="checkbox" onclick="myFunction()" style="float:left"><p style="float:left; text-indent: 5px;"> Show Password</p>
+	<input type="checkbox" id="show_password" class="button"><p class="button_p"> Show Password</p>
       <br>
       <br>
-        <ol style="text-indent: -55px">
-          <span class="psw" style="margin-right: 40px"
+        <ol>
+          <span class="psw" 
             >Forgot <a href="Passwrd_recovery.php">password?</a></span
           >
         </ol>
         <label>
           <input
+			class="input_checkbox"
             type="checkbox"
             checked="checked"
             name="remember"
-            style="margin-bottom: 15px; margin-top: -20px;"
           />
           Remember me
         </label>
-        <div class="clearfix" style=" width: auto; margin-left: 25px">
+        <div class="clearfix">
           <button
+			id="cancel_button"
             type="cancel"
-            style="width: fit-content"
-            onclick="window.location='index.php';return false;"
             class="cancelbtn"
           >
             Cancel
@@ -162,7 +83,6 @@
           <button
             type="submit"
             name="login-submit"
-            style="width: fit-content; margin-left: 45px;"
             class="signup"
           >
             Log In
@@ -170,13 +90,14 @@
         </div>
       </form>
     </div>
+	<script src='./js/passwordInput.js'></script>
 	    
     </div> 
     </div>
 	<!--END OF MEMBER LOG IN FORM-->
     </div>
 	    <!---START OF FOOTER-->
-    <div class="footer" style="background-color:black; padding: 4px 6px; text-align:center; bottom:0; left:0">
+    <div class="footer">
       <p>
         Video games, pictures, all trademarks, and registered trademarks are the
         property of their respective owners.

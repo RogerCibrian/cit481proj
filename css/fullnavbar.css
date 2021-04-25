@@ -1,0 +1,23 @@
+	/* line 8     */
+	.navbar navbar-inverse{
+		margin-bottom: 0px;
+	}
+
+	/*css edit for the logo image on fullnavbar_php file*/
+	/*line 12*/
+	/* class="fullnavbar_php_logo"    */
+	.fullnavbar_php_logo{
+
+		width:174px; 
+		height:58px; 
+		padding-left: 0px; 
+		padding-top: 0px;
+	}
+
+	/*css edit for twittter logo*/
+	/*   line 28  */
+	/*  class="twitter_logo"    */
+	.twitter_logo{
+		width:23px; 
+		height:23px;
+	}

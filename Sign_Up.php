@@ -15,7 +15,26 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
+
+<!-- Page redirect alerts -->
+        <script>
+                const queryString = window.location.search;
+                const urlPar = new URLSearchParams(queryString);
+                const unameExists = urlPar.get('uname');
+                const emailExists = urlPar.get('mailaddr');
+                const phoneExists = urlPar.get('phone');
+
+                if (unameExists){
+                        alert("Username taken, please select another!");
+                }
+		if (emailExists){
+			alert("Email belongs to an account that already exists.");
+                }
+		if (phoneExists){
+                        alert("Phone number belongs to an account that already exists.");
+                }
+        </script>
+
 	<!-- Google reCAPTCHA API Call -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
@@ -88,7 +107,7 @@
                 alert ("\nPassword did not match: Please try again..."); 
                 return false; 
             }else{ 
-                    alert("Password Match: Welcome to RottenPotatoes!") 
+//                    alert("Password Match: Welcome to RottenPotatoes!") 
                     return true; 
                 }
 	}
