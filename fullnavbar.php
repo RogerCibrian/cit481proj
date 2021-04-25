@@ -4,7 +4,7 @@
 
         include 'rememberme.php';
 
-echo '<link rel="stylesheet" href="./css/fullnavbar.css">';
+echo '<link rel="stylesheet" href="../css/fullnavbar.css">';
 echo '<nav class="navbar navbar-inverse">';
 echo     '<div class="container-fluid">';
 echo        '<div class="navbar-header">';
