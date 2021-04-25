@@ -56,24 +56,24 @@
 	  id="PassInput1"
           placeholder="Enter password"
 	  required>
-	<input type="checkbox" onclick="myFunction()" style="float:left"><p style="float:left; text-indent: 5px;"> Show Password</p>
+	<input type="checkbox" onclick="myFunction()" class="button"><p class="button_p"> Show Password</p>
       <br>
       <br>
-        <ol style="text-indent: -55px">
-          <span class="psw" style="margin-right: 40px"
+        <ol>
+          <span class="psw" 
             >Forgot <a href="Passwrd_recovery.php">password?</a></span
           >
         </ol>
         <label>
           <input
+			class="input_checkbox"
             type="checkbox"
             checked="checked"
             name="remember"
-            style="margin-bottom: 15px; margin-top: -20px;"
           />
           Remember me
         </label>
-        <div class="clearfix" style=" width: auto; margin-left: 25px">
+        <div class="clearfix">
           <button
             type="cancel"
             style="width: fit-content"

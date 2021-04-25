@@ -40,6 +40,33 @@
       input[type="submit"]:hover {
         background-color: #45a049;
       }
+	  
+	  .input_checkbox {
+		 margin-bottom: 15px; 
+		 margin-top: -20px;
+      }
+	  
+	  .clearfix{
+		width: auto; 
+		margin-left: 25px;
+	  }
+	  
+	  .button{
+		float:left;
+	  }
+	  
+	  .button_p{
+		float:left; 
+		text-indent: 5px;
+	  }
+	  
+	  ol {
+		text-indent: -55px;
+	  }
+	  
+	  .psw {
+		margin-right: 40px;
+	  }
 
       .Memberlogin_container {
         border-radius: 5px;
