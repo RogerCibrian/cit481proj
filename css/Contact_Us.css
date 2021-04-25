@@ -51,14 +51,22 @@
         margin-top: 5%;
         margin-bottom: 10%;
       }
-
+	  
+	  .g-recaptcha{
+		padding-top: 10px; 
+		padding-bottom: 10px; 
+		display: inline-block;
+	  }
+	  
+	  .submit_button{
+		width: auto;
+	  }
 
       /*these CSS edits are related to the google recptcha*/ 
       /*testing*/
       .rc-anchor-normal .rc-anchor-pt{
         margin: 2px 11px 0 0;
         text-indent: 25px;
-
       }
       .rc-anchor-light.rc-anchor-normal{
         border: 1px solid #d3d3d3;
