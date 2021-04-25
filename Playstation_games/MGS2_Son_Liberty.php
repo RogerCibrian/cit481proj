@@ -52,7 +52,7 @@ $num = 0;
   <link rel="stylesheet" href="../style2.css" />
 
   <!-------css edits for game are in external css link----->
-  <link rel="stylesheet" href="../css/Playstation_games/MSG2_Sons_of_Liberty.css"/>
+  <link rel="stylesheet" href="../css/Playstation_games/MGS2_Sons_of_Liberty.css"/>
 
 
 </head>
