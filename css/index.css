@@ -13,6 +13,9 @@
 		position: relative;
 		margin: auto;
 	}
+	.dots_container {
+		text-align:center;
+	}
 	.dots {
 		height: 15px;
 		width: 15px;

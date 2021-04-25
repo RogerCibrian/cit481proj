@@ -77,7 +77,7 @@
     </div>
 	</div> 
    <!------the dots below the image slider----------------->
-	<div style="text-align:center">
+	<div class="dots_container">
 		<span class="dots"></span>
 		<span class="dots"></span>
 		<span class="dots"></span>
