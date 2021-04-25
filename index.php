@@ -26,7 +26,7 @@
   <body>
     <!----start of  Navigation Bar with search bar, member login, sign up-->
 	<?php
-	//include 'fullnavbar.php';
+	include 'fullnavbar.php';
         ?>
     <!----end of Navigation Bar-->
 	
