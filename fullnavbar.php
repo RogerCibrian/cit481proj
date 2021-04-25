@@ -4,12 +4,12 @@
 
         include 'rememberme.php';
 
-
+echo '<link rel="stylesheet" href="./css/fullnavbar.css">';
 echo '<nav class="navbar navbar-inverse" style="margin-bottom: 0px;">';
 echo     '<div class="container-fluid">';
 echo        '<div class="navbar-header">';
 echo          '<a class="navbar-brand" href="index.php" style="padding: 0;">
-				<img src="/images/logo.png" style="width:174px; height:58px; padding-left: 0px; padding-top: 0px;" alt="Logo">
+				<img src="/images/logo.png" class="fullnavbar_php_logo" alt="Logo">
 			  </a>';
 echo        '</div>';
 echo        '<ul class="nav navbar-nav">';
@@ -25,7 +25,7 @@ echo              '<li><a href="Nintendo_games.php">Nintendo</a></li>';
 echo            '</ul>';
 echo          '</li>';
 echo          '<li class="deactive"><a href="Contact_Us.php">Contact Us</a></li>';
-echo          '<li class="deactive"><a href="https://twitter.com/RottenP_Games"><img src="/images/twitcon.png" style="width:23px; height:23px;"></a></li>';
+echo          '<li class="deactive"><a href="https://twitter.com/RottenP_Games"><img src="/images/twitcon.png" class="twitter_logo"></a></li>';
 echo        '</ul>';
 echo        '<ul class="nav navbar-nav navbar-right">';
 
