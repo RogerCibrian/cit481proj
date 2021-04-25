@@ -40,7 +40,7 @@
       <hr />
       <!----scroll to top button----->
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-      <h2 style="color: white">Filter</h2>
+      <h2>Filter</h2>
 
       <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')">
