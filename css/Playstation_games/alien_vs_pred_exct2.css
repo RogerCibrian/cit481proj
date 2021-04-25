@@ -235,3 +235,19 @@ body {
           text-indent: 20px;
   
   }
+
+  .textarea_line210{
+    color:black;
+  }
+
+
+  .p_text_store_line75{
+    text-indent: 180px;
+  }
+
+  /*line 138*/
+  .btn-post{
+    width: 300px; 
+    background-color: green;
+     color: white;
+  }

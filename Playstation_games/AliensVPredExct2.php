@@ -72,7 +72,7 @@ $num = 0;
                 <a href="https://www.amazon.com/s?k=Aliens+vs+Predator%3A+Extinction+%28PS2%29&i=videogames&ref=nb_sb_noss">
                 <strong>Available in the Amazon Store</strong></a>
               </li>
-              <p style="text-indent: 180px;">or</p> 
+              <p class="p_text_store_line75">or</p> 
               <li>
                 <a  href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=Aliens+vs+Predator%3A+Extinction+%28PS2%29&_sacat=0">
                 <strong>in the Ebay Store </strong></a>
@@ -138,8 +138,7 @@ placeholder="Enter your comment here..."></textarea>
             <button
               class="btn btn-lg btn-post"
               type="submit"
-              name="submit"
-              style="width: 300px; background-color: green; color: white;">
+              name="submit">
               Post!
             </button>
           </form>
@@ -207,7 +206,7 @@ placeholder="Enter your comment here..."></textarea>
 	 <input type='hidden' name='date' value="<?php echo date('Y-m-d H:i:s')?>">
 	 <input type='hidden' name='parent_comment' value="<?php echo $comment->review_id; ?>">
 	 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
-	<textarea style="color:black;" rows="2" name="comment"
+	<textarea class="textarea_line210" rows="2" name="comment"
 	placeholder="Enter your reply here..."></textarea>
 	 <button class="button" type="submit" class="btn">Submit</button>
 	 <button class="button2" type="button" class="btn cancel"
