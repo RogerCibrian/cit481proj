@@ -76,7 +76,6 @@
         <div class="clearfix">
           <button
             type="cancel"
-            style="width: fit-content"
             onclick="window.location='index.php';return false;"
             class="cancelbtn"
           >
@@ -85,7 +84,6 @@
           <button
             type="submit"
             name="login-submit"
-            style="width: fit-content; margin-left: 45px;"
             class="signup"
           >
             Log In
@@ -99,7 +97,7 @@
 	<!--END OF MEMBER LOG IN FORM-->
     </div>
 	    <!---START OF FOOTER-->
-    <div class="footer" style="background-color:black; padding: 4px 6px; text-align:center; bottom:0; left:0">
+    <div class="footer">
       <p>
         Video games, pictures, all trademarks, and registered trademarks are the
         property of their respective owners.
