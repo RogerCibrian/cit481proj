@@ -146,8 +146,7 @@ placeholder="Enter your comment here..."></textarea>
             <button
               class="btn btn-lg btn-post"
               type="submit"
-              name="submit"
-              style="width: 300px; background-color: green; color: white;">
+              name="submit">
               Post!
             </button>
           </form>
@@ -215,7 +214,7 @@ placeholder="Enter your comment here..."></textarea>
 	 <input type='hidden' name='date' value="<?php echo date('Y-m-d H:i:s')?>">
 	 <input type='hidden' name='parent_comment' value="<?php echo $comment->review_id; ?>">
 	 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
-	<textarea style="color:black;" rows="2" name="comment"
+	<textarea class="textarea_line217" rows="2" name="comment"
 	placeholder="Enter your reply here..."></textarea>
 	 <button class="button" type="submit" class="btn">Submit</button>
 	 <button class="button2" type="button" class="btn cancel"
