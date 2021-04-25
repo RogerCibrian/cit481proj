@@ -15,101 +15,10 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
 
-      /* Center website */
-      .main {
-        max-width: 850px;
-        margin: auto;
-      }
-
-      h1 {
-        font-size: 50px;
-        word-break: break-all;
-      }
-
-      .row {
-        margin: 10px -16px;
-      }
-
-      /* Add padding BETWEEN each column */
-      .row,
-      .row > .column {
-        padding: 8px;
-      }
-
-      /* Create three equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 33.33%;
-        display: none; /* Hide all elements by default */
-      }
-
-      /* Clear floats after rows */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-      /* Content */
-      .content {
-        background-color: #00dbf966;
-        padding: 10px;
-        height: 350px;
-        width: auto;
-      }
-
-      /* The "show" class is added to the filtered elements */
-      .show {
-        display: block;
-      }
-
-      /* Style the buttons */
-      .btn {
-        border: none;
-        outline: none;
-        padding: 12px 16px;
-        background-color: #222222e6;
-		color: white;
-        cursor: pointer;
-        margin-left: 10px;
-        margin-top: 10px;
-      }
-
-      .btn:hover {
-        background-color: #ddd;
-      }
-
-      .btn.active {
-        background-color: #f25bffa1;
-        color: white;
-      }
-      /* scroll to the top button*/
-      #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 10px;
-        z-index: 99;
-        font-size: 18px;
-        border: none;
-        outline: none;
-        background-color: black;
-        color: white;
-        cursor: pointer;
-        padding: 10px;
-        border-radius: 4px;
-        width: 100px;
-      }
-
-      #myBtn:hover {
-        background-color: #555;
-      }
-    </style>
+    <!-------css edits for video game section/category are in external css link----->
+    <link rel="stylesheet" href="../css/Nintendo_games.css"/>
+    
   </head>
 
   <body>
@@ -130,7 +39,7 @@
       <hr />
       <!----scroll to top button-->
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-      <h2 style="color: white">Filter</h2>
+      <h2>Filter</h2>
 
       <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')">
@@ -158,7 +67,7 @@
               <img
                 src="/Nintendo_games/Switch/220px-MarioKart8Boxart.jpg"
                 alt="Mario Kart 8  "
-                style="width: 100%; height: 275px"
+                class="nintendo_wallpaper_image"
             /></a>
             <h4>Mario Kart 8</h4>
            
@@ -171,7 +80,7 @@
               <img
                 src="/Nintendo_games/Switch/220px-Animal_Crossing_New_Horizons.jpg"
                 alt="Animal Crossing: New Horizons  "
-                style="width: 100%; height: 250px"
+                class="nintendo_wallpaper_image_2"
             /></a>
             <h4>Animal Crossing: New Horizons</h4>
             
@@ -184,7 +93,7 @@
               <img
                 src="/Nintendo_games/Switch/220px-Super_Smash_Bros._Ultimate.jpg"
                 alt="Super Smash Bros Ultimate  "
-                style="width: 100%; height: 275px"
+                class="nintendo_wallpaper_image"
             /></a>
             <h4>Super Smash Bros Ultimate</h4>
           
@@ -197,7 +106,7 @@
               <img
                 src="/Nintendo_games/Switch/PokВmon_Sword.jpg"
                 alt="Pokemon Sword"
-                style="width: 100%; height: 275px"
+                class="nintendo_wallpaper_image"
             /></a>
             <h4>Pokemon Sword</h4>
            
@@ -210,7 +119,7 @@
               <img
                 src="/Nintendo_games/Switch/220px-Super_Mario_Party.jpg"
                 alt="Super Mario Party"
-                style="width: 100%; height: 275px"
+                class="nintendo_wallpaper_image"
             /></a>
             <h4>Super Mario Party</h4>
            
@@ -224,7 +133,7 @@
               <img
                 src="/Nintendo_games/DS/new_super_mario_bros_2DS.jpg"
                 alt="New Super Mario Bros."
-                style="width: 100%; height: 275px"
+                class="nintendo_wallpaper_image"
             /></a>
             <h4>New Super Mario Bros.</h4>
             
@@ -237,7 +146,7 @@
               <img
                 src="/Nintendo_games/DS/Pokemon_platinum.png"
                 alt="Pokémon Platinum "
-                style="width: 100%; height: 275px"
+                class="nintendo_wallpaper_image"
             /></a>
             <h4>Pokémon Platinum</h4>
            
@@ -251,7 +160,7 @@
               <img
                 src="/Nintendo_games/3DS/Pokemon_Sun_Boxart.jpg"
                 alt="Pokémon Sun  "
-                style="width: 100%; height: 275px"
+                class="nintendo_wallpaper_image"
             /></a>
             <h4>Pokémon Sun</h4>
             
@@ -264,7 +173,7 @@
               <img
                 src="/Nintendo_games/3DS/220px-The_Legend_of_Zelda_A_Link_Between_Worlds_NA_cover.jpg"
                 alt="The Legend of Zelda: A Link Between Worlds"
-                style="width: 100%; height: 250px"
+                class="nintendo_wallpaper_image_2"
             /></a>
             <h4>The Legend of Zelda: A Link Between Worlds</h4>
           
@@ -278,7 +187,7 @@
               <img
                 src="/Nintendo_games/Wii/220px-The_Legend_of_Zelda_Twilight_Princess_Game_Cover.jpg"
                 alt="The Legend of Zelda: Twilight Princess"
-                style="width: 100%; height: 250px"
+                class="nintendo_wallpaper_image_2"
             /></a>
             <h4>The Legend of Zelda: Twilight Princess</h4>
            
@@ -291,7 +200,7 @@
               <img
                 src="/Nintendo_games/Wii/220px-Just_Dance_(Wii)_boxart.jpg"
                 alt="Just Dance"
-                style="width: 100%; height: 275px"
+                class="nintendo_wallpaper_image"
             /></a>
             <h4>Just Dance</h4>
             
@@ -305,7 +214,7 @@
               <img
                 src="/Nintendo_games/Game_Boy_Advance/Pokemon_Emerald.jpg"
                 alt="Pokemon Emerald"
-                style="width: 100%; height: 275px"
+                class="nintendo_wallpaper_image"
             /></a>
             <h4>Pokemon Emerald</h4>
             
@@ -318,7 +227,7 @@
               <img
                 src="/Nintendo_games/Game_Boy_Advance/DBZ_Legacy_of_goku.jpg"
                 alt="Dragon Ball Z: The Legacy of Goku"
-                style="width: 100%; height: 250px"
+                class="nintendo_wallpaper_image_2"
             /></a>
             <h4>Dragon Ball Z: The Legacy of Goku</h4>
            
@@ -332,7 +241,7 @@
               <img
                 src="/Nintendo_games/GameCube/Resident_Evil_4_Cover.png"
                 alt="Resident Evil 4"
-                style="width: 100%; height: 275px"
+                class="nintendo_wallpaper_image"
             /></a>
             <h4>Resident Evil 4</h4>
             

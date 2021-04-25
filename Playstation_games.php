@@ -17,7 +17,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
      <!-------css edits for video game section/category are in external css link----->
-    <link rel="stylesheet" href="../css/Playstation_games.css"/>
+     <link rel="stylesheet" href="../css/Playstation_games.css"/>
   </head>
 
   <body>
