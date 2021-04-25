@@ -8,7 +8,7 @@ echo '<link rel="stylesheet" href="./css/fullnavbar.css">';
 echo '<nav class="navbar navbar-inverse">';
 echo     '<div class="container-fluid">';
 echo        '<div class="navbar-header">';
-echo          '<a class="navbar-brand" href="index.php" style="padding: 0;">
+echo          '<a class="navbar-brand" href="index.php">
 				<img src="/images/logo.png" class="fullnavbar_php_logo" alt="Logo">
 			  </a>';
 echo        '</div>';
