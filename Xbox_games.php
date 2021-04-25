@@ -62,7 +62,7 @@
               <img
                 src="Xbox_games/Xbox360_games/Ace_Combat_6_Fires_of_Liberation_Game_Cover.jpg"
                 alt="Ace Combat 6"
-                style="width: 100%; height: 250px"
+                
             /></a>
             <h4>Ace Combat 6</h4>
             
@@ -77,7 +77,7 @@
               <img
                 src="Xbox_games/Xbox360_games/Doa4cover.jpg"
                 alt="Dead or Alive 4"
-                style="width: 100%; height: 250px"
+                
             /></a>
             <h4>Dead or Alive 4</h4>
            
@@ -92,7 +92,7 @@
               <img
                 src="Xbox_games/Xbox360_games/Forza_Motorsport_4_cover.jpg"
                 alt="Forza 4"
-                style="width: 100%; height: 250px"
+                
             /></a>
             <h4>Forza 4</h4>
            
@@ -107,7 +107,7 @@
               <img
                 src="Xbox_games/Xbox360_games/motogp-07-front-cover.jpg"
                 alt="MotoGP '07"
-                style="width: 100%; height: 250px"
+                
             /></a>
             <h4>MotoGP '07</h4>
            
@@ -122,7 +122,7 @@
               <img
                 src="Xbox_games/Xbox360_games/ridge-racer-game-cover.png"
                 alt="Ridge Racer 6"
-                style="width: 100%; height: 250px"
+                
             /></a>
             <h4>Ridge Racer 6</h4>
            
@@ -137,7 +137,7 @@
               <img
                 src="Xbox_games/Xbox360_games/Saints_Row_Box_Art.jpg"
                 alt="Saints Row"
-                style="width: 100%; height: 250px"
+                
             /></a>
             <h4>Saints Row</h4>
            
@@ -152,7 +152,7 @@
               <img
                 src="Xbox_games/Xbox360_games/viva-pinata-front-cover.jpg"
                 alt="Dead or Alive 4"
-                style="width: 100%; height: 250px"
+               
             /></a>
             <h4>Viva Pinata: Party Animals</h4>
            
@@ -167,7 +167,7 @@
               <img
                 src="Xbox_games/Xbox360_games/Wipeout_in_the_Zone_Coverart.png"
                 alt="Wipeout: In The Zone"
-                style="width: 100%; height: 250px"
+                
             /></a>
             <h4>Wipeout: In The Zone</h4>
             
@@ -182,7 +182,7 @@
               <img
                 src="Xbox_games/Xbox360_games/wreckateer.png"
                 alt="Wreckateer"
-                style="width: 100%; height: 250px"
+                
             /></a>
             <h4>Wreckateer</h4>
             
@@ -197,7 +197,7 @@
               <img
                 src="Xbox_games/Xbox360_games/Zumba-Fitness-Rush-Cover.jpg"
                 alt="Dead or Alive 4"
-                style="width: 100%; height: 275px"
+                
             /></a>
             <h4>Zumba Fitness Rush</h4>
             
@@ -213,7 +213,7 @@
               <img
                 src="Xbox_games/Xbox_One_games/ashen.jpg"
                 alt="Ashen"
-                style="width: 100%; height: 275px"
+                
             /></a>
             <h4>Ashen</h4>
            
@@ -226,7 +226,7 @@
               <img
                 src="Xbox_games/Xbox_One_games/Forza_Horizon_4_cover.jpg"
                 alt="Forza Horizon 4"
-                style="width: 100%; height: 275px"
+                
             /></a>
             <h4>Forza Horizon 4</h4>
            
@@ -239,7 +239,7 @@
               <img
                 src="Xbox_games/Xbox_One_games/Forza7.jpg"
                 alt="Forza 7"
-                style="width: 100%; height: 275px"
+                
             /></a>
             <h4>Forza 7</h4>
            
@@ -252,7 +252,7 @@
               <img
                 src="Xbox_games/Xbox_One_games/GoW4.jpg"
                 alt="Gears of War 4"
-                style="width: 100%; height: 275px"
+               
             /></a>
             <h4>Gears of War 4</h4>
            
@@ -265,7 +265,7 @@
               <img
                 src="Xbox_games/Xbox_One_games/gears5.png"
                 alt="Gears 5"
-                style="width: 100%; height: 275px"
+               
             /></a>
             <h4>Gears of War 5</h4>
             
@@ -278,7 +278,7 @@
               <img
                 src="Xbox_games/Xbox_One_games/halo5.jpg"
                 alt="Halo 5: Guardians"
-                style="width: 100%; height: 275px"
+              
             /></a>
             <h4>Halo 5: Guardians</h4>
             
@@ -291,7 +291,7 @@
               <img
                 src="Xbox_games/Xbox_One_games/killer-instinct-game-cover.png"
                 alt="Killer Instinct"
-                style="width: 100%; height: 275px"
+              
             /></a>
             <h4>Killer Instinct</h4>
            
@@ -304,7 +304,7 @@
               <img
                 src="Xbox_games/Xbox_One_games/quantum_break.jpg"
                 alt="Quantum Break"
-                style="width: 100%; height: 275px"
+               
             /></a>
             <h4>Quantum Break</h4>
             
@@ -317,7 +317,7 @@
               <img
                 src="Xbox_games/Xbox_One_games/Sea_of_thieves_cover_art.jpg"
                 alt="Sea of Thieves"
-                style="width: 100%; height: 275px"
+               
             /></a>
             <h4>Sea of Thieves</h4>
             
@@ -331,7 +331,7 @@
                 <img
                   src="Xbox_games/Xbox_One_games/Sunset_Overdrive_cover.jpg"
                   alt="Sunset Overdrive"
-                  style="width: 100%; height: 275px"
+                 
               /></a>
               <h4>Sunset Overdrive</h4>
              
