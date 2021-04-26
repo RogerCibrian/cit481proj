@@ -43,7 +43,7 @@
       <h2>Filter</h2>
 
       <div id="myBtnContainer">
-        <button class="btn active" id="btn1">
+        <button class="btn" id="btn1">
           Show all
         </button>
         <button class="btn" id="btn2">
