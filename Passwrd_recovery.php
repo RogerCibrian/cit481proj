@@ -50,9 +50,11 @@
 	  <br>
       Or<a href="passwrd_recovery_phone.php"> via phone number</a>
       <form
+        id="recovery-form"
         class="psswd-recovery-form"
         method="post"
         action="pswd_recovery.php"
+        name="myForm"
       >
         <input
           id="email"
