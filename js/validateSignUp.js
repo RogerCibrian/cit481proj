@@ -46,12 +46,12 @@ function validateForm(){
         alert("Please provide a valid email address. Example: oinster159@sbcgobal.net");
             /*return false;*/
     }
-    
+
    // Function to check Whether both passwords 
    // are the same or not. 
    else if (password1 != password2) { 
        alert ("\nPassword did not match: Please try again..."); 
-           return false;
+           /*return false;*/
    }else{ 
            /* alert("Password Match: Welcome to RottenPotatoes!") */
            return true; 
