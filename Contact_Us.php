@@ -54,7 +54,7 @@ session_start();
 	$msg = $_GET['msg'];
 	if($msg == 'suc'){
 		echo '<b><font class="b_font_51">Message sent!</font></b>';}
-	else  echo "<b>Message failed. Try again!</b>";
+	else  echo "<b>Message failed. Try again!</b>";}
 	?>
       <form class="contact-form" name="myForm" id="contact-form"  method="POST" action="contactform.php">
         <input type="text" name="name" id="fullname" maxlength="40" placeholder="Full name" required/>
