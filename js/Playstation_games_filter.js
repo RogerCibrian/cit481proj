@@ -1,11 +1,11 @@
 /*JavaScript filter code */
 
-document.getElementById("btn1").addEventListener("click", filterSelection('all'));	
-document.getElementById("btn2").addEventListener("click", filterSelection('PlayStation 4'));	
-document.getElementById("btn3").addEventListener("click", filterSelection('PlayStation 3'));	
-document.getElementById("btn4").addEventListener("click", filterSelection('PlayStation 2'));	
+document.getElementsByClassName("active").addEventListener("click", filterSelection('all'));	
+document.getElementsByClassName("ps4").addEventListener("click", filterSelection('PlayStation 4'));	
+document.getElementsByClassName("ps3").addEventListener("click", filterSelection('PlayStation 3'));	
+document.getElementsByClassName("ps2").addEventListener("click", filterSelection('PlayStation 2'));	
 
-// filterSelection("all");
+filterSelection("all");
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
