@@ -16,6 +16,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+<!---external JS script: phne number format, password visibility, and cancel button func--->
+<script type="text/javascript" src='../js/validateSignUp.js'></script>
+	<!---external JS script: validate entire form and email format validation--->
+	<script type="text/javascript" src='../js/signup_show_pass.js'></script>
+	<script type="text/javascript" src='../js/signup_alreadyExist.js'></script>
 	
 
 <!-- Page redirect alerts -->
@@ -163,10 +168,6 @@
 		<input id="lname" name="lname" tye="text" maxlength="30" placeholder="Ex: Dubbert" required />
 	</span>
 	<br>
-	<!--<span style="float:left" >
-		<label for="Username">Username:</label>
-		<input id="username" name="username" type="text" maxlength="20" placeholder="Ex: SpottyMilk45" required />
-	</span>	--->
 	<span class="span2">
 		<label for="Emailaddr">Email Address:</label>
 		<input id="email" name="mailaddr" type="text" maxlength="40" placeholder="Ex: random98oink@yahoo.com" required />
@@ -243,12 +244,12 @@
       </form>
     </div>
 
-	<script type="text/javascript" src='../js/signup_email_validation.js'></script>
-	<!---external JS script: phne number format, password visibility, and cancel button func--->
+	<!---<script type="text/javascript" src='../js/signup_email_validation.js'></script>
+	
 	<script type="text/javascript" src='../js/validateSignUp.js'></script>
-	<!---external JS script: validate entire form and email format validation--->
+	
 	<script type="text/javascript" src='../js/signup_show_pass.js'></script>
-	<script type="text/javascript" src='../js/signup_alreadyExist.js'></script>
+	<script type="text/javascript" src='../js/signup_alreadyExist.js'></script>--->
 	
     </div>
     </div>
