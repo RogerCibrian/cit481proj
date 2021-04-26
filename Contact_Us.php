@@ -60,7 +60,7 @@ session_start();
 		<!--recaptcha thing for form-->
 		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR"></div>
        <br>
-	   <button type="submit" name="submit" class="submit_button">
+	   <button type="submit" id="send_message" name="submit" class="submit_button">
           SEND MESSAGE
         </button>
       </form>

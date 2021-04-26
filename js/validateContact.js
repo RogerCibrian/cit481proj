@@ -1,4 +1,4 @@
-document.getElementById("contact-form").addEventListener("click", ValidateContactForm);
+document.getElementById("send_message").addEventListener("click", ValidateContactForm);
 function ValidateContactForm(){
 		
 		var full_name_field = document.getElementById('fullname');
