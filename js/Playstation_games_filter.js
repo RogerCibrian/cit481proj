@@ -8,10 +8,14 @@ button2.addEventListener("click", filterSelection);
 
 var button3 = document.getElementsByClassName("btn3");
 button3.addEventListener("click", filterSelection);*/
-window.onload=function(){
+
 
 var button = document.getElementsByClassName("btn");
-button.addEventListener("click", filterSelection);
+/*button.addEventListener("click", filterSelection);*/
+
+for (i = 0; i < button.length; i++) {
+  button[i].addEventListener("click", filterSelection);
+}
 
 filterSelection("all");
 function filterSelection(c) {
@@ -58,4 +62,5 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-}
+
+ 
