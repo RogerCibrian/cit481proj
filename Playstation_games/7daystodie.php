@@ -198,7 +198,7 @@ placeholder="Enter your comment here..."></textarea>
 </div>
 <!-- end of likes section for parent comments-->  
 
-<button class="open-button" id="open-button">reply</button>
+<button class="open-button" id="open-button" onclick="openForm(<?php echo $num; ?>)" >reply</button>
      <div class="form-popup" id="<?php echo $num; ?>">
       <form class="form-container" method="POST" action="../user_rating_form.php">
 <!--review tables has to be altered to make rating an optional field -->
@@ -209,8 +209,8 @@ placeholder="Enter your comment here..."></textarea>
 	<textarea class="textarea_line208" rows="2" name="comment"
 	placeholder="Enter your reply here..."></textarea>
 	 <button class="button" type="submit" class="btn">Submit</button>
-	 <button class="button2" type="button" id="button2" class="btn cancel">Close</button>
-      </form>  <!---onclick="closeForm(<?php echo $num++; ?>)"---->
+	 <button class="button2" type="button" id="button2" onclick="closeForm(<?php echo $num++; ?>)" class="btn cancel">Close</button>
+      </form> 
     </div>
   </div>
 <?php endif;?>
@@ -288,8 +288,6 @@ placeholder="Enter your comment here..."></textarea>
     </div>
     <!---END OF FOOTER-->
     
-     <!-------css edits are in external css link----->
-  <script src="../js/Playstation_games/7daystodie.js"/>
 
    
 </body>
