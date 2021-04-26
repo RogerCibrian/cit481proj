@@ -35,7 +35,7 @@ function validateForm(){
     var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!filter.test(email.value)){
         alert("Please provide a valid email address. Example: oinster159@sbcgobal.net");
-        return false;
+        /*return false;*/
     }
     
     
@@ -53,7 +53,7 @@ function validateForm(){
         // are the same or not. 
         else if (password1 != password2) { 
             alert ("\nPassword did not match: Please try again..."); 
-            return false; 
+           /* return false; */
         }else{ 
                 /* alert("Password Match: Welcome to RottenPotatoes!") */
                 return true; 
