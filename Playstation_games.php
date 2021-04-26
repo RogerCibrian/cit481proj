@@ -46,13 +46,13 @@
         <button class="btn active" id="btn1">
           Show all
         </button>
-        <button class="btn ps4" id="btn2">
+        <button class="btn" id="btn2">
           PlayStation 4
         </button>
-        <button class="btn ps3" id="btn3">
+        <button class="btn" id="btn3">
           PlayStation 3
         </button>
-        <button class="btn ps2" id="btn4">
+        <button class="btn" id="btn4">
           PlayStation 2
         </button>
       </div>
