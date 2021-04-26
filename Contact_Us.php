@@ -24,7 +24,7 @@ session_start();
     
     
     <!----contact form forbidden words external js script---->
-    <script src='../js/Contact_forbiddenwords.js'></script>
+    <script src='../js/Contact_Us/Contact_forbiddenwords.js'></script>
     
     
     <!-----external css file------>
@@ -85,7 +85,7 @@ session_start();
     </footer>
     </div>
     <!---external JS file: email validation------>
-    <script src='../js/validateContact.js'></script>
+    <script src='../js/Contact_Us/validateContact.js'></script>
     <!---END OF FOOTER-->
   </body>
 </html>
