@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-	<script src='../js/validateSignUp.js'></script>
+
 <!-- Page redirect alerts -->
         <script>
                 const queryString = window.location.search;
@@ -38,6 +38,93 @@
 
 	<!-- Google reCAPTCHA API Call -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+	$(function () {
+		$('#phone').keydown(function(e){
+			var key = e.charCode || e.keyCode || 0;
+			$text = $(this);
+			if (key !== 8 && key !== 9) {
+				if($text.val().length === 3){
+					$text.val($text.val() + '-');
+				}
+				if($text.val().length === 7){
+					$text.val($text.val() + '-');
+				}
+			}
+			return (key == 8 || key == 9 || key == 46 || (key >= 48 && key <=57) || (key >= 96 && key <= 105));	
+		})
+		});
+
+
+	function validateForm(){
+		var x = document.forms["myForm"]["fname"].value;
+		var j = document.forms["myForm"]["lname"].value;
+		var l = document.forms["myForm"]["username"].value;
+		var k = document.forms["myForm"]["mailaddr"].value;
+		var password1 = document.forms["myForm"]["user_pwd"].value;
+		var password2 = document.forms["myForm"]["re_user_pwd"].value;
+
+
+		if (x == ""){
+			alert("First Name field must be filled out");
+			return false;
+		}
+		if (j == ""){
+			alert("Last Name field must be filled out");
+			return false;
+		}
+		if (l == ""){
+			alert("Username field must be filled out");
+			return false;
+		}
+		if (k == ""){
+			alert("Emaill Address field must be filled out");
+			return false;
+		}
+
+
+
+		var email = document.getElementById('email');
+		var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		if (!filter.test(email.value)){
+			alert("Please provide a valid email address. Example: oinster159@sbcgobal.net");
+			return false;
+		}
+		
+		
+		/*Password validation part 2*/
+              /*checks if password is empty*/
+              if ( password1 == "") {
+                alert("Password field must be filled out");
+                return false;
+            }
+            else if (password2 == "") {
+                alert("Re-Enter Password field must be filled out");
+                return false;
+            }
+            // Function to check Whether both passwords 
+            // are the same or not. 
+            else if (password1 != password2) { 
+                alert ("\nPassword did not match: Please try again..."); 
+                return false; 
+            }else{ 
+//                    alert("Password Match: Welcome to RottenPotatoes!") 
+                    return true; 
+                }
+	}
+	
+	function myFunction(){
+		var passwordx2 = document.getElementById("PassInput");
+		var passwordx3 = document.getElementById("PassInput2");
+		if (passwordx2.type === "password" || passwordx3 === "password"){
+			passwordx2.type = "text";
+			passwordx3.type = "text";
+		}else{
+			passwordx2.type = "password";
+			passwordx3.type = "password";
+		}
+	}
+    </script>
 
 	<!---external css file------>
 	<link rel="stylesheet" href="../css/sign_up.css"/>
@@ -104,7 +191,7 @@
 	
 
 	<label>
-		<input class="input_193" type="checkbox" id="showpassword_func">
+		<input class="input_193" type="checkbox" onclick="myFunction()">
 		<p class="label_p_text"> Show Password </p>
 	</label>
 	
