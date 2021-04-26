@@ -39,7 +39,7 @@
     <div class="main">
       <hr />
       <!----scroll to top button----->
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <button id="myBtn" title="Go to top">Top</button>
       <h2>Filter</h2>
 
       <div id="myBtnContainer">
