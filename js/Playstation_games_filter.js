@@ -9,14 +9,12 @@ button2.addEventListener("click", filterSelection);
 var button3 = document.getElementsByClassName("btn3");
 button3.addEventListener("click", filterSelection);*/
 
+var btnContainer = document.getElementById("myBtnContainer");
+var button = btnContainer.getElementById("btn3");
 
-var button = document.getElementsByClassName("btn");
-/*button.addEventListener("click", filterSelection);*/
-
-for (i = 0; i < button.length; i++) {
+for (var i = 0; i < button.length; i++) {
   button[i].addEventListener("click", filterSelection);
 }
-
 filterSelection("all");
 function filterSelection(c) {
   var x, i;
