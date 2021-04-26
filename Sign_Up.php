@@ -218,9 +218,8 @@
           >.
 	</p>
 	<br>
-	
         <div class="clearfix" >
-          <button type="button"
+          <button type="button" 
             onclick="window.location='index.php';return false;"
             class="cancelbtn"
           >
