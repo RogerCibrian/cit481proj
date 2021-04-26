@@ -1,6 +1,6 @@
 /*JavaScript filter code */
 
-var button1 = document.getElementsByClassName("btn");
+/*var button1 = document.getElementsByClassName("btn");
 button1.addEventListener("click", filterSelection);
 
 var button2 = document.getElementsByClassName("btn2");
@@ -10,7 +10,7 @@ var button3 = document.getElementsByClassName("btn3");
 button3.addEventListener("click", filterSelection);
 
 var button4 = document.getElementsByClassName("btn4");
-button4.addEventListener("click", filterSelection);	
+button4.addEventListener("click", filterSelection);	*/
 
 filterSelection("all");
 function filterSelection(c) {

@@ -16,6 +16,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+
+    <script src="../js/Playstation_games_filter.js"></script>
      <!-------css edits for video game section/category are in external css link----->
      <link rel="stylesheet" href="../css/Playstation_games.css"/>
   </head>
@@ -493,6 +495,6 @@
     <!---END OF FOOTER-->
     <!---external JS script for PC games----->
     <script src="./js/scroll_top.js"></script>
-   <script src="./js/Playstation_games_filter.js"></script>
+   
   </body>
 </html>
