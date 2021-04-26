@@ -54,13 +54,8 @@
           name="username"
           placeholder="Enter username"
           required>
-        <input
-          type="password"
-	  name="pwd"
-	  id="PassInput1"
-          placeholder="Enter password"
-	  required>
-	<input type="checkbox" id="show_password" class="button"><p class="button_p"> Show Password</p>
+        <input type="password" name="pwd" id="PassInput1" placeholder="Enter password" required>
+	      <input type="checkbox" id="show_password" class="button"><p class="button_p"> Show Password</p>
       <br>
       <br>
         <ol>

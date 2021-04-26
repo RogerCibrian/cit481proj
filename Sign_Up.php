@@ -39,7 +39,7 @@
 	<!-- Google reCAPTCHA API Call -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
-	$(function () {
+	/*$(function () {
 		$('#phone').keydown(function(e){
 			var key = e.charCode || e.keyCode || 0;
 			$text = $(this);
@@ -53,7 +53,7 @@
 			}
 			return (key == 8 || key == 9 || key == 46 || (key >= 48 && key <=57) || (key >= 96 && key <= 105));	
 		})
-		});
+	});*/
 
 
 	function validateForm(){
@@ -113,7 +113,7 @@
                 }
 	}
 	
-	function myFunction(){
+	/*function myFunction(){
 		var passwordx2 = document.getElementById("PassInput");
 		var passwordx3 = document.getElementById("PassInput2");
 		if (passwordx2.type === "password" || passwordx3 === "password"){
@@ -123,7 +123,7 @@
 			passwordx2.type = "password";
 			passwordx3.type = "password";
 		}
-	}
+	}*/
     </script>
 
 	<!---external css file------>
@@ -145,11 +145,8 @@
       <h1>Sign up with us!</h1>
       <p>Please fill in this form to become a member!</p>
 
-      <form class="form-signup" name="myForm" id="SignUpAccount" onsubmit="return validateForm()" method="POST" action="signupuser.php">
-       <!---<input type="text" name="fname" placeholder="First name" maxlength="30" required />
-        <input type="text" name="lname" placeholder="Last name" maxlength="30" required />
-        <input type="text" name="username" placeholder="Username" maxlength="20" required />
-	<input type="text" name="mailaddr" id="email" placeholder="Your Email Address" maxlength="40" required/>-->
+	<!----onsubmit="return validateForm()"--->
+      <form class="form-signup" name="myForm" id="SignUpAccount"  method="POST" action="signupuser.php">
 	
 	<span class="span1">
 		<label for="Username">Username:</label>
@@ -189,9 +186,9 @@
 		<input type="password" name="re_user_pwd" id="PassInput2" placeholder="Re-enter Password" required/>
 	</span>	
 	
-
+<!-----onclick="myFunction()"--->
 	<label>
-		<input class="input_193" type="checkbox" onclick="myFunction()">
+		<input class="input_193" id="show_password" type="checkbox" >
 		<p class="label_p_text"> Show Password </p>
 	</label>
 	
@@ -230,7 +227,6 @@
 			id="cancel_button"
             type="button"
             class="cancelbtn"
-            onclick="window.location='index.php';return false;"
           > Cancel
           </button>
 
@@ -244,6 +240,9 @@
         </div>
       </form>
     </div>
+
+	<!---external JS script: password visibility and cancel button func--->
+	<script src='../js/signup_show_pass.js'></script>
 
     </div>
     </div>
