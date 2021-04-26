@@ -17,17 +17,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 	<!---external JS script: password visibility and cancel button func--->
-	<script src='../js/signup_show_pass.js'></script>
+	<script type="text/javascript" src='../js/signup_show_pass.js'></script>
 
 <!-- Page redirect alerts -->
-        <script>
-                const queryString = window.location.search;
+       <!--- <script>
+                /*const queryString = window.location.search;
                 const urlPar = new URLSearchParams(queryString);
                 const unameExists = urlPar.get('uname');
                 const emailExists = urlPar.get('mailaddr');
-                const phoneExists = urlPar.get('phone');
+                const phoneExists = urlPar.get('phone');*/
 
-                if (unameExists){
+               /* if (unameExists){
                         alert("Username taken, please select another!");
                 }
 		if (emailExists){
@@ -35,8 +35,8 @@
                 }
 		if (phoneExists){
                         alert("Phone number belongs to an account that already exists.");
-                }
-        </script>
+                }*/
+        </script>---->
 
 	<!-- Google reCAPTCHA API Call -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -148,7 +148,7 @@
       <p>Please fill in this form to become a member!</p>
 
 	<!----onsubmit="return validateForm()"--->
-      <form class="form-signup" name="myForm" id="SignUpAccount"  method="POST" action="signupuser.php">
+      <form class="form-signup" name="myForm" id="SignUpAccount" onsubmit="return validateForm()" method="POST" action="signupuser.php">
 	
 	<span class="span1">
 		<label for="Username">Username:</label>
@@ -245,7 +245,7 @@
     </div>
 
 	<!---external JS script: password visibility and cancel button func--->
-	<script src='../js/validateSignUp.js'></script>
+	<script type="text/javascript" src='../js/validateSignUp.js'></script>
 
     </div>
     </div>
