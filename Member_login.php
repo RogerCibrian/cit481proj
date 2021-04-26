@@ -75,7 +75,7 @@
         <div class="clearfix">
           <button
 			id="cancel_button"
-            type="cancel"
+            type="button"
             class="cancelbtn"
             onclick="window.location='index.php';return false;"
           >
