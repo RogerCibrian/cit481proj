@@ -16,6 +16,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+	<!---external JS script: password visibility and cancel button func--->
+	<script src='../js/signup_show_pass.js'></script>
 
 <!-- Page redirect alerts -->
         <script>
@@ -243,7 +245,7 @@
     </div>
 
 	<!---external JS script: password visibility and cancel button func--->
-	<script src='../js/signup_show_pass.js'></script>
+	<script src='../js/validateSignUp.js'></script>
 
     </div>
     </div>
