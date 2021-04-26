@@ -1,6 +1,7 @@
 /*JavaScript filter code */
 
-document.getElementsByClassName("active").addEventListener("click", filterSelection('all'));	
+var test = document.getElementsByClassName("active");
+test.addEventListener("click", filterSelection('all'));	
 document.getElementsByClassName("ps4").addEventListener("click", filterSelection('PlayStation 4'));	
 document.getElementsByClassName("ps3").addEventListener("click", filterSelection('PlayStation 3'));	
 document.getElementsByClassName("ps2").addEventListener("click", filterSelection('PlayStation 2'));	
