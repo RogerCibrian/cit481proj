@@ -19,7 +19,7 @@ $(function () {
 
 
 /* password visibility*/
-document.getElementById("SignUpAccount").addEventListener("click", validateForm);
+document.getElementById("sign-up-button").addEventListener("click", validateForm);
 function validateForm(){
     var x = document.forms["myForm"]["fname"].value;
     var j = document.forms["myForm"]["lname"].value;

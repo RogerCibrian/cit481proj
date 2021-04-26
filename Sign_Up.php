@@ -231,6 +231,7 @@
           </button>
 
           <button
+		  	id="sign-up-button"
             type="submit"
             name="signup-button"
             class="signup"
