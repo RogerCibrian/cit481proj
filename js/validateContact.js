@@ -24,44 +24,20 @@ function ValidateContactForm(){
 			return false;
 		}
 	
-		/*var emailadd = document.getElementById('email_addr');*/
-		var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		if (!filter.test(email_field.value)){
-			alert("Please provide a valid email address. Example: oinkster159@sbcglobal.net");
+		var e = document.forms["myForm"]["email"].value;
+
+		/* test if email input field is empty or not*/
+		if (e == ""){
+			alert("Emaill Address field must be filled out");
 			return false;
 		}
+	
+		/* makes sure if value enetred in email input field is in actual email format*/
+		var email = document.getElementById('email_addr');
+		var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		if (!filter.test(email.value)){
+			alert("\nPlease provide a valid email address. Example: oinster159@sbcgobal.net");
+				return false;
+		}
 }
-	
-    /*********************************
-	* RESTRICT KEYWORDS IN MESSAGE BOX
-	*8********************************/
-	$(document).ready(function() {
-		$('#textarea-box').keyup(function() {
-			var textBoxValue = $(this).val();
-			console.log(textBoxValue);
-
-			var forbidden = [
-				'http', 'https', '.py', '.php', '.exe', '.diff', '.sh',
-				'.c', '.wnry', '.java', '.json', '.ps1', '.js', '.pl',
-				'.pas', '.rb', '.r', '.sql', '.xml', '.html', 'micro', 'zepto','cerber',
-		 		'locky','cerber3','cryp1','mole','onion','axx','osiris','crpyz','crypt',
-				'locked', 'odin','ccc', 'cerber2','sage', 'globe','exx','1txt', 'decrypt2017',
-				'encrypt','ezz','zzzzz', 'MERRY', 'enciphered', 'r5a','aesir','ecc', 'enigma',
-				'cryptowall', 'breaking_bad','angelamerkel','windows10','PEGS1', '1cbu1','venusf',
-				'rnsmwr', 'evillock','realfs0ciety@sigiant.org.fs0ciety','zorro', 'hush', 'bin',
-				'crypte','dll','rokku','mbed','djvu','.bat','gero','.hese','.seto','.peta', 
-				'.moka','.meds','.kvga','.domn','.karl','.nesa','.noos','.kuub','.reco',
-				'.bora','.nols','.werd','.coot','.derp','.meka','.toec','.kodg'		
-			
-			];
-
-			for (var i =0; i < forbidden.length; i++){
-				if(textBoxValue.search(forbidden[i]) > -1){
-					textBoxValue = textBoxValue.replace(forbidden[i], '');
-				}
-			}
-			$(this).val(textBoxValue);
-		});
-	});
-	
 

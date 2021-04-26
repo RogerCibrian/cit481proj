@@ -22,8 +22,12 @@ session_start();
 	 <!-- Google reCAPTCHA API Call -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
-    <script src='./js/validateContact.js'></script>
-    <!---Start of CSS style for contact form-->
+
+    <!----contact form forbidden words external js script---->
+    <script src='../js/Contact_forbiddenwords.js'></script>
+    
+    
+    <!-----external css file------>
     <link rel="stylesheet" href="../css/Contact_Us.css"/>
     
   </head>
@@ -79,6 +83,7 @@ session_start();
       <p>© 2020 RottenPotatoes</p>
     </footer>
     </div>
+    <script src='../js/validateContact.js'></script>
     <!---END OF FOOTER-->
   </body>
 </html>
