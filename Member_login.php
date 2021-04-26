@@ -38,7 +38,7 @@
                         $errormsg = $_GET['errormsg'];
 			if ($errormsg == "1"){
 			echo "<p>Username does not exist!</p>";}
-			else
+			else{
 			echo "<p>Incorrect password!</p>";}
 		if (isset($_GET['msg'])){
 			echo "<p>Password has been updated!</p>";}
@@ -74,10 +74,10 @@
         </label>
         <div class="clearfix">
           <button
-			id="cancel_button"
+            id="cancel_button"
             type="button"
             class="cancelbtn"
-            onclick="window.location='index.php';return false;"
+            
           >
             Cancel
           </button>
@@ -91,7 +91,7 @@
         </div>
       </form>
     </div>
-	<script src='./js/passwordInput.js'></script>
+	<script src='../js/passwordInput.js'></script>
 	    
     </div> 
     </div>
