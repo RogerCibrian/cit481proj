@@ -1,10 +1,10 @@
 document.getElementById("contact-form").addEventListener("click", ValidateContactForm);
 function ValidateContactForm(){
 		
-		var full_name_field = document.forms["myForm"]["name"].value;
-		var email_field = document.forms["myForm"]["email"].value;
-		var subject_field = document.forms["myForm"]["subject"].value;
-		var message_box_field = document.forms["myForm"]["message"].value;
+		var full_name_field = document.getElementById('fullname');
+		var email_field = document.getElementById('email_addr');
+		var subject_field = document.getElementById('subjectField');
+		var message_box_field = document.getElementById('textarea-box');
 
 
 		if (full_name_field == ""){
@@ -24,9 +24,9 @@ function ValidateContactForm(){
 			return false;
 		}
 	
-		var email = document.getElementById('email_addr');
+		/*var emailadd = document.getElementById('email_addr');*/
 		var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		if (!filter.test(email.value)){
+		if (!filter.test(email_field.value)){
 			alert("Please provide a valid email address. Example: oinkster159@sbcglobal.net");
 			return false;
 		}

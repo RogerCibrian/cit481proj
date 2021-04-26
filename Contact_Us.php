@@ -53,9 +53,9 @@ session_start();
 	else echo "<b>Message failed. Try again!</b>";}
 	?>
       <form class="contact-form" name="myForm" id="contact-form" onsubmit="return ValidateContactForm()"  method="POST" action="contactform.php">
-        <input type="text" name="name" maxlength="40" placeholder="Full name" required/>
+        <input type="text" name="name" id="fullname" maxlength="40" placeholder="Full name" required/>
         <input type="text" name="email" id="email_addr" maxlength="40" placeholder="Your Email Address" required/>
-        <input type="text" name="subject" maxlength="100" placeholder="Subject" required/>
+        <input type="text" name="subject" id="subjectField" maxlength="100" placeholder="Subject" required/>
         <textarea name="message" id="textarea-box" maxlength="200" placeholder="Message" required ></textarea>
 		<!--recaptcha thing for form-->
 		 <div class="g-recaptcha" data-sitekey="6LdsxD4aAAAAAIWbPoSulkJXNVH6py4KRs8on4LR"></div>
