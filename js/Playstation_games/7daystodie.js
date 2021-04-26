@@ -35,17 +35,7 @@
    dt.getFullYear() +
    " " +
   dt.toLocaleTimeString();
- /*
- function result() {
-   //Rating : Count
-   //Review : Comment(id)
-   alert(
-     "Rating : " +
-       count +
-       "\nReview : " +
-       document.getElementById("comment").value
-   );
- }*/
+
  var open_button = document.getElementById("open-button");
  open_button.addEventListener("click", openForm(<?php echo $num; ?>));
 

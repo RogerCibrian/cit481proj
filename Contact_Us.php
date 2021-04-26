@@ -21,10 +21,11 @@ session_start();
 	
 	 <!-- Google reCAPTCHA API Call -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
     <script src='./js/validateContact.js'></script>
     <!---Start of CSS style for contact form-->
     <link rel="stylesheet" href="../css/Contact_Us.css"/>
-    <!---End of CSS style for contact form-->
+    
   </head>
 
   <body>
@@ -51,7 +52,7 @@ session_start();
 		echo '<b><font class="b_font_51">Message sent!</font></b>';}
 	else echo "<b>Message failed. Try again!</b>";}
 	?>
-      <form class="contact-form" name="myForm" onsubmit="return ValidateContactForm()"  method="POST" action="contactform.php">
+      <form class="contact-form" name="myForm" id="validation_contact"  method="POST" action="contactform.php">
         <input type="text" name="name" maxlength="40" placeholder="Full name" required/>
         <input type="text" name="email" id="email_addr" maxlength="40" placeholder="Your Email Address" required/>
         <input type="text" name="subject" maxlength="100" placeholder="Subject" required/>
