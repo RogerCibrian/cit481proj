@@ -1,14 +1,4 @@
 
-/* 
-the alert messages does display on the screen for all input fields
- but the form still runs the signupuser.php I think because if user ignores the 
-alert messages for email validation--> alert("Please provide a valid email 
-address. Example: oinster159@sbcgobal.net"); then the all the info
-entered in the other input fields disappear and the url changes to 
-https://www.rottenpotatoes.org/Sign_Up.php?error=invalidemailaddress
-
-*/
-
 /*
     When all input fields have value and the information is correct, email 
     address format is correct, BUT if the user's password and re-enter password
@@ -17,10 +7,8 @@ https://www.rottenpotatoes.org/Sign_Up.php?error=invalidemailaddress
     does display but the form submits and creates a new account eventho the passwords
     don't match. 
 
-    if passwords dont match AND google recaptcha is not click on then the
-    alert message----alert ("\nPassword did not match: Please try again...");--
-    displays, form is not submitted, and the values of the other input fields are
-    still present.
+    same error shows even if google recaptch isnt clicked. Alert message says its creating new account
+    and automatically signs new user in
 */
 
 document.getElementById("sign-up-button").addEventListener("click", validateForm);
