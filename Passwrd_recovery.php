@@ -72,7 +72,7 @@
         </div>
       </form>
     </div>
-    <!---external JS script: phne number format, password visibility, and cancel button func--->
+    <!---external JS script: cancel button func--->
 	  <script type="text/javascript" src='../js/cancel_button.js'></script>
     <!--END OF PASSWORD RECOVERY FORM-->
   </body>
