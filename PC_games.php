@@ -237,4 +237,4 @@
     <script src="../js/scroll_top.js"></script>
     <script src="../js/PC_games_filter.js"></script>
   </body>
-<.html>
+</html>
