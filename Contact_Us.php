@@ -22,7 +22,7 @@ session_start();
 	 <!-- Google reCAPTCHA API Call -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
-
+    
     <!----contact form forbidden words external js script---->
     <script src='../js/Contact_forbiddenwords.js'></script>
     
@@ -83,6 +83,7 @@ session_start();
       <p>© 2020 RottenPotatoes</p>
     </footer>
     </div>
+    <!---external JS file: email validation------>
     <script src='../js/validateContact.js'></script>
     <!---END OF FOOTER-->
   </body>

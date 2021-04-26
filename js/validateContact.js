@@ -1,11 +1,11 @@
 document.getElementById("send_message").addEventListener("click", ValidateContactForm);
 function ValidateContactForm(){
-		
-		var full_name_field = document.getElementById('fullname');
-		var email_field = document.getElementById('email_addr');
-		var subject_field = document.getElementById('subjectField');
-		var message_box_field = document.getElementById('textarea-box');
 
+		var full_name_field = document.forms["myForm"]["name"].value;
+		var email_field = document.forms["myForm"]["email"].value;
+		var subject_field = document.forms["myForm"]["subject"].value;
+		var message_box_field = document.forms["myForm"]["message"].value;
+		var e = document.forms["myForm"]["email"].value;
 
 		if (full_name_field == ""){
 			alert("Full Name field must be filled");
@@ -23,8 +23,6 @@ function ValidateContactForm(){
 			alert("Message field must be filled out");
 			return false;
 		}
-	
-		var e = document.forms["myForm"]["email"].value;
 
 		/* test if email input field is empty or not*/
 		if (e == ""){
@@ -38,6 +36,8 @@ function ValidateContactForm(){
 		if (!filter.test(email.value)){
 			alert("\nPlease provide a valid email address. Example: oinster159@sbcgobal.net");
 				return false;
+		} else{
+			return true;
 		}
 }
 
