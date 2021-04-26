@@ -73,7 +73,7 @@
 	}
 	#SignUpAccount span{
 		display: inline-block;
-		margin: 10px 10px 25px 30px;
+		/*margin: 10px 10px 25px 30px;*/
 		vertical-align: top;
 	/*	float: left;*/
 	}
@@ -212,6 +212,10 @@
          margin-left: 15%;
        }
 
-       label{
+       label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
         margin-left: 1%;
-       }
+    }
