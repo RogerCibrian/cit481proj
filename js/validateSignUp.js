@@ -31,17 +31,17 @@ function validateForm(){
 
 
     /* makes sure if value enetred in email input field is in actual email format*/
-    var email = document.getElementById('email');
+    /*var email = document.getElementById('email');
     var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!filter.test(email.value)){
         alert("Please provide a valid email address. Example: oinster159@sbcgobal.net");
         return false;
-    }
+    }*/
     
     
     /*Password validation part 2*/
           /*checks if password is empty*/
-          if ( password1 == "") {
+          /*if ( password1 == "") {
             alert("Password field must be filled out");
             return false;
         }
@@ -56,8 +56,8 @@ function validateForm(){
             return false; 
         }else{ 
                 /* alert("Password Match: Welcome to RottenPotatoes!") */
-                return true; 
-            }
+                /*return true; 
+            }*/
 }
 
 

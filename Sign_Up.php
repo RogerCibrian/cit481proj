@@ -243,6 +243,7 @@
       </form>
     </div>
 
+	<script type="text/javascript" src='../js/signup_email_validation.js'></script>
 	<!---external JS script: phne number format, password visibility, and cancel button func--->
 	<script type="text/javascript" src='../js/validateSignUp.js'></script>
 	<!---external JS script: validate entire form and email format validation--->
