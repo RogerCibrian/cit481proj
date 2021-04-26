@@ -10,7 +10,7 @@ var button3 = document.getElementsByClassName("btn3");
 button3.addEventListener("click", filterSelection);*/
 
 var button = document.getElementsByClassName("btn");
-button.addEventListener("click", filterSelection);
+button[i].addEventListener("click", filterSelection);
 
 filterSelection("all");
 function filterSelection(c) {
