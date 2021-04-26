@@ -36,7 +36,7 @@
     <!-- MAIN (Center website) -->
     <div class="main">
       <hr />
-      <button onclick="topFunction()" id="myBtn" title="Go to top" >Top</button>
+      <button id="myBtn" title="Go to top" >Top</button>
       <h2 style="color: white">Filter</h2>
 
       <div id="myBtnContainer">
@@ -375,5 +375,8 @@
     </footer>
     </div>
     <!---END OF FOOTER-->
+
+    <!---external JS script for playstation games----->
+    <script src="../js/scroll_top.js"></script>
   </body>
 </hmtl>

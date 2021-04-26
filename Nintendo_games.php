@@ -38,7 +38,7 @@
     <div class="main">
       <hr />
       <!----scroll to top button-->
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <button id="myBtn" title="Go to top">Top</button>
       <h2>Filter</h2>
 
       <div id="myBtnContainer">
@@ -263,34 +263,6 @@
     </footer>
     <!---END OF FOOTER-->
 
-    <!-----Scroll to top Javascript code-->
-    <script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
-
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-
     <!-----Filter Javascript code-->
     <script>
       filterSelection("all");
@@ -338,5 +310,9 @@
         });
       }
     </script>
+
+
+    <!---external JS script for playstation games----->
+    <script src="../js/scroll_top.js"></script>
   </body>
 </html>

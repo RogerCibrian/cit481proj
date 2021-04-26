@@ -38,7 +38,7 @@
     <div class="main">
       <hr />
       <!----scroll to top button-->
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <button id="myBtn" title="Go to top">Top</button>
       <h2>Filter</h2>
 
       <div id="myBtnContainer">
@@ -237,4 +237,4 @@
     <script src="../js/scroll_top.js"></script>
     <script src="../js/PC_games_filter.js"></script>
   </body>
-<.html>
+</html>
