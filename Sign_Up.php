@@ -16,8 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-	<!---external JS script: validate entire form and email format validation--->
-	<script type="text/javascript" src='../js/validateSignUp.js'></script>
+
 	
 	<!----external JS script: Page redirect alerts and if username, phone number, 
 	email addrs has already been registered-->
@@ -202,6 +201,9 @@
 	<!---<script type="text/javascript" src='../js/signup_email_validation.js'></script>
 	
 	<script type="text/javascript" src='../js/validateSignUp.js'></script>---->
+
+	<!---external JS script: validate entire form and email format validation--->
+	<script type="text/javascript" src='../js/validateSignUp.js'></script>
 	
 	<!---external JS script: phne number format, password visibility, and cancel button func--->
 	<script type="text/javascript" src='../js/signup_show_pass.js'></script>
