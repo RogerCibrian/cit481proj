@@ -15,14 +15,10 @@ var button1 = document.getElementById("btn1");
 var button2 = document.getElementById("btn2");
 
 var button3 = document.getElementById("btn3");
-button3.addEventListener("click", filterSelection);
+button3.addEventListener("click", filterSelection, false);
 button3.addEventListener("click", w3AddClass);
 button3.addEventListener("click", w3RemoveClass);
-button3.addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-});
+
 
 var button4 = document.getElementById("btn4");
 
