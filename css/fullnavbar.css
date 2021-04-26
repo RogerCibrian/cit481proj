@@ -1,6 +1,9 @@
-	/* line 8  */
-	.navbar navbar-inverse{
+	/* line 8*/
+	/*.navbar navbar-inverse{
 		margin-bottom: 0px;
+	}*/
+	.navbar-brand{
+		padding: 0;
 	}
 
 	/*css edit for the logo image on fullnavbar_php file*/
@@ -12,7 +15,7 @@
 		height:58px; 
 		padding-left: 0px; 
 		padding-top: 0px;
-		margin-top: -15px;
+
 	}
 
 	/*css edit for twittter logo*/
