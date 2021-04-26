@@ -9,3 +9,5 @@ function closeForm(){
 }
 
 
+//onclick="openForm(<?php echo $num; ?>)
+
