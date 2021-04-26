@@ -1,3 +1,4 @@
+
 var validate_contact_func = document.getElementById("validation_contact");
 validate_contact_func.addEventListener("click", ValidateContactForm);
 
