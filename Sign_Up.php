@@ -220,7 +220,7 @@
 	<br>
 	
         <div class="clearfix" >
-          <button type="cancel"
+          <button type="button"
             onclick="window.location='index.php';return false;"
             class="cancelbtn"
           >
