@@ -38,7 +38,7 @@
                         $errormsg = $_GET['errormsg'];
 			if ($errormsg == "1"){
 			echo "<p>Username does not exist!</p>";}
-			else
+			else{
 			echo "<p>Incorrect password!</p>";}
 		if (isset($_GET['msg'])){
 			echo "<p>Password has been updated!</p>";}
@@ -77,6 +77,7 @@
 			id="cancel_button"
             type="cancel"
             class="cancelbtn"
+            onclick="window.location='index.php';return false;"
           >
             Cancel
           </button>
