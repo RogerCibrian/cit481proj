@@ -43,16 +43,16 @@
       <h2>Filter</h2>
 
       <div id="myBtnContainer">
-        <button class=" active" id="btn1">
+        <button class="btn active" id="btn1">
           Show all
         </button>
-        <button class="btn" id="btn2">
+        <button class="btn btn2" id="btn2">
           PlayStation 4
         </button>
-        <button class="btn" id="btn3">
+        <button class="btn btn3" id="btn3">
           PlayStation 3
         </button>
-        <button class="btn" id="btn4">
+        <button class="btn btn4" id="btn4">
           PlayStation 2
         </button>
       </div>
