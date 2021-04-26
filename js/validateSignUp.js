@@ -56,6 +56,6 @@ function validateForm(){
         return false;
     }
 
-    
+    console.log("works");
 }
 

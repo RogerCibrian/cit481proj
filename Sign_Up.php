@@ -16,37 +16,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<!---external JS script: phne number format, password visibility, and cancel button func--->
-	<script type="text/javascript" src='../js/validateSignUp.js'></script>
 	<!---external JS script: validate entire form and email format validation--->
+	<script type="text/javascript" src='../js/validateSignUp.js'></script>
 	
+	<!----external JS script: Page redirect alerts and if username, phone number, 
+	email addrs has already been registered-->
 	<script type="text/javascript" src='../js/signup_alreadyExist.js'></script>
 	
-
-<!-- Page redirect alerts -->
-       <!--- <script>
-                /*const queryString = window.location.search;
-                const urlPar = new URLSearchParams(queryString);
-                const unameExists = urlPar.get('uname');
-                const emailExists = urlPar.get('mailaddr');
-                const phoneExists = urlPar.get('phone');*/
-
-               /* if (unameExists){
-                        alert("Username taken, please select another!");
-                }
-		if (emailExists){
-			alert("Email belongs to an account that already exists.");
-                }
-		if (phoneExists){
-                        alert("Phone number belongs to an account that already exists.");
-                }*/
-        </script>---->
-
 	<!-- Google reCAPTCHA API Call -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!--<script>
 	
-
 
 	/*function validateForm(){
 		var x = document.forms["myForm"]["fname"].value;
@@ -127,7 +107,7 @@
       <p>Please fill in this form to become a member!</p>
 
 	<!----onsubmit="return validateForm()"--->
-      <form class="form-signup" name="myForm" id="SignUpAccount" onsubmit="return validateForm()" method="POST" action="signupuser.php">
+      <form class="form-signup" name="myForm" id="SignUpAccount" method="POST" action="signupuser.php">
 	
 	<span class="span1">
 		<label for="Username">Username:</label>
@@ -221,10 +201,9 @@
 
 	<!---<script type="text/javascript" src='../js/signup_email_validation.js'></script>
 	
-	<script type="text/javascript" src='../js/validateSignUp.js'></script>
+	<script type="text/javascript" src='../js/validateSignUp.js'></script>---->
 	
-	<script type="text/javascript" src='../js/signup_show_pass.js'></script>
-	<script type="text/javascript" src='../js/signup_alreadyExist.js'></script>--->
+	<!---external JS script: phne number format, password visibility, and cancel button func--->
 	<script type="text/javascript" src='../js/signup_show_pass.js'></script>
     </div>
     </div>
