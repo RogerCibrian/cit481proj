@@ -83,10 +83,12 @@
 	</span>	
 	
 <!-----onclick="myFunction()"--->
-	<label>
-		<input class="input_193" id="show_password" type="checkbox" >
-		<p class="label_p_text"> Show Password </p>
-	</label>
+  <span>
+    <label>
+      <input class="input_193" id="show_password" type="checkbox" >
+      <p class="label_p_text"> Show Password </p>
+    </label>
+  <span>
 	
 	<br>
 	
