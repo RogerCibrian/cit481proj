@@ -219,12 +219,21 @@
 	</p>
 	<br>
         <div class="clearfix" >
-          <button type="button" 
+         <!-- <button type="button" 
             onclick="window.location='index.php';return false;"
             class="cancelbtn"
           >
             Cancel
+          </button>--->
+
+		  <button
+			id="cancel_button"
+            type="button"
+            class="cancelbtn"
+            onclick="window.location='index.php';return false;"
+          > Cancel
           </button>
+
           <button
             type="submit"
             name="signup-button"
