@@ -61,7 +61,7 @@
         <div class="clearfix">
           <button
             id="cancel_button"
-            type="button
+            type="button"
             class="cancelbtn"
           >
             Cancel

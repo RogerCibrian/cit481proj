@@ -55,6 +55,7 @@
         action="pswd_recovery.php"
       >
         <input
+          id="email"
           type="text"
           name="mail"
           placeholder="Enter Email Address"
@@ -68,12 +69,13 @@
           >
             Cancel
           </button>
-          <button type="submit" name="resetrequestsubmit" class="signup"> Recovery </button>
+          <button type="submit" id="recovery" name="resetrequestsubmit" class="signup"> Recovery </button>
         </div>
       </form>
     </div>
     <!---external JS script: cancel button func--->
 	  <script type="text/javascript" src='../js/cancel_button.js'></script>
+    <script type="text/javascript" src='../js/Sign_Up/emailValidation.js'></script>
     <!--END OF PASSWORD RECOVERY FORM-->
   </body>
 </html>
