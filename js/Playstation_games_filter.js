@@ -10,10 +10,13 @@ var button3 = document.getElementsByClassName("btn3");
 button3.addEventListener("click", filterSelection);*/
 
 var btnContainer = document.getElementById("myBtnContainer");
-var button = btnContainer.getElementById("btn3");
+var button = btnContainer.getElementsByClassName("btn");
 
 for (var i = 0; i < button.length; i++) {
   button[i].addEventListener("click", filterSelection);
+  button[i].addEventListener("click", w3AddClass);
+  button[i].addEventListener("click", w3RemoveClass);
+
 }
 filterSelection("all");
 function filterSelection(c) {
@@ -50,7 +53,7 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
+//var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
