@@ -5,7 +5,7 @@ document.getElementById("btn2").addEventListener("click", filterSelection('PlayS
 document.getElementById("btn3").addEventListener("click", filterSelection('PlayStation 3'));	
 document.getElementById("btn4").addEventListener("click", filterSelection('PlayStation 2'));	
 
-filterSelection("all");
+// filterSelection("all");
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
