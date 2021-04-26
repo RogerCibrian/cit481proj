@@ -1,4 +1,4 @@
-
+document.getElementById("contact-form").addEventListener("click", ValidateContactForm);
 function ValidateContactForm(){
 		
 		var full_name_field = document.forms["myForm"]["name"].value;
@@ -30,11 +30,11 @@ function ValidateContactForm(){
 			alert("Please provide a valid email address. Example: oinkster159@sbcglobal.net");
 			return false;
 		}
-	}
+}
 	
-		/***************************
+    /*********************************
 	* RESTRICT KEYWORDS IN MESSAGE BOX
-	*8************************8*/
+	*8********************************/
 	$(document).ready(function() {
 		$('#textarea-box').keyup(function() {
 			var textBoxValue = $(this).val();
