@@ -33,6 +33,11 @@
     <!--START OF MEMBER LOG IN FORM-->
     <div class="Memberlogin_container">
       <h1>Member Login</h1>
+
+
+      <!---if a "{" after else statement on line 46 is inserted, the 
+      entire webpage will have error statement of "Cannot be found" or 
+      " can't connect"--------->
         <?php 
 		if (isset($_GET['errormsg'])){
                         $errormsg = $_GET['errormsg'];
@@ -91,7 +96,9 @@
         </div>
       </form>
     </div>
-	<script src='../js/passwordInput.js'></script>
+
+    <!---external JS script: password visibility and cancel button func--->
+	  <script src='../js/passwordInput.js'></script>
 	    
     </div> 
     </div>
