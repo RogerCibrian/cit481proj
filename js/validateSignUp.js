@@ -56,9 +56,9 @@ function validateForm(){
 
     if ( password1 == "") {
        alert("Password field must be filled out");
-        /*return false;*/
+        return false;
    }
-   else if (password2 == "") {
+   if (password2 == "") {
        alert("Re-Enter Password field must be filled out");
         return false;
    }
@@ -67,13 +67,13 @@ function validateForm(){
     var email = document.getElementById('email');
     var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!filter.test(email.value)){
-        alert("Please provide a valid email address. Example: oinster159@sbcgobal.net");
+        alert("\nPlease provide a valid email address. Example: oinster159@sbcgobal.net");
             return false;
     }
 
    // Function to check Whether both passwords 
    // are the same or not. 
-   else if (password1 != password2) { 
+    if (password1 != password2) { 
        alert ("\nPassword did not match: Please try again..."); 
            return false;
    }else{ 
