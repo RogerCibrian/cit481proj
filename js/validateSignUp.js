@@ -1,5 +1,5 @@
 
-document.getElementById("SignUpAccount").addEventListener("click", validateForm);
+document.getElementById("sign-up-button").addEventListener("click", validateForm);
 function validateForm(){
     var l = document.forms["myForm"]["username"].value;
     var x = document.forms["myForm"]["fname"].value;
@@ -25,7 +25,7 @@ function validateForm(){
         alert("Emaill Address field must be filled out");
         return false;
     }
-    
+
     var password1 = document.forms["myForm"]["user_pwd"].value;
     var password2 = document.forms["myForm"]["re_user_pwd"].value;
 
