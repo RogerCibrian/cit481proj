@@ -248,6 +248,7 @@
 	<script type="text/javascript" src='../js/validateSignUp.js'></script>
 	<!---external JS script: validate entire form and email format validation--->
 	<script type="text/javascript" src='../js/signup_show_pass.js'></script>
+	<script type="text/javascript" src='../js/signup_alreadyExist.js'></script>
 	
     </div>
     </div>
