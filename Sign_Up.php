@@ -38,7 +38,7 @@
 
 	<!-- Google reCAPTCHA API Call -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
+    <!--<script>
 	/*$(function () {
 		$('#phone').keydown(function(e){
 			var key = e.charCode || e.keyCode || 0;
@@ -56,7 +56,7 @@
 	});*/
 
 
-	function validateForm(){
+	/*function validateForm(){
 		var x = document.forms["myForm"]["fname"].value;
 		var j = document.forms["myForm"]["lname"].value;
 		var l = document.forms["myForm"]["username"].value;
@@ -90,11 +90,11 @@
 			alert("Please provide a valid email address. Example: oinster159@sbcgobal.net");
 			return false;
 		}
-		
+		*/
 		
 		/*Password validation part 2*/
               /*checks if password is empty*/
-              if ( password1 == "") {
+            /*  if ( password1 == "") {
                 alert("Password field must be filled out");
                 return false;
             }
@@ -111,7 +111,7 @@
 //                    alert("Password Match: Welcome to RottenPotatoes!") 
                     return true; 
                 }
-	}
+	}*/
 	
 	/*function myFunction(){
 		var passwordx2 = document.getElementById("PassInput");
@@ -124,7 +124,7 @@
 			passwordx3.type = "password";
 		}
 	}*/
-    </script>
+    </script>-->
 
 	<!---external css file------>
 	<link rel="stylesheet" href="../css/sign_up.css"/>

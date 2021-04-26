@@ -16,19 +16,6 @@ $(function () {
 });
 
 
-/* password visibility*/
-document.getElementById("show_password").addEventListener("click", myFunction);	
-function myFunction(){
-    var passwordx2 = document.getElementById("PassInput");
-    var passwordx3 = document.getElementById("PassInput2");
-    if (passwordx2.type === "password" || passwordx3 === "password"){
-        passwordx2.type = "text";
-        passwordx3.type = "text";
-    }else{
-        passwordx2.type = "password";
-        passwordx3.type = "password";
-    }
-}
 
 
 /* password visibility*/
@@ -89,6 +76,20 @@ function validateForm(){
                 return true; 
             }
 }	
+
+/* password visibility*/
+document.getElementById("show_password").addEventListener("click", myFunction);	
+function myFunction(){
+    var passwordx2 = document.getElementById("PassInput");
+    var passwordx3 = document.getElementById("PassInput2");
+    if (passwordx2.type === "password" || passwordx3 === "password"){
+        passwordx2.type = "text";
+        passwordx3.type = "text";
+    }else{
+        passwordx2.type = "password";
+        passwordx3.type = "password";
+    }
+}
 
 /* cancel button function*/
 document.getElementById("cancel_button").addEventListener("click", cancel);	
