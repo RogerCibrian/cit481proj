@@ -62,7 +62,7 @@ $num = 0;
   <link rel="stylesheet" href="/main.css" />
   <link rel="stylesheet" href="../style2.css" />
 
-
+	<link rel="stylesheet" href="../css/Xbox_games/AceCombat6.css"/>
 
 </head>
 <body>
