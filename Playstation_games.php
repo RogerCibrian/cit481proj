@@ -43,16 +43,16 @@
       <h2>Filter</h2>
 
       <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">
+        <button class="btn active" id="btn1">
           Show all
         </button>
-        <button class="btn" onclick="filterSelection('PlayStation 4')">
+        <button class="btn" id="btn2">
           PlayStation 4
         </button>
-        <button class="btn" onclick="filterSelection('PlayStation 3')">
+        <button class="btn" id="btn3">
           PlayStation 3
         </button>
-        <button class="btn" onclick="filterSelection('PlayStation 2')">
+        <button class="btn" id="btn4">
           PlayStation 2
         </button>
       </div>
@@ -492,7 +492,7 @@
     </div>
     <!---END OF FOOTER-->
     <!---external JS script for PC games----->
-    <script src="../js/scroll_top.js"></script>
-   <script src="../js/Playstation_games_filter.js"></script>
+    <script src="./js/scroll_top.js"></script>
+   <script src="./js/Playstation_games_filter.js"></script>
   </body>
 </html>
