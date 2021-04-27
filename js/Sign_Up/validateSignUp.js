@@ -12,6 +12,7 @@
 */
 
 document.getElementById("sign-up-button").addEventListener("click", validateForm);
+
 function validateForm(){
     var l = document.forms["myForm"]["username"].value;
     var x = document.forms["myForm"]["fname"].value;
@@ -66,7 +67,8 @@ function validateForm(){
            return false;
    }else{ 
            /* alert("Password Match: Welcome to RottenPotatoes!") */
-           return true; 
+//          return true; 
+			document.getElementById("SignUpAccount").submit();
     }
 
    

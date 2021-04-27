@@ -130,7 +130,7 @@
 
           <button
 		  	id="sign-up-button"
-            type="submit"
+            type="button"
             name="signup-button"
             class="signup"
           >
