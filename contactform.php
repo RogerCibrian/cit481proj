@@ -9,7 +9,13 @@ require '/home/cit481/vendor/autoload.php';
 
 //echo !extension_loaded('openssl')?"Not Avail":"Avail";
 
-if(isset($_POST['submitbtn'])){ /*checks whether user submitted form*/
+if(!isset($_POST['name'], $_POST['email'], $_POST['subject'], $_POST['message'])) { 
+// form not submitted
+	exit('please fill in form');
+}
+
+//if(isset($_POST['submitbtn'])){ /*checks whether user submitted form*/
+else {
 //	echo "submitted";
 	$name = $_POST['name'];
 	$email = $_POST['email'];
