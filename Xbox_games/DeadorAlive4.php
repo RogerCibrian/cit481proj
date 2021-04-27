@@ -319,12 +319,7 @@ placeholder="Enter your comment here..."></textarea>
             document.getElementById(i + 1 + subid).style.color = "black";
           }
         }
-      }
-	//i think this is jquery
-	//function finalrating(item) {
-	//var count = item.id[0];
-	//$.post("../user_rating_form.php", {rating:count});
-       
+      }  
 	/*Timestamp javascript code */
        var dt = new Date();
       document.getElementById("datetime").innerHTML =
