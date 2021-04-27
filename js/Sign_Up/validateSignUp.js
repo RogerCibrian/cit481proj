@@ -66,7 +66,8 @@ function validateForm(){
            return false;
    }else{ 
            /* alert("Password Match: Welcome to RottenPotatoes!") */
-           return true; 
+//          return true; 
+			document.getElementById("myForm").submit();
     }
 
    
