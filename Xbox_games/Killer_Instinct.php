@@ -51,7 +51,7 @@ $num = 0;
   <link rel="stylesheet" href="../style2.css" />
 
   <!-------css edits for game are in external css link----->
-  <link rel="stylesheet" href="../css/Xbox_games/deadoralive.css"/>
+  <link rel="stylesheet" href="../css/Xbox_games/Killer_Instinct.css"/>
 
 </head>
 <body>
