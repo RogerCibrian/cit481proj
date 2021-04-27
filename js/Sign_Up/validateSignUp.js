@@ -68,7 +68,8 @@ function validateForm(){
    }else{ 
            /* alert("Password Match: Welcome to RottenPotatoes!") */
 //          return true; 
-			document.getElementById("SignUpAccount").submit();
+//			document.getElementById("SignUpAccount").submit();
+			$('#SignUpAccount').submit()
     }
 
    
