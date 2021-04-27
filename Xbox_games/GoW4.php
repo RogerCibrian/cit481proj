@@ -61,7 +61,7 @@ $num = 0;
 <script src="https://kit.fontawesome.com/961faa2e94.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/main.css" />
   <link rel="stylesheet" href="../style2.css" />
-	<link rel="stylesheet" href="../css/Xbox_games/AceCombat6.css"/>
+	<link rel="stylesheet" href="../css/Xbox_games/GoW4.css"/>
 
 </head>
 <body>
