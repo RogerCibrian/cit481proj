@@ -51,6 +51,11 @@ function validateForm(){
        alert("Re-Enter Password field must be filled out");
         return false;
    }
+   
+   if (grecaptcha.getResponse() == ""){
+		alert("Complete the reCAPTCHA");
+		return false;
+	}
 
     /* makes sure if value enetred in email input field is in actual email format*/
     var email = document.getElementById('email');
@@ -69,7 +74,7 @@ function validateForm(){
            /* alert("Password Match: Welcome to RottenPotatoes!") */
 //          return true; 
 //			document.getElementById("SignUpAccount").submit();
-			$('#SignUpAccount').submit()
+			$('#SignUpAccount').submit();
     }
 
    
