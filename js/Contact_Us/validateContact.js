@@ -44,7 +44,8 @@ function ValidateContactForm(){
 				return false;
 		} else{
 //			return true;
-			$('#contact-form').submit()
+//			$('#contact-form').submit();
+			document.getElementById('contact-form').submit();
 		}
 }
 
