@@ -43,7 +43,8 @@ function ValidateContactForm(){
 			alert("\nPlease provide a valid email address. Example: oinster159@sbcgobal.net");
 				return false;
 		} else{
-			return true;
+//			return true;
+			$('#contact-form').submit()
 		}
 }
 
