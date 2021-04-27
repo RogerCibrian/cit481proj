@@ -49,9 +49,7 @@ $num = 0;
 <script src="https://kit.fontawesome.com/961faa2e94.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/main.css" />
   <link rel="stylesheet" href="../style2.css" />
-  <!-------css edits for game are in external css link----->
-  <link rel="stylesheet" href="../css/Xbox_games/Forza7.css"/>
-
+	<link rel="stylesheet" href="../css/Xbox_games/Forza7.css"/>
 </head>
 <body>
     <!----start of  Navigation Bar with search bar, member login, sign up-->
