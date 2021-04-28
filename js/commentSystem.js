@@ -1,4 +1,4 @@
-console.log(5 + 6);
+
 var count;
 
 function starmark(item) {
@@ -47,8 +47,9 @@ function closeForm($id) {
 document.getElementById($id).style.display = "none";
 }
 //likes section 
+var lArray = $("#myPhpValue").val();
 // pass php array to javascript array in json format
-var lArray = <?php echo json_encode($userLikes) ?>;
+//var lArray = <?php echo json_encode($userLikes) ?>;
 //grab the parent element which comments are a part of
 const parent = document.getElementById('pComments');
 var countn = 0;
@@ -189,7 +190,4 @@ e.preventDefault();
 });
 
 });
-$(document).ready(function(){
- alert('worked');
- // ajax call here
-});
+

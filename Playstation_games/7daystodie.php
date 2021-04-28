@@ -5,6 +5,7 @@ include '../user_rating_form.php';
 include '/var/www/html/rememberme.php';
 include '../likesdislikes.php';
 //multidimentional array of objects
+
 $page = 48;
 $multiobj = display_comments($page,$con);
 $multiobj2 = display_comments2($page,$con);
@@ -37,16 +38,13 @@ $num = 0;
     <title>RottenPotatoes</title>
 	<link rel="stylesheet" href="/main.css" />
 	<script src="../js/all.js" crossorigin="anonymous" data-auto-add-css="false"></script>
-    <link
-    rel="stylesheet"
-    href="../css/fontawesome.min.css"
-	/>
+    <link rel="stylesheet" href="../css/fontawesome.min.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <link
+  <!-- <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  /> 
+  /> -->
 <script type='text/javascript' src='../js/jquery-3.6.0.min.js'></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --> 
   
@@ -293,6 +291,8 @@ placeholder="Enter your comment here..."></textarea>
     </div>
     <!---END OF FOOTER-->
      <!---external JS script: dislike container, likes container, form-container, userform----->
+     <input type="hidden" id="myPhpValue" value="<?php echo json_encode($userLikes) ?>" />
+     <!-- <script type="text/javascript">var lArray = <?php echo json_encode($userLikes) ?></script> -->
 	  <script type="text/javascript" src='../js/commentSystem.js'></script>
   
 </body>
