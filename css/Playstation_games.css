@@ -116,7 +116,7 @@
     color: white;
   }*/
   /* scroll to the top button*/
-  /*#myBtn {
+  #myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -135,7 +135,7 @@
 
   #myBtn:hover {
     background-color: #555;
-  }*/
+  }
 
   /**************************
   *
