@@ -14,7 +14,9 @@
   }
 
   .row {
-    margin: 10px -16px;
+   /* margin: 10px -16px;*/
+   margin-top: 20px;
+   overflow: hidden;
   }
 
   /* Add padding BETWEEN each column */
@@ -28,15 +30,19 @@
   .column {
     float: left;
     width: 33.33%;
-    /*display: none;*/ /* Hide all elements by default */
+    display: none; /* Hide all elements by default */
+    
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
   }
 
   /* Clear floats after rows */
-  .row:after {
+  /*.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+  }*/
 
   /* Content */
   .content {

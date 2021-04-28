@@ -13,9 +13,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
     
      <!-------css edits for video game section/category are in external css link----->
@@ -37,7 +38,7 @@
 
     <div class="bg"></div>
     <!---------Start listing playstation games-->
-    <!-- MAIN (Center website) --->
+    <!-- MAIN Center website --->
     <div class="main">
       <hr />
       <!----scroll to top button----->
@@ -45,16 +46,16 @@
       <h2>Filter</h2>
 
       <div id="myBtnContainer">
-        <button class="btn active btn1" id="btn1">
+        <button class="btn active btn1" onclick="filterSelection('all')" >
           Show all
         </button>
-        <button class="btn btn2" id="btn2">
+        <button class="btn btn2" onclick="filterSelection('PlayStation 4')" >
           PlayStation 4
         </button>
-        <button class="btn btn3" id="btn3">
+        <button class="btn btn3" onclick="filterSelection('PlayStation 3')" >
           PlayStation 3
         </button>
-        <button class="btn btn4" id="btn4">
+        <button class="btn btn4" onclick="filterSelection('PlayStation 2')">
           PlayStation 2
         </button>
       </div>
