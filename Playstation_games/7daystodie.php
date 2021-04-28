@@ -36,17 +36,22 @@ $num = 0;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
 	<link rel="stylesheet" href="/main.css" />
-  <!---<script src="https://kit.fontawesome.com/961faa2e94.js" crossorigin="anonymous" data-auto-add-css="false"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--->
-
-  <script src="../js/kit_font_awesome_js.js"></script>
-  <link rel="stylesheet" href="../css/font_awesome_min_css.css"/>
-  <link rel="stylesheet" href="../css/bootstrap_min_css.css"/>
-  <script src="../js/googleapis_jquery_min_js.js"></script>
-  <script src="../js/bootstrap_min_js.js"></script>
+	<script src="../js/all.js" crossorigin="anonymous" data-auto-add-css="false"></script>
+    <link
+    rel="stylesheet"
+    href="../css/fontawesome.min.css"
+    
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  
+<!---- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> ---->
+<script type="text/javascript" src='../js/bootstrap.min.js'></script>
 
   
   <link rel="stylesheet" href="../style2.css" />
@@ -288,6 +293,6 @@ placeholder="Enter your comment here..."></textarea>
     </div>
     <!---END OF FOOTER-->
      <!---external JS script: dislike container, likes container, form-container, userform----->
-	  <script type="text/javascript" src='../js/Playstation_games/7daystodie.js'></script>
+	  <script type="text/javascript" src='../js/commentSystem.js'></script>
 </body>
 </html>
