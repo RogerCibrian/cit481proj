@@ -288,85 +288,8 @@ placeholder="Enter your comment here..."></textarea>
       <p>© 2020 RottenPotatoes</p>
     </div>
     <!---END OF FOOTER-->
-    <script type="text/javascript">
-      var count;
-
-      function starmark(item) {
-        count = item.id[0];
-        //sessionStorage.starRating = count;
-        var subid = item.id.substring(1);
-        for (var i = 0; i < 5; i++) {
-          if (i < count) {
-            document.getElementById(i + 1 + subid).style.color = "orange";
-          } else {
-            document.getElementById(i + 1 + subid).style.color = "black";
-          }
-        }
-      }
-	//i think this is jquery
-	//function finalrating(item) {
-	//var count = item.id[0];
-	//$.post("../user_rating_form.php", {rating:count});
-       
-	/*Timestamp javascript code */
-       var dt = new Date();
-      document.getElementById("datetime").innerHTML =
-        ("0" + (dt.getMonth() + 1)).slice(-2) +
-        "/" +
-        ("0" + dt.getDate()).slice(-2) +
-        "/" +
-        dt.getFullYear() +
-        " " +
-       dt.toLocaleTimeString();
-      /*
-      function result() {
-        //Rating : Count
-        //Review : Comment(id)
-        alert(
-          "Rating : " +
-            count +
-            "\nReview : " +
-            document.getElementById("comment").value
-        );
-      }*/
-
-  function openForm($id) {
-   document.getElementById($id).style.display = "block";
-}
-  function closeForm($id) {
-   document.getElementById($id).style.display = "none";
-}
-
-$('.userrating-form').submit(function(e){
-e.preventDefault();
-        $.ajax({
-            url     : $(this).attr('action'),
-            type    : $(this).attr('method'),
-            data    : $(this).serialize(),
-            success : function() {
-        if(!alert('Thanks for your comment!')){window.location.reload();}
-            //alert("Thanks for your comment");
-        }
-    });
-
-});
-
-// same function as above for reply section
-$('.form-container').submit(function(e){
-e.preventDefault();
-        $.ajax({
-            url     : $(this).attr('action'),
-            type    : $(this).attr('method'),
-            data    : $(this).serialize(),
-            success : function() {
-        if(!alert('Thanks for your comment!')){window.location.reload();}
-            //alert("Thanks for your comment");
-        }
-    });
-
-});
-
-    </script>
+      <!---external JS script: dislike container, likes container, form-container, userform  --->
+      <script type="text/javascript" src='../js/Playstation_games/AliensVPredExct2.js'></script>
 </body>
 </html>
 
