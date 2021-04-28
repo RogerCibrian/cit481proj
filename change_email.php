@@ -68,7 +68,6 @@
     	<!---external JS script:  cancel button func--->
 	    <script type="text/javascript" src='../js/profile_cancel_button.js'></script>
       <script type="text/javascript" src='../js/emailValidation.js'></script>
-    <!--END OF EMAIL CHANGE FORM-->
 	</div>
   </body>
 </html>
