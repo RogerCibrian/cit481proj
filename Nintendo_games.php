@@ -96,7 +96,7 @@
                 alt="Pokemon Sword"
                 class="nintendo_wallpaper_image"
             /></a>
-            <h4>Pokemon Sword</h4>
+            <h4>Pokémon Sword</h4>
            
           </div>
         </div>
@@ -204,7 +204,7 @@
                 alt="Pokemon Emerald"
                 class="nintendo_wallpaper_image"
             /></a>
-            <h4>Pokemon Emerald</h4>
+            <h4>Pokémon Emerald</h4>
             
           </div>
         </div>
