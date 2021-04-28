@@ -44,7 +44,7 @@ $num = 0;
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  	<link rel="stylesheet" href="/main.css" />
+  	<link rel="stylesheet" href="/main.css" /> 
 	<script src="../js/all.js" crossorigin="anonymous" data-auto-add-css="false"></script>
     <link
     rel="stylesheet"
@@ -298,7 +298,6 @@ placeholder="Enter your comment here..."></textarea>
       <p>© 2020 RottenPotatoes</p>
     </div>
     <!---END OF FOOTER-->
-    <!---external file---->
-    <script type="text/javascript" src='../js/commentSystem.js'></script>
+<script type="text/javascript" src='../js/commentSystem.js'></script>
 </body>
 </html>
