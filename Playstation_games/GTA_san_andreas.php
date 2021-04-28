@@ -296,6 +296,6 @@ placeholder="Enter your comment here..."></textarea>
     </div>
     <!---END OF FOOTER-->
      <!---external JS script: dislike container, likes container, form-container, userform  --->
-	  <script type="text/javascript" src='../js/Playstation_games/GTA_san_andreas.js'></script>
-</body>
+     <script type="text/javascript" src='../js/commentSystem.js'></script>
+  </body>
 </html>

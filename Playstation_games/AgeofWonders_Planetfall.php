@@ -293,7 +293,7 @@ placeholder="Enter your comment here..."></textarea>
       <p>© 2020 RottenPotatoes</p>
     </div>
     <!---END OF FOOTER-->
-     <!---external JS script: dislike container, likes container, form-container, userform  --->
-	   <script type="text/javascript" src='../js/Playstation_games/AgeofWonders_Planetfall.js'></script>
+       <!---external JS script: dislike container, likes container, form-container, userform----->
+	  <script type="text/javascript" src='../js/commentSystem.js'></script>
 </body>
 </html>
