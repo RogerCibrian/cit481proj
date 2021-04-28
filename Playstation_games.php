@@ -42,7 +42,7 @@
       <hr />
       <!----scroll to top button----->
       <button id="myBtn" title="Go to top">Top</button>
-      <h2>Filter</h2>
+      <h2 id="filter">Filter</h2>
       <!----search bar---->
       <input id='search' type='text'>
 

@@ -30,13 +30,23 @@
   .column1 {
     float: left;
     width: 33.33%;
-    display: none; /* Hide all elements by default */
+    /*display: none;*/ /* Hide all elements by default */
     
     line-height: 100px;
     text-align: center;
     
   }
 
+  #filter{
+    text-align: center;
+  }
+  #seacrh{
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+
+  }
   /* Clear floats after rows */
   /*.row:after {
     content: "";
