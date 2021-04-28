@@ -1,3 +1,4 @@
+console.log(5 + 6);
 var count;
 
 function starmark(item) {
