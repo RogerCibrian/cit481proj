@@ -1,5 +1,24 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*the %vh is not a unit of measure*/
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: repeat;
+    background-image: url("/images/Space2.jpg");
+    background-position: center;
+  }
+  
+  
+  html {
+    /*%vh unit does not exist*/
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
   }
 
   /* Center website */
@@ -46,6 +65,15 @@
     margin-bottom: 15px;
     display: flex;
 
+  }
+
+  input[type="text"] {
+    width: 30%;
+    /*padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;*/
+    border: none;
+    background: #ffffff;
   }
   /* Clear floats after rows */
   /*.row:after {
@@ -133,3 +161,26 @@
   h2{
     color: white;
   }
+
+  #page-container{
+    position: relative;
+    min-height: 100vh;
+    
+    
+  }
+  #content-wrap-home{
+    /*padding-bottom: 2.5rem;*/
+    background-color: #000000d9;
+  }
+  #footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*height: 2.5rem;*/
+    background: black;
+    padding: 4px 6px;
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+  }
+ 

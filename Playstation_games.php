@@ -45,7 +45,7 @@
       <button id="myBtn" title="Go to top">Top</button>
       <h2 id="filter">Filter</h2>
       <!----search bar---->
-      <input id='search' class="search" type='text'>
+      <input id='search' class="search" type='text' placeholder="search game by name">
 
       <!--<div id="myBtnContainer">
         <button class="btn active btn1" onclick="filterSelection('all')" >
