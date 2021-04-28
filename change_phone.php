@@ -15,81 +15,9 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-------css edits in external css link----->
+    <link rel="stylesheet" href="../css/change_phone.css"/>
 
-   <script>
-	$(function () {
-			$('.phone').keydown(function(e){
-				var key = e.charCode || e.keyCode || 0;
-				$text = $(this);
-				if (key !== 8 && key !== 9) {
-					if($text.val().length === 3){
-						$text.val($text.val() + '-');
-					}
-					if($text.val().length === 7){
-						$text.val($text.val() + '-');
-					}
-				}
-				return (key == 8 || key == 9 || key == 46 || (key >= 48 && key <=57) || (key >= 96 && key <= 105));	
-			})
-			});
-    </script>
-    <style>
-      input[type="text"],
-      select,
-      textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-      }
-
-
-      label {
-        padding: 12px 12px 12px 0;
-        display: inline-block;
-      }
-
-      input[type="submit"] {
-        background-color: #4caf50;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #45a049;
-      }
-
-      .email_change_container {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 40px;
-        /*height: 350px;
-        width: 450px;*/
-		height: fit-content;
-		width:fit-content;
-        text-align: center;
-        /*margin-left: 30%;
-        margin-right: 50%;
-        margin-top: 5%;
-        margin-bottom: 20%;*/
-		margin: 0 auto;
-      }
-
-      /* Responsive layout - when the screen is less than 600px wide, 
-      make the two columns stack on top of each other instead of next 
-      to each other */
-      @media screen and (max-width: 600px) {
-        input[type="submit"] {
-          width: 100%;
-          margin-top: 0;
-        }
-      }
-    </style>
   </head>
 
   <body>
@@ -122,7 +50,7 @@
 	<input class="phone" type="text" name="phone" maxlength="12" placeholder="New Phone Number" required>
 	<input class="phone" type="text" name="phone-repeat" maxlength="12" placeholder="Repeat Phone Number" required>
         <div class="clearfix">
-          <button type="submit" name="reset-phone-submit" style="width: 150px" class="signup">Submit</button>
+          <button type="submit" name="reset-phone-submit" id="submit" class="signup">Submit</button>
         </div>
       </form>
     </div>
@@ -136,6 +64,7 @@
       <p>© 2020 RottenPotatoes</p>
     </footer>
     <!---END OF FOOTER-->
+    <script type="text/javascript" src='../js/phone_format.js'></script>
 	</div>
   </body>
 </html>

@@ -77,7 +77,7 @@
     </div>
     <!---external JS script: cancel button func and email validation func--->
 	  <script type="text/javascript" src='../js/cancel_button.js'></script>
-    <script type="text/javascript" src='../js/emailValidation.js'></script>
+    <script type="text/javascript" src='../js/recoveryemailValidation.js'></script>
     <!--END OF PASSWORD RECOVERY FORM-->
   </body>
 </html>
