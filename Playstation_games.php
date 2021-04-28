@@ -21,7 +21,7 @@
     
      <!-------css edits for video game section/category are in external css link----->
      <link rel="stylesheet" href="../css/Playstation_games.css"/>
-     <link rel="stylesheet" href="/main.css" />
+     <!--<link rel="stylesheet" href="/main.css" />-->
   </head>
 
   <body>
