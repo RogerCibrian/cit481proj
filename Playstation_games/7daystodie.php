@@ -36,10 +36,10 @@ $num = 0;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
 	<link rel="stylesheet" href="/main.css" />
-	<script src="./js/all.js" crossorigin="anonymous" data-auto-add-css="false"></script>
+	<script src="../js/all.js" crossorigin="anonymous" data-auto-add-css="false"></script>
     <link
     rel="stylesheet"
-    href="./css/fontawesome.min.css"
+    href="../css/fontawesome.min.css"
     
   />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
