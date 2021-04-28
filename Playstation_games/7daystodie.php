@@ -43,10 +43,10 @@ $num = 0;
 	/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <link
+ <!-- <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  />
+  /> -->
 <script type='text/javascript' src='../js/jquery-3.6.0.min.js'></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --> 
   
@@ -294,11 +294,6 @@ placeholder="Enter your comment here..."></textarea>
     <!---END OF FOOTER-->
      <!---external JS script: dislike container, likes container, form-container, userform----->
 	  <script type="text/javascript" src='../js/commentSystem.js'></script>
-    <script>
-$(document).ready(function(){
- alert('worked');
- // ajax call here
-});
-</script>
+  
 </body>
 </html>
