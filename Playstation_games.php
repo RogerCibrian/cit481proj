@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="../css/fontawesome.min.css" />
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
-    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!--<script src="../js/jquery-3.6.0.min.js"></script>-->
+    <script src="../js/googleapis_jquery_min_js.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 
     
