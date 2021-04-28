@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
-    <link rel="stylesheet" href="/main.css" />
+    <!---<link rel="stylesheet" href="/main.css" />--->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <!--<link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    />--->
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
      <!-------css edits for video game section/category are in external css link----->
      <link rel="stylesheet" href="../css/Xbox_games.css"/>
@@ -33,30 +35,20 @@
 
     <div class="bg"></div>
     <!---------Start listing Xbox games-->
-    <!-- MAIN (Center website) -->
+    <!-- MAIN Center website -->
     <div class="main">
       <hr />
       <button id="myBtn" title="Go to top" >Top</button>
-      <h2 style="color: white">Filter</h2>
+      <h2 id="filter">Filter</h2>
+       <!----search bar---->
+       <input id='search' class="search" type='text' placeholder="search game by name">
 
-      <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">
-          Show all
-        </button>
-        <button class="btn" onclick="filterSelection('Xbox 360')">
-          Xbox 360
-        </button>
-        <button class="btn" onclick="filterSelection('Xbox One')">
-          Xbox One
-        </button>
-      </div>
-
-      <!-- XBOX 360 games -->
+      <!-- game games -->
       <!--follow the.php code in Playstation games.php to have same format-->
       <!------https://en.wikipedia.org/wiki/List_of_Xbox_360_games-->
       <!-------Ace Combat 6-->
       <div class="row">
-        <div class="column Xbox 360">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/AceCombat6.php">
               <img
@@ -72,7 +64,7 @@
 
         <!-- Dead or Alive -->
 
-        <div class="column Xbox 360">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/DeadorAlive4.php">
               <img
@@ -88,7 +80,7 @@
 
         <!-- Forza 4 -->
 
-        <div class="column Xbox 360">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/Forza4.php">
               <img
@@ -104,7 +96,7 @@
 
         <!-- MotoGP '07 -->
 
-        <div class="column Xbox 360">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/MotoGP07.php">
               <img
@@ -120,7 +112,7 @@
 
         <!-- Ridge Racer 6 -->
 
-        <div class="column Xbox 360">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/Ridgeracer6.php">
               <img
@@ -136,7 +128,7 @@
 
         <!-- Saints Row -->
 
-        <div class="column Xbox 360">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/SaintsRow.php">
               <img
@@ -152,7 +144,7 @@
 
         <!-- Viva Pinata: Party Animals -->
 
-        <div class="column Xbox 360">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/VivaPinata_PartyAnimals.php">
               <img
@@ -168,7 +160,7 @@
 
         <!-- Wipeout: In The Zone -->
 
-        <div class="column Xbox 360">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/Wipeout.php">
               <img
@@ -184,7 +176,7 @@
 
         <!-- Wreckateer -->
 
-        <div class="column Xbox 360">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/Wreckateer.php">
               <img
@@ -200,7 +192,7 @@
 
         <!-- Zumba Fitness Rush -->
 
-        <div class="column Xbox 360">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/ZumbaFitnessRush.php">
               <img
@@ -214,10 +206,10 @@
           </div>
         </div>
 
-        <!-- XBOX One games -->
+        <!-- game games -->
         <!----https://en.wikipedia.org/wiki/List_of_Xbox_One_games-->
 
-        <div class="column Xbox One">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/Ashen.php">
               <img
@@ -231,7 +223,7 @@
           </div>
         </div>
 
-        <div class="column Xbox One">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/Forza_Horizon_4_cover.php">
               <img
@@ -245,7 +237,7 @@
           </div>
         </div>
 
-        <div class="column Xbox One">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/Forza7.php">
               <img
@@ -259,7 +251,7 @@
           </div>
         </div>
 
-        <div class="column Xbox One">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/GoW4.php">
               <img
@@ -273,7 +265,7 @@
           </div>
         </div>
 
-        <div class="column Xbox One">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/gears5.php">
               <img
@@ -287,7 +279,7 @@
           </div>
         </div>
 
-        <div class="column Xbox One">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/halo5.php">
               <img
@@ -301,7 +293,7 @@
           </div>
         </div>
 
-        <div class="column Xbox One">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/Killer_Instinct.php">
               <img
@@ -315,7 +307,7 @@
           </div>
         </div>
 
-        <div class="column Xbox One">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/Quantum_Break.php">
               <img
@@ -329,7 +321,7 @@
           </div>
         </div>
 
-        <div class="column Xbox One">
+        <div class="column1 game">
           <div class="content">
             <a href="Xbox_games/Sea_Of_Thieves.php">
               <img
@@ -344,7 +336,7 @@
         </div>
 
         
-          <div class="column Xbox One">
+          <div class="column1 game">
             <div class="content">
               <a href="Xbox_games/Sunset_Overdrive.php">
                 <img
@@ -376,7 +368,8 @@
     </div>
     <!---END OF FOOTER-->
 
-    <!---external JS script for playstation games----->
+    <!---external JS script for xbox games----->
+    <script src="../js/search_bar_games_filter.js"></script>
     <script src="../js/scroll_top.js"></script>
   </body>
 </hmtl>

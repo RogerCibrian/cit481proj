@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
-    <link rel="stylesheet" href="/main.css" />
+    <!----<link rel="stylesheet" href="/main.css" />---->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <!--<link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    />--->
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
     <!-------css edits for video game section/category are in external css link----->
     <link rel="stylesheet" href="../css/Nintendo_games.css"/>
@@ -34,34 +36,20 @@
 
     <div class="bg"></div>
     <!---------Start listing playstation games-->
-    <!-- MAIN (Center website) -->
+    <!-- MAIN---Center website -->
     <div class="main">
       <hr />
       <!----scroll to top button-->
       <button id="myBtn" title="Go to top">Top</button>
-      <h2>Filter</h2>
-
-      <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">
-          Show all
-        </button>
-        <button class="btn" onclick="filterSelection('Switch')">Switch</button>
-        <button class="btn" onclick="filterSelection('3DS')">3DS</button>
-        <button class="btn" onclick="filterSelection('2DS')">2DS</button>
-        <button class="btn" onclick="filterSelection('Wii')">Wii</button>
-        <button class="btn" onclick="filterSelection('Game Boy Advance')">
-          Game Boy Advance
-        </button>
-        <button class="btn" onclick="filterSelection('GameCube')">
-          GameCube
-        </button>
-      </div>
-
+    
+      <h2 id="filter">Filter</h2>
+      <!----search bar---->
+      <input id='search' class="search" type='text' placeholder="search game by name">
       <!-- Nintendo games -->
-      <!-- Switch games -->
+      <!-- game games -->
       <!--Mario Kart 8   -->
       <div class="row">
-        <div class="column Switch">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/Mario_Kart8.php ">
               <img
@@ -74,7 +62,7 @@
           </div>
         </div>
         <!-- Animal Crossing: New Horizons  -->
-        <div class="column Switch">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/Animal_Cross_New_Horizons.php">
               <img
@@ -87,7 +75,7 @@
           </div>
         </div>
         <!-- Super Smash Bros Ultimate -->
-        <div class="column Switch">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/Super_Smash_Bros_Ultimate.php">
               <img
@@ -100,7 +88,7 @@
           </div>
         </div>
         <!--Pokemon Sword -->
-        <div class="column Switch">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/Pokemon_Sword.php">
               <img
@@ -113,7 +101,7 @@
           </div>
         </div>
         <!--Super Mario Party -->
-        <div class="column Switch">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/Super_Mario_Party.php">
               <img
@@ -127,7 +115,7 @@
         </div>
         <!--Nintendo 2DS -->
         <!--New Super Mario Bros -->
-        <div class="column 2DS">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/New_Super_Mario_Bros.php">
               <img
@@ -140,7 +128,7 @@
           </div>
         </div>
         <!--Pokémon Platinum  -->
-        <div class="column 2DS">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/Pokemon_Platinum.php ">
               <img
@@ -154,7 +142,7 @@
         </div>
         <!------Nintendo 3DS-->
         <!--Pokémon Sun  -->
-        <div class="column 3DS">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/Pokemon_Sun.php">
               <img
@@ -167,7 +155,7 @@
           </div>
         </div>
         <!--The Legend of Zelda: A Link Between Worlds-->
-        <div class="column 3DS">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/LOZ_Link_btw_Worlds.php">
               <img
@@ -181,7 +169,7 @@
         </div>
         <!------Nintendo Wii-->
         <!--The Legend of Zelda: Twilight Princess  -->
-        <div class="column Wii, GameCube">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/LOZ_Twilight_Princess.php">
               <img
@@ -194,7 +182,7 @@
           </div>
         </div>
         <!--Just Dance   -->
-        <div class="column Wii">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/Just_Dance.php">
               <img
@@ -208,7 +196,7 @@
         </div>
         <!------Nintendo Game Boy Advance-->
         <!--Pokemon Emerald -->
-        <div class="column Game Boy Advance">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/Pokemon_Emerald.php">
               <img
@@ -221,7 +209,7 @@
           </div>
         </div>
         <!--Dragon Ball Z: The Legacy of Goku-->
-        <div class="column Game Boy Advance">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/DBZ_Legacy_of_Goku.php ">
               <img
@@ -235,7 +223,7 @@
         </div>
         <!------Nintendo GameCube-->
         <!--Resident Evil 4  -->
-        <div class="column GameCube">
+        <div class="column1 game">
           <div class="content">
             <a href="/Nintendo_games/Resident_Evil_4.php ">
               <img
@@ -262,57 +250,8 @@
       <p>© 2020 RottenPotatoes</p>
     </footer>
     <!---END OF FOOTER-->
-
-    <!-----Filter Javascript code-->
-    <script>
-      filterSelection("all");
-      function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("column");
-        if (c == "all") c = "";
-        for (i = 0; i < x.length; i++) {
-          w3RemoveClass(x[i], "show");
-          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-        }
-      }
-
-      function w3AddClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-          }
-        }
-      }
-
-      function w3RemoveClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-          }
-        }
-        element.className = arr1.join(" ");
-      }
-
-      // Add active class to the current button (highlight it)
-      var btnContainer = document.getElementById("myBtnContainer");
-      var btns = btnContainer.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-    </script>
-
-
     <!---external JS script for playstation games----->
     <script src="../js/scroll_top.js"></script>
+    <script src="../js/search_bar_games_filter.js"></script>
   </body>
 </html>

@@ -46,22 +46,6 @@
       <h2 id="filter">Filter</h2>
       <!----search bar---->
       <input id='search' class="search" type='text' placeholder="search game by name">
-
-      <!--<div id="myBtnContainer">
-        <button class="btn active btn1" onclick="filterSelection('all')" >
-          Show all
-        </button>
-        <button class="btn btn2" onclick="filterSelection('PlayStation 4')" >
-          game
-        </button>
-        <button class="btn btn3" onclick="filterSelection('PlayStation 3')" >
-          PlayStation 3
-        </button>
-        <button class="btn btn4" onclick="filterSelection('game')">
-          game
-        </button>
-      </div>--->
-
       <!-- PS4 games -->
       <!--7days to die  -->
       <div class="row">
@@ -497,7 +481,7 @@
     </div>
     <!---END OF FOOTER-->
 
-    <script src="../js/Playstation_games_filter.js"></script>
+    <script src="../js/search_bar_games_filter.js"></script>
     <!---external JS script for PC games----->
     <script src="../js/scroll_top.js"></script>
    

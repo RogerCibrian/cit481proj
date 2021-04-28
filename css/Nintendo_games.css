@@ -1,7 +1,25 @@
 * {
     box-sizing: border-box;
   }
-
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*the %vh is not a unit of measure*/
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: repeat;
+    background-image: url("/images/Space2.jpg");
+    background-position: center;
+  }
+  
+  
+  html {
+    /*%vh unit does not exist*/
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
   /* Center website */
   .main {
     max-width: 850px;
@@ -19,24 +37,40 @@
 
   /* Add padding BETWEEN each column */
   .row,
-  .row > .column {
+  .row > .column1 {
     padding: 8px;
   }
 
   /* Create three equal columns that floats next to each other */
-  .column {
+  .column1 {
     float: left;
     width: 33.33%;
     /*display: none;*/ /* Hide all elements by default */
+    line-height: 100px;
+    text-align: center;
+  }
+  #filter{
+    text-align: center;
+  }
+  .search{
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+
   }
 
   /* Clear floats after rows */
-  .row:after {
+  /*.row:after {
     content: "";
     display: table;
     clear: both;
+  }*/
+  input[type="text"] {
+    width: 30%;
+    border: none;
+    background: #ffffff;
   }
-
   /* Content */
   .content {
     background-color: #00dbf966;
@@ -46,12 +80,12 @@
   }
 
   /* The "show" class is added to the filtered elements */
-  .show {
+  /*.show {
     display: block;
-  }
+  }*/
 
   /* Style the buttons */
-  .btn {
+ /* .btn {
     border: none;
     outline: none;
     padding: 12px 16px;
@@ -69,7 +103,7 @@
   .btn.active {
     background-color: #f25bffa1;
     color: white;
-  }
+  }*/
   /* scroll to the top button*/
   #myBtn {
     /*display: none;*/
@@ -108,3 +142,26 @@
   h2{
       color: white;
   }
+
+  #page-container{
+    position: relative;
+    min-height: 100vh;
+    
+    
+  }
+  #content-wrap-home{
+    /*padding-bottom: 2.5rem;*/
+    background-color: #000000d9;
+  }
+  #footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*height: 2.5rem;*/
+    background: black;
+    padding: 4px 6px;
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+  }
+ 

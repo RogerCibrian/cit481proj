@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
-    <link rel="stylesheet" href="/main.css" />
+    <!--<link rel="stylesheet" href="/main.css" />-->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <!--<link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    />--->
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
    
     <!-------css edits for video game section/category are in external css link----->
     <link rel="stylesheet" href="../css/PC_games.css"/>
@@ -34,32 +36,19 @@
 
     <div class="bg"></div>
     <!---------Start listing playstation games-->
-    <!-- MAIN (Center website) -->
+    <!-- MAIN-- Center website -->
     <div class="main">
       <hr />
       <!----scroll to top button-->
       <button id="myBtn" title="Go to top">Top</button>
-      <h2>Filter</h2>
-
-      <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">
-          Show all
-        </button>
-        <button class="btn" onclick="filterSelection('Windows')">
-          Windows
-        </button>
-        <button class="btn" onclick="filterSelection('Mac OS X')">
-          Mac OS X
-        </button>
-        <button class="btn" onclick="filterSelection('SteamOS + Linux')">
-          SteamOS + Linux
-        </button>
-      </div>
-
-      <!-- Windows games -->
+      <h2 id="filter">Filter</h2>
+      <!----search bar---->
+      <input id='search' class="search" type='text' placeholder="search game by name">
+     
+      <!-- game games -->
       <!--The Witcher 3: Wild Hunt    -->
       <div class="row">
-        <div class="column Windows">
+        <div class="column1 game">
           <div class="content">
             <a href="/PC_games/TheWitcher3_Wild_Hunt.php ">
               <img
@@ -73,7 +62,7 @@
           </div>
         </div>
         <!--Fall Guys: Ultimate Knockout   -->
-        <div class="column Windows">
+        <div class="column1 game">
           <div class="content">
             <a href="/PC_games/Fall_Guys_Ultimate_Knockout.php">
               <img
@@ -86,7 +75,7 @@
           </div>
         </div>
         <!--Dark Souls III  -->
-        <div class="column Windows">
+        <div class="column1 game">
           <div class="content">
             <a href="/PC_games/Dark_Souls_III.php">
               <img
@@ -99,7 +88,7 @@
           </div>
         </div>
         <!--Control  -->
-        <div class="column Windows">
+        <div class="column1 game">
           <div class="content">
             <a href="/PC_games/Control.php">
               <img
@@ -112,7 +101,7 @@
           </div>
         </div>
         <!--Red Dead Redemption 2   -->
-        <div class="column Windows">
+        <div class="column1 game">
           <div class="content">
             <a href="/PC_games/RedDeadRedemp2.php">
               <img
@@ -125,7 +114,7 @@
           </div>
         </div>
         <!--Doom: Eternal  -->
-        <div class="column Windows">
+        <div class="column1 game">
           <div class="content">
             <a href="/PC_games/Doom_Eternal.php">
               <img
@@ -138,7 +127,7 @@
           </div>
         </div>
         <!--Garry's Mod -->
-        <div class="column Windows, Mac OS X, SteamOS + Linux">
+        <div class="column1 game">
           <div class="content">
             <a href="/PC_games/Garrys_Mod.php">
               <img
@@ -151,7 +140,7 @@
           </div>
         </div>
         <!--Diablo III  -->
-        <div class="column Windows, Mac OS X">
+        <div class="column1 game">
           <div class="content">
             <a href="/PC_games/Diablo_III.php">
               <img
@@ -164,7 +153,7 @@
           </div>
         </div>
         <!--Minecraft -->
-        <div class="column Windows, Mac OS X, SteamOS + Linux">
+        <div class="column1 game">
           <div class="content">
             <a href="/PC_games/Minecraft.php">
               <img
@@ -177,7 +166,7 @@
           </div>
         </div>
         <!--World of Warcraft-->
-        <div class="column Windows, Mac OS X">
+        <div class="column1 game">
           <div class="content">
             <a href="/PC_games/World_of_Warcraft.php">
               <img
@@ -190,7 +179,7 @@
           </div>
         </div>
         <!--League of Legends-->
-        <div class="column Windows, Mac OS X">
+        <div class="column1 game">
           <div class="content">
             <a href="/PC_games/League_of_Legends.php">
               <img
@@ -203,7 +192,7 @@
           </div>
         </div>
         <!--Dying Light -->
-        <div class="column Windows, Mac OS X, SteamOS + Linux">
+        <div class="column1 game">
           <div class="content">
             <a href="/PC_games/Dying_Light.php">
               <img
@@ -232,9 +221,8 @@
     </footer>
     <!---END OF FOOTER-->
 
-
     <!---external JS script for playstation games----->
     <script src="../js/scroll_top.js"></script>
-    <script src="../js/PC_games_filter.js"></script>
+    <script src="../js/search_bar_games_filter.js"></script>
   </body>
 </html>
