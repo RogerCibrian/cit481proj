@@ -214,4 +214,22 @@ pre{
 		border-radius: none;
 		}
 
+/* 7daystodie.php likes and dislikes button*/
 
+#dislikebtn{
+
+  display: contents;
+}
+
+.fa-thumbs-down{
+  height: 1.5rem;
+}
+
+#likebtn{
+  display: contents;
+}
+
+.fa-thumbs-up{
+  height: 1.5rem;
+  padding-left: 25px;
+}
