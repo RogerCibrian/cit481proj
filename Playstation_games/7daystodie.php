@@ -294,6 +294,11 @@ placeholder="Enter your comment here..."></textarea>
     <!---END OF FOOTER-->
      <!---external JS script: dislike container, likes container, form-container, userform----->
 	  <script type="text/javascript" src='../js/commentSystem.js'></script>
-   
+    <script>
+$(document).ready(function(){
+ alert('worked');
+ // ajax call here
+});
+</script>
 </body>
 </html>
