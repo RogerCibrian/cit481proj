@@ -5,6 +5,7 @@ include '../user_rating_form.php';
 include '/var/www/html/rememberme.php';
 include '../likesdislikes.php';
 //multidimentional array of objects
+
 $page = 48;
 $multiobj = display_comments($page,$con);
 $multiobj2 = display_comments2($page,$con);
@@ -293,6 +294,7 @@ placeholder="Enter your comment here..."></textarea>
     </div>
     <!---END OF FOOTER-->
      <!---external JS script: dislike container, likes container, form-container, userform----->
+     <script type="text/javascript">var lArray = <?php echo json_encode($userLikes) ?></script>
 	  <script type="text/javascript" src='../js/commentSystem.js'></script>
   
 </body>
