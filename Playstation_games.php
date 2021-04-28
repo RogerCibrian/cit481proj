@@ -63,7 +63,7 @@
       <!-- PS4 games -->
       <!--7days to die  -->
       <div class="row">
-        <div class="column11 PlayStation 4">
+        <div class="column1 PlayStation 4">
           <div class="content">
             <a href="/Playstation_games/7daystodie.php ">
               <img
@@ -77,7 +77,7 @@
           </div>
         </div>
         <!--Age of Wonders: Planetfall  -->
-        <div class="column11 PlayStation 4">
+        <div class="column1 PlayStation 4">
           <div class="content">
             <a href="/Playstation_games/AgeofWonders_Planetfall.php">
               <img
@@ -91,7 +91,7 @@
           </div>
         </div>
         <!--Agony  -->
-        <div class="column11 PlayStation 4">
+        <div class="column1 PlayStation 4">
           <div class="content">
             <a href="/Playstation_games/Agony.php">
               <img
@@ -105,7 +105,7 @@
           </div>
         </div>
         <!--Alien:Isolation  -->
-        <div class="column11 PlayStation 4, PlayStation 3">
+        <div class="column1 PlayStation 4, PlayStation 3">
           <div class="content">
             <a href="/Playstation_games/AlienIsolation.php">
               <img
@@ -119,7 +119,7 @@
           </div>
         </div>
         <!--Blair Witch  -->
-        <div class="column11 PlayStation 4">
+        <div class="column1 PlayStation 4">
           <div class="content">
             <a href="/Playstation_games/BlairWitch.php">
               <img
@@ -133,7 +133,7 @@
           </div>
         </div>
         <!--COD:warzone  -->
-        <div class="column11 PlayStation 4">
+        <div class="column1 PlayStation 4">
           <div class="content">
             <a href="/Playstation_games/COD_Warzone.php">
               <img
@@ -146,7 +146,7 @@
           </div>
         </div>
         <!--Death Stranding  -->
-        <div class="column11 PlayStation 4">
+        <div class="column1 PlayStation 4">
           <div class="content">
             <a href="/Playstation_games/DeathStranding.php">
               <img
@@ -159,7 +159,7 @@
           </div>
         </div>
         <!--Fall Guys: Ultimate Knockout -->
-        <div class="column11 PlayStation 4">
+        <div class="column1 PlayStation 4">
           <div class="content">
             <a href="/Playstation_games/FallGuys.php">
               <img
@@ -172,7 +172,7 @@
           </div>
         </div>
         <!--The Amazing Spider-Man 2-->
-        <div class="column11 PlayStation 4, PlayStation 3">
+        <div class="column1 PlayStation 4, PlayStation 3">
           <div class="content">
             <a href="/Playstation_games/AmazingSpiderMan2.php">
               <img
@@ -186,7 +186,7 @@
           </div>
         </div>
         <!--The Last Of Us: 2-->
-        <div class="column11 PlayStation 4">
+        <div class="column1 PlayStation 4">
           <div class="content">
             <a href="/Playstation_games/TLOU2.php">
               <img
