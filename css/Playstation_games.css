@@ -53,12 +53,12 @@
   }
 
   /* The "show" class is added to the filtered elements */
-  .show {
+  /*.show {
     display: block;
-  }
+  }*/
 
   /* Style the buttons */
-  .btn {
+  /*.btn {
     border: none;
     outline: none;
     padding: 12px 16px;
@@ -76,9 +76,9 @@
   .btn.active {
     background-color: #f25bffa1;
     color: white;
-  }
+  }*/
   /* scroll to the top button*/
-  #myBtn {
+  /*#myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -97,7 +97,7 @@
 
   #myBtn:hover {
     background-color: #555;
-  }
+  }*/
 
   /**************************
   *

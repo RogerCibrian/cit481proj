@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="../css/fontawesome.min.css" />
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
-    <!--<script src="../js/jquery-3.6.0.min.js"></script>-->
-    <script src="../js/googleapis_jquery_min_js.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 
     
@@ -45,25 +44,25 @@
       <button id="myBtn" title="Go to top">Top</button>
       <h2>Filter</h2>
 
-      <div id="myBtnContainer">
+      <!--<div id="myBtnContainer">
         <button class="btn active btn1" onclick="filterSelection('all')" >
           Show all
         </button>
         <button class="btn btn2" onclick="filterSelection('PlayStation 4')" >
-          PlayStation 4
+          game
         </button>
         <button class="btn btn3" onclick="filterSelection('PlayStation 3')" >
           PlayStation 3
         </button>
-        <button class="btn btn4" onclick="filterSelection('PlayStation 2')">
-          PlayStation 2
+        <button class="btn btn4" onclick="filterSelection('game')">
+          game
         </button>
-      </div>
+      </div>--->
 
       <!-- PS4 games -->
       <!--7days to die  -->
       <div class="row">
-        <div class="column1 PlayStation 4">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/7daystodie.php ">
               <img
@@ -77,7 +76,7 @@
           </div>
         </div>
         <!--Age of Wonders: Planetfall  -->
-        <div class="column1 PlayStation 4">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/AgeofWonders_Planetfall.php">
               <img
@@ -91,7 +90,7 @@
           </div>
         </div>
         <!--Agony  -->
-        <div class="column1 PlayStation 4">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/Agony.php">
               <img
@@ -105,7 +104,7 @@
           </div>
         </div>
         <!--Alien:Isolation  -->
-        <div class="column1 PlayStation 4, PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/AlienIsolation.php">
               <img
@@ -119,7 +118,7 @@
           </div>
         </div>
         <!--Blair Witch  -->
-        <div class="column1 PlayStation 4">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/BlairWitch.php">
               <img
@@ -133,7 +132,7 @@
           </div>
         </div>
         <!--COD:warzone  -->
-        <div class="column1 PlayStation 4">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/COD_Warzone.php">
               <img
@@ -146,7 +145,7 @@
           </div>
         </div>
         <!--Death Stranding  -->
-        <div class="column1 PlayStation 4">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/DeathStranding.php">
               <img
@@ -159,7 +158,7 @@
           </div>
         </div>
         <!--Fall Guys: Ultimate Knockout -->
-        <div class="column1 PlayStation 4">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/FallGuys.php">
               <img
@@ -172,7 +171,7 @@
           </div>
         </div>
         <!--The Amazing Spider-Man 2-->
-        <div class="column1 PlayStation 4, PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/AmazingSpiderMan2.php">
               <img
@@ -186,7 +185,7 @@
           </div>
         </div>
         <!--The Last Of Us: 2-->
-        <div class="column1 PlayStation 4">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/TLOU2.php">
               <img
@@ -201,7 +200,7 @@
         </div>
         <!-- PS3 games -->
         <!--Batman: Arkham City-->
-        <div class="column1 PlayStation 4, PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/BatmanArkCity.php">
               <img
@@ -215,7 +214,7 @@
           </div>
         </div>
         <!--Beyond: Two Souls-->
-        <div class="column1 PlayStation 4, PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/BeyondTwoSouls.php">
               <img
@@ -229,7 +228,7 @@
           </div>
         </div>
         <!--Call of Duty: Black Ops-->
-        <div class="column1 PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/CODBlackOps.php">
               <img
@@ -241,7 +240,7 @@
           </div>
         </div>
         <!--Grand Theft Auto IV-->
-        <div class="column1 PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/GTA_IV.php">
               <img
@@ -254,7 +253,7 @@
           </div>
         </div>
         <!--Grand Theft Auto V-->
-        <div class="column1 PlayStation 4, PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/GTA_V.php">
               <img
@@ -268,7 +267,7 @@
           </div>
         </div>
         <!--Heavy Rain-->
-        <div class="column1 PlayStation 4, PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/HeavyRain.php">
               <img
@@ -282,7 +281,7 @@
           </div>
         </div>
         <!--inFamous-->
-        <div class="column1 PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/inFamous.php">
               <img
@@ -296,7 +295,7 @@
           </div>
         </div>
         <!--Red Dead Redemption-->
-        <div class="column1 PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/RedDeadRedemp.php">
               <img
@@ -310,7 +309,7 @@
           </div>
         </div>
         <!--Resident Evil 5-->
-        <div class="column1 PlayStation 4, PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/ResidentEvil5.php">
               <img
@@ -324,7 +323,7 @@
           </div>
         </div>
         <!--The Last of Us-->
-        <div class="column1 PlayStation 4, PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/TLOU.php">
               <img
@@ -339,7 +338,7 @@
         </div>
         <!-- PS2 games -->
         <!-------Aliens Versus Predator: Extinction-->
-        <div class="column1 PlayStation 2">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/AliensVPredExct.php">
               <img
@@ -353,7 +352,7 @@
           </div>
         </div>
         <!-------Bionicle-->
-        <div class="column1 PlayStation 2">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/Bionicle.php">
               <img
@@ -367,7 +366,7 @@
           </div>
         </div>
         <!-------Bully-->
-        <div class="column1 PlayStation 2">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/Bully.php">
               <img
@@ -381,7 +380,7 @@
           </div>
         </div>
         <!-------Call of Duty: World at War-->
-        <div class="column1 PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/CODWorldWar.php">
               <img
@@ -395,7 +394,7 @@
           </div>
         </div>
         <!-------God of War-->
-        <div class="column1 PlayStation 2, PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/GodOfWar.php">
               <img
@@ -409,7 +408,7 @@
           </div>
         </div>
         <!-------Grand Theft Auto III-->
-        <div class="column1 PlayStation 2">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/GTA_III.php">
               <img
@@ -423,7 +422,7 @@
           </div>
         </div>
         <!-------Grand Theft Auto: San Andreas-->
-        <div class="column1 PlayStation 2, PlayStation 3">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/GTA_san_andreas.php">
               <img
@@ -437,7 +436,7 @@
           </div>
         </div>
         <!-------Grand Theft Auto: Vice City-->
-        <div class="column1 PlayStation 2">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/GTA_Vice_City.php">
               <img
@@ -451,7 +450,7 @@
           </div>
         </div>
         <!-------Metal Gear Solid 2: Sons of Liberty-->
-        <div class="column1 PlayStation 2">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/MGS2_Son_Liberty.php">
               <img
@@ -465,7 +464,7 @@
           </div>
         </div>
         <!-------Tekken 5-->
-        <div class="column1 PlayStation 2">
+        <div class="column1 game">
           <div class="content">
             <a href="/Playstation_games/Tekken5.php">
               <img

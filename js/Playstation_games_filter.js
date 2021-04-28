@@ -1,9 +1,27 @@
 /*JavaScript filter code */
+
+/*To ensure the search is case-insensitive*/
+$.expr[":"].contains = $.expr.createPseudo(function(arg) {
+  return function( elem ) {
+      return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+  };
+});
+
+/*filter elements by name*/
+$("#search").keyup(function() {
+    var val = $.trim(this.value);
+    if (val === "") {
+    $('.game').show();
+    } else {
+    $('.game').hide();
+    $(".game:contains(" + val + ")").show();
+    }
+  });
 /*var button = document.getElementsByClassName("btn");
 for (var i = 0 ; i < button.length; i++) {
   button[i].addEventListener("click" , filterSelection) ;  
 }*/
-filterSelection("all")
+/*filterSelection("all")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column1");
@@ -45,4 +63,4 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
+}*/
