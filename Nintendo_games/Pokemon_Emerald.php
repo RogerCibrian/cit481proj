@@ -68,7 +68,7 @@ $num = 0;
   <div class="POKEMONEMERALD">
         <div class="transbox_pokemonemerald">
             <ul>
-              <h2>Pokemon Emerald</h2>
+              <h2>Pokémon Emerald</h2>
               <br />
               <br />
               <li>Initial Release Date: May 1, 2005 </li>

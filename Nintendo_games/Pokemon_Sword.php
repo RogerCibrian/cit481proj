@@ -68,7 +68,7 @@ $num = 0;
         <div class="POKEMONSWORD">
         <div class="transbox_pokemonsword">
             <ul>
-              <h2>Pokemon Sword</h2>
+              <h2>Pokémon Sword</h2>
               <br />
 
               <li>Initial Release Date: November 15, 2019 </li>
