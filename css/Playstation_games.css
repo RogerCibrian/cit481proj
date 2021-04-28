@@ -21,7 +21,7 @@
 
   /* Add padding BETWEEN each column */
   .row,
-  .row > .column {
+  .row > .column1 {
     padding: 8px;
     
   }
@@ -34,7 +34,7 @@
     
     line-height: 100px;
     text-align: center;
-    margin: 2px;
+    
   }
 
   /* Clear floats after rows */
