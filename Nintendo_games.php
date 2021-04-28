@@ -47,7 +47,7 @@
       <input id='search' class="search" type='text' placeholder="search game by name">
       <!-- Nintendo games -->
       <!-- game games -->
-      <!--Mario Kart 8   -->
+      <!--Mario Kart 8----->
       <div class="row">
         <div class="column1 game">
           <div class="content">
