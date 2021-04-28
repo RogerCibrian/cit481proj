@@ -18,7 +18,7 @@ function ValidateContactForm(){
 			return false;
 		}
 		if (email_field == ""){
-			alert("Emaill Address field must be filled in");
+			alert("Email Address field must be filled in");
 			return false;
 		}
 		if (subject_field == ""){
@@ -29,10 +29,15 @@ function ValidateContactForm(){
 			alert("Message field must be filled out");
 			return false;
 		}
+		
+		if (grecaptcha.getResponse() == ""){
+			alert("Complete the reCAPTCHA");
+			return false;
+	    }
 
 		/* test if email input field is empty or not*/
 		if (e == ""){
-			alert("Emaill Address field must be filled out");
+			alert("Email Address field must be filled out");
 			return false;
 		}
 	
@@ -43,7 +48,9 @@ function ValidateContactForm(){
 			alert("\nPlease provide a valid email address. Example: oinster159@sbcgobal.net");
 				return false;
 		} else{
-			return true;
+//			return true;
+//			$('#contact-form').submit();
+			document.getElementById('contact-form').submit();
 		}
 }
 
