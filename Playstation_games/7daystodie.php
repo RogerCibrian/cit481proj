@@ -136,9 +136,10 @@ $num = 0;
 placeholder="Enter your comment here..."></textarea>
              <!----Timestamp MM/DD/YYYY HH:MIN:SEC AM/PM-->
         <p>Date/Time: <span id="datetime"></span></p>
+        <!-- changed type of button to button instead of submit -->
             <button
               class="btn btn-lg btn-post"
-              type="submit"
+              type="button"
               name="submit">
               Post!
             </button>
