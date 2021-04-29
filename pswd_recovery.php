@@ -1,7 +1,7 @@
 <?php
 
 error_reporting(E_ALL);
-ini_set('display_errors',true);
+ini_set('display_errors',1);
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -90,8 +90,6 @@ echo "new phpmailer";
 if ($login){
 echo "parsed";}
 
-	$mail->SMTPDebug = 2;
-
         $mail->IsSMTP();
         $mail->Host = 'mail.rottenpotatoes.org';
         $mail->SMTPAuth = true;
@@ -120,6 +118,7 @@ echo "parsed";}
 
 	if(!$mail->Send()){
 	echo "reset email not sent";
+	echo 'Error: ' . $mail->ErrorInfo;
 //	header("Location:Passwrd_recovery.php?msg=err");
 	}
 	else {
