@@ -34,6 +34,7 @@
 		padding: 0;
 	}
 
+	/*remove the space between slide show and navbar in index.php*/
 	.navbar {
 		position: relative;
 		min-height: 50px;
