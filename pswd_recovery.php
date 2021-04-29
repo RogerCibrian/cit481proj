@@ -110,9 +110,9 @@ echo "parsed";}
 
 
 	$mail->isHTML(true);
-        $mail->setFrom('support@rottenpotatoes.org', 'Rotten Potatoes Password Reset');
+        $mail->setFrom('info@rottenpotatoes.org', 'Rotten Potatoes Password Reset');
         $mail->addAddress($to);
-        $mail->addReplyTo('support@rottenpotatoes.org');
+        $mail->addReplyTo('info@rottenpotatoes.org');
         $mail->Subject = $subject;
         $mail->Body = $message;
 
