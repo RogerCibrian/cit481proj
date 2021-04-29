@@ -232,6 +232,10 @@ pre{
   height: 1.5rem;
   padding-left: 25px;
 }*/
+button.btn2{ 
+padding: 0;
+margin-left:5px;
+}
 #likebtn{
   width:20px;
   color: #fff;
@@ -256,6 +260,7 @@ margin-right:10px;
 color:#787878;
 }
 #likess{
+display: inline-block;
 width:18px;
 border: none;
 background: none;
@@ -274,6 +279,9 @@ margin: 0 5px;
 pointer-events:none;
 }
 .fa_thumbs_up{
+display: inline-block;
 background-image: url("/images/thumbs_up.png");  
-width: 50;
+background-size: 25px;
+height: 25px;
+width: 25px;
 }
