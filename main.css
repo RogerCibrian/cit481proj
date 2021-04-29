@@ -215,7 +215,7 @@ pre{
 		}
 
 /* 7daystodie.php likes and dislikes button*/
-
+/*
 #dislikebtn{
   display: contents;
 }
@@ -231,4 +231,45 @@ pre{
 .fa-thumbs-up{
   height: 1.5rem;
   padding-left: 25px;
+}*/
+#likebtn{
+  width:20px;
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 15px;
+  outline:none;
+  }
+#dislikebtn{
+width:20px;
+color: #fff;
+background: none;
+border: none;
+font-size: 15px;
+outline:none;
+}
+.fas{
+color:#A0A0A0;
+margin-right:10px;
+}
+.fas:hover{
+color:#787878;
+}
+#likess{
+width:18px;
+border: none;
+background: none;
+color: #919191;
+font-size: 18px;
+margin: 0 5px;
+pointer-events: none;
+}
+#dislikess{
+width:18px;
+border: none;
+background: none;
+color: #919191;
+font-size: 18px;
+margin: 0 5px;
+pointer-events:none;
 }
