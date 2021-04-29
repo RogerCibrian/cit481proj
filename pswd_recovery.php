@@ -1,7 +1,7 @@
 <?php
 
 error_reporting(E_ALL);
-ini_set('display_errors',1);
+ini_set('display_errors',true);
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -89,6 +89,8 @@ echo "new phpmailer";
 
 if ($login){
 echo "parsed";}
+
+	$mail->SMTPDebug = 2;
 
         $mail->IsSMTP();
         $mail->Host = 'mail.rottenpotatoes.org';
