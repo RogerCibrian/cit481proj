@@ -248,11 +248,11 @@ border: none;
 font-size: 15px;
 outline:none;
 }
-.fa{
+.thum{
 color:#A0A0A0;
 margin-right:10px;
 }
-.fa:hover{
+.thum:hover{
 color:#787878;
 }
 #likess{
@@ -272,4 +272,8 @@ color: #919191;
 font-size: 18px;
 margin: 0 5px;
 pointer-events:none;
+}
+.fa_thumbs_up{
+background-image: url("/images/thumbs_up.png");  
+width: 50;
 }
