@@ -106,15 +106,15 @@ if (isset($_POST["resetrequestsubmit"])){
 
 	if(!$mail->Send()){
 	//echo "reset email not sent";
-	header("Location:Passwrd_recovery.php?msg=err");
+//	header("Location:Passwrd_recovery.php?msg=err");
 	}
 	else {
-	header("Location:Passwrd_recovery.php?msg=suc");
+//	header("Location:Passwrd_recovery.php?msg=suc");
 	//echo "email sent";
 	}
 }
 else {
 //echo "email isnt sending";
-header("Location:Passwrd_recovery.php?msg=err");
+//header("Location:Passwrd_recovery.php?msg=err");
 }
 ?>
