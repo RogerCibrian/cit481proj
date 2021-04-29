@@ -40,20 +40,10 @@ $num = 0;
 	<script src="../js/all.js" crossorigin="anonymous" data-auto-add-css="false"></script> 
     <link rel="stylesheet" href="../css/fontawesome.min.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-   <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  /> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> 
 <script type='text/javascript' src='../js/jquery-3.6.0.min.js'></script>
- <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-  
-<!---- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> ---->
 <script type="text/javascript" src='../js/bootstrap.min.js'></script>
-
-  
   <link rel="stylesheet" href="../style2.css" />
-  
   <!-------css edits are in external css link----->
   <link rel="stylesheet" href="../css/Playstation_games/7waystodie.css"/>
    
@@ -139,7 +129,7 @@ placeholder="Enter your comment here..."></textarea>
         <!-- changed type of button to button instead of submit -->
             <button
               class="btn btn-lg btn-post"
-              type="button"
+              type="submit"
               name="submit">
               Post!
             </button>
