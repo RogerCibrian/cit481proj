@@ -39,13 +39,13 @@ function result() {
       document.getElementById("comment").value
   );
 }*/
-
+/*
 function openForm($id) {
 document.getElementById($id).style.display = "block";
 }
 function closeForm($id) {
 document.getElementById($id).style.display = "none";
-}
+} */
 //likes section 
 var lArray = $("#myPhpValue").val();
 // pass php array to javascript array in json format
@@ -135,6 +135,10 @@ parent.addEventListener('click', event => {
      }
   }
 });          
+// open reply form for comments
+parent.addEventListener('click', event => {
+  document.getElementById("open-button").style.display = "block";
+});
 
 $('.userrating-form').submit(function(e){
 e.preventDefault();

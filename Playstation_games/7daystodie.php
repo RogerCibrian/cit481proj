@@ -191,8 +191,8 @@ placeholder="Enter your comment here..."></textarea>
 <?php $nope2 = 0; ?>
 </div>
 <!-- end of likes section for parent comments-->  
-
-<button class="open-button" id="open-button" onclick="openForm(<?php echo $num; ?>)" >reply</button>
+<!-- onclick="openForm(/*<?php echo $num; ?>*/)"-->
+<button class="open-button" id="open-button" >reply</button>
      <div class="form-popup" id="<?php echo $num; ?>">
       <form class="form-container" method="POST" action="../user_rating_form.php">
 <!--review tables has to be altered to make rating an optional field -->
@@ -203,8 +203,9 @@ placeholder="Enter your comment here..."></textarea>
 	<textarea class="textarea_line208" rows="2" name="comment"
 	placeholder="Enter your reply here..."></textarea>
 	 <button class="button" type="submit" class="btn">Submit</button>
-	 <button class="button2" type="button" id="button2" onclick="closeForm(<?php echo $num++; ?>)" class="btn cancel">Close</button>
+	 <button class="button2" type="button" id="button2"  class="btn cancel">Close</button>
       </form> 
+     <!-- onclick="closeForm(/*<?php echo $num++; ?>*/)" -->
     </div>
   </div>
 <?php endif;?>
