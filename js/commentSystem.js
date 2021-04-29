@@ -58,7 +58,7 @@ var countn = 0;
 //add event listener to parent, any event in children element events will bubble up to this element
 var arrayClicks = [];
 parent.addEventListener('click', event => {
-  console.log(event.target.className);
+ // console.log(event.target.firstchild.className);
     if (event.target.className === 'thum fa_thumbs_up'){
     //get the date associated with the liked event
     //let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
@@ -137,7 +137,10 @@ parent.addEventListener('click', event => {
 });          
 // open reply form for comments
 parent.addEventListener('click', event => {
-  parent.getElementById("same").style.display = "block";
+  if (event.target.className === "open-button"){
+    console.log(event.target.firstChild.className);
+  //parent.getElementById("same").style.display = "block";
+  }
 });
 
 $('.userrating-form').submit(function(e){
