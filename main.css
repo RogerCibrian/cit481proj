@@ -256,6 +256,7 @@ margin-right:10px;
 color:#787878;
 }
 #likess{
+display: inline-block;
 width:18px;
 border: none;
 background: none;
