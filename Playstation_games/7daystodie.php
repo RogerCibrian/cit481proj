@@ -37,14 +37,15 @@ $num = 0;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
 	<link rel="stylesheet" href="/main.css" />
-	<script src="../js/all.js" crossorigin="anonymous" data-auto-add-css="false"></script>
+<!--	<script src="../js/all.js" crossorigin="anonymous" data-auto-add-css="false"></script> -->
+  <script src="../js/all.js" crossorigin="anonymous" ></script>
     <link rel="stylesheet" href="../css/fontawesome.min.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <!-- <link
+   <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  /> -->
+  /> 
 <script type='text/javascript' src='../js/jquery-3.6.0.min.js'></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --> 
   
@@ -136,9 +137,10 @@ $num = 0;
 placeholder="Enter your comment here..."></textarea>
              <!----Timestamp MM/DD/YYYY HH:MIN:SEC AM/PM-->
         <p>Date/Time: <span id="datetime"></span></p>
+        <!-- changed type of button to button instead of submit -->
             <button
               class="btn btn-lg btn-post"
-              type="submit"
+              type="button"
               name="submit">
               Post!
             </button>
