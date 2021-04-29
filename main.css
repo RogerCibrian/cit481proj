@@ -275,7 +275,7 @@ pointer-events:none;
 }
 .fa_thumbs_up{
 display: inline-block;
-height: 30px;
-width: 30px;
+height: 200px;
+width: 200px;
 background-image: url("/images/thumbs_up.png");  
 }
