@@ -71,7 +71,7 @@
           >
             Cancel
           </button>
-          <button type="button" id="recovery" name="resetrequestsubmit" class="signup"> Recovery </button>
+          <button type="submit" id="recovery" name="resetrequestsubmit" class="signup"> Recovery </button>
         </div>
       </form>
     </div>
