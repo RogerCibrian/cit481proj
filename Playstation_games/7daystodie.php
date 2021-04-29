@@ -154,7 +154,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="-1";>
 </form>
 <button class="btn2" type="submit" form="l<?php echo $num; ?>" value="Submit" id="likebtn">
- <i class="fas fa-thumbs-up"></i>
+ <i class="fa-thumbs-up"></i>
 </button>
 <!-- show like count summary -->
 <?php foreach ($counterLikes as $Tup): ?>
@@ -176,7 +176,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="-1">
 </form>
 <button type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
- <i class="fas fa-thumbs-down"></i>
+ <i class="fa-thumbs-down"></i>
 </button>
 <!-- show like count summary dislikes -->
 <?php foreach ($counterLikes as $Tdown): ?>
@@ -225,7 +225,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
 <button class="btn2" type="submit" form="e<?php echo $num2; ?>" value="Submit" id="likebtn">
- <i class="fas fa-thumbs-up"></i>
+ <i class="fa-thumbs-up"></i>
 </button>
 <!-- show like count summary for replies -->
 <?php foreach ($counterLikes as $Tup): ?>
@@ -247,7 +247,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
 <button type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
- <i class="fas fa-thumbs-down"></i>
+ <i class="fa-thumbs-down"></i>
 </button>
 <!-- show like count summary -->
 <?php foreach ($counterLikes as $Tdown): ?>
