@@ -79,8 +79,14 @@ if (isset($_POST["resetrequestsubmit"])){
 
         $mail = new PHPMailer();
 
+echo "new phpmailer";
+
 /*SMTP settings for external mail server*/
 		$login = parse_ini_file('/var/app/login.ini', true); // Parse external INI file on server
+
+if ($login){
+echo "parsed";}
+
         $mail->IsSMTP();
         $mail->Host = 'mail.rottenpotatoes.org';
         $mail->SMTPAuth = true;
