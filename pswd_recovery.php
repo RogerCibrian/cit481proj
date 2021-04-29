@@ -97,7 +97,7 @@ echo "parsed";}
 	$mail->Username = $login['email']['username']; //Saving data in file outside of github and root directory to prevent unauthed access to email
 	$mail->Password = $login['email']['password'];
         $mail->Port = 587;
-        $mail->SMTPSecure = "tls";
+        $mail->SMTPSecure = 'tls';
 
 // don't allow less secure certs 
 	$mail->SMTPOptions = array(
