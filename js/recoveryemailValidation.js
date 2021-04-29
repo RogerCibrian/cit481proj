@@ -1,4 +1,4 @@
-document.getElementById("recovery").addEventListener("click", emailValid);
+document.getElementById("recovery-form").addEventListener("click", emailValid);
 function emailValid(){
     var e = document.forms["myForm"]["mail"].value;
 
