@@ -113,12 +113,12 @@ echo "parsed";}
         $mail->Body = $message;
 
 	if(!$mail->Send()){
-	//echo "reset email not sent";
+	echo "reset email not sent";
 //	header("Location:Passwrd_recovery.php?msg=err");
 	}
 	else {
 //	header("Location:Passwrd_recovery.php?msg=suc");
-	//echo "email sent";
+	echo "email sent";
 	}
 }
 else {
