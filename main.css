@@ -281,14 +281,14 @@ pointer-events:none;
 .fa_thumbs_up{
 display: inline-block;
 background-image: url("/images/thumbs_up.png");  
-background-size: 25px;
-height: 25px;
-width: 25px;
+background-size: 20px;
+height: 20px;
+width: 20px;
 }
 .fa_thumbs_down{
   display: inline-block;
-  background-image: url("/images/thumbs_up.png");  
-  background-size: 25px;
-  height: 25px;
-  width: 25px;
+  background-image: url("/images/thumbs_down.png");  
+  background-size: 20px;
+  height: 20px;
+  width: 20px;
   }
