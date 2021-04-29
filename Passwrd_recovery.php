@@ -41,11 +41,11 @@
                         $msg = $_GET['msg'];
                         if ($msg == 'err'){
                         echo "<p>Error: please try again later!</p>";}
-                        else
+                        else{
                         echo "<p>Request received! Check your email.</p>";}
 		elseif (isset($_GET['limit'])){
 			echo "<p>Password reset request expired. <br>Please submit your request again.</p>";}
-		else echo "<p>Please enter your email address.</p>";
+		else {echo "<p>Please enter your email address.</p>";}}
 	?>
 	  <br>
       Or<a href="passwrd_recovery_phone.php"> via phone number</a>
