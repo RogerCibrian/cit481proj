@@ -135,7 +135,7 @@ parent.addEventListener('click', event => {
   }
 });          
 
-$('.userrating-form').submit(function(e){
+$('.userrating-form').button(function(e){
 e.preventDefault();
   $.ajax({
       url     : $(this).attr('action'),
