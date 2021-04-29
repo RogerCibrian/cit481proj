@@ -5,6 +5,8 @@ use PHPMailer\PHPMailer\Exception;
 
 require '/home/cit481/vendor/autoload.php';
 
+echo $_POST["resetrequestsubmit"];
+
 if (isset($_POST["resetrequestsubmit"])){
 	$selector = bin2hex(random_bytes(8));
 	$token = random_bytes(32);
@@ -115,6 +117,6 @@ if (isset($_POST["resetrequestsubmit"])){
 }
 else {
 //echo "email isnt sending";
-header("Location:Passwrd_recovery.php?msg=err");
+//header("Location:Passwrd_recovery.php?msg=err");
 }
 ?>
