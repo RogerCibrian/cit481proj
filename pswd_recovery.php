@@ -8,8 +8,6 @@ use PHPMailer\PHPMailer\Exception;
 
 require '/home/cit481/vendor/autoload.php';
 
-echo $_POST["mail"];
-
 if (isset($_POST["resetrequestsubmit"])){
 	$selector = bin2hex(random_bytes(8));
 	$token = random_bytes(32);
@@ -18,26 +16,26 @@ if (isset($_POST["resetrequestsubmit"])){
 
 	$expires = date("U") + 1800;
 
-	echo "expire var set"; /*error check*/
+//	echo "expire var set"; /*error check*/
 
 /*connect to db*/
 	include 'connect.php';
 
-	echo "connect.php working"; /*error check*/
+//	echo "connect.php working"; /*error check*/
 
 /*set users email*/
 	$userEmail = $_POST["mail"];
 
-	echo "user email var set"; /*error check*/
+//	echo "user email var set"; /*error check*/
 
 /*invalidate previous reset requests*/
 	$sql = "DELETE FROM pwdReset WHERE pwdResetEmail=?;";
 
-	echo "sql var set"; /*error check*/
+//	echo "sql var set"; /*error check*/
 
 	$stmt = mysqli_stmt_init($con);
 
-	echo "stmt var set"; /*error check*/
+//	echo "stmt var set"; /*error check*/
 
 	if (!mysqli_stmt_prepare($stmt, $sql)){
 		echo "Error accessing database, try again.";
@@ -46,7 +44,7 @@ if (isset($_POST["resetrequestsubmit"])){
 	mysqli_stmt_bind_param($stmt, "s", $userEmail);
 	mysqli_stmt_execute($stmt);}
 
-	echo "previous requests deleted"; /*error check*/
+//	echo "previous requests deleted"; /*error check*/
 
 /*create new request entry with valid validation tokens in pwdReset table*/
 	$sql = "INSERT INTO pwdReset (pwdResetEmail, pwdResetSelector, pwdResetToken, pwdResetExpires) VALUES (?, ?, ?, ?);";
@@ -59,7 +57,7 @@ if (isset($_POST["resetrequestsubmit"])){
         mysqli_stmt_bind_param($stmt, "ssss", $userEmail, $selector, $hashedToken, $expires);
         mysqli_stmt_execute($stmt);}
 
-	echo "tokens added to table"; /*error check*/
+//	echo "tokens added to table"; /*error check*/
 
 /*close stmt and connection*/
 	mysqli_stmt_close($stmt);
@@ -82,13 +80,10 @@ if (isset($_POST["resetrequestsubmit"])){
 
         $mail = new PHPMailer();
 
-echo "new phpmailer";
+//echo "new phpmailer"; /*error check*/
 
 /*SMTP settings for external mail server*/
-		$login = parse_ini_file('/var/app/login.ini', true); // Parse external INI file on server
-
-if ($login){
-echo "parsed";}
+	$login = parse_ini_file('/var/app/login.ini', true); // Parse external INI file on server
 
         $mail->IsSMTP();
         $mail->Host = 'mail.rottenpotatoes.org';
@@ -117,17 +112,17 @@ echo "parsed";}
         $mail->Body = $message;
 
 	if(!$mail->Send()){
-	echo "reset email not sent";
-	echo 'Error: ' . $mail->ErrorInfo;
-//	header("Location:Passwrd_recovery.php?msg=err");
+//	echo "reset email not sent";
+//	echo 'Error: ' . $mail->ErrorInfo;
+	header("Location:Passwrd_recovery.php?msg=err");
 	}
 	else {
-//	header("Location:Passwrd_recovery.php?msg=suc");
-	echo "email sent";
+	header("Location:Passwrd_recovery.php?msg=suc");
+//	echo "email sent";
 	}
 }
 else {
 //echo "email isnt sending";
-//header("Location:Passwrd_recovery.php?msg=err");
+header("Location:Passwrd_recovery.php?msg=err");
 }
 ?>
