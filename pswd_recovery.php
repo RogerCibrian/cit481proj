@@ -93,8 +93,9 @@ echo "parsed";}
         $mail->IsSMTP();
         $mail->Host = 'mail.rottenpotatoes.org';
         $mail->SMTPAuth = true;
-		$mail->Username = $login['email']['username']; //Saving data in file outside of github and root directory to prevent unauthed access to email
-		$mail->Password = $login['email']['password'];
+	$mail->AuthType='LOGIN';
+	$mail->Username = $login['email']['username']; //Saving data in file outside of github and root directory to prevent unauthed access to email
+	$mail->Password = $login['email']['password'];
         $mail->Port = 587;
         $mail->SMTPSecure = "tls";
 
