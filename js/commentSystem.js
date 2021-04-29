@@ -138,7 +138,7 @@ parent.addEventListener('click', event => {
 // open reply form for comments
 parent.addEventListener('click', event => {
   if (event.target.className === "open-button"){
-    console.log(event.target.nextSibling);
+    console.log(event.target.nextSibling.nextSibling.id);
   //parent.getElementById("same").style.display = "block";
   }
 });
