@@ -58,7 +58,9 @@ var countn = 0;
 //add event listener to parent, any event in children element events will bubble up to this element
 var arrayClicks = [];
 parent.addEventListener('click', event => {
-  if (event.target.className === 'fas fa-thumbs-up'){
+  console.count(event.target.className);
+  //if (event.target.className === 'fas fa-thumbs-up'){
+    if (event.target.className === 'fas fa-thumbs-up'){
     //get the date associated with the liked event
     //let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
     //get the <h> tag to add to the count summary of the liked event
