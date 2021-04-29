@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\Exception;
 
 require '/home/cit481/vendor/autoload.php';
 
-echo $_POST["resetrequestsubmit"];
+echo $_POST["mail"];
 
 if (isset($_POST["resetrequestsubmit"])){
 	$selector = bin2hex(random_bytes(8));
