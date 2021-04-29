@@ -233,7 +233,7 @@ pre{
   padding-left: 25px;
 }*/
 button.btn2{
-padding: none;
+padding: 0;
 }
 #likebtn{
   width:20px;
