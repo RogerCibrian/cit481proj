@@ -1,11 +1,14 @@
 <?php
 
+error_reporting(E_ALL);
+ini_set('display_errors',1);
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require '/home/cit481/vendor/autoload.php';
 
-if (isset($_POST["resetrequestsubmit"])){
+if (isset($_POST["mail"])){
 	$selector = bin2hex(random_bytes(8));
 	$token = random_bytes(32);
 
@@ -77,15 +80,19 @@ if (isset($_POST["resetrequestsubmit"])){
 
         $mail = new PHPMailer();
 
+//echo "new phpmailer"; /*error check*/
+
 /*SMTP settings for external mail server*/
-		$login = parse_ini_file('/var/app/login.ini', true); // Parse external INI file on server
+	$login = parse_ini_file('/var/app/login.ini', true); // Parse external INI file on server
+
         $mail->IsSMTP();
         $mail->Host = 'mail.rottenpotatoes.org';
         $mail->SMTPAuth = true;
-		$mail->Username = $login['email']['username']; //Saving data in file outside of github and root directory to prevent unauthed access to email
-		$mail->Password = $login['email']['password'];
+	$mail->AuthType='LOGIN';
+	$mail->Username = $login['email']['username']; //Saving data in file outside of github and root directory to prevent unauthed access to email
+	$mail->Password = $login['email']['password'];
         $mail->Port = 587;
-        $mail->SMTPSecure = "tls";
+        $mail->SMTPSecure = 'tls';
 
 // don't allow less secure certs 
 	$mail->SMTPOptions = array(
@@ -98,19 +105,20 @@ if (isset($_POST["resetrequestsubmit"])){
 
 
 	$mail->isHTML(true);
-        $mail->setFrom('support@rottenpotatoes.org', 'Rotten Potatoes Password Reset');
+        $mail->setFrom('info@rottenpotatoes.org', 'Rotten Potatoes Password Reset');
         $mail->addAddress($to);
-        $mail->addReplyTo('support@rottenpotatoes.org');
+        $mail->addReplyTo('info@rottenpotatoes.org');
         $mail->Subject = $subject;
         $mail->Body = $message;
 
 	if(!$mail->Send()){
-	//echo "reset email not sent";
+//	echo "reset email not sent";
+//	echo 'Error: ' . $mail->ErrorInfo;
 	header("Location:Passwrd_recovery.php?msg=err");
 	}
 	else {
 	header("Location:Passwrd_recovery.php?msg=suc");
-	//echo "email sent";
+//	echo "email sent";
 	}
 }
 else {

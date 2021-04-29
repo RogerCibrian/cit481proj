@@ -37,24 +37,13 @@ $num = 0;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
 	<link rel="stylesheet" href="/main.css" />
-<!--	<script src="../js/all.js" crossorigin="anonymous" data-auto-add-css="false"></script> -->
-  <script src="../js/all.js" crossorigin="anonymous" ></script>
+	<script src="../js/all.js" crossorigin="anonymous" data-auto-add-css="false"></script> 
     <link rel="stylesheet" href="../css/fontawesome.min.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-   <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  /> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> 
 <script type='text/javascript' src='../js/jquery-3.6.0.min.js'></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --> 
-  
-<!---- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> ---->
 <script type="text/javascript" src='../js/bootstrap.min.js'></script>
-
-  
   <link rel="stylesheet" href="../style2.css" />
-  
   <!-------css edits are in external css link----->
   <link rel="stylesheet" href="../css/Playstation_games/7waystodie.css"/>
    
@@ -140,7 +129,7 @@ placeholder="Enter your comment here..."></textarea>
         <!-- changed type of button to button instead of submit -->
             <button
               class="btn btn-lg btn-post"
-              type="button"
+              type="submit"
               name="submit">
               Post!
             </button>
@@ -165,7 +154,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="-1";>
 </form>
 <button class="btn2" type="submit" form="l<?php echo $num; ?>" value="Submit" id="likebtn">
- <i class="fas fa-thumbs-up"></i>
+ <i class="thum fa_thumbs_up"></i>
 </button>
 <!-- show like count summary -->
 <?php foreach ($counterLikes as $Tup): ?>
@@ -186,8 +175,8 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='date' value="<?php echo $comment->review_date; ?>">
 <input type='hidden' name='parent_comment' value="-1">
 </form>
-<button type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
- <i class="fas fa-thumbs-down"></i>
+<button class="btn2" type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
+ <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary dislikes -->
 <?php foreach ($counterLikes as $Tdown): ?>
@@ -202,9 +191,10 @@ placeholder="Enter your comment here..."></textarea>
 <?php $nope2 = 0; ?>
 </div>
 <!-- end of likes section for parent comments-->  
-
-<button class="open-button" id="open-button" onclick="openForm(<?php echo $num; ?>)" >reply</button>
-     <div class="form-popup" id="<?php echo $num; ?>">
+<!-- onclick="openForm(/*<?php echo $num; ?>*/)"-->
+ <!-- <div class="form-popup" id="/*<?php echo $num; ?>*/"> --> 
+<button class="open-button" id="open-button" >reply</button>
+     <div class="form-popup" id="same">
       <form class="form-container" method="POST" action="../user_rating_form.php">
 <!--review tables has to be altered to make rating an optional field -->
 	 <input type='hidden' name='uid' value="<?php echo $_SESSION['id']; ?>">
@@ -214,8 +204,9 @@ placeholder="Enter your comment here..."></textarea>
 	<textarea class="textarea_line208" rows="2" name="comment"
 	placeholder="Enter your reply here..."></textarea>
 	 <button class="button" type="submit" class="btn">Submit</button>
-	 <button class="button2" type="button" id="button2" onclick="closeForm(<?php echo $num++; ?>)" class="btn cancel">Close</button>
+	 <button class="button2" type="button" id="button2"  class="btn cancel">Close</button>
       </form> 
+     <!-- onclick="closeForm(/*<?php echo $num++; ?>*/)" -->
     </div>
   </div>
 <?php endif;?>
@@ -236,7 +227,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
 <button class="btn2" type="submit" form="e<?php echo $num2; ?>" value="Submit" id="likebtn">
- <i class="fas fa-thumbs-up"></i>
+ <i class="thum fa_thumbs_up"></i>
 </button>
 <!-- show like count summary for replies -->
 <?php foreach ($counterLikes as $Tup): ?>
@@ -257,8 +248,8 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='date' value="<?php echo $replies->review_date; ?>">
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
-<button type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
- <i class="fas fa-thumbs-down"></i>
+<button class="btn2" type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
+ <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary -->
 <?php foreach ($counterLikes as $Tdown): ?>

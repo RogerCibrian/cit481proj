@@ -39,13 +39,13 @@ function result() {
       document.getElementById("comment").value
   );
 }*/
-
+/*
 function openForm($id) {
 document.getElementById($id).style.display = "block";
 }
 function closeForm($id) {
 document.getElementById($id).style.display = "none";
-}
+} */
 //likes section 
 var lArray = $("#myPhpValue").val();
 // pass php array to javascript array in json format
@@ -58,7 +58,8 @@ var countn = 0;
 //add event listener to parent, any event in children element events will bubble up to this element
 var arrayClicks = [];
 parent.addEventListener('click', event => {
-  if (event.target.className === 'fas fa-thumbs-up'){
+ // console.log(event.target.firstchild.className);
+    if (event.target.className === 'thum fa_thumbs_up'){
     //get the date associated with the liked event
     //let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
     //get the <h> tag to add to the count summary of the liked event
@@ -97,7 +98,7 @@ parent.addEventListener('click', event => {
        countn = 0;
      }
   }
-  else if (event.target.className === 'fas fa-thumbs-down'){
+  else if (event.target.className === 'thum fa_thumbs_down'){
     //get the date associated with the liked event
     let str3 = event.target.parentElement.parentElement.parentElement.firstElementChild.innerHTML;
     //get the <h> tag to add to the count summary of the liked event
@@ -134,9 +135,16 @@ parent.addEventListener('click', event => {
      }
   }
 });          
+// open reply form for comments
+parent.addEventListener('click', event => {
+  if (event.target.className === "open-button"){
+    console.log(event.target.firstChild);
+  //parent.getElementById("same").style.display = "block";
+  }
+});
 
-$('.userrating-form').click(function(e){
-//e.preventDefault();
+$('.userrating-form').submit(function(e){
+e.preventDefault();
   $.ajax({
       url     : $(this).attr('action'),
       type    : $(this).attr('method'),
