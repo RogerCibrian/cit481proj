@@ -154,7 +154,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="-1";>
 </form>
 <button class="btn2" type="submit" form="l<?php echo $num; ?>" value="Submit" id="likebtn">
- <i class="fa fa-thumbs-up"></i>
+ <i class="thum fa_thumbs_up"></i>
 </button>
 <!-- show like count summary -->
 <?php foreach ($counterLikes as $Tup): ?>
