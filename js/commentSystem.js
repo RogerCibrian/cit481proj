@@ -137,7 +137,7 @@ parent.addEventListener('click', event => {
 });          
 // open reply form for comments
 parent.addEventListener('click', event => {
-  document.getElementById("open-button").style.display = "block";
+  parent.getElementById("same").style.display = "block";
 });
 
 $('.userrating-form').submit(function(e){
