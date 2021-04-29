@@ -35,7 +35,6 @@
     <!--START OF PASSWORD RECOVERY FORM-->
     <div class="passwrd_recovery_container">
       <h1>Password Recovery</h1>
-	  
 	<?php
                 if (isset($_GET['msg'])){
                         $msg = $_GET['msg'];
