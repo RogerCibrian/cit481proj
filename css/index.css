@@ -33,6 +33,13 @@
 	.navbar-brand {
 		padding: 0;
 	}
+
+	.navbar {
+		position: relative;
+		min-height: 50px;
+		/*margin-bottom: 20px;*/
+		border: 1px solid transparent;
+	}
 	
 	/*staffs' best picks ---video games--table CSS edit*/
 		table {
