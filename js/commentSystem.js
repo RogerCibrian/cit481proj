@@ -61,7 +61,6 @@ parent.addEventListener('click', event => {
  // console.log(event.target.firstchild.className);
     if (event.target.className === 'thum fa_thumbs_up'){
     //get the date associated with the liked event
-    //let str = event.target.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML;
     //get the <h> tag to add to the count summary of the liked event
     let str2 = event.target.parentElement.nextElementSibling;
     // date associated with event
@@ -101,8 +100,10 @@ parent.addEventListener('click', event => {
   else if (event.target.className === 'thum fa_thumbs_down'){
     //get the date associated with the liked event
     let str3 = event.target.parentElement.parentElement.parentElement.firstElementChild.innerHTML;
+    console.log(str3);
     //get the <h> tag to add to the count summary of the liked event
     let str2 = event.target.parentElement.nextElementSibling;
+    console.log(str2);
     //start at the closing character of the first span tag
     str3 = str3.substring(str3.indexOf(">") + 2);
     //start at 0 index and end at opening character of the closing span tag
