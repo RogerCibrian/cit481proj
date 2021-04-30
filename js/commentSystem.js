@@ -144,7 +144,7 @@ parent.addEventListener('click', event => {
     document.getElementById(i_d).style.display = "block";
    //event.target.nextSibling.nextSibling.id.style.display = "block";
   }
-  console.log(event.target.nextElementSibling.nextElementSibling.id)
+  console.log(event.target.className);
 
   
 });
