@@ -112,7 +112,7 @@ $num = 0;
         <div class="UserRating_container">
           <h1>Give us your feedback below!</h1>
           <p>Review Section</p>
-<form id="java" class="userrating-form" method="POST" action="../user_rating_form.php">
+<form class="userrating-form" method="POST" action="../user_rating_form.php">
 <input type='hidden' name='uid' value="<?php echo $_SESSION['id']; ?>">
 <input type='hidden' name='date' value="<?php echo date('Y-m-d H:i:s')?>">
 <input type='hidden' name='parent_comment' value="-1";>
