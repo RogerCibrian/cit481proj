@@ -102,7 +102,7 @@ $num = 0;
         <div class="UserRating_container">
           <h1>Give us your feedback below!</h1>
           <p>Review Section</p>
-<form class="userrating-form" method="POST" action="../user_rating_form.php">        
+<form id="java" class="userrating-form" method="POST" action="../user_rating_form.php">        
  <input type='hidden' name='uid' value="<?php echo $_SESSION['id']; ?>">
 <input type='hidden' name='date' value="<?php echo date('Y-m-d H:i:s')?>">
 <input type='hidden' name='parent_comment' value="-1";>
@@ -178,7 +178,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='date' value="<?php echo $comment->review_date; ?>">
 <input type='hidden' name='parent_comment' value="-1">
 </form>
-<button type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
+<button class="btn2" type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
  <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary dislikes -->
@@ -194,7 +194,8 @@ placeholder="Enter your comment here..."></textarea>
 <?php $nope2 = 0; ?>
 </div>
 <!-- end of likes section for parent comments-->  
-  <button class="open-button" id="open-button">reply</button>   <div class="form-popup" id="same">  
+<button class="open-button" id="open-button">reply</button>  
+   <div class="form-popup" id="<?php echo $num; ?>">  
       <form class="form-container" method="POST" action="../user_rating_form.php">
 <!--review tables has to be altered to make rating an optional field -->
 	 <input type='hidden' name='uid' value="<?php echo $_SESSION['id']; ?>">
@@ -203,8 +204,8 @@ placeholder="Enter your comment here..."></textarea>
 	 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
 	<textarea style="color:black;" rows="2" name="comment"
 	placeholder="Enter your reply here..."></textarea>
-	 <button class="button" type="submit" class="btn">Submit</button>
-	<button class="button2" type="button" id="button2"  class="btn cancel">Close</button>
+	  <button class="button" type="submit" class="btn">Submit</button>
+	  <button class="button2" type="button" id="button2"  class="btn cancel">Close</button>
       </form>
     </div>
   </div>
@@ -247,7 +248,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='date' value="<?php echo $replies->review_date; ?>">
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
-<button type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
+<button class="btn2" type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
  <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary -->
@@ -282,8 +283,8 @@ placeholder="Enter your comment here..."></textarea>
       <p>© 2020 RottenPotatoes</p>
     </div>
     <!---END OF FOOTER-->
-    <input type="hidden" id="myPhpValue" value="<?php echo json_encode($userLikes) ?>" />
-<script type="text/javascript" src='../js/commentSystem.js'></script>
+    <input type="hidden" id="myPhpValue" value='<?php echo json_encode($userLikes); ?>'/>
+    <script type="text/javascript" src='../js/commentSystem.js'></script>
 
 
 </body>
