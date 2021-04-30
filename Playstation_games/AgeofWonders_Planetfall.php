@@ -35,8 +35,6 @@ $num = 0;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
@@ -205,7 +203,6 @@ placeholder="Enter your comment here..."></textarea>
 <!-- end of likes section for parent comments-->   
 <!--  <button class="open-button" onclick="openForm(<?php echo $num; ?>)">reply</button>-->
    <button class="open-button" id="open-button">reply</button>
-   <!-------<div class="form-popup" id="<?php echo $num; ?>">------>
      <div class="form-popup" id="<?php echo $num; ?>">
       <form class="form-container" method="POST" action="../user_rating_form.php">
 <!--review tables has to be altered to make rating an optional field -->
