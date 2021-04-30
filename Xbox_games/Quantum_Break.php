@@ -41,7 +41,7 @@ $num = 0;
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
   />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type='text/javascript' src='../js/jquery-3.6.0.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   	<link rel="stylesheet" href="/main.css" /> 
@@ -184,7 +184,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='date' value="<?php echo $comment->review_date; ?>">
 <input type='hidden' name='parent_comment' value="-1">
 </form>
-<button type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
+<button class="btn2" type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
  <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary dislikes -->
@@ -201,7 +201,7 @@ placeholder="Enter your comment here..."></textarea>
 </div>
 <!-- end of likes section for parent comments-->   
   <button class="open-button" id="open-button">reply</button>  
-       <div class="form-popup" id="same">  
+       <div class="form-popup" id="<?php echo $num; ?>">  
       <form class="form-container" method="POST" action="../user_rating_form.php">
 <!--review tables has to be altered to make rating an optional field -->
 	 <input type='hidden' name='uid' value="<?php echo $_SESSION['id']; ?>">
@@ -254,7 +254,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='date' value="<?php echo $replies->review_date; ?>">
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
-<button type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
+<button class="btn2" type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
  <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary -->
@@ -289,7 +289,7 @@ placeholder="Enter your comment here..."></textarea>
       <p>© 2020 RottenPotatoes</p>
     </div>
     <!---END OF FOOTER-->
-    <input type="hidden" id="myPhpValue" value="<?php echo json_encode($userLikes) ?>" />
+    <input type="hidden" id="myPhpValue" value='<?php echo json_encode($userLikes); ?>'/>
 <script type="text/javascript" src='../js/commentSystem.js'></script>
 
 </body>
