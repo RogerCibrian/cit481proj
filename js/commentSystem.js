@@ -51,8 +51,8 @@ var lArray = $("#myPhpValue").val();
 var lArray2 =  JSON.parse(lArray);
 console.log(lArray2);
 //console.log(lArray);
-console.log(lArray.length);
-console.log(lArray[0].date);
+console.log(lArray2.length);
+console.log(lArray2[0].date);
 // pass php array to javascript array in json format
 //var lArray = <?php echo json_encode($userLikes) ?>;
 //grab the parent element which comments are a part of
