@@ -140,14 +140,13 @@ parent.addEventListener('click', event => {
   if (event.target.className === "open-button"){
    // console.log(event.target.nextSibling.nextSibling.id);
     let i_d = event.target.nextSibling.nextSibling.id;
-    let i_d2 = parseInt(i_d);
-    let i_d3 = "\'" + i_d2 + "\'";
     console.log(i_d); 
-    console.log(typeof i_d2);
-    //let i_d = i_d 
     document.getElementById(i_d).style.display = "block";
    //event.target.nextSibling.nextSibling.id.style.display = "block";
   }
+  console.log(event.target.nextElementSibling)
+
+  
 });
 //
 $('.userrating-form').submit(function(e){
