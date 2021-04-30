@@ -75,10 +75,10 @@ parent.addEventListener('click', event => {
     //start at 0 index and end at opening character of the closing span tag
     str3 = str3.substring(0, str3.indexOf('<'));
     // for loop check if user already liked on that date
-    for (let i = 0; i < lArray.length; i++){
-     let a = lArray[i].date;
-     //let b = lArray[i]["COUNT(likesvalue)"];
-     let c = lArray[i]["COUNT(dislikevalue)"];
+    for (let i = 0; i < lArray2.length; i++){
+     let a = lArray2[i].date;
+     //let b = lArray2[i]["COUNT(likesvalue)"];
+     let c = lArray2[i]["COUNT(dislikevalue)"];
      let dt1 = str3.trim();
       if (dt1 === a){
        countn = 1;
@@ -114,11 +114,11 @@ parent.addEventListener('click', event => {
     //start at 0 index and end at opening character of the closing span tag
     str3 = str3.substring(0, str3.indexOf('<'));
     // for loop check if user already liked on that date
-    for (let i = 0; i < lArray.length; i++){
-     let a = lArray[i].date;
+    for (let i = 0; i < lArray2.length; i++){
+     let a = lArray2[i].date;
      console.log(a);
-     let b = lArray[i]["COUNT(likesvalue)"];
-     //let c = lArray[i]["COUNT(dislikevalue)"];
+     let b = lArray2[i]["COUNT(likesvalue)"];
+     //let c = lArray2[i]["COUNT(dislikevalue)"];
      let dt1 = str3.trim();
     // console.log(dt1);
       if (dt1 === a){
