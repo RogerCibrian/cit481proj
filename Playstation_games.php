@@ -372,7 +372,7 @@
             <a href="/Playstation_games/CODWorldWar.php">
               <img
               class="ps2_image"
-                src="/Playstation_games/Playstation_3_games/Call_of_dutyu_wolrd_at_war.jpg"
+                src="/Playstation_games/Playstation_3_games/Call_of_duty_world_at_war.jpg"
                 alt="Call of Duty: World at War"
               
             /></a>
