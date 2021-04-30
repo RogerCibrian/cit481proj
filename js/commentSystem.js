@@ -141,10 +141,11 @@ parent.addEventListener('click', event => {
    // console.log(event.target.nextSibling.nextSibling.id);
     let i_d = event.target.nextSibling.nextSibling.id;
     let i_d2 = parseInt(i_d);
+    let i_d3 = "\'" + i_d2 + "\'";
     console.log(i_d); 
     console.log(typeof i_d2);
     //let i_d = i_d 
-    document.getElementById('0').style.display = "block";
+    document.getElementById(i_d3).style.display = "block";
    //event.target.nextSibling.nextSibling.id.style.display = "block";
   }
 });
