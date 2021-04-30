@@ -141,7 +141,7 @@ parent.addEventListener('click', event => {
    // console.log(event.target.nextSibling.nextSibling.id);
     let i_d = "\'" + event.target.nextSibling.nextSibling.id + "\'";
     console.log(i_d); 
-    document.getElementById(i_d).style.display = "block";
+    document.getElementById('0').style.display = "block";
    //event.target.nextSibling.nextSibling.id.style.display = "block";
   }
 });
