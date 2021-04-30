@@ -49,10 +49,10 @@ document.getElementById($id).style.display = "none";
 //likes section 
 var lArray = $("#myPhpValue").val();
 var lArray2 =  JSON.parse(lArray);
-console.log(lArray2);
+//console.log(lArray2);
 //console.log(lArray);
-console.log(lArray2.length);
-console.log(lArray2[0].date);
+//console.log(lArray2.length);
+//console.log(lArray2[0].date);
 // pass php array to javascript array in json format
 //var lArray = <?php echo json_encode($userLikes) ?>;
 //grab the parent element which comments are a part of
@@ -147,12 +147,12 @@ parent.addEventListener('click', event => {
 parent.addEventListener('click', event => {
   if (event.target.className === "open-button"){
     let i_d = event.target.nextSibling.nextSibling.id;
-    console.log(i_d); 
+    //console.log(i_d); 
     document.getElementById(i_d).style.display = "block";
   }
-  console.log(event.target.id);
+  //console.log(event.target.id);
   if (event.target.id === "button2"){
-console.log(event.target.parentElement.parentElement.id);
+//console.log(event.target.parentElement.parentElement.id);
     let i_d2 = event.target.parentElement.parentElement.id;
     document.getElementById(i_d2).style.display = "none";
   }
