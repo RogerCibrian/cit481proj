@@ -112,7 +112,7 @@ $num = 0;
         <div class="UserRating_container">
           <h1>Give us your feedback below!</h1>
           <p>Review Section</p>
-<form class="userrating-form" method="POST" action="../user_rating_form.php">
+<form id="java" class="userrating-form" method="POST" action="../user_rating_form.php">
 <input type='hidden' name='uid' value="<?php echo $_SESSION['id']; ?>">
 <input type='hidden' name='date' value="<?php echo date('Y-m-d H:i:s')?>">
 <input type='hidden' name='parent_comment' value="-1";>
@@ -149,7 +149,7 @@ placeholder="Enter your comment here..."></textarea>
         </div>
     <div class="comment_container">
 	<div class="count"><h2><b><?php echo "$comm"; ?> comments</b></h2></div>
- 	<div class="Comments" id="pComments";>
+ 	<div class="Comments" id="pComments">
         <?php foreach ($multiobj as $comment): ?>
 	<?php if ($comment->review_parent == -1): ?>
 <div class="comment">
@@ -187,7 +187,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='date' value="<?php echo $comment->review_date; ?>">
 <input type='hidden' name='parent_comment' value="-1">
 </form>
-<button type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
+<button  class="btn2" type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
   <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary dislikes -->
