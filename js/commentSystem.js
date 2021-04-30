@@ -48,6 +48,7 @@ document.getElementById($id).style.display = "none";
 } */
 //likes section 
 var lArray = $("#myPhpValue").val();
+console.log(lArray);
 // pass php array to javascript array in json format
 //var lArray = <?php echo json_encode($userLikes) ?>;
 //grab the parent element which comments are a part of
@@ -111,11 +112,11 @@ parent.addEventListener('click', event => {
     // for loop check if user already liked on that date
     for (let i = 0; i < lArray.length; i++){
      let a = lArray[i].date;
-     console.log(a);
+     //console.log(a);
      let b = lArray[i]["COUNT(likesvalue)"];
      //let c = lArray[i]["COUNT(dislikevalue)"];
      let dt1 = str3.trim();
-     console.log(dt1);
+    // console.log(dt1);
       if (dt1 === a){
        countn = 1;
       }
