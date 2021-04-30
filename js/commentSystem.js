@@ -145,8 +145,10 @@ parent.addEventListener('click', event => {
    //event.target.nextSibling.nextSibling.id.style.display = "block";
   }
   console.log(event.target.id);
+  if (event.target.id === "button2"){
+console.log(event.target.parentElement);
 
-  
+  }
 });
 //
 $('.userrating-form').submit(function(e){
