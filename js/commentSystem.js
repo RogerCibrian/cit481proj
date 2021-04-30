@@ -142,7 +142,7 @@ parent.addEventListener('click', event => {
    event.target.nextSibling.nextSibling.id.style.display = "block";
   }
 });
-
+//
 $('.userrating-form').submit(function(e){
 e.preventDefault();
   $.ajax({
