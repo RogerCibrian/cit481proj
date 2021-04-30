@@ -146,7 +146,7 @@ parent.addEventListener('click', event => {
   if (event.target.id === "button2"){
 console.log(event.target.parentElement.parentElement.id);
     let i_d2 = event.target.parentElement.parentElement.id;
-    document.getElementById(i_d).style.display = "none";
+    document.getElementById(i_d2).style.display = "none";
   }
 });
 
