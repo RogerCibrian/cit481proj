@@ -38,7 +38,7 @@ $num = 0;
   <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-
+    <script type='text/javascript' src='../js/jquery-3.6.0.min.js'></script>
 <!----css external files------>
 	<link rel="stylesheet" href="/main.css" />
 	<script src="../js/all.js" crossorigin="anonymous" data-auto-add-css="false"></script>
