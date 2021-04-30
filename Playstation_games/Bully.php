@@ -182,7 +182,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='date' value="<?php echo $comment->review_date; ?>">
 <input type='hidden' name='parent_comment' value="-1">
 </form>
-<button type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
+<button class="btn2" type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
  <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary dislikes -->
@@ -199,7 +199,7 @@ placeholder="Enter your comment here..."></textarea>
 </div>
 <!-- end of likes section for parent comments-->   
 <button class="open-button" id="open-button">reply</button>
-     <div class="form-popup" id="same">
+     <div class="form-popup" id="<?php echo $num; ?>">
       <form class="form-container" method="POST" action="../user_rating_form.php">
 <!--review tables has to be altered to make rating an optional field -->
 	 <input type='hidden' name='uid' value="<?php echo $_SESSION['id']; ?>">
@@ -252,7 +252,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='date' value="<?php echo $replies->review_date; ?>">
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
-<button type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
+<button class="btn2" type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
  <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary -->

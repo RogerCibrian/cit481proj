@@ -185,7 +185,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='date' value="<?php echo $comment->review_date; ?>">
 <input type='hidden' name='parent_comment' value="-1">
 </form>
-<button type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
+<button class="btn2" type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
  <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary dislikes -->
@@ -255,7 +255,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='date' value="<?php echo $replies->review_date; ?>">
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
-<button type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
+<button class="btn2" type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
  <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary -->
