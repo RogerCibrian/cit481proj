@@ -139,6 +139,9 @@ parent.addEventListener('click', event => {
 parent.addEventListener('click', event => {
   if (event.target.className === "open-button"){
     console.log(event.target.nextSibling.nextSibling.id);
+    let i_d = "\'" + event.target.nextSibling.nextSibling.id + "\'";
+    console.log(i_d); 
+//    document.getElementById('i_d').style.display = "block";
    //event.target.nextSibling.nextSibling.id.style.display = "block";
   }
 });
