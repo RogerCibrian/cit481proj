@@ -48,7 +48,7 @@ document.getElementById($id).style.display = "none";
 } */
 //likes section 
 var lArray = $("#myPhpValue").val();
-//console.log(lArray);
+console.log(lArray);
 // pass php array to javascript array in json format
 //var lArray = <?php echo json_encode($userLikes) ?>;
 //grab the parent element which comments are a part of
