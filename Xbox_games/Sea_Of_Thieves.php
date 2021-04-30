@@ -155,7 +155,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="-1";>
 </form>
 <button class="btn2" type="submit" form="l<?php echo $num; ?>" value="Submit" id="likebtn">
- <i class="fas fa-thumbs-up"></i>
+ <i class="thum fa_thumbs_up"></i>
 </button>
 <!-- show like count summary -->
 <?php foreach ($counterLikes as $Tup): ?>
@@ -177,7 +177,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="-1">
 </form>
 <button type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
- <i class="fas fa-thumbs-down"></i>
+<i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary dislikes -->
 <?php foreach ($counterLikes as $Tdown): ?>
@@ -202,8 +202,7 @@ placeholder="Enter your comment here..."></textarea>
 	<textarea class="textarea_line200" rows="2" name="comment"
 	placeholder="Enter your reply here..."></textarea>
 	 <button class="button" type="submit" class="btn">Submit</button>
-	 <button class="button2" type="button" class="btn cancel"
-	  onclick="closeForm(<?php echo $num++; ?>)">Close</button>
+	  <button class="button2" type="button" id="button2"  class="btn cancel">Close</button>
       </form>
     </div>
   </div>
@@ -225,7 +224,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
 <button class="btn2" type="submit" form="e<?php echo $num2; ?>" value="Submit" id="likebtn">
- <i class="fas fa-thumbs-up"></i>
+ <i class="thum fa_thumbs_up"></i>
 </button>
 <!-- show like count summary for replies -->
 <?php foreach ($counterLikes as $Tup): ?>
@@ -247,7 +246,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
 <button type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
- <i class="fas fa-thumbs-down"></i>
+<i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary -->
 <?php foreach ($counterLikes as $Tdown): ?>
@@ -281,6 +280,7 @@ placeholder="Enter your comment here..."></textarea>
       <p>© 2020 RottenPotatoes</p>
     </div>
     <!---END OF FOOTER-->
+    <input type="hidden" id="myPhpValue" value="<?php echo json_encode($userLikes) ?>" />
 <script type="text/javascript" src='../js/commentSystem.js'></script>
 
 </body>

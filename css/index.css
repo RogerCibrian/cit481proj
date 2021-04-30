@@ -33,6 +33,14 @@
 	.navbar-brand {
 		padding: 0;
 	}
+
+	/*remove the space between slide show and navbar in index.php*/
+	.navbar {
+		position: relative;
+		min-height: 50px;
+		border: 1px solid transparent;
+		margin-bottom: 0;
+	}
 	
 	/*staffs' best picks ---video games--table CSS edit*/
 		table {

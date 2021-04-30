@@ -175,7 +175,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="-1";>
 </form>
 <button class="btn2" type="submit" form="l<?php echo $num; ?>" value="Submit" id="likebtn">
- <i class="fas fa-thumbs-up"></i>
+ <i class="thum fa_thumbs_up"></i>
 </button>
 <!-- show like count summary -->
 <?php foreach ($counterLikes as $Tup): ?>
@@ -197,7 +197,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="-1">
 </form>
 <button type="submit" form="d<?php echo $num; ?>" value="Submit" id="dislikebtn">
- <i class="fas fa-thumbs-down"></i>
+ <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary dislikes -->
 <?php foreach ($counterLikes as $Tdown): ?>
@@ -211,8 +211,9 @@ placeholder="Enter your comment here..."></textarea>
 <?php endif; ?>
 <?php $nope2 = 0; ?>
 </div>
-<!-- end of likes section for parent comments-->   <button class="open-button" onclick="openForm(<?php echo $num; ?>)">reply</button>
-     <div class="form-popup" id="<?php echo $num; ?>">
+<!-- end of likes section for parent comments--> 
+<button class="open-button" id="open-button">reply</button>
+     <div class="form-popup" id="same">
       <form class="form-container" method="POST" action="../user_rating_form.php">
 <!--review tables has to be altered to make rating an optional field -->
 	 <input type='hidden' name='uid' value="<?php echo $_SESSION['id']; ?>">
@@ -222,8 +223,7 @@ placeholder="Enter your comment here..."></textarea>
 	<textarea class="textarea_line220" rows="2" name="comment"
 	placeholder="Enter your reply here..."></textarea>
 	 <button class="button" type="submit" class="btn">Submit</button>
-	 <button class="button2" type="button" class="btn cancel"
-	  onclick="closeForm(<?php echo $num++; ?>)">Close</button>
+	  <button class="button2" type="button" id="button2"  class="btn cancel">Close</button>
       </form>
     </div>
   </div>
@@ -245,7 +245,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
 <button class="btn2" type="submit" form="e<?php echo $num2; ?>" value="Submit" id="likebtn">
- <i class="fas fa-thumbs-up"></i>
+ <i class="thum fa_thumbs_up"></i>
 </button>
 <!-- show like count summary for replies -->
 <?php foreach ($counterLikes as $Tup): ?>
@@ -267,7 +267,7 @@ placeholder="Enter your comment here..."></textarea>
 <input type='hidden' name='parent_comment' value="<?php echo $replies->review_id; ?>">
 </form>
 <button type="submit" form="f<?php echo $num2; ?>" value="Submit" id="dislikebtn">
- <i class="fas fa-thumbs-down"></i>
+ <i class="thum fa_thumbs_down"></i>
 </button>
 <!-- show like count summary -->
 <?php foreach ($counterLikes as $Tdown): ?>
@@ -300,6 +300,7 @@ placeholder="Enter your comment here..."></textarea>
       <p>© 2020 RottenPotatoes</p>
     </div>
     <!---END OF FOOTER-->
+    <input type="hidden" id="myPhpValue" value="<?php echo json_encode($userLikes) ?>" />
 <script type="text/javascript" src='../js/commentSystem.js'></script>
 
 </body>
