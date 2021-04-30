@@ -100,10 +100,10 @@ parent.addEventListener('click', event => {
   else if (event.target.className === 'thum fa_thumbs_down'){
     //get the date associated with the liked event
     let str3 = event.target.parentElement.parentElement.parentElement.firstElementChild.innerHTML;
-    console.log(str3);
+    //console.log(str3);
     //get the <h> tag to add to the count summary of the liked event
     let str2 = event.target.parentElement.nextElementSibling;
-    console.log(str2);
+    //console.log(str2);
     //start at the closing character of the first span tag
     str3 = str3.substring(str3.indexOf(">") + 2);
     //start at 0 index and end at opening character of the closing span tag
@@ -111,9 +111,11 @@ parent.addEventListener('click', event => {
     // for loop check if user already liked on that date
     for (let i = 0; i < lArray.length; i++){
      let a = lArray[i].date;
+     console.log(a);
      let b = lArray[i]["COUNT(likesvalue)"];
      //let c = lArray[i]["COUNT(dislikevalue)"];
      let dt1 = str3.trim();
+     console.log(dt1);
       if (dt1 === a){
        countn = 1;
       }
