@@ -194,13 +194,14 @@ placeholder="Enter your comment here..."></textarea>
 <!-- onclick="openForm(/*<?php echo $num; ?>*/)"-->
  <!-- <div class="form-popup" id="/*<?php echo $num; ?>*/"> --> 
 <button class="open-button" id="open-button" >reply</button>
-     <div class="form-popup" id="same">
+     <div class="form-popup" id="<?php echo $num; ?>">
       <form class="form-container" method="POST" action="../user_rating_form.php">
 <!--review tables has to be altered to make rating an optional field -->
 	 <input type='hidden' name='uid' value="<?php echo $_SESSION['id']; ?>">
 	 <input type='hidden' name='date' value="<?php echo date('Y-m-d H:i:s')?>">
 	 <input type='hidden' name='parent_comment' value="<?php echo $comment->review_id; ?>">
 	 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
+   <input type="hidden" id="PhpValue" value="<?php echo json_encode($userLikes) ?>" />
 	<textarea class="textarea_line208" rows="2" name="comment"
 	placeholder="Enter your reply here..."></textarea>
 	 <button class="button" type="submit" class="btn">Submit</button>

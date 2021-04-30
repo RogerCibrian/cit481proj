@@ -139,7 +139,7 @@ parent.addEventListener('click', event => {
 parent.addEventListener('click', event => {
   if (event.target.className === "open-button"){
     console.log(event.target.nextSibling.nextSibling.id);
-   event.target.nextSibling.nextSibling.id.style.display = "block";
+   //event.target.nextSibling.nextSibling.id.style.display = "block";
   }
 });
 //
