@@ -35,7 +35,7 @@ $num = 0;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RottenPotatoes</title>
-
+    <link rel="stylesheet" href="/main.css" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link
     rel="stylesheet"
@@ -44,7 +44,7 @@ $num = 0;
   <script type='text/javascript' src='../js/jquery-3.6.0.min.js'></script>
   
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  	<link rel="stylesheet" href="/main.css" /> 
+  
 	<script src="../js/all.js" crossorigin="anonymous" data-auto-add-css="false"></script>
     <link
     rel="stylesheet"
