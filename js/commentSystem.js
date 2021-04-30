@@ -112,11 +112,11 @@ parent.addEventListener('click', event => {
     // for loop check if user already liked on that date
     for (let i = 0; i < lArray.length; i++){
      let a = lArray[i].date;
-     console.log(a);
+     //console.log(a);
      let b = lArray[i]["COUNT(likesvalue)"];
      //let c = lArray[i]["COUNT(dislikevalue)"];
      let dt1 = str3.trim();
-     console.log(dt1);
+    // console.log(dt1);
       if (dt1 === a){
        countn = 1;
       }
