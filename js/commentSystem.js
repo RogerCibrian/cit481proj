@@ -148,6 +148,7 @@ parent.addEventListener('click', event => {
   if (event.target.className === "open-button"){
     let i_d = event.target.nextSibling.nextSibling.id;
     console.log(i_d); 
+    console.log(event.target);
    // document.getElementById(i_d).style.display = "block";
   }
   //console.log(event.target.id);
