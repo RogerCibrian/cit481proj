@@ -201,7 +201,7 @@ placeholder="Enter your comment here..."></textarea>
 	 <input type='hidden' name='date' value="<?php echo date('Y-m-d H:i:s')?>">
 	 <input type='hidden' name='parent_comment' value="<?php echo $comment->review_id; ?>">
 	 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
-   <input type="hidden" id="PhpValue" value="<?php echo json_encode($userLikes) ?>" />
+  <!-- <input type="hidden" id="PhpValue" value="/*<?php echo json_encode($userLikes) ?>*/" /> -->
 	<textarea class="textarea_line208" rows="2" name="comment"
 	placeholder="Enter your reply here..."></textarea>
 	 <button class="button" type="submit" class="btn">Submit</button>
