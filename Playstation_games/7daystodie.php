@@ -285,8 +285,8 @@ placeholder="Enter your comment here..."></textarea>
     </div>
     <!---END OF FOOTER-->
      <!---external JS script: dislike container, likes container, form-container, userform----->
-     <input type="hidden" id="myPhpValue" value="<?php echo json_encode($userLikes); ?>" /> 
-     <!-- <script type="text/javascript">var lArray = <?php echo json_encode($userLikes) ?></script> -->
+    <!-- <input type="hidden" id="myPhpValue" value="<?php echo json_encode($userLikes); ?>" /> -->
+      <script type="text/javascript">var lArray = <?php echo json_encode($userLikes) ?></script> 
 	  <script type="text/javascript" src='../js/commentSystem.js'></script>
   
 </body>
