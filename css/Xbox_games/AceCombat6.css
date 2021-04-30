@@ -135,7 +135,7 @@ div.transbox_acecombat6{
   margin: 0 auto;
 }
 /*END OF FOOTER EDITING*/
-//comment section
+/*comment section*/
 .count {
      font-family:"Times New Roman", cursive, sans-serif;
      font-weight: bold;
@@ -246,5 +246,10 @@ border: none;
 
   /*line 208*/
   .textarea_line208{
+    color:black;
+  }
+
+  /*textarea_line205*/
+  .textarea_line205{
     color:black;
   }

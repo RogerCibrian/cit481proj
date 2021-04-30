@@ -202,7 +202,7 @@ placeholder="Enter your comment here..."></textarea>
 	 <input type='hidden' name='date' value="<?php echo date('Y-m-d H:i:s')?>">
 	 <input type='hidden' name='parent_comment' value="<?php echo $comment->review_id; ?>">
 	 <input type='hidden' name='page_id' value="<?php echo $page; ?>">
-	<textarea style="color:black;" rows="2" name="comment"
+	<textarea class="textarea_line205" rows="2" name="comment"
 	placeholder="Enter your reply here..."></textarea>
 	  <button class="button" type="submit" class="btn">Submit</button>
 	  <button class="button2" type="button" id="button2"  class="btn cancel">Close</button>
